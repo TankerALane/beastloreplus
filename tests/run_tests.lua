@@ -185,6 +185,50 @@ check(count > 0, "some Claw results at 27")
 FT.state.show = { learnable = true, learned = true, later = true }
 local _, all = FT.collect()
 check(all > count, "unticking Can learn now shows more")
+-- Nearest-first sort: player in The Barrens (Kalimdor); Eastern Kingdoms zones sort last.
+do
+    local KALIMDOR = { ["The Barrens"] = { 0, 0 }, ["Durotar"] = { 300, 0 }, ["Ashenvale"] = { 0, 600 },
+        ["Mulgore"] = { -300, 100 }, ["Stonetalon Mountains"] = { -200, 500 }, ["Darkshore"] = { 0, 1200 },
+        ["Teldrassil"] = { 0, 1500 }, ["Thousand Needles"] = { 0, -700 }, ["Dustwallow Marsh"] = { 300, -500 } }
+    local maps, byId, id = {}, {}, 100
+    for name, xy in pairs(KALIMDOR) do id = id + 1 maps[#maps + 1] = { mapID = id, name = name, mapType = 3 } byId[id] = { 1, xy } end
+    for _, name in ipairs({ "Silverpine Forest", "Elwynn Forest", "Dun Morogh", "Tirisfal Glades", "Westfall",
+                            "Loch Modan", "Redridge Mountains", "Duskwood", "Wetlands", "Hillsbrad Foothills" }) do
+        id = id + 1 maps[#maps + 1] = { mapID = id, name = name, mapType = 3 } byId[id] = { 0, { 0, 0 } }
+    end
+    local barrens
+    for _, m in ipairs(maps) do if m.name == "The Barrens" then barrens = m.mapID end end
+    Enum = { UIMapType = { Zone = 3 } }
+    CreateVector2D = function(x, y) return { x = x, y = y } end
+    C_Map = {
+        GetBestMapForUnit = function() return barrens end,
+        GetMapInfo = function(m) return { mapID = m, parentMapID = (m == 1 and 0 or 1) } end,
+        GetMapChildrenInfo = function() return maps end,
+        GetPlayerMapPosition = function() return { x = 0.5, y = 0.5 } end,
+        GetWorldPosFromMapPos = function(m) local e = byId[m] if not e then return nil end return e[1], { x = e[2][1], y = e[2][2] } end,
+    }
+    FT.state.ability, FT.state.rank, FT.state.search = "bite", 3, ""
+    FT.state.show = { learnable = true, learned = true, later = true }
+    FT.state.sortKey, FT.state.asc = "zone", true
+    local sorted = FT.collect()
+    local seenEK, order = false, true
+    for _, row in ipairs(sorted) do
+        if not row.header and not row.spacer then
+            local ek = byId[0] == nil and false
+            local z = row.beast.zones and row.beast.zones[1]
+            local kal = z and KALIMDOR[z] ~= nil
+            if not kal and z and z ~= "" then
+                for _, m in ipairs(maps) do if m.name == z and byId[m.mapID][1] == 0 then ek = true end end
+            end
+            if ek then seenEK = true elseif kal and seenEK then order = false end
+        end
+    end
+    check(order, "nearest sort: Kalimdor beasts before Eastern Kingdoms beasts when in The Barrens")
+    local firstZone
+    for _, row in ipairs(sorted) do if not row.header and not row.spacer then firstZone = row.beast.zones[1] break end end
+    check(firstZone ~= "Silverpine Forest", "nearest sort: first Bite 3 beast is not in Silverpine (" .. tostring(firstZone) .. ")")
+    C_Map, CreateVector2D = nil, nil
+end
 -- Caps
 local capStore = {}
 for i = 1, 450 do C.AddReport(capStore, i, "bite:1", "S", nil, i) end

@@ -8,12 +8,13 @@ BLP.Finder = Finder
 local ROW_H = 18
 local createRow -- defined below; rows are created as the visible area needs them
 local frame
-local state = { ability = nil, rank = 0, zone = nil, search = "", sortKey = "level", asc = true,
+local state = { ability = nil, rank = 0, zone = nil, search = "", sortKey = "zone", asc = true,
                 level = nil,  -- nil = follow the character's level
                 show = { learnable = true, learned = true, later = true } }
 local data = {}       -- filtered/sorted rows
 local abilityButtons = {}
 local rankButtons = {}
+local headerButtons = {} -- sort key -> column header button
 local rows = {}
 
 ---------------------------------------------------------------------------
@@ -80,6 +81,13 @@ local function category(r)
     return "later"
 end
 
+local function matchesSearch(r, search)
+    if search == "" then return true end
+    if contains(r.beast.name, search) or contains(BLP.AbilityName(r.ability), search) then return true end
+    for _, z in ipairs(r.beast.zones or {}) do if contains(z, search) then return true end end
+    return false
+end
+
 local function rowMatches(r, search)
     if state.ability and r.ability ~= state.ability then return false end
     if state.rank > 0 and r.rank ~= state.rank then return false end
@@ -89,14 +97,7 @@ local function rowMatches(r, search)
         if not ok then return false end
     end
     if not state.show[category(r)] then return false end
-    if search ~= "" then
-        if not (contains(r.beast.name, search) or contains(BLP.AbilityName(r.ability), search)) then
-            local zoneHit = false
-            for _, z in ipairs(r.beast.zones or {}) do if contains(z, search) then zoneHit = true end end
-            if not zoneHit then return false end
-        end
-    end
-    return true
+    return matchesSearch(r, search)
 end
 
 ---------------------------------------------------------------------------
@@ -194,6 +195,7 @@ local resultCount = 0
 
 local rankCounts = {}
 local abilityCounts = {}
+local searchCounts = {}  -- rows per ability matching the search text alone
 
 local function collect()
     wipe(data)
@@ -207,12 +209,16 @@ local function collect()
     sources[#sources + 1] = communityRows()
     -- How many rows each ability would show under the other filters (for the ability list).
     wipe(abilityCounts)
+    wipe(searchCounts)
     do
         local savedAbility, savedRank = state.ability, state.rank
         state.ability, state.rank = nil, 0
         for _, list in pairs(byAbility) do
             for _, r in ipairs(list) do
                 if rowMatches(r, search) then abilityCounts[r.ability] = (abilityCounts[r.ability] or 0) + 1 end
+                if search ~= "" and matchesSearch(r, search) then
+                    searchCounts[r.ability] = (searchCounts[r.ability] or 0) + 1
+                end
             end
         end
         state.ability, state.rank = savedAbility, savedRank
@@ -417,12 +423,31 @@ local function updateHeader()
         end
         frame.info:SetText(text .. ("  \226\128\148 %d result(s)"):format(resultCount))
     end
+    local searching = (state.search or "") ~= ""
+    local slot = 0
     for _, btn in ipairs(abilityButtons) do
         if btn.key == state.ability then btn:LockHighlight() else btn:UnlockHighlight() end
-        -- Dim abilities with nothing under the current filters (kept in place so the list is stable).
+        -- Searching shrinks the list; level, toggles and zone only grey (the list stays put).
+        local shown = not btn.key or not searching or (searchCounts[btn.key] or 0) > 0 or btn.key == state.ability
+        btn:SetShown(shown)
+        if shown then
+            btn:ClearAllPoints()
+            btn:SetPoint("TOPLEFT", 0, -slot * 21)
+            slot = slot + 1
+        end
         local empty = btn.key and (abilityCounts[btn.key] or 0) == 0
         btn.text:SetTextColor(empty and 0.5 or 1, empty and 0.5 or 0.82, empty and 0.5 or 0)
         btn.icon:SetDesaturated(empty and true or false)
+    end
+    if abilityButtons[1] then abilityButtons[1]:GetParent():SetHeight(math.max(1, slot * 21)) end
+    -- Sort arrow on the active column.
+    for sortKey, hb in pairs(headerButtons) do
+        local active = sortKey == state.sortKey
+        hb.arrow:SetShown(active)
+        if active then
+            if state.asc then hb.arrow:SetTexCoord(0, 0.5625, 0, 1) else hb.arrow:SetTexCoord(0, 0.5625, 1, 0) end
+        end
+        hb.label:SetTextColor(active and 1 or 1, active and 1 or 0.82, active and 1 or 0)
     end
     local max = key and BLP.MaxRank(key) or 0
     local knownRank = (key and BLP.isHunter and BLP.char and BLP.char.scanned) and (BLP.char.known[key] or 0) or 0
@@ -480,6 +505,7 @@ function Finder.Refresh()
         BLP.db.finder.ability, BLP.db.finder.rank = state.ability, state.rank
         BLP.db.finder.show = state.show
         BLP.db.finder.level = state.level
+        BLP.db.finder.sortKey, BLP.db.finder.asc = state.sortKey, state.asc
     end
 end
 
@@ -538,6 +564,13 @@ local function rowTooltip(row)
     GameTooltip:Show()
 end
 
+local SORT_TIPS = {
+    name = "Sort by beast name (click again to reverse).",
+    rank = "Sort by ability and rank (click again to reverse).",
+    level = "Sort by beast level, lowest first (click again: highest first).",
+    zone = "Sort by distance from you, nearest first (click again: farthest first).",
+}
+
 local function makeHeader(parent, text, key, width, x)
     local b = CreateFrame("Button", nil, parent)
     b:SetSize(width, 18)
@@ -545,12 +578,26 @@ local function makeHeader(parent, text, key, width, x)
     local fs = b:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
     fs:SetPoint("LEFT", 2, 0)
     fs:SetText(text)
+    b.label = fs
     b:SetHighlightTexture("Interface\\Buttons\\UI-Listbox-Highlight2", "ADD")
     if key then
+        b.arrow = b:CreateTexture(nil, "OVERLAY")
+        b.arrow:SetTexture("Interface\\Buttons\\UI-SortArrow")
+        b.arrow:SetSize(9, 8)
+        b.arrow:SetPoint("LEFT", fs, "RIGHT", 4, 0)
+        b.arrow:Hide()
+        headerButtons[key] = b
         b:SetScript("OnClick", function()
             if state.sortKey == key then state.asc = not state.asc else state.sortKey, state.asc = key, true end
             Finder.Refresh()
         end)
+        b:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_TOP")
+            GameTooltip:AddLine(text)
+            GameTooltip:AddLine(SORT_TIPS[key], 1, 1, 1, true)
+            GameTooltip:Show()
+        end)
+        b:SetScript("OnLeave", function() GameTooltip:Hide() end)
     end
     return b
 end
@@ -834,7 +881,7 @@ local function create()
     makeHeader(header, "Beast", "name", 210, COLS.name - 2)
     makeHeader(header, "Rank", "rank", 96, COLS.rank - 2)
     makeHeader(header, "Level", "level", 56, COLS.level - 2)
-    makeHeader(header, "Zone (nearest)", "zone", 142, COLS.zone - 2)
+    makeHeader(header, "Zone", "zone", 142, COLS.zone - 2)
 
     -- Results list (virtualised rows)
     local scroll = CreateFrame("ScrollFrame", nil, f, "UIPanelScrollFrameTemplate")
@@ -876,6 +923,8 @@ function Finder.Toggle()
         end
         state.show.learnable = true -- what you can learn now is always shown
         state.level = tonumber(saved.level)
+        if SORT_TIPS[saved.sortKey] then state.sortKey = saved.sortKey end
+        if saved.asc ~= nil then state.asc = saved.asc and true or false end
     end
     if frame:IsShown() then frame:Hide() else frame:Show() end
 end

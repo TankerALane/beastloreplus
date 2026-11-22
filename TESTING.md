@@ -51,8 +51,11 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
 - [ ] Pick an ability (e.g. Bite) and a rank → the list shows beasts with level range and zone,
       and the header shows pet level, training points and your status for that rank.
 - [ ] Click the **Level** and **Beast** headers → sorting changes; click again → reverses.
-- [ ] Click **Zone (nearest)** → beasts in your zone first, then nearby zones, other continent last;
-      click again → farthest first. The zone menu also lists zones nearest first.
+- [ ] Default sort is nearest first (arrow on **Zone**): in the Crossroads, Bite (Rank 3) starts with The
+      Barrens / Wailing Caverns, Eastern Kingdoms beasts last. Click **Zone** again → farthest first.
+      The zone menu also lists zones nearest first. Close and reopen → the sort is remembered.
+- [ ] Type "raptor" in search → the ability list shrinks to matching abilities; clear it → all back.
+      Changing the Level box only greys abilities.
 - [ ] "All abilities" (or "All" ranks) → a gold header per ability and rank with a blank row between
       groups; clicking a header shows only that rank.
 - [ ] Pick an ability you know (e.g. Bite rank 2) → rank buttons 1 and 2 are grey; hovering says you

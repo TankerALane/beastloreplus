@@ -15,7 +15,10 @@
 - Ability Finder: rank buttons you already know are greyed out.
 - Ability Finder: rank buttons only appear for ranks with beasts under the current filters (e.g.
   "Can learn now" at level 27 hides Claw 5), and abilities with nothing to show are dimmed.
-- Ability Finder: the Zone column and the zone menu sort nearest first (click again for farthest).
+- Ability Finder: sorts **nearest first** by default (Zone column; click again for farthest), the zone
+  menu lists zones nearest first, the active sort column shows an arrow, and the sort is remembered.
+- Ability Finder: typing a search shrinks the ability list to matching abilities; level, toggles and
+  zone only grey abilities out.
 
 ## 1.0.0 (2026-11-21)
 
