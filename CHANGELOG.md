@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.1 (2026-11-21)
 
 - Data: entries where a beast would teach a higher rank than its level allows (below every teacher
   of the rank before) are removed, e.g. Savannah Patriarch as Cower (Rank 4).
