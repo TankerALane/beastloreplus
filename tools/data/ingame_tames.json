@@ -3,7 +3,7 @@
   "tames": [
     {"npcId": 3255, "name": "Sunscale Screecher", "level": 15, "zone": "The Barrens", "teaches": [{"ability": "savage_rend", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
     {"npcId": 4127, "name": "Hecklefang Hyena", "level": 15, "zone": "The Barrens", "teaches": [{"ability": "tendon_rip", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
-    {"npcId": 2960, "name": "Prairie Wolf Alpha", "level": 10, "zone": "Mulgore", "teaches": [{"ability": "bite", "rank": 2}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037", "note": "3 tames"},
+    {"npcId": 2960, "name": "Prairie Wolf Alpha", "level": 10, "zone": "Mulgore", "teaches": [{"ability": "bite", "rank": 2}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037", "note": "about 5 tames, never Furious Howl"},
     {"npcId": 3249, "name": "Greater Thunderhawk", "level": 24, "zone": "The Barrens", "teaches": [{"ability": "lightning_breath", "rank": 2}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037", "note": "3 tames"},
     {"npcId": 4128, "name": "Hecklefang Stalker", "level": 22, "zone": "The Barrens", "teaches": [], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037", "note": "2 tames (a manual capture of another pet ignored)"},
     {"npcId": 3472, "name": "Washte Pawne", "level": 25, "zone": "The Barrens", "teaches": [{"ability": "lightning_breath", "rank": 3}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
