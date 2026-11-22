@@ -30,7 +30,7 @@ ABILITIES_LUA = os.path.join(ROOT, "Data", "Abilities.lua")
 BEASTS_LUA = os.path.join(ROOT, "Data", "Beasts.lua")
 
 # Earlier = more trusted when sources disagree.
-SOURCE_PRIORITY = ["wowhead-classic", "petopia-classic", "warcraft.wiki.gg"]
+SOURCE_PRIORITY = ["in-game", "wowhead-classic", "petopia-classic", "warcraft.wiki.gg"]
 # Sites that are the same data under another name count as one source.
 SOURCES_CONFIG = os.path.join(ROOT, "tools", "data", "sources.json")
 try:
@@ -116,7 +116,43 @@ def load_raw(errs):
         if data.get("foreverComplete") is True:
             FOREVER_COMPLETE.add(key)
         files.append(data)
+    files.extend(load_ingame(errs))
     return files
+
+
+INGAME_PATH = os.path.join(ROOT, "tools", "data", "ingame_tames.json")
+
+
+def load_ingame(errs):
+    """Turn verified in-game tames into per-ability observations from source 'in-game'."""
+    if not os.path.exists(INGAME_PATH):
+        return []
+    try:
+        with open(INGAME_PATH, encoding="utf-8") as fh:
+            tames = json.load(fh).get("tames") or []
+    except (OSError, ValueError) as exc:
+        errs.err("ingame_tames.json: cannot parse JSON (%s)" % exc)
+        return []
+    by_ability = defaultdict(list)
+    for t in tames:
+        npc = as_int(t.get("npcId"))
+        if npc is None:
+            errs.err("ingame_tames.json: tame without npcId: %r" % t)
+            continue
+        for x in t.get("teaches") or []:
+            obs = {"source": "in-game", "url": "tools/data/ingame_tames.json (%s, %s)" % (t.get("date"), t.get("by")),
+                   "name": t.get("name"), "rank": as_int(x.get("rank"))}
+            if t.get("zone"):
+                obs["zones"] = [t["zone"]]
+            by_ability[x.get("ability")].append({"npcId": npc, "observations": [obs]})
+    out = []
+    for key, beasts in sorted(by_ability.items()):
+        if not isinstance(key, str) or not KEY_RE.match(key):
+            errs.err("ingame_tames.json: bad ability key %r" % key)
+            continue
+        out.append({"ability": key, "name": None, "beasts": beasts, "ranks": [],
+                    "_file": "ingame_tames.json"})
+    return out
 
 
 def consensus(values_by_source):

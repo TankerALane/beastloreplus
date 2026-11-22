@@ -1,0 +1,15 @@
+{
+  "_doc": "Tames verified in game (from /blp export). Each one counts as an independent source ('in-game') for every ability the pet arrived with. Add rows from GitHub issues here, then run python tools/build_data.py.",
+  "tames": [
+    {
+      "npcId": 3255, "name": "Sunscale Screecher", "level": 15, "zone": "The Barrens",
+      "teaches": [ { "ability": "savage_rend", "rank": 1 } ],
+      "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"
+    },
+    {
+      "npcId": 4127, "name": "Hecklefang Hyena", "level": 15, "zone": "The Barrens",
+      "teaches": [ { "ability": "tendon_rip", "rank": 1 } ],
+      "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"
+    }
+  ]
+}

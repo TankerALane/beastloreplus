@@ -79,7 +79,8 @@ MIT © Decoupled Lane Studio. See [LICENSE](LICENSE).
 
 ### For developers
 
-- Data: raw research lives in `tools/data/raw/*.json`; `python tools/build_data.py` generates
+- Data: raw research lives in `tools/data/raw/*.json`, and tames verified in game (from `/blp export`
+  issues) go in `tools/data/ingame_tames.json` (source `in-game`, most trusted). `python tools/build_data.py` generates
   `Data/Abilities.lua`, `Data/Beasts.lua` and `tools/data/REVIEW.md`. Never edit the generated Lua.
 - Tests: `luajit tests/run_tests.lua`. Lint: `luajit tools/lint.lua` (luacheck via its Lua API).
 - Local install: `powershell -ExecutionPolicy Bypass -File tools\install_local.ps1` (add `-Junction`
