@@ -155,7 +155,9 @@ local function appendSection(tooltip, npcId)
     if empty or source == "pending" then
         tooltip:AddLine(L.NO_DATA, c.cream[1], c.cream[2], c.cream[3])
         -- Keep asking for tames until 2 different hunters confirmed it teaches nothing.
-        local confirmedNone = empty and BLP.Community.NothingConfirmations(npcId) >= BLP.Community.NOTHING_QUORUM
+        -- (Bundled with an empty list = tamed in game with nothing: already confirmed.)
+        local confirmedNone = empty and (source == "bundled"
+            or BLP.Community.NothingConfirmations(npcId) >= BLP.Community.NOTHING_QUORUM)
         if not confirmedNone then
             tooltip:AddLine(L.NO_DATA_HINT, c.grey[1], c.grey[2], c.grey[3], true)
         end

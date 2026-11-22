@@ -1,10 +1,35 @@
 {
   "beasts": {
+    "2956": {
+      "family": "Tallstrider",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Cheese, Fungus, Fruit"
+      ],
+      "tameable": true
+    },
+    "2960": {
+      "family": "Wolf",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Meat"
+      ],
+      "tameable": true
+    },
+    "3035": {
+      "family": "Cat",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Meat, Fish"
+      ],
+      "tameable": true
+    },
     "3239": {
       "lines": [],
       "tameable": false
     },
     "3249": {
+      "family": "Wind Serpent",
       "lines": [
         "Specialization: Default",
         "Diet: Fish, Cheese, Bread"
@@ -17,7 +42,32 @@
         "Diet: Meat"
       ],
       "tameable": true
+    },
+    "3424": {
+      "family": "Wind Serpent",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Fish, Cheese, Bread"
+      ],
+      "tameable": true
     }
   },
-  "families": {}
+  "families": {
+    "Cat": [
+      "Specialization: Default",
+      "Diet: Meat, Fish"
+    ],
+    "Tallstrider": [
+      "Specialization: Default",
+      "Diet: Cheese, Fungus, Fruit"
+    ],
+    "Wind Serpent": [
+      "Specialization: Default",
+      "Diet: Fish, Cheese, Bread"
+    ],
+    "Wolf": [
+      "Specialization: Default",
+      "Diet: Meat"
+    ]
+  }
 }

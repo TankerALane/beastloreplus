@@ -155,6 +155,68 @@ def load_ingame(errs):
     return out
 
 
+def load_ingame_sets():
+    """npcId -> {"abilities": {key: rank}, "name", "level", "zone"} from in-game tames.
+
+    A tamed pet arrives with every ability its beast teaches, so an in-game tame is the complete
+    list for that beast (an empty list means it teaches nothing)."""
+    if not os.path.exists(INGAME_PATH):
+        return {}
+    try:
+        with open(INGAME_PATH, encoding="utf-8") as fh:
+            tames = json.load(fh).get("tames") or []
+    except (OSError, ValueError):
+        return {}
+    out = {}
+    for t in tames:
+        npc = as_int(t.get("npcId"))
+        if npc is None:
+            continue
+        entry = out.setdefault(npc, {"abilities": {}, "name": t.get("name"), "level": as_int(t.get("level")),
+                                     "zone": t.get("zone"), "date": t.get("date"), "by": t.get("by")})
+        for x in t.get("teaches") or []:
+            r = as_int(x.get("rank"))
+            if isinstance(x.get("ability"), str) and r is not None:
+                entry["abilities"][x["ability"]] = max(r, entry["abilities"].get(x["ability"], 0))
+    return out
+
+
+def apply_ingame_complete(beasts, ingame):
+    """In-game tames are the complete list: drop abilities they did not show, mark the rest
+    confirmed, and ship beasts tamed with nothing as teaching nothing. Returns review rows."""
+    review = []
+    for npc, tame in sorted(ingame.items()):
+        src = "tools/data/ingame_tames.json (%s, %s)" % (tame.get("date"), tame.get("by"))
+        b = beasts.get(npc)
+        if b is None:
+            if tame["abilities"]:
+                continue  # merge_beasts already added it from the in-game observations
+            lvl = tame.get("level")
+            b = {"name": tame.get("name") or "NPC %d" % npc, "minLevel": lvl, "maxLevel": lvl,
+                 "zones": [tame["zone"]] if tame.get("zone") else [], "elite": False, "rare": False,
+                 "teaches": [], "conf": "confirmed"}
+            beasts[npc] = b
+            review.append(("ingame", "NPC %d %s: teaches nothing" % (npc, b["name"]),
+                           "tamed in game, the pet arrived with no abilities", [src]))
+            continue
+        kept = []
+        for t in b["teaches"]:
+            if t["ability"] in tame["abilities"]:
+                t["conf"] = "confirmed"
+                t["ingame"] = True
+                kept.append(t)
+            else:
+                review.append(("ingame", "NPC %d %s: %s rank %d removed" % (npc, b["name"], t["ability"], t["rank"]),
+                               "tamed in game, the pet arrived without it", [src]))
+        b["teaches"] = kept
+        b["conf"] = "confirmed" if all(t["conf"] == "confirmed" for t in kept) else max(
+            (t["conf"] for t in kept), key=lambda c: CONF_ORDER[c])
+        if not kept:
+            review.append(("ingame", "NPC %d %s: teaches nothing" % (npc, b["name"]),
+                           "tamed in game, the pet arrived with no abilities", [src]))
+    return review
+
+
 def consensus(values_by_source):
     """values_by_source: {source: value}. Returns (value, conf, detail)."""
     vals = {s: v for s, v in values_by_source.items() if v is not None}
@@ -281,8 +343,9 @@ def drop_out_of_order(beasts, abilities):
                 ref = min(kept_levels)
     for npc in list(beasts):
         b = beasts[npc]
+        had = len(b["teaches"])
         b["teaches"] = [t for t in b["teaches"] if not t.get("drop")]
-        if not b["teaches"]:
+        if had and not b["teaches"]:  # (a beast tamed in game with nothing stays: it teaches nothing)
             del beasts[npc]
             continue
         worst = "confirmed"
@@ -511,6 +574,7 @@ def write_review(abilities, beasts, ab_review, beast_review, unresolved, errs):
     section("Beast conflicts", beast_review, {"conflict"})
     section("Beasts with one source", beast_review, {"unverified"})
     section("Dropped: rank out of level order (not shipped)", beast_review, {"dropped"})
+    section("Corrected by in-game tames (complete ability lists)", beast_review, {"ingame"})
     section("Level-range disagreements (informational)", beast_review, {"note"})
     out.append("## Unresolved names (not shipped) (%d)" % len(unresolved))
     out.append("")
@@ -539,6 +603,9 @@ def main(argv):
     files = load_raw(errs)
     abilities, ab_review = merge_abilities(files, errs)
     beasts, beast_review, unresolved = merge_beasts(files, abilities, errs)
+    ingame_review = apply_ingame_complete(beasts, load_ingame_sets())
+    corrected = set(r[1].split(":")[0] for r in ingame_review)
+    beast_review = [r for r in beast_review if r[1].split(":")[0] not in corrected] + ingame_review
     drops = drop_out_of_order(beasts, abilities)
     dropped = set(r[1] for r in drops)
     beast_review = [r for r in beast_review if r[1] not in dropped] + drops

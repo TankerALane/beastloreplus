@@ -1,15 +1,15 @@
 {
-  "_doc": "Tames verified in game (from /blp export). Each one counts as an independent source ('in-game') for every ability the pet arrived with. Add rows from GitHub issues here, then run python tools/build_data.py.",
+  "_doc": "Tames verified in game (from /blp export). Each one counts as an independent source ('in-game') for every ability the pet arrived with, and is the complete list for that beast: abilities it did not show are removed, and an empty list means the beast teaches nothing. Leave out manual /blp capture rows. Add rows from GitHub issues here, then run python tools/build_data.py.",
   "tames": [
-    {
-      "npcId": 3255, "name": "Sunscale Screecher", "level": 15, "zone": "The Barrens",
-      "teaches": [ { "ability": "savage_rend", "rank": 1 } ],
-      "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"
-    },
-    {
-      "npcId": 4127, "name": "Hecklefang Hyena", "level": 15, "zone": "The Barrens",
-      "teaches": [ { "ability": "tendon_rip", "rank": 1 } ],
-      "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"
-    }
+    {"npcId": 3255, "name": "Sunscale Screecher", "level": 15, "zone": "The Barrens", "teaches": [{"ability": "savage_rend", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
+    {"npcId": 4127, "name": "Hecklefang Hyena", "level": 15, "zone": "The Barrens", "teaches": [{"ability": "tendon_rip", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
+    {"npcId": 2960, "name": "Prairie Wolf Alpha", "level": 10, "zone": "Mulgore", "teaches": [{"ability": "bite", "rank": 2}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037", "note": "3 tames"},
+    {"npcId": 3249, "name": "Greater Thunderhawk", "level": 24, "zone": "The Barrens", "teaches": [{"ability": "lightning_breath", "rank": 2}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037", "note": "3 tames"},
+    {"npcId": 4128, "name": "Hecklefang Stalker", "level": 22, "zone": "The Barrens", "teaches": [], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037", "note": "2 tames (a manual capture of another pet ignored)"},
+    {"npcId": 3472, "name": "Washte Pawne", "level": 25, "zone": "The Barrens", "teaches": [{"ability": "lightning_breath", "rank": 3}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
+    {"npcId": 3250, "name": "Silithid Creeper", "level": 21, "zone": "The Barrens", "teaches": [{"ability": "scorpid_poison", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
+    {"npcId": 3245, "name": "Ornery Plainstrider", "level": 16, "zone": "The Barrens", "teaches": [{"ability": "cower", "rank": 2}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
+    {"npcId": 3246, "name": "Fleeting Plainstrider", "level": 12, "zone": "The Barrens", "teaches": [{"ability": "cower", "rank": 1}, {"ability": "dust_cloud", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
+    {"npcId": 3254, "name": "Sunscale Lashtail", "level": 12, "zone": "The Barrens", "teaches": [], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"}
   ]
 }

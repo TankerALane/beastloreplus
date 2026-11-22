@@ -44,6 +44,23 @@ beasts, review = run(ingame=True)
 check(4 in beasts, "out-of-order beast confirmed in game is kept")
 check(not any("Odd" in r[1] for r in review), "in-game beast is not reported as dropped")
 
+# In-game tames are complete lists
+beasts = {7: {"name": "Wolf", "minLevel": 9, "maxLevel": 10, "zones": [], "elite": False, "rare": False, "conf": "unverified",
+              "teaches": [{"ability": "bite", "rank": 2, "conf": "confirmed", "ingame": True},
+                          {"ability": "furious_howl", "rank": 1, "conf": "unverified", "ingame": False}]},
+          8: {"name": "Hyena", "minLevel": 22, "maxLevel": 23, "zones": [], "elite": False, "rare": False, "conf": "confirmed",
+              "teaches": [{"ability": "tendon_rip", "rank": 1, "conf": "confirmed", "ingame": False}]}}
+ingame = {7: {"abilities": {"bite": 2}, "name": "Wolf"}, 8: {"abilities": {}, "name": "Hyena"},
+          9: {"abilities": {}, "name": "Lizard", "level": 12, "zone": "The Barrens"}}
+review = bd.apply_ingame_complete(beasts, ingame)
+check([t["ability"] for t in beasts[7]["teaches"]] == ["bite"] and beasts[7]["conf"] == "confirmed",
+      "ability the tame did not show is removed; beast confirmed")
+check(beasts[8]["teaches"] == [] and 8 in beasts, "tamed with nothing: kept, teaches nothing")
+check(beasts[9]["teaches"] == [] and beasts[9]["zones"] == ["The Barrens"], "new beast tamed with nothing is added")
+check(any("furious_howl" in r[1] for r in review), "removal listed for REVIEW.md")
+bd.drop_out_of_order(beasts, {"bite": {"name": "Bite", "ranks": {2: {}}}})
+check(8 in beasts and 9 in beasts, "teaches-nothing beasts survive the level-order pass")
+
 # import_lore: read saved variables and merge Beast Lore lines
 import import_lore as il  # noqa: E402
 
