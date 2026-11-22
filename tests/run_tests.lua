@@ -335,6 +335,11 @@ do
         "toggle on: never-lored beast of a lored family shows the family's Specialization and Diet")
     check(BLP.Community.ExportText():find("| Tallstrider | Specialization: Cunning; Diet: Meat | 3255 |", 1, true),
         "export lists Beast Lore by family")
+    -- Family remembered per NPC: hovering again works even when the game gives no family.
+    UnitCreatureFamily = function() return nil end
+    local again = mockTip("TipG", { "Mottled Screecher", "Level 16" })
+    BLP.Lore.Process(again, nil, "Creature-0-1-1-1-1021-00000005", true)
+    check(again.has("Diet: Meat"), "family remembered per NPC when the game gives none")
     UnitCreatureFamily = nil
 
     local other = mockTip("TipE", { "Defias Thug", "Level 9" })

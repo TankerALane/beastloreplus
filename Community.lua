@@ -396,6 +396,13 @@ local function recordTame(target, teaches, unknown)
         time = time(),
     }
     if unknown and #unknown > 0 then tame.unknown = unknown end
+    -- The new pet's family is reliable; remember it so Specialization / Diet can be shown.
+    local family = BLP.Lore and BLP.Lore.UnitFamily and BLP.Lore.UnitFamily("pet")
+    if family and tame.npcId then
+        BLP.db.npcFamily = BLP.db.npcFamily or {}
+        BLP.db.npcFamily[tame.npcId] = family
+        tame.family = family
+    end
     local tames = BLP.db.community.tames
     table.insert(tames, 1, tame)
     while #tames > MAX_TAMES do table.remove(tames) end

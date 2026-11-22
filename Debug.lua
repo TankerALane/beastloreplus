@@ -104,6 +104,11 @@ function Debug.Text()
     local guid = BLP.SafeUnitGUID("target")
     add(("guid=%s npcId=%s name=%s type=%s"):format(q(guid), q(BLP.NpcIdFromGUID(guid)),
         q(BLP.Plain(UnitName("target"))), q(BLP.Plain(UnitCreatureType("target")))))
+    local lore = BLP.Lore
+    add(("family: target=%s mouseover=%s remembered=%s"):format(
+        q(lore and lore.UnitFamily and lore.UnitFamily("target")),
+        q(lore and lore.UnitFamily and lore.UnitFamily("mouseover")),
+        q(BLP.db and BLP.db.npcFamily and BLP.NpcIdFromGUID(guid) and BLP.db.npcFamily[BLP.NpcIdFromGUID(guid)])))
     local npcId = BLP.NpcIdFromGUID(guid)
     if npcId then
         local teaches, source, extra = BLP.GetTeaches(npcId)
@@ -140,6 +145,22 @@ function Debug.Text()
     end
     local c = BLP.Lore and BLP.Lore.lastCast
     if c then add(("last Beast Lore cast at %s on npcId %s"):format(date("%H:%M:%S", c.time), q(c.npcId))) end
+    add("")
+
+    add("== Beast Lore remembered (shown without casting)")
+    local db = BLP.db or {}
+    local nLore = 0
+    for _ in pairs(db.lore or {}) do nLore = nLore + 1 end
+    add(("details without casting: %s; beasts remembered: %d"):format(db.alwaysShow and "on" or "off", nLore))
+    local fams = {}
+    for f in pairs(db.loreFamily or {}) do fams[#fams + 1] = f end
+    table.sort(fams)
+    for _, f in ipairs(fams) do
+        local parts = {}
+        for _, l in ipairs(db.loreFamily[f].lines or {}) do parts[#parts + 1] = tostring(l[1]) end
+        add(("  %s: %s"):format(f, table.concat(parts, "; ")))
+    end
+    if #fams == 0 then add("  no families yet: cast Beast Lore on a beast") end
     add("")
 
     add("== Beast Training (this character)")

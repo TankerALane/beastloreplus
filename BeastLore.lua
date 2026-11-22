@@ -180,15 +180,38 @@ local function tooltipGUID(tooltip, data)
     return nil
 end
 
--- The hovered unit's creature family ("Wolf", "Raptor"...), when the game gives a plain value.
-local function tooltipFamily(tooltip)
-    if not tooltip.GetUnit or not UnitCreatureFamily then return nil end
-    local ok, _, unit = pcall(tooltip.GetUnit, tooltip)
-    unit = ok and BLP.Plain(unit) or nil
-    if not unit then return nil end
-    local ok2, family = pcall(UnitCreatureFamily, unit)
-    family = ok2 and BLP.Plain(family) or nil
+local function unitFamily(unit)
+    if not unit or not UnitCreatureFamily then return nil end
+    local ok, family = pcall(UnitCreatureFamily, unit)
+    family = ok and BLP.Plain(family) or nil
     return type(family) == "string" and family ~= "" and family or nil
+end
+Lore.UnitFamily = unitFamily
+
+-- The creature family ("Wolf", "Wind Serpent"...) of the beast a tooltip shows. Tries the
+-- tooltip's unit, then mouseover / target when they are the same beast, then the family
+-- remembered for this NPC (from a Beast Lore cast or a tame). Remembers what it finds.
+local function tooltipFamily(tooltip, guid)
+    local family
+    if tooltip.GetUnit then
+        local ok, _, unit = pcall(tooltip.GetUnit, tooltip)
+        family = unitFamily(ok and BLP.Plain(unit) or nil)
+    end
+    if not family and guid then
+        for _, unit in ipairs({ "mouseover", "target" }) do
+            if BLP.SafeUnitGUID(unit) == guid then
+                family = unitFamily(unit)
+                if family then break end
+            end
+        end
+    end
+    local npcId = BLP.NpcIdFromGUID(guid)
+    local db = BLP.db
+    if npcId and db then
+        db.npcFamily = db.npcFamily or {}
+        if family then db.npcFamily[npcId] = family else family = db.npcFamily[npcId] end
+    end
+    return family
 end
 Lore.TooltipFamily = tooltipFamily
 
@@ -201,7 +224,7 @@ local function process(tooltip, data, knownGUID, isRecheck)
     local lines, colors = readLines(tooltip)
     local tameable, notTameable, lore, ours = classify(lines)
     if (tameable or notTameable) and not ours then
-        remember(npcId, lines, colors, tameable, tooltipFamily(tooltip))
+        remember(npcId, lines, colors, tameable, tooltipFamily(tooltip, guid))
     end
     if tameable or notTameable or lore then
         local dataLines
@@ -234,7 +257,7 @@ local function process(tooltip, data, knownGUID, isRecheck)
             -- Only tameable beasts are in the data, so "Tameable" is safe to show.
             tooltip:AddLine(L.TAMEABLE, 1, 1, 1)
             -- Specialization and Diet from another beast of the same family.
-            local family = tooltipFamily(tooltip)
+            local family = tooltipFamily(tooltip, guid)
             local fam = family and BLP.db.loreFamily and BLP.db.loreFamily[family]
             if fam and type(fam.lines) == "table" then
                 for _, l in ipairs(fam.lines) do
