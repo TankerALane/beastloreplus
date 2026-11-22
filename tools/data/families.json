@@ -1,0 +1,34 @@
+{
+  "_doc": "Which pet families can learn each tameable ability on WoW Forever. Two-source rule: an ability is listed for a family only when both sources agree. Trainer-only abilities (Growl, Great Stamina, Natural Armor, resistances) are learnable by every family and are not listed. Generated into Data/Families.lua by tools/build_data.py.",
+  "sources": [
+    "https://foreverchanges.pro/hunter-pets (compares Forever 1.60.1.71037 client data with Classic; updated 2026-09-24)",
+    "https://www.warcrafttavern.com/forever/guides/hunter-pet-families/",
+    "Blizzard deep dive: every family can learn Bite or Claw (sometimes both) and Dash or Dive, plus one unique ability (https://worldofwarcraft.blizzard.com/news/24301515)"
+  ],
+  "allFamilies": ["cower"],
+  "allFamiliesNote": "Cower: Warcraft Tavern lists it for every family (ForeverChanges does not list it); beasts of Bat, Bird of Prey, Cat and Tallstrider families teach it and tames confirm it in game (Ornery / Fleeting Plainstrider), matching Classic where every family could learn Cower.",
+  "excluded": [
+    "Bat: Bite (Warcraft Tavern only; ForeverChanges client data lists Bat with Dive and Sonic Blast only)",
+    "Core Hound: Lava Breath, Bite (Warcraft Tavern only; no tameable Core Hound in the data)"
+  ],
+  "families": {
+    "Bat": ["dive", "sonic_blast"],
+    "Bear": ["swipe", "bite", "claw", "dash"],
+    "Bird of Prey": ["mine", "claw", "dive"],
+    "Boar": ["charge", "bite", "dash"],
+    "Carrion Bird": ["screech", "bite", "claw", "dive"],
+    "Cat": ["prowl", "bite", "claw", "dash"],
+    "Crab": ["pinch", "claw", "dash"],
+    "Crocolisk": ["dismember", "bite", "dash"],
+    "Fox": ["tricksters_dance", "bite", "dash"],
+    "Gorilla": ["thunderstomp", "bite", "dash"],
+    "Hyena": ["tendon_rip", "bite", "dash"],
+    "Raptor": ["savage_rend", "bite", "claw", "dash"],
+    "Scorpid": ["scorpid_poison", "claw", "dash"],
+    "Spider": ["web", "bite", "dash"],
+    "Tallstrider": ["dust_cloud", "bite", "dash"],
+    "Turtle": ["shell_shield", "bite", "dash"],
+    "Wind Serpent": ["lightning_breath", "bite", "dive"],
+    "Wolf": ["furious_howl", "bite", "dash"]
+  }
+}

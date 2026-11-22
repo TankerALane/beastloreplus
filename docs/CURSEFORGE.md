@@ -47,6 +47,7 @@ Type **/blp** or click the minimap button to search every pet ability and the be
 - **Level box** (your level by default):
   - **Can learn now** hides beasts you can't tame yet.
   - Untick **Already learned** to see only what you still need.
+- **Pet family:** show only the abilities your current pet, or any other family, can learn.
 - **Click a beast** to drop a **map pin** where it spawns, plus a **TomTom** arrow if you use TomTom. Exact spawn points need **Questie** installed; without it, the pin uses where you last targeted that beast.
 
 ## Includes Forever's new pet abilities

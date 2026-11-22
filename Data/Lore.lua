@@ -24,5 +24,6 @@ BLP.LoreData = {
     [3250] = { tameable = true, lines = { "Specialization: Default", "Diet: Meat" } },
     [3424] = { tameable = true, family = "Wind Serpent", lines = { "Specialization: Default", "Diet: Fish, Cheese, Bread" } },
     [3466] = { tameable = false },
+    [3566] = { tameable = true, family = "Cat", lines = { "Specialization: Default", "Diet: Meat, Fish" } },  -- Flatland Prowler
   },
 }

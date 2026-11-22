@@ -5,6 +5,11 @@
 - Fix: with "Show Beast Lore details without casting Beast Lore" on, the tooltip no longer flickers or
   jumps on mouseover; the lines are added at once instead of a frame later.
 - Specialization / Diet added on mouseover: label in yellow, value in white.
+- Ability Finder: **Pet** family filter. Pick a family (or "My pet", which follows the pet you have out)
+  to see only the abilities it can learn. Family lists are from two agreeing sources
+  (`tools/data/families.json`); Cower and trainer abilities count for every family.
+- Ability Finder: the legend shows the yellow dot (higher rank known, this one not).
+- Data: Swoop confirmed in game (Claw 1); Flatland Prowler Beast Lore lines bundled.
 
 ## 1.0.2 (2026-11-21)
 

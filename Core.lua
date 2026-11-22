@@ -294,6 +294,19 @@ function BLP.StatusText(status)
     return L.STATUS_UNKNOWN
 end
 
+-- Can a pet family learn this ability? Trainer-only abilities and BLP.FamilyAll: every family.
+-- Unknown families (not in Data/Families.lua) are not filtered.
+function BLP.FamilyCanLearn(family, key)
+    if not family then return true end
+    local ab = BLP.Abilities[key]
+    if ab and ab.trainerOnly then return true end
+    for _, k in ipairs(BLP.FamilyAll or {}) do if k == key then return true end end
+    local list = BLP.Families and BLP.Families[family]
+    if not list then return true end
+    for _, k in ipairs(list) do if k == key then return true end end
+    return false
+end
+
 -- What a beast teaches: bundled data first (always wins), then community data that met the
 -- 3-sender rule. Returns list, source ("bundled"|"community"|"pending"|nil), extra.
 function BLP.GetTeaches(npcId)

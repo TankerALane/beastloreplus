@@ -169,7 +169,7 @@ BLP.Beasts = {
   [2959] = { name = "Prairie Stalker", minLevel = 7, maxLevel = 8, zones = { "Mulgore" }, teaches = { { ability = "bite", rank = 1 } }, conf = "confirmed" },
   [2960] = { name = "Prairie Wolf Alpha", minLevel = 9, maxLevel = 10, zones = { "Mulgore" }, teaches = { { ability = "bite", rank = 2 } }, conf = "confirmed" },
   [2966] = { name = "Battleboar", minLevel = 3, maxLevel = 4, zones = { "Mulgore" }, teaches = { { ability = "charge", rank = 1 } }, conf = "confirmed" },
-  [2970] = { name = "Swoop", minLevel = 7, maxLevel = 9, zones = { "Mulgore" }, teaches = { { ability = "claw", rank = 1, conf = "unverified" } }, conf = "unverified" },
+  [2970] = { name = "Swoop", minLevel = 7, maxLevel = 9, zones = { "Mulgore" }, teaches = { { ability = "claw", rank = 1 } }, conf = "confirmed" },
   [2971] = { name = "Taloned Swoop", minLevel = 8, maxLevel = 10, zones = { "Mulgore" }, teaches = { { ability = "screech", rank = 1, conf = "unverified" } }, conf = "unverified" },
   [3035] = { name = "Flatland Cougar", minLevel = 7, maxLevel = 8, zones = { "Mulgore" }, teaches = { { ability = "cower", rank = 1 } }, conf = "confirmed" },
   [3068] = { name = "Mazzranache", minLevel = 9, maxLevel = 9, zones = { "Mulgore" }, teaches = { { ability = "cower", rank = 1 } }, conf = "confirmed" },

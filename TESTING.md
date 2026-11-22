@@ -79,6 +79,9 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
       another level (e.g. 40) → the list changes; clear it → back to your level. With **Can learn now**
       unticked, rows above the level are dimmed with a red level.
 - [ ] Scroll down, then tick **Can learn now** → the list stays visible (no empty view).
+- [ ] Pet button → "Wolf": the ability list keeps only Bite, Dash, Furious Howl, Cower (no Claw/Dive);
+      "My pet" follows the pet you have out and updates when you swap pets. Right-click → any family.
+      The legend shows five dots, including yellow "higher rank known".
 - [ ] Click a beast row → chat names the zone and coordinates, a map pin appears (and a TomTom arrow if
       TomTom is installed). With Questie installed the spot is a real spawn point.
 - [ ] Hover a row → tooltip with all abilities that beast teaches and your status.

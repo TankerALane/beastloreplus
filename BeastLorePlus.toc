@@ -23,6 +23,7 @@ Core.lua
 Data\Abilities.lua
 Data\Beasts.lua
 Data\Lore.lua
+Data\Families.lua
 Training.lua
 BeastLore.lua
 Community.lua

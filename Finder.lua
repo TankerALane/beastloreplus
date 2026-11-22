@@ -88,8 +88,18 @@ local function matchesSearch(r, search)
     return false
 end
 
+-- The pet family filter: nil (any), a family name, or "pet" (follows the pet you have out).
+local function currentFamily()
+    if state.family ~= "pet" then return state.family end
+    if not UnitCreatureFamily then return nil end
+    local ok, fam = pcall(UnitCreatureFamily, "pet")
+    fam = ok and BLP.Plain(fam) or nil
+    return type(fam) == "string" and fam ~= "" and fam or nil
+end
+
 local function rowMatches(r, search)
     if state.ability and r.ability ~= state.ability then return false end
+    if not BLP.FamilyCanLearn(currentFamily(), r.ability) then return false end
     if state.rank > 0 and r.rank ~= state.rank then return false end
     if state.zone then
         local ok = false
@@ -424,11 +434,13 @@ local function updateHeader()
         frame.info:SetText(text .. ("  \226\128\148 %d result(s)"):format(resultCount))
     end
     local searching = (state.search or "") ~= ""
+    local family = currentFamily()
     local slot = 0
     for _, btn in ipairs(abilityButtons) do
         if btn.key == state.ability then btn:LockHighlight() else btn:UnlockHighlight() end
-        -- Searching shrinks the list; level, toggles and zone only grey (the list stays put).
-        local shown = not btn.key or not searching or (searchCounts[btn.key] or 0) > 0 or btn.key == state.ability
+        -- Searching and the pet family shrink the list; level, toggles and zone only grey.
+        local shown = not btn.key or ((not searching or (searchCounts[btn.key] or 0) > 0 or btn.key == state.ability)
+            and BLP.FamilyCanLearn(family, btn.key))
         btn:SetShown(shown)
         if shown then
             btn:ClearAllPoints()
@@ -469,6 +481,11 @@ local function updateHeader()
         btn.ability = key
     end
     frame.zoneBtn:SetText("Zone: " .. (state.zone or "All"))
+    if state.family == "pet" then
+        frame.familyBtn:SetText("Pet: my " .. (family or "pet"))
+    else
+        frame.familyBtn:SetText("Pet: " .. (state.family or "Any"))
+    end
     if not frame.levelBox:HasFocus() then
         frame.levelBox:SetText(tostring(effectiveLevel()))
     end
@@ -505,6 +522,7 @@ function Finder.Refresh()
         BLP.db.finder.ability, BLP.db.finder.rank = state.ability, state.rank
         BLP.db.finder.show = state.show
         BLP.db.finder.level = state.level
+        BLP.db.finder.family = state.family
         BLP.db.finder.sortKey, BLP.db.finder.asc = state.sortKey, state.asc
     end
 end
@@ -690,6 +708,38 @@ local function openZoneMenu(btn)
     pick(zones[idx + 1])
 end
 
+local function pickFamily(fam)
+    state.family = fam
+    -- Leave an ability the new family cannot learn.
+    if state.ability and not BLP.FamilyCanLearn(currentFamily(), state.ability) then
+        state.ability, state.rank = nil, 0
+    end
+    Finder.Refresh()
+end
+
+local function openFamilyMenu(btn)
+    local names = {}
+    for fam in pairs(BLP.Families or {}) do names[#names + 1] = fam end
+    table.sort(names)
+    if MenuUtil and MenuUtil.CreateContextMenu then
+        MenuUtil.CreateContextMenu(btn, function(_, root)
+            root:CreateTitle("Abilities a pet family can learn")
+            root:CreateButton("Any family", function() pickFamily(nil) end)
+            local ok, mine = pcall(UnitCreatureFamily or function() end, "pet")
+            mine = ok and BLP.Plain(mine) or nil
+            root:CreateButton("My pet" .. (type(mine) == "string" and (" (" .. mine .. ")") or ""),
+                function() pickFamily("pet") end)
+            root:CreateDivider()
+            for _, fam in ipairs(names) do root:CreateButton(fam, function() pickFamily(fam) end) end
+            if root.SetScrollMode then root:SetScrollMode(400) end
+        end)
+        return
+    end
+    local idx = 0
+    for i, fam in ipairs(names) do if fam == state.family then idx = i end end
+    pickFamily(names[idx + 1])
+end
+
 local function create()
     buildIndex()
     local f = CreateFrame("Frame", "BeastLorePlusFinder", UIParent, "BasicFrameTemplateWithInset")
@@ -813,6 +863,22 @@ local function create()
     end)
     f.zoneBtn = zoneBtn
 
+    local familyBtn = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
+    familyBtn:SetSize(150, 22)
+    familyBtn:SetPoint("LEFT", zoneBtn, "RIGHT", 6, 0)
+    familyBtn:SetScript("OnClick", openFamilyMenu)
+    familyBtn:SetScript("OnMouseUp", function(_, button)
+        if button == "RightButton" then pickFamily(nil) end
+    end)
+    familyBtn:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:AddLine("Pet family")
+        GameTooltip:AddLine("Show only the abilities this pet family can learn. \"My pet\" follows the pet you have out. Right-click for any family.", 1, 1, 1, true)
+        GameTooltip:Show()
+    end)
+    familyBtn:SetScript("OnLeave", function() GameTooltip:Hide() end)
+    f.familyBtn = familyBtn
+
     -- Level box and the three learn-state toggles
     local levelLabel = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
     levelLabel:SetPoint("TOPLEFT", right, -94)
@@ -900,9 +966,9 @@ local function create()
     legend:SetPoint("BOTTOMLEFT", right, 14)
     if BLP.isHunter then
         local g = BLP.DOT_GAP
-        legend:SetText(("%s%syou know it      %s%supgrade      %s%snot learned      %s%sopen Beast Training"):format(
-            BLP.DotString("known"), g, BLP.DotString("upgrade"), g, BLP.DotString("missing"), g,
-            BLP.DotString("unknown"), g))
+        legend:SetText(("%s%syou know it    %s%shigher rank known    %s%supgrade    %s%snot learned    %s%sopen Beast Training"):format(
+            BLP.DotString("known"), g, BLP.DotString("lower"), g, BLP.DotString("upgrade"), g,
+            BLP.DotString("missing"), g, BLP.DotString("unknown"), g))
     else
         legend:SetText("Learned status is shown on hunters only.")
     end
@@ -923,6 +989,7 @@ function Finder.Toggle()
         end
         state.show.learnable = true -- what you can learn now is always shown
         state.level = tonumber(saved.level)
+        if saved.family == "pet" or (BLP.Families and BLP.Families[saved.family]) then state.family = saved.family end
         if SORT_TIPS[saved.sortKey] then state.sortKey = saved.sortKey end
         if saved.asc ~= nil then state.asc = saved.asc and true or false end
     end
@@ -938,6 +1005,7 @@ end
 
 BLP.OnInit(function()
     BLP.On("PLAYER_LEVEL_UP", function() C_Timer.After(0.5, Finder.Refresh) end)
+    BLP.On("UNIT_PET", function(unit) if unit == "player" and state.family == "pet" then Finder.Refresh() end end)
 end)
 
 -- Test hooks (used by tests/run_tests.lua; harmless in game).

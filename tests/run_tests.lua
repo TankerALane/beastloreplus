@@ -27,6 +27,7 @@ load("Core.lua")
 load("Data/Abilities.lua")
 load("Data/Beasts.lua")
 load("Data/Lore.lua")
+load("Data/Families.lua")
 load("Community.lua")
 BLP.BuildIndexes()
 BLP.isHunter = true
@@ -228,6 +229,40 @@ check(count > 0, "some Claw results at 27")
 FT.state.show = { learnable = true, learned = true, later = true }
 local _, all = FT.collect()
 check(all > count, "unticking Can learn now shows more")
+
+-- Pet family filter
+check(BLP.FamilyCanLearn("Wolf", "bite") and BLP.FamilyCanLearn("Wolf", "furious_howl"), "wolf learns Bite and Furious Howl")
+check(not BLP.FamilyCanLearn("Wolf", "claw") and not BLP.FamilyCanLearn("Wolf", "dive"), "wolf cannot learn Claw or Dive")
+check(BLP.FamilyCanLearn("Bat", "cower") and BLP.FamilyCanLearn("Bat", "growl"), "every family: Cower and trainer abilities")
+check(not BLP.FamilyCanLearn("Bat", "bite"), "Bat Bite (one source) is not listed")
+check(BLP.FamilyCanLearn(nil, "claw") and BLP.FamilyCanLearn("Core Hound", "claw"), "any or unknown family: no filter")
+for fam, keys in pairs(BLP.Families) do
+    local bc, dd = false, false
+    for _, k in ipairs(keys) do
+        check(BLP.Abilities[k] ~= nil, fam .. " ability " .. k .. " exists")
+        if k == "bite" or k == "claw" then bc = true end
+        if k == "dash" or k == "dive" then dd = true end
+    end
+    check(bc or fam == "Bat", fam .. " learns Bite or Claw")
+    check(dd, fam .. " learns Dash or Dive")
+end
+FT.state.ability, FT.state.family = nil, "Wolf"
+local wolfRows = FT.collect()
+local wolfOk, wolfAny = true, 0
+for _, row in ipairs(wolfRows) do
+    if not row.header and not row.spacer then
+        wolfAny = wolfAny + 1
+        if not BLP.FamilyCanLearn("Wolf", row.ability) then wolfOk = false end
+    end
+end
+check(wolfAny > 0 and wolfOk, "Wolf filter shows only abilities a wolf can learn")
+UnitCreatureFamily = function(unit) return unit == "pet" and "Crab" or nil end
+FT.state.family = "pet"
+local crabRows = FT.collect()
+local sawPinch = false
+for _, row in ipairs(crabRows) do if row.ability == "pinch" then sawPinch = true end end
+check(sawPinch, "My pet follows the pet you have out (Crab: Pinch)")
+UnitCreatureFamily, FT.state.family = nil, nil
 -- Nearest-first sort: player in The Barrens (Kalimdor); Eastern Kingdoms zones sort last.
 do
     local KALIMDOR = { ["The Barrens"] = { 0, 0 }, ["Durotar"] = { 300, 0 }, ["Ashenvale"] = { 0, 600 },

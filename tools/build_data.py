@@ -26,6 +26,8 @@ from collections import Counter, defaultdict
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW_DIR = os.path.join(ROOT, "tools", "data", "raw")
 REVIEW_PATH = os.path.join(ROOT, "tools", "data", "REVIEW.md")
+FAMILIES_JSON = os.path.join(ROOT, "tools", "data", "families.json")
+FAMILIES_LUA = os.path.join(ROOT, "Data", "Families.lua")
 ABILITIES_LUA = os.path.join(ROOT, "Data", "Abilities.lua")
 BEASTS_LUA = os.path.join(ROOT, "Data", "Beasts.lua")
 
@@ -541,6 +543,32 @@ def write_beasts(beasts):
     return "\n".join(lines) + "\n"
 
 
+def write_families(abilities, errs):
+    """Data/Families.lua from tools/data/families.json (which families can learn each ability)."""
+    try:
+        with open(FAMILIES_JSON, encoding="utf-8") as fh:
+            data = json.load(fh)
+    except (OSError, ValueError) as exc:
+        errs.err("families.json: %s" % exc)
+        return ""
+    lines = [HEADER.replace("tools/data/raw/*.json", "tools/data/families.json"), "local _, BLP = ...",
+             "-- Abilities every family can learn (trainer-only abilities are always learnable too).",
+             "BLP.FamilyAll = { %s }" % ", ".join(lua_str(k) for k in data.get("allFamilies") or []),
+             "-- Family -> tameable abilities it can learn (two sources agree; see families.json).",
+             "BLP.Families = {"]
+    for key in data.get("allFamilies") or []:
+        if key not in abilities:
+            errs.err("families.json: unknown ability %s" % key)
+    for family in sorted(data.get("families") or {}):
+        keys = data["families"][family]
+        for key in keys:
+            if key not in abilities:
+                errs.err("families.json: %s has unknown ability %s" % (family, key))
+        lines.append("  [%s] = { %s }," % (lua_str(family), ", ".join(lua_str(k) for k in sorted(keys))))
+    lines.append("}")
+    return "\n".join(lines) + "\n"
+
+
 def write_review(abilities, beasts, ab_review, beast_review, unresolved, errs):
     counts = Counter(b["conf"] for b in beasts.values())
     pair_counts = Counter(t["conf"] for b in beasts.values() for t in b["teaches"])
@@ -610,6 +638,7 @@ def main(argv):
     dropped = set(r[1] for r in drops)
     beast_review = [r for r in beast_review if r[1] not in dropped] + drops
     review, counts, pairs = write_review(abilities, beasts, ab_review, beast_review, unresolved, errs)
+    families_lua = write_families(abilities, errs)
 
     print("abilities: %d, ranks: %d" % (len(abilities), sum(len(a["ranks"]) for a in abilities.values())))
     print("beasts: %d (confirmed %d, unverified %d, conflict %d)" % (
@@ -628,7 +657,7 @@ def main(argv):
         return 0
     os.makedirs(os.path.dirname(ABILITIES_LUA), exist_ok=True)
     for path, text in ((ABILITIES_LUA, write_abilities(abilities)), (BEASTS_LUA, write_beasts(beasts)),
-                       (REVIEW_PATH, review)):
+                       (FAMILIES_LUA, families_lua), (REVIEW_PATH, review)):
         with open(path, "w", encoding="utf-8", newline="\n") as fh:
             fh.write(text)
         print("wrote", os.path.relpath(path, ROOT))

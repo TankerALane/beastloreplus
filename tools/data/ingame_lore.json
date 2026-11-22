@@ -78,6 +78,15 @@
     "3466": {
       "lines": [],
       "tameable": false
+    },
+    "3566": {
+      "family": "Cat",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Meat, Fish"
+      ],
+      "name": "Flatland Prowler",
+      "tameable": true
     }
   },
   "families": {

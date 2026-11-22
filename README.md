@@ -20,7 +20,8 @@ teaches, with its rank and a dot that says whether you need it.
   beasts teach it, with level range, zone and your status. Search, sort by level/name/zone, filter
   by zone (nearest first), and set a **Level** with **Can learn now** (hide beasts above that level) and
   **Already learned** (show ranks you know). Click a beast to drop a **map pin** where it spawns (plus a
-  **TomTom** arrow if you use TomTom; exact spawns need Questie installed).
+  **TomTom** arrow if you use TomTom; exact spawns need Questie installed). The **Pet** button shows only
+  the abilities one pet family can learn ("My pet" follows the pet you have out).
 - **Community confirmation.** When you tame a beast, the abilities your new pet arrived with are
   recorded and shared with other Beast Lore Plus users (guild + a hidden channel), so the data gets
   better over time. See below.
