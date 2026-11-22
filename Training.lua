@@ -59,10 +59,11 @@ local function trainerServiceSpellId(i)
 end
 
 function Training.ScanTrainer()
-    if not isPetTrainer() or not GetNumTrainerServices then return false end
+    if not GetNumTrainerServices then return false end
     local ok, n = pcall(GetNumTrainerServices)
     if not ok or type(n) ~= "number" or n == 0 then return false end
-    local list = {}
+    local petTrainer = isPetTrainer()
+    local list, matched = {}, 0
     for i = 1, n do
         local name, sub, kind
         if GetTrainerServiceInfo then
@@ -72,10 +73,14 @@ function Training.ScanTrainer()
         if kind ~= "header" then
             local spellId = trainerServiceSpellId(i)
             local key, rank = BLP.ResolveSpell(spellId, name, sub)
+            if key then matched = matched + 1 end
             list[#list + 1] = { key = key, rank = rank, spellId = spellId, name = name, sub = sub, kind = kind }
         end
     end
-    merge(list, "trainer")
+    -- Not reported as a Pet trainer: accept only if most entries are pet abilities we know
+    -- (a class or profession trainer never is).
+    if not petTrainer and (matched < 2 or matched * 2 < #list) then return false end
+    merge(list, petTrainer and "trainer" or "trainer (matched by content)")
     return true
 end
 
@@ -127,10 +132,26 @@ local function onSystemMessage(msg)
     end
 end
 
+-- Record what the trainer reported, for /blp debug.
+local function trainerEvent(event)
+    local info = { event = event, time = time() }
+    if C_Trainer and C_Trainer.GetTrainerType then
+        local ok, t = pcall(C_Trainer.GetTrainerType)
+        info.trainerType = ok and BLP.Plain(t) or "error"
+    end
+    info.petType = Enum and Enum.TrainerType and Enum.TrainerType.Pet
+    if GetNumTrainerServices then
+        local ok, n = pcall(GetNumTrainerServices)
+        info.services = ok and BLP.Plain(n) or "error"
+    end
+    info.scanned = Training.ScanTrainer()
+    Training.lastTrainerEvent = info
+end
+
 BLP.OnInit(function()
     if not BLP.isHunter then return end
-    BLP.On("TRAINER_SHOW", function() C_Timer.After(0.1, Training.ScanTrainer) end)
-    BLP.On("TRAINER_UPDATE", Training.ScanTrainer)
+    BLP.On("TRAINER_SHOW", function() C_Timer.After(0.1, function() trainerEvent("TRAINER_SHOW") end) end)
+    BLP.On("TRAINER_UPDATE", function() trainerEvent("TRAINER_UPDATE") end)
     if eventValid("CRAFT_UPDATE") then
         BLP.On("CRAFT_SHOW", Training.ScanCraft)
         BLP.On("CRAFT_UPDATE", Training.ScanCraft)

@@ -150,6 +150,13 @@ function Debug.Text()
     for k in pairs(char.known or {}) do keys[#keys + 1] = k end
     table.sort(keys)
     for _, k in ipairs(keys) do add(("  %s = rank %d"):format(k, char.known[k])) end
+    local te = BLP.Training and BLP.Training.lastTrainerEvent
+    if te then
+        add(("last trainer event: %s at %s, trainer type=%s (Pet=%s), services=%s, scanned=%s"):format(
+            te.event, date("%H:%M:%S", te.time), q(te.trainerType), q(te.petType), q(te.services), tostring(te.scanned)))
+    else
+        add("last trainer event: none this session (open Beast Training)")
+    end
     local last = BLP.Training and BLP.Training.lastScan
     if last then
         add(("last scan this session via %s, %d entries:"):format(BLP.Training.lastSource or "?", #last))
@@ -163,6 +170,9 @@ function Debug.Text()
     add("== Community")
     local lc = BLP.Community and BLP.Community.lastCapture
     add(("last capture: %s"):format(lc and (lc.npcId .. " " .. (lc.name or "?") .. " " .. lc.sig) or "none"))
+    local tlog = BLP.Community and BLP.Community.tameLog or {}
+    add(("tame log (%d):"):format(#tlog))
+    for _, line in ipairs(tlog) do add("  " .. line) end
     local n = 0
     for _ in pairs(BLP.db.community.reports) do n = n + 1 end
     add(("stored NPC reports: %d, own tames: %d, sharing=%s, channel id=%s"):format(n,
