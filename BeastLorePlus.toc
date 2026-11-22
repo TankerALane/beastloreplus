@@ -1,0 +1,31 @@
+## Interface: 16001
+## Title: Beast Lore Plus
+## Notes: Beast Lore shows which pet abilities a beast teaches and whether you already know them. Ability Finder, community-confirmed data. Support: support@decoupledlane.com
+## Author: Decoupled Lane Studio
+## Version: @project-version@
+## IconTexture: Interface\AddOns\BeastLorePlus\Media\logo
+## SavedVariables: BeastLorePlusDB
+## SavedVariablesPerCharacter: BeastLorePlusCharDB
+## X-Curse-Project-ID: 1822393
+## X-License: MIT
+## X-Website: https://github.com/TankerALane/beastloreplus
+## X-Email: support@decoupledlane.com
+## X-Flavor: Forever
+
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
+#@end-no-lib-strip@
+
+Core.lua
+Data\Abilities.lua
+Data\Beasts.lua
+Training.lua
+BeastLore.lua
+Community.lua
+Debug.lua
+Finder.lua
+Minimap.lua
+Options.lua
