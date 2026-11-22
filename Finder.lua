@@ -689,6 +689,8 @@ local function create()
 
     local keys = abilityKeys()
     table.insert(keys, 1, false) -- "All abilities"
+    -- Tall enough to show the whole ability list without scrolling (60 px above it, 12 below).
+    f:SetHeight(math.max(560, 60 + #keys * 21 + 16))
     local listScroll = CreateFrame("ScrollFrame", nil, f, "UIPanelScrollFrameTemplate")
     listScroll:SetPoint("TOPLEFT", 10, -60)
     listScroll:SetPoint("BOTTOMLEFT", 10, 12)
