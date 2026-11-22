@@ -1,0 +1,24 @@
+package-as: BeastLorePlus
+
+externals:
+  Libs/LibStub: https://repos.curseforge.com/wow/libstub/trunk
+  Libs/CallbackHandler-1.0:
+    url: https://repos.curseforge.com/wow/callbackhandler/trunk/CallbackHandler-1.0
+  Libs/LibDataBroker-1.1: https://github.com/tekkub/libdatabroker-1-1
+  Libs/LibDBIcon-1.0:
+    url: https://repos.curseforge.com/wow/libdbicon-1-0/trunk/LibDBIcon-1.0
+
+ignore:
+  - tools
+  - tests
+  - docs
+  - BUILD_LOG.md
+  - BEAST_LORE_PLUS_BUILD_PROMPT.md
+  - TESTING.md
+  - beast_lore_plus_logo.jpg
+  - beast_lore_plus_logo_512.jpg
+  - .luacheckrc
+
+manual-changelog:
+  filename: CHANGELOG.md
+  markup-type: markdown

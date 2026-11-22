@@ -87,7 +87,8 @@ local function appendSection(tooltip, npcId)
     local teaches, source, extra = BLP.GetTeaches(npcId)
     local beast = source == "bundled" and extra or nil
     if not teaches or source == "pending" then
-        tooltip:AddLine(L.NO_DATA, c.grey[1], c.grey[2], c.grey[3], true)
+        tooltip:AddLine(L.NO_DATA, c.cream[1], c.cream[2], c.cream[3])
+        tooltip:AddLine(L.NO_DATA_HINT, c.grey[1], c.grey[2], c.grey[3], true)
     end
     if teaches and #teaches == 0 and source ~= "pending" then
         tooltip:AddLine(L.TEACHES_NOTHING, c.cream[1], c.cream[2], c.cream[3])

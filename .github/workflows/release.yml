@@ -1,0 +1,32 @@
+name: Release
+
+# Runs when a version tag (v1.2.3) is pushed. Packages the addon with the BigWigs packager and
+# uploads to CurseForge (project 1822393, from ## X-Curse-Project-ID) and GitHub Releases.
+# The packager reads "## Interface: 16001" as WoW Forever and attaches CurseForge game
+# version "1.60.1" (game version type 88568); see BUILD_LOG.md, Phase 0 > Packaging.
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the packager builds the changelog from history
+
+      - name: Check data and Lua
+        run: |
+          python3 tools/build_data.py --check
+          sudo apt-get update && sudo apt-get install -y luajit
+          luajit tests/run_tests.lua
+
+      - name: Package and upload
+        uses: BigWigsMods/packager@v2
