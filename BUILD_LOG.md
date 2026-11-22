@@ -103,3 +103,99 @@ in-game probe report. "In game" means it still needs Austin to confirm (see `TES
   a `BeastLorePlus/` subfolder. `.pkgmeta` ignores `tools/`, `docs/`, the logo JPGs, etc.
   Sibling projects avoided the packager only because they kept the addon in a subfolder.
 - WoWInterface upload skips Forever (packager prints a warning); not used here anyway.
+
+## Phase 1 — Beast database (2026-11-21)
+
+### How it was gathered
+
+- 13 research subagents in parallel, split by ability (Bite 1-4, Bite 5-8, Claw 1-4, Claw 5-8,
+  Cower/Dash/Prowl, Dive/Screech, Charge/Howl/Stomp/Shell, Lightning Breath/Scorpid Poison,
+  trainer abilities + completeness, packager check, Forever family abilities, and a Forever
+  cross-check of the 13 Classic abilities). Raw observations in `tools/data/raw/*.json` (one record
+  per source, with URLs; format in `tools/data/RAW_SCHEMA.md`). Research notes: `raw/_findings.md`.
+- Sources that worked: **Petopia** Classic and Forever sections (main beast lists, NPC IDs, pet
+  level, TP), **Warcraft Tavern** (per-beast "Skills When Tamed"), **Wowhead** spell pages and the
+  `nether.wowhead.com` tooltip endpoint (spell IDs, levels, elite/rare, zones), warcraft.wiki.gg
+  (scraps), Ten Ton Hammer (TBC-era names/zones), mmonster.co and classicdb (rank data).
+- Failed or thin: Wowhead full pages (403 / bot check; its "Taught by NPC" listviews could not be
+  read, and Wowhead has no such lists for pet abilities anyway), Wowpedia (Cloudflare),
+  warcraft.wiki.gg (no per-rank beast lists).
+
+### Generator rules (`tools/build_data.py`, `tools/data/sources.json`)
+
+- confirmed = 2+ different sites agree on a beast's rank; unverified = one site; conflict = sites
+  disagree (highest-priority site's value ships). Beast `conf` = worst of what it teaches.
+- Petopia Classic and Petopia Forever are one site; within a site the Forever page wins.
+- Wowhead's beast->rank data for Dive, Screech, Scorpid Poison and Lightning Breath came from a 2019
+  user comment that copies Petopia; it counts as Petopia (`beastRankCopies`).
+- `"foreverComplete": true` files hold Petopia's complete Forever list for an ability; a beast only
+  Classic sources list for it becomes a conflict ("not on Petopia's Forever list").
+- Spell-ID sets agree when they share an ID (some sources add the "teach" spell).
+- Zone suffixes "(Dungeon)/(Raid)" are stripped; names without an NPC ID are matched by name or
+  reported as unresolved (2: Undead Wolf, Witherbark Broodguard; not shipped).
+- **Doubt not resolved by the rules:** Warcraft Tavern agrees with Petopia almost perfectly and may
+  share its origin. It is counted as an independent source, so many "confirmed" entries rest on
+  Petopia + Warcraft Tavern. Austin may want to treat those as softer than Wowhead-backed ones.
+
+### Counts (generator output)
+
+- 32 abilities (155 ranks): 13 Classic beast-taught, 8 trainer-only, 11 Forever family abilities.
+- 436 beasts: **258 confirmed, 166 unverified, 12 conflict**; beast/ability pairs 316 / 185 / 13.
+- Every conflict and unverified entry is in `tools/data/REVIEW.md`.
+
+### Forever differences found (important)
+
+- Forever redesigned pet families (Blizzard news 24301515): Owl -> Bird of Prey, new Fox family,
+  every family can learn Bite or Claw and Dive or Dash, each family has one unique ability learned
+  only by taming: Sonic Blast (Bat), Swipe (Bear), Mine! (Bird of Prey), Pinch (Crab), Dismember
+  (Crocolisk), Tendon Rip (Hyena), Savage Rend (Raptor), Web (Spider), Dust Cloud (Tallstrider),
+  Trickster's Dance (Fox). Lava Breath (Core Hound, 2 ranks) is listed but no tameable source is
+  known. Family-ability data is from Petopia Forever (beta data) + Wowhead tooltips, so beast->rank
+  is mostly **unverified**; several ranks have no known teacher yet.
+- Screech is "Demoralizing Screech" (Carrion Bird) on Forever; Petopia Forever still lists some
+  bat/owl teachers. Shown with the client's own spell name.
+- New beasts and zones (Zephras Isle, Riverglades), Thunderstomp rank 4 (Forever-only, "0 TP",
+  no teacher), Furious Howl reworked, Savannah Patriarch moved from Cower 2 to Cower 4.
+- Hunter-side "teach" spell IDs for family abilities are not in the data; `Training.lua` falls back
+  to name + "Rank N" for those. In game: confirm the trainer service IDs (`/blp debug`).
+
+## Phase 2-3 — Addon code and community (2026-11-21)
+
+- Root layout as decided in Phase 0. Files: Core, Training, BeastLore, Community, Debug, Finder,
+  Minimap, Options, Data/*. Globals: only the two SavedVariables and the slash command globals,
+  plus the named frames `BeastLorePlusFinder` / `BeastLorePlusCopyFrame` (for Esc to close).
+- Missing beasts show **"No known abilities"** plus a grey "Tame it to help confirm!" hint
+  (Austin's wording, 2026-11-21) instead of the prompt's "No data yet" line.
+- Status dots are `Media/dot.tga` tinted per status and `Media/unknown.tga` (grey "?"), as inline
+  textures. Pet Abilities rows are sorted alphabetically (Beast Lore on Forever lists no abilities).
+- Community message `B1|npcId|build|version|sig|name`, sig = sorted `key:rank` list or `-`.
+  Validation: version, numeric ranges, known non-trainer ability keys, rank ranges, canonical order,
+  no duplicates, <= 250 bytes; 10 messages/min/sender; caps 400 NPCs, 4 ability sets per NPC,
+  10 senders per set, 200 own tames. Own tames re-shared (max 5) once a day.
+- A tame whose pet has an **active spell the addon cannot map** (e.g. a Forever ability missing
+  from the data) is kept for `/blp export` but not counted or shared, so incomplete lists never
+  spread. Pet GUID creature ID must match the Tame Beast target (stabled/summoned pets never count).
+- Sharing off = no sending and no channel; GUILD reports are still received and stored.
+- Non-hunters: Beast Lore hook, training scan, capture and channel are all skipped; reports from
+  others are still received so the Finder can show community-confirmed beasts.
+
+## Phase 4 — Packaging (2026-11-21)
+
+- `.pkgmeta`: externals LibStub, CallbackHandler-1.0, LibDataBroker-1.1, LibDBIcon-1.0 (canonical
+  CurseForge SVN / GitHub URLs, not tried yet: the first tagged build will show if they resolve).
+  No ChatThrottleLib (see Phase 0). Ignores tools, tests, docs, BUILD_LOG, TESTING, prompt, JPGs.
+- TOC loads `CallbackHandler-1.0.lua` directly (no XML), so local installs that copy single files
+  from other addons and the packaged layout are the same.
+- `release.yml`: on `v*` tags, runs the data check and LuaJIT tests, then `BigWigsMods/packager@v2`
+  with `CF_API_KEY` and `GITHUB_OAUTH`. No `-g` flag needed (16001 -> forever -> CurseForge 1.60.1).
+
+## Phase 5 — Checks and local install (2026-11-21)
+
+- `luajit tools/lint.lua`: luacheck through its Lua API (the luacheck CLI here lacks
+  LuaFileSystem). 0 warnings on all addon files.
+- `luajit tests/run_tests.lua`: GUID parsing, status logic, spell resolution, codec, junk messages,
+  trust rules, caps and generated-data integrity (2054 checks pass).
+- `python tools/build_data.py --check`: unknown abilities/ranks, duplicate IDs, spell IDs shared
+  between abilities. Passes.
+- `tools/install_local.ps1` installed the addon into the Forever AddOns folder, with libraries
+  copied from Auctionator/RareScanner. Not yet loaded in game: see `TESTING.md`.

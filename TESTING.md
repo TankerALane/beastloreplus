@@ -1,0 +1,96 @@
+# In-game test checklist (WoW Forever)
+
+Some facts could only be worked out from files and other addons, not in game. These are marked
+**[confirms Phase 0]** below. If a step fails, run `/blp debug`, click **Select all**, copy it, and
+send it along with what you saw.
+
+## Setup
+
+1. In PowerShell from the repo folder:
+   `powershell -ExecutionPolicy Bypass -File tools\install_local.ps1`
+   (fills `Libs\` from libraries already installed in other addons, then copies the addon into
+   `_forever_\Interface\AddOns\BeastLorePlus`). Use `-Junction` to link instead of copy.
+2. Start Forever, check **Beast Lore Plus** is enabled in the AddOns list (logo icon shows), log in
+   on a hunter. No Lua errors should appear (`/console scriptErrors 1` to see them).
+
+## 1. Beast Lore before opening Beast Training (grey)
+
+Use a hunter that has **never opened Beast Training** since installing (or a fresh character).
+
+- [ ] Cast Beast Lore on a **tameable** beast that is in the database. The tooltip shows the game's
+      lines, then a gold **Pet Abilities** header, then each ability with a grey "?" texture and
+      "Open Beast Training to see which of these you know." **[confirms Phase 0: the Unit tooltip
+      hook sees the Beast Lore lines]**
+- [ ] `/blp debug` → "Last Beast Lore display seen" lists the tooltip lines; note the line types.
+- [ ] Options › untick "Show grey ? rows" → the grey rows disappear, the hint stays. Tick it again.
+
+## 2. Beast Training scan, then green / orange / red
+
+- [ ] Open **Beast Training** (spellbook). `/blp debug` → "Beast Training" shows `scanned=true` and
+      the abilities/ranks you know, each matched (no "UNMATCHED"). **[confirms Phase 0: Pet trainer
+      type + C_TooltipInfo.GetTrainerService ids]**
+- [ ] Beast Lore on a beast that teaches a rank you **know** (or lower) → **green** dot.
+- [ ] Beast Lore on a beast that teaches a **higher** rank of something you know → **orange** dot.
+- [ ] Beast Lore on a beast that teaches an ability you **don't have** → **red** dot.
+- [ ] Learn a new rank from a pet in the field; the "You have learned..." message updates the
+      status without reopening Beast Training.
+
+## 3. Cannot Be Tamed, missing beast, non-beasts
+
+- [ ] Beast Lore on a **Cannot Be Tamed** beast (e.g. Kodo Calf in Mulgore) → nothing added.
+- [ ] Beast Lore on a tameable beast **missing from the database** (turn on "Show NPC ID" in options;
+      check the ID is not in the Finder) → "No known abilities" and a grey "Tame it to help confirm!".
+- [ ] Mouse over ordinary mobs, players and NPCs without Beast Lore → tooltips unchanged.
+- [ ] Beast Lore in combat → no errors (secret values are skipped silently).
+
+## 4. Ability Finder
+
+- [ ] `/blp` opens the Finder; the minimap button left-click opens it too; Esc closes it.
+- [ ] Pick an ability (e.g. Bite) and a rank → the list shows beasts with level range and zone,
+      and the header shows pet level, training points and your status for that rank.
+- [ ] Click the **Level**, **Beast**, **Zone** headers → sorting changes; click again → reverses.
+- [ ] **Zone** button → menu of zones (and "Current zone"); picking one filters; right-click clears.
+      **[confirms Phase 0: MenuUtil exists; otherwise it cycles zones on click]**
+- [ ] Type in the search box (a beast name, an ability or a zone) → the list filters.
+- [ ] Tick **Only upgrades for me** → only orange and red rows remain.
+- [ ] Hover a row → tooltip with all abilities that beast teaches and your status.
+
+## 5. Minimap button and options
+
+- [ ] Minimap button shows the logo; drag it around the minimap; right-click opens options.
+- [ ] Options › untick "Show the minimap button" → it hides; `/blp minimap` shows it again.
+- [ ] Esc › Options › AddOns › Beast Lore Plus shows the panel with logo, 4 checkboxes and legend.
+
+## 6. Capture a fresh tame, then export
+
+- [ ] Tame a beast (Tame Beast channel completes). Within a few seconds chat says the tame was
+      recorded if it is new or differs from the database (nothing is said if it matches).
+      `/blp debug` → "last capture" shows the NPC ID and abilities. **[confirms Phase 0: pet GUID
+      carries the creature ID; pet spellbook API]**
+- [ ] Dismiss and call a **stabled** pet → **no** capture is recorded.
+- [ ] Interrupt a Tame Beast cast → no capture.
+- [ ] `/blp export` → a copyable window with the tame in a Markdown table; Ctrl+C works.
+
+## 7. Sharing between two characters or accounts
+
+Two hunters with the addon, sharing on, either in the same guild or both online (hidden channel).
+
+- [ ] `/blp debug` → "channel id" is a number (the hidden **BeastLorePlus** channel was joined) and
+      the channel does **not** appear in any chat tab. **[confirms Phase 0: JoinTemporaryChannel /
+      ChatFrame_RemoveChannel on Forever]**
+- [ ] Hunter A tames a beast; on hunter B, `/blp debug` → "stored NPC reports" goes up.
+      **[confirms Phase 0: CHANNEL/GUILD addon messages allowed]**
+- [ ] If that beast is missing from the database, hunter B's Beast Lore shows
+      "community: pending (1/3)" next to the abilities.
+- [ ] Options › untick sharing → the channel is left; no messages are sent.
+
+## 8. Non-hunter character
+
+- [ ] Log in on a non-hunter: no errors, no channel joined, nothing added to tooltips.
+- [ ] `/blp` still opens the Finder, without the status column; the upgrades toggle is disabled.
+
+## Data review
+
+Unverified and conflicting entries are listed in `tools/data/REVIEW.md`. Any you can check in game
+(Beast Lore on the beast, or a tame) can be fixed in `tools/data/raw/*.json`, then run
+`python tools/build_data.py`.
