@@ -219,3 +219,4 @@ in-game probe report. "In game" means it still needs Austin to confirm (see `TES
   saved in `BeastLorePlusDB.debugLog` so they can be read from disk after /reload.
 - Confirmed in game: Sunscale Screecher (3255) teaches Savage Rend 1; a Barrens hyena teaches
   Tendon Rip 1.
+- Learn messages on Forever link the **hunter's** copy of a spell (Tendon Rip 1 = 1265043; the pet's is 1265038) with the name "Tendon Rip (Rank 1)". The resolver now parses "(Rank N)", matches by name when the ID is unknown, and caches the hunter-side ID. Automatic tame capture confirmed working (16:55, NPC 4127, tendon_rip:1).

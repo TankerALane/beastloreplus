@@ -73,6 +73,11 @@ check(k == "bite" and r == 5, "Bite by name + Rank 5")
 k, r = BLP.ResolveSpell(nil, "Claw III", nil)
 check(k == "claw" and r == 3, "Claw III roman numeral")
 check(BLP.ResolveSpell(nil, "Fireball", "Rank 1") == nil, "non-pet spell unresolved")
+k, r = BLP.ResolveSpell(1265043, "Tendon Rip (Rank 1)", nil)
+check(k == "tendon_rip" and r == 1, "Forever learn link 'Tendon Rip (Rank 1)' with hunter-side id")
+k, r = BLP.ResolveSpell(nil, "Bite (Rank 6)", nil)
+check(k == "bite" and r == 6, "'Bite (Rank 6)'")
+check(BLP.ResolveSpell(nil, "Fireball (Rank 2)", nil) == nil, "non-pet '(Rank N)' unresolved")
 
 -- Status ----------------------------------------------------------------------
 check(BLP.Status("bite", 3) == "unknown", "unscanned is unknown")

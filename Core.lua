@@ -197,10 +197,20 @@ function BLP.ResolveSpell(spellId, name, subText)
         BLP.localNamesIndexed = true
         for key in pairs(BLP.Abilities) do BLP.AbilityName(key) end -- adds the client's names
     end
+    -- "Tendon Rip (Rank 1)" (spell links and learn messages on Forever)
+    local paren, parenRank = name:match("^(.-)%s*%(%D-(%d+)%)$")
+    if paren and BLP.NameIndex[paren:lower()] then
+        name, subText = paren, subText or parenRank
+    end
     local base, roman = name:match("^(.-)%s+([IVX]+)$")
     local key = BLP.NameIndex[name:lower()] or (base and BLP.NameIndex[base:lower()])
     if not key then return nil end
     local rank = type(subText) == "string" and tonumber(subText:match("(%d+)")) or nil
+    if not rank and spellId and C_Spell and C_Spell.GetSpellSubtext then
+        local ok, st = pcall(C_Spell.GetSpellSubtext, spellId)
+        st = ok and BLP.Plain(st) or nil
+        rank = type(st) == "string" and tonumber(st:match("(%d+)")) or nil
+    end
     if not rank and roman then
         local map = { I = 1, II = 2, III = 3, IV = 4, V = 5, VI = 6, VII = 7, VIII = 8, IX = 9, X = 10 }
         rank = map[roman]

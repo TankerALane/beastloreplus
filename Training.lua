@@ -122,11 +122,13 @@ local function onSystemMessage(msg)
     local spellId = tonumber(what:match("|Hspell:(%d+)"))
     local key, rank = BLP.ResolveSpell(spellId, what:match("%[(.-)%]") or what, nil)
     BLP.Log("learned: %s spell=%s -> %s %s", (what:gsub("|", "/")), tostring(spellId), tostring(key), tostring(rank))
-    if key and rank and spellId and BLP.SpellIndex[spellId] then
-        -- Only a scanned character gets field updates; otherwise the grey "?" would turn into
-        -- misleading reds for everything else.
+    if key and rank then
+        -- The link carries the hunter's copy of the spell (e.g. 1265043 for Tendon Rip 1), not the
+        -- pet's; remember it so later scans and messages match by ID too.
+        if spellId and not BLP.SpellIndex[spellId] then BLP.SpellIndex[spellId] = { key = key, rank = rank } end
+        -- Saved even before the first Beast Training scan; the dots stay grey until that scan.
         local char = BLP.char
-        if char and char.scanned and rank > (char.known[key] or 0) then
+        if char and rank > (char.known[key] or 0) then
             char.known[key] = rank
             if BLP.Finder and BLP.Finder.Refresh then BLP.Finder.Refresh() end
         end
