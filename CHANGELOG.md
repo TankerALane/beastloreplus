@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Ability Finder: **Level** box (defaults to your level) with **Can learn now**, **Already learned**
+  and **Not yet** toggles, replacing "Only upgrades for me". Beasts above the level are dimmed.
+- Ability Finder: the search box placeholder fits the box (full hint on mouse-over).
+
 ## 1.0.0 (2026-11-21)
 
 First release for WoW Forever (1.60.1).
@@ -19,9 +25,3 @@ First release for WoW Forever (1.60.1).
   `/blp capture` (record the pet you have out), `/blp debug`.
 - Bundled database: 32 pet abilities (including Forever's family abilities such as Savage Rend,
   Tendon Rip, Pinch and Web) and 436 beasts, with confirmed / unverified tags.
-
-## Unreleased
-
-- Ability Finder: **Level** box (defaults to your level) with **Can learn now**, **Already learned**
-  and **Not yet** toggles, replacing "Only upgrades for me". Beasts above the level are dimmed.
-- Ability Finder: the search box placeholder fits the box (full hint on mouse-over).
