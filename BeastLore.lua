@@ -4,7 +4,8 @@
 -- Specialization:, Diet:). We hook unit tooltips and act only when a "Tameable" line is present.
 -- With "Show details without casting Beast Lore" on, beasts are shown on plain mouseover too:
 -- the Beast Lore lines seen last time are replayed (BLP.db.lore), or "Tameable" for beasts in
--- the database, followed by the Pet Abilities section.
+-- the database, followed by the Pet Abilities section. Specialization and Diet are also remembered
+-- per creature family (BLP.db.loreFamily), so a beast never lored shows those of its family.
 local _, BLP = ...
 local L = BLP.L
 
@@ -62,19 +63,33 @@ local function isLoreLine(low)
     return false
 end
 
--- Remember a beast's Beast Lore lines so they can be shown again without casting.
-local function remember(npcId, lines, colors, tameable)
+local function isFamilyLine(low)
+    for _, pat in ipairs(LORE_MARKERS) do if low:find(pat) then return true end end
+    return false
+end
+
+-- Remember a beast's Beast Lore lines so they can be shown again without casting, and its
+-- Specialization and Diet for its whole family.
+local function remember(npcId, lines, colors, tameable, family)
     local db = BLP.db
     if not db then return end
     db.lore = db.lore or {}
     local entry = { tameable = tameable, lines = {} }
+    local famLines = {}
     for i, text in ipairs(lines) do
-        if isLoreLine(text:lower()) then
+        local low = text:lower()
+        if isLoreLine(low) then
             local c = colors[i]
-            entry.lines[#entry.lines + 1] = c and { text, c[1], c[2], c[3] } or { text }
+            local line = c and { text, c[1], c[2], c[3] } or { text }
+            entry.lines[#entry.lines + 1] = line
+            if isFamilyLine(low) then famLines[#famLines + 1] = line end
         end
     end
     if #entry.lines > 0 then db.lore[npcId] = entry end
+    if tameable and family and #famLines > 0 then
+        db.loreFamily = db.loreFamily or {}
+        db.loreFamily[family] = { lines = famLines, npcId = npcId }
+    end
 end
 Lore.Remember = remember
 
@@ -165,6 +180,18 @@ local function tooltipGUID(tooltip, data)
     return nil
 end
 
+-- The hovered unit's creature family ("Wolf", "Raptor"...), when the game gives a plain value.
+local function tooltipFamily(tooltip)
+    if not tooltip.GetUnit or not UnitCreatureFamily then return nil end
+    local ok, _, unit = pcall(tooltip.GetUnit, tooltip)
+    unit = ok and BLP.Plain(unit) or nil
+    if not unit then return nil end
+    local ok2, family = pcall(UnitCreatureFamily, unit)
+    family = ok2 and BLP.Plain(family) or nil
+    return type(family) == "string" and family ~= "" and family or nil
+end
+Lore.TooltipFamily = tooltipFamily
+
 local function process(tooltip, data, knownGUID, isRecheck)
     if not BLP.isHunter or not BLP.db then return end
     local guid = knownGUID or tooltipGUID(tooltip, data)
@@ -173,7 +200,9 @@ local function process(tooltip, data, knownGUID, isRecheck)
 
     local lines, colors = readLines(tooltip)
     local tameable, notTameable, lore, ours = classify(lines)
-    if (tameable or notTameable) and not ours then remember(npcId, lines, colors, tameable) end
+    if (tameable or notTameable) and not ours then
+        remember(npcId, lines, colors, tameable, tooltipFamily(tooltip))
+    end
     if tameable or notTameable or lore then
         local dataLines
         if data and type(data.lines) == "table" then
@@ -204,6 +233,14 @@ local function process(tooltip, data, knownGUID, isRecheck)
         elseif BLP.GetTeaches(npcId) then
             -- Only tameable beasts are in the data, so "Tameable" is safe to show.
             tooltip:AddLine(L.TAMEABLE, 1, 1, 1)
+            -- Specialization and Diet from another beast of the same family.
+            local family = tooltipFamily(tooltip)
+            local fam = family and BLP.db.loreFamily and BLP.db.loreFamily[family]
+            if fam and type(fam.lines) == "table" then
+                for _, l in ipairs(fam.lines) do
+                    tooltip:AddLine(l[1], l[2] or 1, l[3] or 1, l[4] or 1)
+                end
+            end
             appendSection(tooltip, npcId)
         end
         return

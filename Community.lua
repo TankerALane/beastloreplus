@@ -651,6 +651,21 @@ function Community.ExportText()
     if agree == 0 then lines[#lines + 1] = "| | (none) | | |" end
     lines[#lines + 1] = ""
     lines[#lines + 1] = ("_\"ready to add\" = reported by %d+ different hunters._"):format(Community.QUORUM)
+    lines[#lines + 1] = ""
+    lines[#lines + 1] = "#### Beast Lore by family"
+    lines[#lines + 1] = ""
+    lines[#lines + 1] = "| Family | Lines | Seen on NPC |"
+    lines[#lines + 1] = "|---|---|---|"
+    local families = {}
+    for family in pairs(BLP.db.loreFamily or {}) do families[#families + 1] = family end
+    table.sort(families)
+    for _, family in ipairs(families) do
+        local fam = BLP.db.loreFamily[family]
+        local parts = {}
+        for _, l in ipairs(fam.lines or {}) do parts[#parts + 1] = tostring(l[1]) end
+        lines[#lines + 1] = ("| %s | %s | %s |"):format(family, table.concat(parts, "; "), tostring(fam.npcId or "?"))
+    end
+    if #families == 0 then lines[#lines + 1] = "| (none yet) | | |" end
     return table.concat(lines, "\n")
 end
 

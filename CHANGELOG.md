@@ -5,6 +5,9 @@
 - Option **Show Beast Lore details without casting Beast Lore** (off by default). When on, hovering a
   beast shows the Beast Lore lines seen the last time you cast Beast Lore on it (Tameable,
   Specialization, Diet), or "Tameable" for beasts in the database, followed by Pet Abilities.
+  Specialization and Diet are remembered per creature family, so a beast you never lored shows those
+  of its family once you have cast Beast Lore on any beast of that family.
+- `/blp export` lists the Specialization and Diet seen for each family.
 
 ## 1.0.1 (2026-11-21)
 

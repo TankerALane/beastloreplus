@@ -26,7 +26,8 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
 - [ ] Default: hovering a beast without casting Beast Lore shows no Pet Abilities.
 - [ ] Options › tick "Show Beast Lore details without casting Beast Lore" → hovering the beast you just
       lored shows Tameable / Specialization / Diet and Pet Abilities; a database beast you never lored
-      shows "Tameable" and Pet Abilities; humanoids show nothing extra. Untick it again.
+      shows "Tameable" and Pet Abilities, plus Specialization / Diet if you have lored another beast of
+      its family; humanoids show nothing extra. `/blp export` lists "Beast Lore by family". Untick it again.
 
 ## 2. Beast Training scan, then green / orange / red
 

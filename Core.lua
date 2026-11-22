@@ -285,6 +285,7 @@ local DEFAULTS = {
     showNpcId = false,
     alwaysShow = false, -- show the details on mouseover without casting Beast Lore
     lore = {},          -- npcId -> Beast Lore lines seen last time
+    loreFamily = {},    -- creature family -> Specialization / Diet lines seen last time
     community = { reports = {}, tames = {}, lastShare = 0 },
     finder = {},
 }

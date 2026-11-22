@@ -11,7 +11,7 @@ globals = {
 read_globals = {
     "C_AddOns", "C_ChatInfo", "C_EventUtils", "C_Spell", "C_SpellBook", "C_Timer", "C_TooltipInfo",
     "C_Trainer", "Enum", "LibStub", "MenuUtil", "Settings", "TooltipDataProcessor",
-    "CreateFrame", "UIParent", "GameTooltip", "DEFAULT_CHAT_FRAME", "UISpecialFrames", "ChatFontNormal",
+    "CreateFrame", "UnitCreatureFamily", "UIParent", "GameTooltip", "DEFAULT_CHAT_FRAME", "UISpecialFrames", "ChatFontNormal",
     "UnitClass", "UnitCastingInfo", "UnitChannelInfo", "UnitGUID", "UnitName", "UnitLevel", "UnitCreatureType", "UnitFullName",
     "GetBuildInfo", "GetTime", "GetZoneText", "GetChannelName", "GetNormalizedRealmName", "IsInGuild",
     "GetNumTrainerServices", "GetTrainerServiceInfo", "GetNumCrafts", "GetCraftInfo",

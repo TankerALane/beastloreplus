@@ -31,7 +31,7 @@ Cast **Beast Lore** on a tameable beast as usual. Under the game's own lines (Ta
 
 Beasts with no known abilities say so. Nothing is added for beasts that can't be tamed.
 
-Prefer not to cast every time? Turn on **Show Beast Lore details without casting Beast Lore** in the options and simply hover a beast. It's off by default.
+Prefer not to cast every time? Turn on **Show Beast Lore details without casting Beast Lore** in the options and simply hover a beast to see Tameable, Specialization, Diet and Pet Abilities. Specialization and Diet are learned per family: cast Beast Lore once on any wolf and every wolf shows them. It's off by default.
 
 ## Ability Finder
 

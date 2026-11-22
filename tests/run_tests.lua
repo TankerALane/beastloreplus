@@ -274,6 +274,7 @@ do
         end
         for _, t in ipairs(texts) do add(t) end
         function tip.GetName() return name end
+        function tip.GetUnit() return texts[1], "mouseover" end
         function tip.NumLines() return #tip.lines end
         function tip.AddLine(_, text, r, g, b) add(text, r, g, b) end
         function tip.AddDoubleLine(_, text) add(text) end
@@ -286,14 +287,20 @@ do
         return tip
     end
     local guid = "Creature-0-1-1-1-3255-00000001"  -- Sunscale Screecher, in the database
-    BLP.db.lore = {}
+    BLP.db.lore, BLP.db.loreFamily = {}, {}
+    local families = { ["Sunscale Screecher"] = "Tallstrider", ["Mottled Screecher"] = "Tallstrider" }
+    UnitCreatureFamily = function() return nil end
+    local function hoverAs(beastName) UnitCreatureFamily = function() return families[beastName] end end
 
     local plain = mockTip("TipA", { "Sunscale Screecher", "Level 13" })
     BLP.Lore.Process(plain, nil, guid, true)
     check(not plain.has("Pet Abilities"), "default: nothing shown without casting Beast Lore")
 
     local lored = mockTip("TipB", { "Sunscale Screecher", "Level 13", "Tameable", "Specialization: Cunning", "Diet: Meat" })
+    hoverAs("Sunscale Screecher")
     BLP.Lore.Process(lored, nil, guid, true)
+    local fam = BLP.db.loreFamily.Tallstrider
+    check(fam and #fam.lines == 2 and fam.lines[1][1] == "Specialization: Cunning", "family Specialization / Diet remembered")
     check(lored.has("Pet Abilities"), "Beast Lore tooltip gets the section")
     local cached = BLP.db.lore[3255]
     check(cached and cached.tameable and #cached.lines == 3, "Beast Lore lines remembered")
@@ -305,8 +312,19 @@ do
         "toggle on: remembered Beast Lore lines and abilities shown on mouseover")
 
     local unseen = mockTip("TipD", { "Forest Spider", "Level 5" })
+    hoverAs("Forest Spider")
     BLP.Lore.Process(unseen, nil, "Creature-0-1-1-1-30-00000002", true)
-    check(unseen.has("Tameable") and unseen.has("Pet Abilities"), "toggle on: database beast never lored shows Tameable")
+    check(unseen.has("Tameable") and unseen.has("Pet Abilities") and not unseen.has("Diet: Meat"),
+        "toggle on: database beast never lored shows Tameable (no family seen)")
+
+    local kin = mockTip("TipF", { "Mottled Screecher", "Level 16" })
+    hoverAs("Mottled Screecher")
+    BLP.Lore.Process(kin, nil, "Creature-0-1-1-1-1021-00000004", true)
+    check(kin.has("Specialization: Cunning") and kin.has("Diet: Meat") and kin.has("Pet Abilities"),
+        "toggle on: never-lored beast of a lored family shows the family's Specialization and Diet")
+    check(BLP.Community.ExportText():find("| Tallstrider | Specialization: Cunning; Diet: Meat | 3255 |", 1, true),
+        "export lists Beast Lore by family")
+    UnitCreatureFamily = nil
 
     local other = mockTip("TipE", { "Defias Thug", "Level 9" })
     BLP.Lore.Process(other, nil, "Creature-0-1-1-1-38-00000003", true)
