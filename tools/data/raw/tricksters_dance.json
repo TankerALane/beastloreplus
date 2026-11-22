@@ -1,0 +1,100 @@
+{
+  "ability": "tricksters_dance",
+  "name": "Trickster's Dance",
+  "icon": "ability_hunter_aspectofthefox",
+  "trainerOnly": false,
+  "researcher": "research agent (Forever family abilities), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#trickstersdance1",
+          "spellIds": [],
+          "petLevel": 20,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1310612",
+          "spellIds": [
+            1310612
+          ],
+          "petLevel": 20,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 277645,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#trickstersdance1",
+          "name": "Gray Fox",
+          "rank": 1,
+          "minLevel": 22,
+          "maxLevel": 23,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=277645",
+          "name": "Gray Fox",
+          "rank": null,
+          "minLevel": 22,
+          "maxLevel": 23,
+          "zones": [
+            "Duskwood"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 249474,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#trickstersdance1",
+          "name": "Rustleaf Fox",
+          "rank": 1,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Mount Hyjal"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=249474",
+          "name": "Rustleaf Fox",
+          "rank": null,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Mount Hyjal"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Only one rank. Hunter-side learn spell on Wowhead: 1310617 ('Beast Training Abilities', level 20). Fox is a new family in Forever. warcraft.wiki.gg has no Trickster's Dance page (404).",
+    "Petopia Forever (wow-petopia.com/forever/abilities.php) lists ranks with pet level, TP cost and beasts per rank; beast NPC IDs come from its Wowhead Forever links. Petopia states its data comes from a limited beta and may change. Petopia gives no spell IDs. Its rank/beast lists are its own work, but its NPC IDs/links point to Wowhead.",
+    "wowhead-forever observations come from nether.wowhead.com/forever/tooltip/{spell,npc}/<id> (full www.wowhead.com pages return 403) and the www.wowhead.com/forever/search/suggestions-template endpoint (used for rank labels and spell IDs). Spell tooltips give 'Requires level N' (recorded as petLevel) and a 'Rank N' label; they do NOT show training point cost, so tp is null for wowhead-forever.",
+    "Wowhead NPC tooltips show level range, classification (Normal/Elite/Rare) and a zone ID only; they do not say which ability rank the beast teaches, so wowhead-forever beast observations have rank null (the list of beasts itself comes from Petopia). Zone IDs were turned into names with a fixed classic zone-ID table; Forever-only zone IDs were confirmed via Wowhead search (16591 Riverglades, 16593 Zephras Isle, 16611 Ruins of Lordaeron, 16550 The Drowned City, 16732 Excavation Site: Wetlands).",
+    "Petopia elite/rare flags come from its 'Rare Pets' and 'Elite Pets' browse pages (matched by name); when a beast is not on those pages the flag is omitted, not set false.",
+    "Blizzard announcement https://worldofwarcraft.blizzard.com/news/24301515 confirms the ability name and family only (no ranks, levels, TP or beasts), so no blizzard observation rows were added.",
+    "Spell IDs recorded are the 'Pet Abilities' (pet-cast) spells. Wowhead also lists separate hunter-side 'Abilities' spells with the same name/rank (presumably the learn/teach spells); those are listed in notes, not in spellIds.",
+    "Petopia lists the TP cost of every rank of these Forever family abilities as 0."
+  ]
+}

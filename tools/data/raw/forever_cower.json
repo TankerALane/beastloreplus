@@ -1,0 +1,819 @@
+{
+  "ability": "cower",
+  "name": "Cower",
+  "icon": "ability_druid_cower",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "spellIds": null,
+          "petLevel": 5,
+          "tp": 8,
+          "description": "Cower, causing no damage but lowering threat, making the enemy less likely to attack."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower2",
+          "spellIds": null,
+          "petLevel": 15,
+          "tp": 10,
+          "description": "Cower, causing no damage but lowering threat, making the enemy less likely to attack."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower3",
+          "spellIds": null,
+          "petLevel": 25,
+          "tp": 12,
+          "description": "Cower, causing no damage but lowering threat, making the enemy less likely to attack."
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower4",
+          "spellIds": null,
+          "petLevel": 35,
+          "tp": 14,
+          "description": "Cower, causing no damage but lowering threat, making the enemy less likely to attack."
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower5",
+          "spellIds": null,
+          "petLevel": 45,
+          "tp": 16,
+          "description": "Cower, causing no damage but lowering threat, making the enemy less likely to attack."
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower6",
+          "spellIds": null,
+          "petLevel": 55,
+          "tp": 18,
+          "description": "Cower, causing no damage but lowering threat, making the enemy less likely to attack."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 2042,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Nightsaber",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2042"
+        }
+      ]
+    },
+    {
+      "npcId": 251245,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Prideclaw",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 5,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=251245"
+        }
+      ]
+    },
+    {
+      "npcId": 1199,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Juvenile Snow Leopard",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1199"
+        }
+      ]
+    },
+    {
+      "npcId": 1553,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Greater Duskbat",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1553"
+        }
+      ]
+    },
+    {
+      "npcId": 3121,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Durotar Tiger",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3121"
+        }
+      ]
+    },
+    {
+      "npcId": 3035,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Flatland Cougar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3035"
+        }
+      ]
+    },
+    {
+      "npcId": 2957,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Elder Plainstrider",
+          "rank": 1,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2957"
+        }
+      ]
+    },
+    {
+      "npcId": 253282,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Shriekling Fledgling",
+          "rank": 1,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=253282"
+        }
+      ]
+    },
+    {
+      "npcId": 3068,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Mazzranache",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3068"
+        }
+      ]
+    },
+    {
+      "npcId": 276198,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Shal'ma",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=276198"
+        }
+      ]
+    },
+    {
+      "npcId": 2070,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Moonstalker Runt",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2070"
+        }
+      ]
+    },
+    {
+      "npcId": 2321,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Foreststrider Fledgling",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 13,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2321"
+        }
+      ]
+    },
+    {
+      "npcId": 3246,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower1",
+          "name": "Fleeting Plainstrider",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3246"
+        }
+      ]
+    },
+    {
+      "npcId": 3245,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower2",
+          "name": "Ornery Plainstrider",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3245"
+        }
+      ]
+    },
+    {
+      "npcId": 2323,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower2",
+          "name": "Giant Foreststrider",
+          "rank": 2,
+          "minLevel": 17,
+          "maxLevel": 19,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2323"
+        }
+      ]
+    },
+    {
+      "npcId": 2237,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower2",
+          "name": "Moonstalker Sire",
+          "rank": 2,
+          "minLevel": 17,
+          "maxLevel": 19,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2237"
+        }
+      ]
+    },
+    {
+      "npcId": 4067,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower2",
+          "name": "Twilight Runner",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Stonetalon Mountains"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4067"
+        }
+      ]
+    },
+    {
+      "npcId": 2384,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower2",
+          "name": "Starving Mountain Lion",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2384"
+        }
+      ]
+    },
+    {
+      "npcId": 4126,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower3",
+          "name": "Crag Stalker",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4126"
+        }
+      ]
+    },
+    {
+      "npcId": 2385,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower3",
+          "name": "Feral Mountain Lion",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2385"
+        }
+      ]
+    },
+    {
+      "npcId": 681,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower3",
+          "name": "Young Stranglethorn Tiger",
+          "rank": 3,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=681"
+        }
+      ]
+    },
+    {
+      "npcId": 4538,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower3",
+          "name": "Kraul Bat",
+          "rank": 3,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4538"
+        }
+      ]
+    },
+    {
+      "npcId": 683,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower3",
+          "name": "Young Panther",
+          "rank": 3,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=683"
+        }
+      ]
+    },
+    {
+      "npcId": 4539,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower3",
+          "name": "Greater Kraul Bat",
+          "rank": 3,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4539"
+        }
+      ]
+    },
+    {
+      "npcId": 4425,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower3",
+          "name": "Blind Hunter",
+          "rank": 3,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4425"
+        }
+      ]
+    },
+    {
+      "npcId": 736,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower3",
+          "name": "Panther",
+          "rank": 3,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=736"
+        }
+      ]
+    },
+    {
+      "npcId": 3241,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower4",
+          "name": "Savannah Patriarch",
+          "rank": 4,
+          "minLevel": 14,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3241"
+        }
+      ]
+    },
+    {
+      "npcId": 2731,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower4",
+          "name": "Ridge Stalker",
+          "rank": 4,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2731"
+        }
+      ]
+    },
+    {
+      "npcId": 263348,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower4",
+          "name": "Roving Tallstrider",
+          "rank": 4,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=263348"
+        }
+      ]
+    },
+    {
+      "npcId": 2732,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower4",
+          "name": "Ridge Huntress",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2732"
+        }
+      ]
+    },
+    {
+      "npcId": 259055,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower4",
+          "name": "Wildplains Huntress",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=259055"
+        }
+      ]
+    },
+    {
+      "npcId": 259054,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower4",
+          "name": "Wildplains Patriarch",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=259054"
+        }
+      ]
+    },
+    {
+      "npcId": 4861,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower4",
+          "name": "Shrike Bat",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4861"
+        }
+      ]
+    },
+    {
+      "npcId": 4725,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower4",
+          "name": "Crazed Sandstrider",
+          "rank": 4,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4725"
+        }
+      ]
+    },
+    {
+      "npcId": 2522,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower5",
+          "name": "Jaguero Stalker",
+          "rank": 5,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2522"
+        }
+      ]
+    },
+    {
+      "npcId": 8600,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower5",
+          "name": "Plaguebat",
+          "rank": 5,
+          "minLevel": 53,
+          "maxLevel": 55,
+          "zones": [
+            "Eastern Plaguelands"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8600"
+        }
+      ]
+    },
+    {
+      "npcId": 8601,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower5",
+          "name": "Noxious Plaguebat",
+          "rank": 5,
+          "minLevel": 54,
+          "maxLevel": 56,
+          "zones": [
+            "Eastern Plaguelands"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8601"
+        }
+      ]
+    },
+    {
+      "npcId": 7430,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower6",
+          "name": "Frostsaber Cub",
+          "rank": 6,
+          "minLevel": 55,
+          "maxLevel": 56,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7430"
+        }
+      ]
+    },
+    {
+      "npcId": 8602,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower6",
+          "name": "Monstrous Plaguebat",
+          "rank": 6,
+          "minLevel": 56,
+          "maxLevel": 58,
+          "zones": [
+            "Eastern Plaguelands"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8602"
+        }
+      ]
+    },
+    {
+      "npcId": 268231,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#cower6",
+          "name": "Ta'shkal",
+          "rank": 6,
+          "minLevel": 57,
+          "maxLevel": 57,
+          "zones": [
+            "Mount Hyjal"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=268231"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #cower was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): All Families. Petopia Classic lists: All Families.",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (9): Prideclaw 251245 r1 (Cat, 5, Zephras Isle); Shriekling Fledgling 253282 r1 (Bird of Prey, 8-9, Zephras Isle); Shal'ma 276198 r1 (Cat, 9, Durotar); Blind Hunter 4425 r3 (Bat, 32, Razorfen Kraul (Dungeon)); Roving Tallstrider 263348 r4 (Tallstrider, 37-38, Riverglades); Wildplains Huntress 259055 r4 (Cat, 38-39, Riverglades); Wildplains Patriarch 259054 r4 (Cat, 38-39, Riverglades); Crazed Sandstrider 4725 r4 (Tallstrider, 39-40, Desolace); Ta'shkal 268231 r6 (Cat, 57, Mount Hyjal)",
+    "No beasts removed vs Petopia Classic.",
+    "Rank taught changed vs Petopia Classic: Savannah Patriarch 3241: Classic r[2] -> Forever r[4]"
+  ]
+}

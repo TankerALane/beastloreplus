@@ -1,0 +1,911 @@
+{
+  "ability": "claw",
+  "name": "Claw",
+  "icon": "ability_druid_rake",
+  "trainerOnly": false,
+  "researcher": "claw r5-8 research agent, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=16831",
+          "spellIds": [
+            16831
+          ],
+          "petLevel": 32,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "spellIds": null,
+          "petLevel": 32,
+          "tp": 13
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=16832",
+          "spellIds": [
+            16832
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 17
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=3010",
+          "spellIds": [
+            3010
+          ],
+          "petLevel": 48,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 21
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=3009",
+          "spellIds": [
+            3009
+          ],
+          "petLevel": 56,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 4697,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Scorpashi Lasher",
+          "rank": 5,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Scorpid"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/scorpashi-lasher/",
+          "name": "Scorpashi Lasher",
+          "rank": 5,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Scorpid"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Scorpashi Lasher",
+          "rank": 5,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Desolace"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 5937,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Vile Sting",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Scorpid"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/vile-sting/",
+          "name": "Vile Sting",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Scorpid",
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 4343,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Drywallow Snapper",
+          "rank": 5,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Crocolisk"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/drywallow-snapper/",
+          "name": "Drywallow Snapper",
+          "rank": 5,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Crocolisk"
+        }
+      ]
+    },
+    {
+      "npcId": 7022,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Venomlash Scorpid",
+          "rank": 5,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ],
+          "family": "Scorpid"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/venomlash-scorpid/",
+          "name": "Venomlash Scorpid",
+          "rank": 5,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Uldaman"
+          ],
+          "family": "Scorpid",
+          "elite": true
+        }
+      ]
+    },
+    {
+      "npcId": 5422,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Scorpid Hunter",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Scorpid"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/scorpid-hunter/",
+          "name": "Scorpid Hunter",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Scorpid"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Scorpid Hunter",
+          "rank": 6,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Tanaris"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 922,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Silt Crawler",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Swamp of Sorrows"
+          ],
+          "family": "Crab"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/silt-crawler/",
+          "name": "Silt Crawler",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Swamp Of Sorrows"
+          ],
+          "family": "Crab"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Silt Crawler",
+          "rank": 6,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Swamp of Sorrows"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 5268,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Ironfur Bear",
+          "rank": 6,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ironfur-bear/",
+          "name": "Ironfur Bear",
+          "rank": 6,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Ferelas"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Ironfur Bear",
+          "rank": 6,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Feralas"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 731,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "King Bangalash",
+          "rank": 6,
+          "minLevel": 43,
+          "maxLevel": 43,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/king-bangalash/",
+          "name": "King Bangalash",
+          "rank": 6,
+          "minLevel": 43,
+          "maxLevel": 43,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "elite": true
+        }
+      ]
+    },
+    {
+      "npcId": 5352,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Old Grizzlegut",
+          "rank": 6,
+          "minLevel": 43,
+          "maxLevel": 43,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/old-grizzlegut/",
+          "name": "Old Grizzlegut",
+          "rank": 6,
+          "minLevel": 43,
+          "maxLevel": 43,
+          "zones": [
+            "Ferelas"
+          ],
+          "family": "Bear",
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 1088,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Monstrous Crawler",
+          "rank": 6,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Swamp of Sorrows"
+          ],
+          "family": "Crab"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/monstrous-crawler/",
+          "name": "Monstrous Crawler",
+          "rank": 6,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Swamp Of Sorrows"
+          ],
+          "family": "Crab"
+        }
+      ]
+    },
+    {
+      "npcId": 5274,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Ironfur Patriarch",
+          "rank": 7,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ironfur-patriarch/",
+          "name": "Ironfur Patriarch",
+          "rank": 7,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Ferelas"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Ironfur Patriarch",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Feralas"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8958,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Angerclaw Mauler",
+          "rank": 7,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/angerclaw-mauler/",
+          "name": "Angerclaw Mauler",
+          "rank": 7,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Angerclaw Mauler",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Felwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 14344,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Mongress",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/mongress/",
+          "name": "Mongress",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Bear",
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 7099,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Ironbeak Hunter",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Owl"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ironbeak-hunter/",
+          "name": "Ironbeak Hunter",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Owl"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Ironbeak Hunter",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Felwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 14343,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Olm the Wise",
+          "rank": 7,
+          "minLevel": 52,
+          "maxLevel": 52,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Owl"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/olm-the-wise/",
+          "name": "Olm the Wise",
+          "rank": 7,
+          "minLevel": 52,
+          "maxLevel": 52,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Owl",
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 7444,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Shardtooth Bear",
+          "rank": 7,
+          "minLevel": 53,
+          "maxLevel": 54,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/shardtooth-bear/",
+          "name": "Shardtooth Bear",
+          "rank": 7,
+          "minLevel": 53,
+          "maxLevel": 54,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Shardtooth Bear",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Winterspring"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8301,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Clack the Reaver",
+          "rank": 7,
+          "minLevel": 53,
+          "maxLevel": 53,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "family": "Scorpid"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/clack-the-reaver/",
+          "name": "Clack the Reaver",
+          "rank": 7,
+          "minLevel": 53,
+          "maxLevel": 53,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "family": "Scorpid",
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 7455,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Winterspring Owl",
+          "rank": 7,
+          "minLevel": 54,
+          "maxLevel": 56,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Owl"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/winterspring-owl/",
+          "name": "Winterspring Owl",
+          "rank": 7,
+          "minLevel": 54,
+          "maxLevel": 56,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Owl"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Winterspring Owl",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Winterspring"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 9695,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Deathlash Scorpid",
+          "rank": 7,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "family": "Scorpid"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/deathlash-scorpid/",
+          "name": "Deathlash Scorpid",
+          "rank": 7,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "family": "Scorpid"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Deathlash Scorpid",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Burning Steppes"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1816,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Diseased Grizzly",
+          "rank": 7,
+          "minLevel": 55,
+          "maxLevel": 56,
+          "zones": [
+            "Western Plaguelands"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/diseased-grizzly/",
+          "name": "Diseased Grizzly",
+          "rank": 7,
+          "minLevel": 55,
+          "maxLevel": 56,
+          "zones": [
+            "Western Plaguelands"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Diseased Grizzly",
+          "rank": 8,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Western Plaguelands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 7456,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Winterspring Screecher",
+          "rank": 8,
+          "minLevel": 57,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Owl"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/winterspring-screecher/",
+          "name": "Winterspring Screecher",
+          "rank": 8,
+          "minLevel": 57,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Owl"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Winterspring Screecher",
+          "rank": 8,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Winterspring"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=7456",
+          "name": "Winterspring Screecher",
+          "rank": null,
+          "minLevel": 57,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Owl"
+        }
+      ]
+    },
+    {
+      "npcId": 7445,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw",
+          "name": "Elder Shardtooth",
+          "rank": 8,
+          "minLevel": 57,
+          "maxLevel": 58,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-shardtooth/",
+          "name": "Elder Shardtooth",
+          "rank": 8,
+          "minLevel": 57,
+          "maxLevel": 58,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Bear"
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-location-table",
+          "name": "Elder Shardtooth",
+          "rank": 8,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Winterspring"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Scope: Claw ranks 5-8 only (ranks 1-4 handled by another agent).",
+    "Rank data: Wowhead Classic spell pages (16831, 16832, 3010, 3009) give spell ID and level in the 'see-also-ability' Listview (Rank 5=32, 6=40, 7=48, 8=56) but show no TP cost, so tp=null for wowhead. Petopia Classic gives pet level and TP (13/17/21/25) but no spell IDs. Damage per Petopia: R5 21-29, R6 26-36, R7 35-49, R8 43-59.",
+    "Wowhead Classic spell pages have NO 'Taught by NPC' / 'Learned from' listview for Claw (only 'Used by Pet': Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid); its database does not link beasts to pet ability ranks. A user comment on spell=16831 lists all ranks/beasts in exactly Petopia's text format ('Claw 5: Pet Level 32, Cost 13 TP ... Scorpashi Lasher (Scorpid, 34-35, Desolace)'), i.e. a reprint of Petopia; NOT recorded as a separate source.",
+    "Wowhead NPC pages: only npc=7456 (Winterspring Screecher) was fetched: Level 57-59, location 618 (Winterspring), classification 0 (normal), Tameable (Owl). rank is null because Wowhead does not state the taught rank (user comments say Claw 8). After that, Wowhead returned CloudFront 403 for all NPC pages (rate limit) and retrying was not permitted, so the other 21 NPCs have no Wowhead level/elite/rare check.",
+    "No Wowhead Forever section found: www.wowhead.com/forever/spell=3009 -> 403, /classic-forever/ -> 404. Warcraft Tavern's nav has a 'Forever' section, but the pet pages used here are under /wow-classic/.",
+    "warcraft.wiki.gg: 'Claw (pet ability)' Classic section only says 'Claw (8 ranks)', level 1, families Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid; 'Pet abilities (Classic)' lists Claw level 1, 1 TP. No per-rank table or beast list, so no wiki observations recorded. Direct curl to wiki.gg is blocked (403 'Blocked - wiki.gg'); WebFetch worked.",
+    "DOUBTFUL / Forever-relevant: Drywallow Snapper (4343) is a Crocolisk, a family that cannot use Claw, yet Petopia and Warcraft Tavern both list it as teaching Claw 5. warcraft.wiki.gg's Drywallow Snapper page has a Patch 2.4.2 note: Drywallow Snappers 'will have' Bite Rank 5 instead of Claw Rank 5. So the 1.12 data really did list Claw 5 (a vanilla oddity), but a crocolisk pet probably cannot use it. Verify in game on Forever. Wiki infobox shows retail level 15-30 (patch note: 'reduced from 37 - 38').",
+    "CONFLICT: Diseased Grizzly (1816). Petopia and Warcraft Tavern say Claw 7 (55-56); Ten Ton Hammer's table puts it in the Claw rank 8 row. Ten Ton Hammer is a TBC-era guide (rows 8-9 include Outland beasts). Its table gives zone + name only (no levels, no IDs). The column order (Level, Bite, Claw, Cower, Growl) was read from the raw HTML, and IDs were matched by name.",
+    "Ten Ton Hammer covers only 13 of the 22 beasts. It lacks the rares/elites (Vile Sting, King Bangalash, Old Grizzlegut, Mongress, Olm the Wise, Clack the Reaver, Venomlash Scorpid), Monstrous Crawler and Drywallow Snapper. In its rank-5 row, the Dustwallow Marsh 'Drywallow Crocolisk' entry sits in the Bite column, not Claw.",
+    "Warcraft Tavern per-pet pages ('Skills When Tamed') match Petopia exactly for all 22 beasts (rank, levels, zone), so they probably derive from Petopia and may not be independent. Zone spellings are kept as shown ('Ferelas', 'Swamp Of Sorrows', 'Uldaman'). Elite/rare comes from its 'Class' field: Rare = Vile Sting, Old Grizzlegut, Mongress, Olm the Wise, Clack the Reaver; Elite = Venomlash Scorpid (Uldaman dungeon), King Bangalash. Pages without a Class line have the flags omitted.",
+    "Petopia gives no elite/rare flags. Its NPC IDs come from its links to classic.wowhead.com/npc=<id>. 'family' is an extra field, recorded as each source shows it.",
+    "Icon ability_druid_rake per Wowhead and Petopia."
+  ]
+}

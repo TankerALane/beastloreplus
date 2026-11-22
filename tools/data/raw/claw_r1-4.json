@@ -1,0 +1,2738 @@
+{
+  "ability": "claw",
+  "name": "Claw",
+  "icon": "ability_druid_rake",
+  "trainerOnly": false,
+  "researcher": "claw r1-4 research agent, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=16827",
+          "spellIds": [
+            16827
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw1",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 1
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 1
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=16828",
+          "spellIds": [
+            16828
+          ],
+          "petLevel": 8,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "spellIds": null,
+          "petLevel": 8,
+          "tp": 4
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "spellIds": null,
+          "petLevel": 8,
+          "tp": 4
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=16829",
+          "spellIds": [
+            16829
+          ],
+          "petLevel": 16,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "spellIds": null,
+          "petLevel": 16,
+          "tp": 7
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "spellIds": null,
+          "petLevel": 16,
+          "tp": 7
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=16830",
+          "spellIds": [
+            16830
+          ],
+          "petLevel": 24,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw4",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 10
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw4",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 10
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 3124,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw1",
+          "name": "Scorpid Worker",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://classic.wowhead.com/npc=3124"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Scorpid Worker",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3124"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/scorpid-worker/",
+          "name": "Scorpid Worker",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Durotar"
+          ],
+          "skillsWhenTamed": "Claw 1"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3124",
+          "name": "Scorpid Worker",
+          "rank": null,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/3124"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3124",
+          "name": "Scorpid Worker",
+          "rank": null,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/3124"
+        }
+      ]
+    },
+    {
+      "npcId": 3281,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw1",
+          "name": "Sarkoth",
+          "rank": 1,
+          "minLevel": 4,
+          "maxLevel": 4,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://classic.wowhead.com/npc=3281"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Sarkoth",
+          "rank": 1,
+          "minLevel": 4,
+          "maxLevel": 4,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3281"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/sarkoth/",
+          "name": "Sarkoth",
+          "rank": 1,
+          "minLevel": 4,
+          "maxLevel": 4,
+          "zones": [
+            "Durotar"
+          ],
+          "skillsWhenTamed": "Claw 1"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3281",
+          "name": "Sarkoth",
+          "rank": null,
+          "minLevel": 4,
+          "maxLevel": 4,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/3281"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3281",
+          "name": "Sarkoth",
+          "rank": null,
+          "minLevel": 4,
+          "maxLevel": 4,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/3281"
+        }
+      ]
+    },
+    {
+      "npcId": 3106,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw1",
+          "name": "Pygmy Surf Crawler",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://classic.wowhead.com/npc=3106"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Pygmy Surf Crawler",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3106"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/pygmy-surf-crawler/",
+          "name": "Pygmy Surf Crawler",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Durotar"
+          ],
+          "skillsWhenTamed": "Claw 1"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3106",
+          "name": "Pygmy Surf Crawler",
+          "rank": null,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/3106"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3106",
+          "name": "Pygmy Surf Crawler",
+          "rank": null,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/3106"
+        }
+      ]
+    },
+    {
+      "npcId": 1995,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw1",
+          "name": "Strigid Owl",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Owl",
+          "linkedUrl": "https://classic.wowhead.com/npc=1995"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Strigid Owl",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1995"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/strigid-owl/",
+          "name": "Strigid Owl",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Teldrassil"
+          ],
+          "skillsWhenTamed": "Claw 1"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1995",
+          "name": "Strigid Owl",
+          "rank": null,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Owl",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1995"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1995",
+          "name": "Strigid Owl",
+          "rank": null,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bird of Prey",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1995"
+        }
+      ]
+    },
+    {
+      "npcId": 1196,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw1",
+          "name": "Ice Claw Bear",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=1196"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Ice Claw Bear",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1196"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ice-claw-bear/",
+          "name": "Ice Claw Bear",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "skillsWhenTamed": "Claw 1"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1196",
+          "name": "Ice Claw Bear",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1196"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1196",
+          "name": "Ice Claw Bear",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1196"
+        }
+      ]
+    },
+    {
+      "npcId": 822,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Young Forest Bear",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=822"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Young Forest Bear",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=822"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/young-forest-bear/",
+          "name": "Young Forest Bear",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "skillsWhenTamed": "Claw 2"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=822",
+          "name": "Young Forest Bear",
+          "rank": null,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/822"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=822",
+          "name": "Young Forest Bear",
+          "rank": null,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/822"
+        }
+      ]
+    },
+    {
+      "npcId": 1997,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Strigid Hunter",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Owl",
+          "linkedUrl": "https://classic.wowhead.com/npc=1997"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Strigid Hunter",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1997"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/strigid-hunter/",
+          "name": "Strigid Hunter",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Teldrassil"
+          ],
+          "skillsWhenTamed": "Claw 2"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1997",
+          "name": "Strigid Hunter",
+          "rank": null,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Owl",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1997"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1997",
+          "name": "Strigid Hunter",
+          "rank": null,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bird of Prey",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1997"
+        }
+      ]
+    },
+    {
+      "npcId": 3108,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Encrusted Surf Crawler",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://classic.wowhead.com/npc=3108"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Encrusted Surf Crawler",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3108"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/encrusted-surf-crawler/",
+          "name": "Encrusted Surf Crawler",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "skillsWhenTamed": "Claw 2"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3108",
+          "name": "Encrusted Surf Crawler",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/3108"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3108",
+          "name": "Encrusted Surf Crawler",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/3108"
+        }
+      ]
+    },
+    {
+      "npcId": 3127,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Venomtail Scorpid",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://classic.wowhead.com/npc=3127"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Venomtail Scorpid",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3127"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/venomtail-scorpid/",
+          "name": "Venomtail Scorpid",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "skillsWhenTamed": "Claw 2, Scorpid Poison 1"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3127",
+          "name": "Venomtail Scorpid",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/3127"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3127",
+          "name": "Venomtail Scorpid",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/3127"
+        }
+      ]
+    },
+    {
+      "npcId": 1961,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Mangeclaw",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=1961"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Mangeclaw",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1961"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/mangeclaw/",
+          "name": "Mangeclaw",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "skillsWhenTamed": "Claw 2"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1961",
+          "name": "Mangeclaw",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1961"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1961",
+          "name": "Mangeclaw",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1961"
+        }
+      ]
+    },
+    {
+      "npcId": 5823,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Death Flayer",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://classic.wowhead.com/npc=5823"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Death Flayer",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5823"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/death-flayer/",
+          "name": "Death Flayer",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "skillsWhenTamed": "Claw 2, Scorpid Poison 1",
+          "rare": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5823",
+          "name": "Death Flayer",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": true,
+          "family": "Scorpid",
+          "classification": "Rare",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/5823"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5823",
+          "name": "Death Flayer",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": true,
+          "family": "Scorpid",
+          "classification": "Rare",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/5823"
+        }
+      ]
+    },
+    {
+      "npcId": 1778,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Ferocious Grizzled Bear",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=1778"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Ferocious Grizzled Bear",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1778"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ferocious-grizzled-bear/",
+          "name": "Ferocious Grizzled Bear",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "skillsWhenTamed": "Claw 2"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1778",
+          "name": "Ferocious Grizzled Bear",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1778"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1778",
+          "name": "Ferocious Grizzled Bear",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1778"
+        }
+      ]
+    },
+    {
+      "npcId": 2163,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Thistle Bear",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=2163"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Thistle Bear",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2163"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/thistle-bear/",
+          "name": "Thistle Bear",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Darkshore"
+          ],
+          "skillsWhenTamed": "Claw 2"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2163",
+          "name": "Thistle Bear",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/2163"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2163",
+          "name": "Thistle Bear",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/2163"
+        }
+      ]
+    },
+    {
+      "npcId": 1130,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Bjarn",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=1130"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Bjarn",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1130"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/bjarn/",
+          "name": "Bjarn",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "skillsWhenTamed": "Claw 2",
+          "rare": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1130",
+          "name": "Bjarn",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": true,
+          "family": "Bear",
+          "classification": "Rare",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1130"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1130",
+          "name": "Bjarn",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": true,
+          "family": "Bear",
+          "classification": "Rare",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1130"
+        }
+      ]
+    },
+    {
+      "npcId": 2232,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw2",
+          "name": "Tide Crawler",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 14,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://classic.wowhead.com/npc=2232"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Tide Crawler",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 14,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2232"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/tide-crawler/",
+          "name": "Tide Crawler",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 14,
+          "zones": [
+            "Darkshore"
+          ],
+          "skillsWhenTamed": "Claw 2"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2232",
+          "name": "Tide Crawler",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 14,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/2232"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2232",
+          "name": "Tide Crawler",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 14,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/2232"
+        }
+      ]
+    },
+    {
+      "npcId": 1189,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Black Bear Patriarch",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=1189"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Black Bear Patriarch",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1189"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/black-bear-patriarch/",
+          "name": "Black Bear Patriarch",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ],
+          "skillsWhenTamed": "Claw 3"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1189",
+          "name": "Black Bear Patriarch",
+          "rank": null,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1189"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1189",
+          "name": "Black Bear Patriarch",
+          "rank": null,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1189"
+        }
+      ]
+    },
+    {
+      "npcId": 1216,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Shore Crawler",
+          "rank": 3,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Westfall"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://classic.wowhead.com/npc=1216"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Shorecrawler",
+          "rank": 3,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Westfall"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1216"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/shore-crawler/",
+          "name": "Shore Crawler",
+          "rank": 3,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Westfall"
+          ],
+          "skillsWhenTamed": "Claw 3"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1216",
+          "name": "Shore Crawler",
+          "rank": null,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Westfall"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1216"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1216",
+          "name": "Shore Crawler",
+          "rank": null,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Westfall"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1216"
+        }
+      ]
+    },
+    {
+      "npcId": 6788,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Den Mother",
+          "rank": 3,
+          "minLevel": 18,
+          "maxLevel": 19,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=6788"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Den Mother",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 19,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=6788"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/den-mother/",
+          "name": "Den Mother",
+          "rank": 3,
+          "minLevel": 18,
+          "maxLevel": 19,
+          "zones": [
+            "Darkshore"
+          ],
+          "skillsWhenTamed": "Claw 3"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=6788",
+          "name": "Den Mother",
+          "rank": null,
+          "minLevel": 18,
+          "maxLevel": 19,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/6788"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=6788",
+          "name": "Den Mother",
+          "rank": null,
+          "minLevel": 18,
+          "maxLevel": 19,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/6788"
+        }
+      ]
+    },
+    {
+      "npcId": 3619,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Ghost Saber",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://classic.wowhead.com/npc=3619"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Ghost Saber",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3619"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ghost-saber/",
+          "name": "Ghost Saber",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Darkshore"
+          ],
+          "skillsWhenTamed": "Claw 3"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3619",
+          "name": "Ghost Saber",
+          "rank": null,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Cat",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/3619"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3619",
+          "name": "Ghost Saber",
+          "rank": null,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Cat",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/3619"
+        }
+      ]
+    },
+    {
+      "npcId": 3812,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Clattering Crawler",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://classic.wowhead.com/npc=3812"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Clattering Crawler",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3812"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/clattering-crawler/",
+          "name": "Clattering Crawler",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Ashenvale"
+          ],
+          "skillsWhenTamed": "Claw 3"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3812",
+          "name": "Clattering Crawler",
+          "rank": null,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/3812"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3812",
+          "name": "Clattering Crawler",
+          "rank": null,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/3812"
+        }
+      ]
+    },
+    {
+      "npcId": 1225,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Ol' Sooty",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=1225"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Ol' Sooty",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1225"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ol-sooty/",
+          "name": "Ol' Sooty",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Loch Modan"
+          ],
+          "skillsWhenTamed": "Claw 3",
+          "elite": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1225",
+          "name": "Ol' Sooty",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": true,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Elite",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1225"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1225",
+          "name": "Ol' Sooty",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": true,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Elite",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1225"
+        }
+      ]
+    },
+    {
+      "npcId": 2351,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Gray Bear",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=2351"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Gray Bear",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2351"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/gray-bear/",
+          "name": "Gray Bear",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "skillsWhenTamed": "Claw 3"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2351",
+          "name": "Gray Bear",
+          "rank": null,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/2351"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2351",
+          "name": "Gray Bear",
+          "rank": null,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/2351"
+        }
+      ]
+    },
+    {
+      "npcId": 3809,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Ashenvale Bear",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=3809"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Ashenvale Bear",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3809"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ashenvale-bear/",
+          "name": "Ashenvale Bear",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ],
+          "skillsWhenTamed": "Claw 3"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3809",
+          "name": "Ashenvale Bear",
+          "rank": null,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/3809"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3809",
+          "name": "Ashenvale Bear",
+          "rank": null,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/3809"
+        }
+      ]
+    },
+    {
+      "npcId": 4821,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Skittering Crustacean",
+          "rank": 3,
+          "minLevel": 22,
+          "maxLevel": 23,
+          "zones": [
+            "Blackfathom Deeps (Dungeon"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://classic.wowhead.com/npc=4821"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Skittering Crustacean",
+          "rank": 3,
+          "minLevel": 22,
+          "maxLevel": 23,
+          "zones": [
+            "Blackfathom Deeps (Dungeon"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4821"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/skittering-crustacean/",
+          "name": "Skittering Crustacean",
+          "rank": 3,
+          "minLevel": 22,
+          "maxLevel": 23,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "skillsWhenTamed": "Claw 3",
+          "elite": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4821",
+          "name": "Skittering Crustacean",
+          "rank": null,
+          "minLevel": 22,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Elite",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/4821"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4821",
+          "name": "Skittering Crustacean",
+          "rank": null,
+          "minLevel": 22,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Elite",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/4821"
+        }
+      ]
+    },
+    {
+      "npcId": 4822,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw3",
+          "name": "Snapping Crustacean",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps (Dungeon"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://classic.wowhead.com/npc=4822"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw3",
+          "name": "Snapping Crustacean",
+          "rank": 3,
+          "minLevel": 22,
+          "maxLevel": 23,
+          "zones": [
+            "Blackfathom Deeps (Dungeon"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4822"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/snapping-crustacean/",
+          "name": "Snapping Crustacean",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "skillsWhenTamed": "Claw 3",
+          "elite": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4822",
+          "name": "Snapping Crustacean",
+          "rank": null,
+          "minLevel": 23,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Elite",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/4822"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4822",
+          "name": "Snapping Crustacean",
+          "rank": null,
+          "minLevel": 23,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Elite",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/4822"
+        }
+      ]
+    },
+    {
+      "npcId": 3810,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw4",
+          "name": "Elder Ashenvale Bear",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://classic.wowhead.com/npc=3810"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw4",
+          "name": "Elder Ashenvale Bear",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3810"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-ashenvale-bear/",
+          "name": "Elder Ashenvale Bear",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Ashenvale"
+          ],
+          "skillsWhenTamed": "Claw 4"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3810",
+          "name": "Elder Ashenvale Bear",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/3810"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3810",
+          "name": "Elder Ashenvale Bear",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/3810"
+        }
+      ]
+    },
+    {
+      "npcId": 4823,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw4",
+          "name": "Barbed Crustacean",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Blackfathom Deeps (Dungeon"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://classic.wowhead.com/npc=4823"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw4",
+          "name": "Barbed Crustacean",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Blackfathom Deeps (Dungeon"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4823"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/barbed-crustacean/",
+          "name": "Barbed Crustacean",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "skillsWhenTamed": "Claw 4",
+          "elite": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4823",
+          "name": "Barbed Crustacean",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Elite",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/4823"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4823",
+          "name": "Barbed Crustacean",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Elite",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/4823"
+        }
+      ]
+    },
+    {
+      "npcId": 4696,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw4",
+          "name": "Scorpashi Snapper",
+          "rank": 4,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://classic.wowhead.com/npc=4696"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw4",
+          "name": "Scorpashi Snapper",
+          "rank": 4,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4696"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/scorpashi-snapper/",
+          "name": "Scorpashi Snapper",
+          "rank": 4,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "skillsWhenTamed": "Claw 4, Scorpid Poison 2"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4696",
+          "name": "Scorpashi Snapper",
+          "rank": null,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/4696"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4696",
+          "name": "Scorpashi Snapper",
+          "rank": null,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/4696"
+        }
+      ]
+    },
+    {
+      "npcId": 4140,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#claw4",
+          "name": "Scorpid Reaver",
+          "rank": 4,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://classic.wowhead.com/npc=4140"
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw4",
+          "name": "Scorpid Reaver",
+          "rank": 4,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4140"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/scorpid-reaver/",
+          "name": "Scorpid Reaver",
+          "rank": 4,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "skillsWhenTamed": "Claw 4, Scorpid Poison 2"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4140",
+          "name": "Scorpid Reaver",
+          "rank": null,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/4140"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4140",
+          "name": "Scorpid Reaver",
+          "rank": null,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Scorpid",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/4140"
+        }
+      ]
+    },
+    {
+      "npcId": 250926,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Scrawny Ursera",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=250926"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=250926",
+          "name": "Scrawny Ursera",
+          "rank": null,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/250926"
+        }
+      ]
+    },
+    {
+      "npcId": 250937,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Ursera Scavenger",
+          "rank": 1,
+          "minLevel": 4,
+          "maxLevel": 4,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=250937"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=250937",
+          "name": "Ursera Scavenger",
+          "rank": null,
+          "minLevel": 4,
+          "maxLevel": 4,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/250937"
+        }
+      ]
+    },
+    {
+      "npcId": 251115,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Urs'anah",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 5,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=251115"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=251115",
+          "name": "Urs'anah",
+          "rank": null,
+          "minLevel": 5,
+          "maxLevel": 5,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/251115"
+        }
+      ]
+    },
+    {
+      "npcId": 2970,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Swoop",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2970"
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/swoop/",
+          "name": "Swoop",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ],
+          "skillsWhenTamed": "None"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2970",
+          "name": "Swoop",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Carrion Bird",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/2970"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2970",
+          "name": "Swoop",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Carrion Bird",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/2970"
+        }
+      ]
+    },
+    {
+      "npcId": 250928,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Highlands Ursera",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=250928"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=250928",
+          "name": "Highlands Ursera",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/250928"
+        }
+      ]
+    },
+    {
+      "npcId": 1129,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw1",
+          "name": "Black Bear",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1129"
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1129",
+          "name": "Black Bear",
+          "rank": null,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/classic/tooltip/npc/1129"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1129",
+          "name": "Black Bear",
+          "rank": null,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/1129"
+        }
+      ]
+    },
+    {
+      "npcId": 254588,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Windsong Crawler",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=254588"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=254588",
+          "name": "Windsong Crawler",
+          "rank": null,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Crab",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/254588"
+        }
+      ]
+    },
+    {
+      "npcId": 276189,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Matriarch Bristlefur",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=276189"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=276189",
+          "name": "Matriarch Bristlefur",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": true,
+          "family": "Bear",
+          "classification": "Rare",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/276189"
+        }
+      ]
+    },
+    {
+      "npcId": 276111,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Ghostfang",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=276111"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=276111",
+          "name": "Ghostfang",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": true,
+          "family": "Cat",
+          "classification": "Rare",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/276111"
+        }
+      ]
+    },
+    {
+      "npcId": 250927,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Shadowgale Ursera",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=250927"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=250927",
+          "name": "Shadowgale Ursera",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "elite": false,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Normal",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/250927"
+        }
+      ]
+    },
+    {
+      "npcId": 248299,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#claw2",
+          "name": "Elmpaw",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Bear",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=248299"
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=248299",
+          "name": "Elmpaw",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": true,
+          "rare": false,
+          "family": "Bear",
+          "classification": "Elite",
+          "dataVia": "https://nether.wowhead.com/forever/tooltip/npc/248299"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Scope: Claw ranks 1-4 only (ranks 5-8 researched by another agent).",
+    "Wowhead Classic spell pages (16827/16828/16829/16830) gave spell IDs and required levels (1/8/16/24, from the 'see-also-ability' listview and the tooltip text 'Requires level N'). They have NO 'Taught by NPC'/'Learned from' listview for these pet spells, and show no training-point cost, so wowhead-classic tp = null. The only TP text on those pages is a user comment that copies Petopia; it is not counted as a Wowhead observation.",
+    "Wowhead beast observations come from Wowhead's tooltip JSON (nether.wowhead.com/<classic|forever>/tooltip/npc/<id>; see 'dataVia'), because full www.wowhead.com pages started returning HTTP 403 (CloudFront 'Request blocked') after the first few fetches. The tooltips give name, level range, classification (Normal/Elite/Rare), family and zone ID (zone IDs turned into names with nether.wowhead.com tooltip/zone). They do NOT say which Claw rank a beast teaches, so wowhead observations have rank = null. They confirm the NPC exists, its levels and its flags only.",
+    "Wowhead has a Forever section (www.wowhead.com/forever/...). Its full pages were 403-blocked too. Its tooltip JSON worked and resolves the Forever-only NPC IDs (248299, 250926-250937, 251115, 254588, 276111, 276189), which return 'Entity not found' on the Classic tooltip endpoint.",
+    "petopia-classic and petopia-forever are two sections of the SAME site (wow-petopia.com, same editors). Treat them as one source for independence counting. They are kept separate because their data differs (Forever lists extra beasts). Petopia's beast links point to classic.wowhead.com/npc=<id> (classic section) and www.wowhead.com/forever/npc=<id> (forever section). Petopia does not show spell IDs (null) or elite/rare flags (omitted). Petopia writes 'Blackfathom Deeps (Dungeon)'; it is kept verbatim.",
+    "warcrafttavern = Warcraft Tavern 'Petpedia' per-beast pages (warcrafttavern.com/wow-classic/hunter-pets/pets/<slug>/). Each shows 'Skills When Tamed: Claw N', the pet level range, the zone, and 'Class Rare/Elite' when it applies. This is Classic data only; Warcraft Tavern has no Forever pet database. A missing Class field was not taken to mean normal (elite/rare left out). The 'black-bear' slug redirected to Black Bear Patriarch, so it was dropped, and no Warcraft Tavern page exists for Black Bear (1129). Pages for Forever-only NPCs returned 404.",
+    "warcraft.wiki.gg 'Claw (pet ability)' (fetched with WebFetch; direct curl is blocked by wiki.gg) has no per-rank table and no beast lists for Classic. It lists only 8 ranks, families (Bear, Carrion Bird, Cat, Crab, Owl, Raptor, Scorpid) and Wowhead links for 16827 (rank 1) and 3009 (rank 8). No observation was recorded from it. wowpedia.fandom.com is behind a Cloudflare challenge (403).",
+    "Rank data agreement: Wowhead and Petopia (both sections) agree on pet levels 1/8/16/24. Petopia (both sections) gives TP 1/4/7/10. No second independent source for TP was found.",
+    "FOREVER-SPECIFIC (only in petopia-forever; the Wowhead Forever tooltips confirm the NPCs exist): Claw 1 adds Scrawny Ursera 250926 (Bear, 3-4), Ursera Scavenger 250937 (Bear, 4), Urs'anah 251115 (Bear, 5, subtitle 'The Den Mother'), Highlands Ursera 250928 (Bear, 7-8), all in Zephras Isle (a new Forever zone, Wowhead zone 16593, level 1-12). It also adds Swoop 2970 (Carrion Bird, 7-9, Mulgore) and Black Bear 1129 (Bear, Dun Morogh). Claw 2 adds Windsong Crawler 254588 (Crab, 8-9, Zephras Isle), Shadowgale Ursera 250927 (Bear, 10-11, Zephras Isle), Matriarch Bristlefur 276189 (Bear, 10, Elwynn Forest, Rare per Wowhead), Ghostfang 276111 (Cat, 10, Dun Morogh, Rare per Wowhead) and Elmpaw 248299 (Bear, 12, Elwynn Forest, Elite per Wowhead).",
+    "Swoop (2970) and Black Bear (1129) are Classic NPC IDs, but Classic sources do not list them as Claw teachers: petopia-classic leaves them out, and Warcraft Tavern's Swoop page says 'Skills When Tamed: None'. So in Forever they appear to have gained Claw 1. Single source (petopia-forever) only.",
+    "Forever family change: petopia-forever and the Wowhead Forever tooltip list Strigid Owl / Strigid Hunter as family 'Bird of Prey' (Classic: 'Owl'). Petopia's Forever differences page says Owls are part of Birds of Prey in Forever.",
+    "Level differences seen: Black Bear 1129 is '7' in petopia-forever but 6-7 on Wowhead (classic and forever). Den Mother 6788 is 18-19 in petopia-classic, Warcraft Tavern and Wowhead, but 19 in petopia-forever. Snapping Crustacean 4822 is 23-24 in petopia-classic and Warcraft Tavern, 22-23 in petopia-forever, and 23-25 on Wowhead. Skittering Crustacean 4821 is 22-23 on Petopia and Warcraft Tavern but 22-25 on Wowhead. Shore Crawler 1216 is spelled 'Shorecrawler' in petopia-forever but 'Shore Crawler' on Wowhead Forever.",
+    "Elite/rare per Wowhead tooltips: Bjarn 1130 Rare, Death Flayer 5823 Rare, Ol' Sooty 1225 Elite, Skittering/Snapping/Barbed Crustacean 4821/4822/4823 Elite (Blackfathom Deeps dungeon), Elmpaw 248299 Elite, Ghostfang 276111 Rare, Matriarch Bristlefur 276189 Rare. Mangeclaw 1961 shows as Normal on Wowhead.",
+    "Extra fields 'family', 'classification', 'skillsWhenTamed', 'linkedUrl' and 'dataVia' are added for context. The generator may ignore them."
+  ]
+}

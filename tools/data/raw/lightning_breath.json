@@ -1,0 +1,1488 @@
+{
+  "ability": "lightning_breath",
+  "name": "Lightning Breath",
+  "icon": "spell_nature_lightning",
+  "trainerOnly": false,
+  "researcher": "research agent (lightning_breath/scorpid_poison), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24844",
+          "spellIds": [
+            24844
+          ],
+          "petLevel": 1,
+          "tp": 1
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=27",
+          "spellIds": [
+            24844
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Lightning_Breath",
+          "spellIds": [
+            24844
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath1",
+          "spellIds": [],
+          "petLevel": 1,
+          "tp": 1
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath1",
+          "spellIds": [],
+          "petLevel": 1,
+          "tp": 1
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=25008",
+          "spellIds": [
+            25008
+          ],
+          "petLevel": 12,
+          "tp": 5
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=27",
+          "spellIds": [
+            25008
+          ],
+          "petLevel": 12,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath2",
+          "spellIds": [],
+          "petLevel": 12,
+          "tp": 5
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "spellIds": [],
+          "petLevel": 12,
+          "tp": 5
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=25009",
+          "spellIds": [
+            25009
+          ],
+          "petLevel": 24,
+          "tp": 10
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=27",
+          "spellIds": [
+            25009
+          ],
+          "petLevel": 24,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath3",
+          "spellIds": [],
+          "petLevel": 24,
+          "tp": 10
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "spellIds": [],
+          "petLevel": 24,
+          "tp": 10
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=25010",
+          "spellIds": [
+            25010
+          ],
+          "petLevel": 36,
+          "tp": 15
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=27",
+          "spellIds": [
+            25010
+          ],
+          "petLevel": 36,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath4",
+          "spellIds": [],
+          "petLevel": 36,
+          "tp": 15
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath4",
+          "spellIds": [],
+          "petLevel": 36,
+          "tp": 15
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=25011",
+          "spellIds": [
+            25011
+          ],
+          "petLevel": 48,
+          "tp": 20
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=27",
+          "spellIds": [
+            25011
+          ],
+          "petLevel": 48,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath5",
+          "spellIds": [],
+          "petLevel": 48,
+          "tp": 20
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "spellIds": [],
+          "petLevel": 48,
+          "tp": 20
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=25012",
+          "spellIds": [
+            25012
+          ],
+          "petLevel": 60,
+          "tp": 25
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=27",
+          "spellIds": [
+            25012
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Lightning_Breath",
+          "spellIds": [
+            25012
+          ],
+          "petLevel": null,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath6",
+          "spellIds": [],
+          "petLevel": 60,
+          "tp": 25
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath6",
+          "spellIds": [],
+          "petLevel": 60,
+          "tp": 25
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 3247,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3247",
+          "name": "Thunderhawk Hatchling",
+          "rank": 2,
+          "minLevel": 18,
+          "maxLevel": 20,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath2",
+          "name": "Thunderhawk Hatchling",
+          "rank": 2,
+          "minLevel": 18,
+          "maxLevel": 20,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Thunderhawk Hatchling",
+          "rank": 2,
+          "minLevel": 18,
+          "maxLevel": 20,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/gold-wind-serpents/",
+          "name": "Thunderhawk Hatchling",
+          "rank": 2,
+          "minLevel": 18,
+          "maxLevel": 20,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3247",
+          "name": "Thunderhawk Hatchling",
+          "rank": null,
+          "minLevel": 18,
+          "maxLevel": 20,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3249,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3249",
+          "name": "Greater Thunderhawk",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath2",
+          "name": "Greater Thunderhawk",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Greater Thunderhawk",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/gold-wind-serpents/",
+          "name": "Greater Thunderhawk",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3249",
+          "name": "Greater Thunderhawk",
+          "rank": null,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3424,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3424",
+          "name": "Thunderhawk Cloudscraper",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath2",
+          "name": "Thunderhawk Cloudscraper",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Thunderhawk Cloudscraper",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/gold-wind-serpents/",
+          "name": "Thunderhawk Cloudscraper",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3424",
+          "name": "Thunderhawk Cloudscraper",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3630,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3630",
+          "name": "Deviate Coiler",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath2",
+          "name": "Deviate Coiler",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Deviate Coiler",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/gold-wind-serpents/",
+          "name": "Deviate Coiler",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3630",
+          "name": "Deviate Coiler",
+          "rank": null,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3631,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3631",
+          "name": "Deviate Stinglash",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath2",
+          "name": "Deviate Stinglash",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Deviate Stinglash",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-wind-serpents/",
+          "name": "Deviate Stinglash",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Wailing Caverns"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3631",
+          "name": "Deviate Stinglash",
+          "rank": null,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5056,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5056",
+          "name": "Deviate Dreadfang",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath2",
+          "name": "Deviate Dreadfang",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Deviate Dreadfang",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-wind-serpents/",
+          "name": "Deviate Dreadfang",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5056",
+          "name": "Deviate Dreadfang",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5756,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5756",
+          "name": "Deviate Venomwing",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath2",
+          "name": "Deviate Venomwing",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Deviate Venomwing",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-wind-serpents/",
+          "name": "Deviate Venomwing",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5756",
+          "name": "Deviate Venomwing",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3472,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3472",
+          "name": "Washte Pawne",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath3",
+          "name": "Washte Pawne",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "name": "Washte Pawne",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-gold-wind-serpents/",
+          "name": "Washte Pawne",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3472",
+          "name": "Washte Pawne",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4117,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4117",
+          "name": "Cloud Serpent",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath3",
+          "name": "Cloud Serpent",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "name": "Cloud Serpent",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-wind-serpents/",
+          "name": "Cloud Serpent",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4117",
+          "name": "Cloud Serpent",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4118,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4118",
+          "name": "Venomous Cloud Serpent",
+          "rank": 3,
+          "minLevel": 26,
+          "maxLevel": 28,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath3",
+          "name": "Venomous Cloud Serpent",
+          "rank": 3,
+          "minLevel": 26,
+          "maxLevel": 28,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "name": "Venomous Cloud Serpent",
+          "rank": 3,
+          "minLevel": 26,
+          "maxLevel": 28,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-wind-serpents/",
+          "name": "Venomous Cloud Serpent",
+          "rank": 3,
+          "minLevel": 26,
+          "maxLevel": 28,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4118",
+          "name": "Venomous Cloud Serpent",
+          "rank": null,
+          "minLevel": 26,
+          "maxLevel": 28,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4119,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4119",
+          "name": "Elder Cloud Serpent",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 29,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath3",
+          "name": "Elder Cloud Serpent",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 29,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "name": "Elder Cloud Serpent",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 29,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-wind-serpents/",
+          "name": "Elder Cloud Serpent",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 29,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4119",
+          "name": "Elder Cloud Serpent",
+          "rank": null,
+          "minLevel": 27,
+          "maxLevel": 29,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5307,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5307",
+          "name": "Vale Screecher",
+          "rank": 4,
+          "minLevel": 41,
+          "maxLevel": 43,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath4",
+          "name": "Vale Screecher",
+          "rank": 4,
+          "minLevel": 41,
+          "maxLevel": 43,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath4",
+          "name": "Vale Screecher",
+          "rank": 4,
+          "minLevel": 41,
+          "maxLevel": 43,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-gold-wind-serpents/",
+          "name": "Vale Screecher",
+          "rank": 4,
+          "minLevel": 41,
+          "maxLevel": 43,
+          "zones": [
+            "Ferelas"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5307",
+          "name": "Vale Screecher",
+          "rank": null,
+          "minLevel": 41,
+          "maxLevel": 43,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5308,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5308",
+          "name": "Rogue Vale Screecher",
+          "rank": 4,
+          "minLevel": 44,
+          "maxLevel": 46,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath4",
+          "name": "Rogue Vale Screecher",
+          "rank": 4,
+          "minLevel": 44,
+          "maxLevel": 46,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath4",
+          "name": "Rogue Vale Screecher",
+          "rank": 4,
+          "minLevel": 44,
+          "maxLevel": 46,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-gold-wind-serpents/",
+          "name": "Rogue Vale Screecher",
+          "rank": 4,
+          "minLevel": 44,
+          "maxLevel": 46,
+          "zones": [
+            "Ferelas"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5308",
+          "name": "Rogue Vale Screecher",
+          "rank": null,
+          "minLevel": 44,
+          "maxLevel": 46,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5291,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5291",
+          "name": "Hakkari Frostwing",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath5",
+          "name": "Hakkari Frostwing",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "name": "Hakkari Frostwing",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-wind-serpents/",
+          "name": "Hakkari Frostwing",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5291",
+          "name": "Hakkari Frostwing",
+          "rank": null,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5349,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5349",
+          "name": "Arash-ethis",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Feralas"
+          ],
+          "rare": true,
+          "elite": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath5",
+          "name": "Arash-ethis",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "name": "Arash-ethis",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-wind-serpents/",
+          "name": "Arash-ethis",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Ferelas"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5349",
+          "name": "Arash-ethis",
+          "rank": null,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Feralas"
+          ],
+          "rare": true,
+          "elite": false
+        }
+      ]
+    },
+    {
+      "npcId": 5708,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5708",
+          "name": "Spawn of Hakkar",
+          "rank": 5,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "The Temple of Atal'Hakkar"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath5",
+          "name": "Spawn of Hakkar",
+          "rank": 5,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "name": "Spawn of Hakkar",
+          "rank": 5,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-wind-serpents/",
+          "name": "Spawn of Hakkar",
+          "rank": 5,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "The Temple of Atal'Hakkar"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5708",
+          "name": "Spawn of Hakkar",
+          "rank": null,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "The Temple of Atal'Hakkar"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 8336,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=8336",
+          "name": "Hakkari Sapper",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath5",
+          "name": "Hakkari Sapper",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "name": "Hakkari Sapper",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/gold-wind-serpents/",
+          "name": "Hakkari Sapper",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=8336",
+          "name": "Hakkari Sapper",
+          "rank": null,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 11357,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=11357",
+          "name": "Son of Hakkar",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Zul'Gurub"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#lightningbreath6",
+          "name": "Son of Hakkar",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Zul'Gurub (Raid)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath6",
+          "name": "Son of Hakkar",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Zul'Gurub (Raid)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-wind-serpents/",
+          "name": "Son of Hakkar",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Zul'Gurub"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=11357",
+          "name": "Son of Hakkar",
+          "rank": null,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Zul'Gurub"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 11359,
+      "observations": [
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-wind-serpents/",
+          "name": "Soulflayer",
+          "rank": 6,
+          "minLevel": 61,
+          "maxLevel": 61,
+          "zones": [
+            "Zul'Gurub"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=11359",
+          "name": "Soulflayer",
+          "rank": null,
+          "minLevel": 61,
+          "maxLevel": 61,
+          "zones": [
+            "Zul'Gurub"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=11359",
+          "name": "Soulflayer",
+          "rank": null,
+          "minLevel": 61,
+          "maxLevel": 61,
+          "zones": [
+            "Zul'Gurub"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 272401,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath6",
+          "name": "Vale Screamer",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=272401",
+          "name": "Vale Screamer",
+          "rank": null,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "wowhead-classic rank observations: spellIds and petLevel come from Wowhead Classic spell pages (see-also-ability listview 'level' field). The tp values in wowhead-classic rank observations come from a user comment by 'hevgirl' (2019) on the Rank 1 spell page, not from Wowhead's own data. Wowhead Classic spell pages have NO 'Taught by NPC' listview for pet abilities.",
+    "wowhead-classic beast observations: 'rank' comes from that same hevgirl user comment (table of beasts per rank with npc= links); minLevel/maxLevel/zones/elite/rare come from Wowhead's own 'Tameable' listview on the pet family page (https://www.wowhead.com/classic/pet=27). Zone names were mapped by the researcher from Wowhead numeric zone IDs (17=The Barrens, 400=Thousand Needles, 718=Wailing Caverns, 1477=The Temple of Atal'Hakkar, 357=Feralas, 1977=Zul'Gurub, 14=Durotar, 405=Desolace, 440=Tanaris, 4=Blasted Lands, 1337=Uldaman, 1584=Blackrock Depths, 46=Burning Steppes, 1377=Silithus). Wowhead location -6 (and Forever-only 16651) is unmapped and omitted. elite/rare derived from Wowhead 'classification' codes (0=normal, 1=elite, 2=rare elite, 4=rare).",
+    "wowhead-classic beast observations with rank null: the beast is in Wowhead's tameable list (levels from there) but is not in the hevgirl comment.",
+    "wowhead-forever: Wowhead HAS a Forever section. The Forever pet family page (https://www.wowhead.com/forever/pet=27) loaded and gives the same spell IDs and learn levels per rank, each marked envChange 'updated / values_changed' (damage reduced on Forever). It has no tp values and does not say which beast teaches which rank, so wowhead-forever beast observations have rank null and only record level/zone/classification from the Forever tameable listview. Wowhead Forever spell/NPC pages (and later all Wowhead pages) returned HTTP 403 after the first batch of requests; not retried.",
+    "petopia-classic and petopia-forever are the SAME SITE (wow-petopia.com /classic/abilities.php and /forever/abilities.php) and must count as one source. Petopia links its beasts to Wowhead NPC pages; that is where the npcIds in petopia observations come from. Petopia gives pet level and TP per rank but no spell IDs (spellIds [] = not given).",
+    "warcrafttavern (warcrafttavern.com/wow-classic/hunter-pets/<colour>-<family>/) lists beasts grouped by model colour with 'Pet Level', 'Skills When Tamed', 'Zone'. No NPC IDs (matched by name to Wowhead IDs). Probably not exhaustive. Curly apostrophes in zone names normalized to ASCII. Zone spelling 'Ferelas' is as the site shows it (typo for Feralas).",
+    "warcraft.wiki.gg: curl was blocked (403 'Blocked - wiki.gg'); WebFetch worked. The ability page gives spell IDs only for the first and last rank and a single 'Level learned' value; it lists no beasts and no TP costs. The wiki pet-family page lists no tameable beasts with ranks either.",
+    "Rank 1 (24844): no beast teaches it in any source (hevgirl comment: 'Currently Unavailable'; Petopia classic and forever: 'No known training source'; Warcraft Tavern lists none).",
+    "FOREVER-SPECIFIC: Petopia Forever lists a new beast 'Vale Screamer' (npc 272401, level 60, Feralas) as teaching Rank 6. Wowhead Forever's tameable list confirms npc 272401 Vale Screamer, 60-60, Feralas, normal. Not present in Classic data.",
+    "FOREVER-SPECIFIC: Wowhead Forever's wind serpent tameable list also has new NPCs 269057 Mirrorscale (48, Feralas, normal) and 272396 Durotar Windviper (no level/zone shown). No source says which Lightning Breath rank (if any) they teach, so they are NOT included as beasts. Worth checking in-game.",
+    "FOREVER-SPECIFIC: Petopia Forever places Deviate Coiler (3630) and Deviate Stinglash (3631) in 'The Barrens' (Petopia classic: 'Wailing Caverns (Dungeon)'). Wowhead Forever gives locations [17 The Barrens, -6] for both; Wowhead Classic gives [17] for Coiler and [-6] for Stinglash. Warcraft Tavern: Coiler The Barrens, Stinglash Wailing Caverns.",
+    "FOREVER-SPECIFIC: damage lower on Forever (R1 8-10, R2 20-22, R3 32-36, R4 46-54, R5 71-81, R6 86-98 vs Classic 11-14 / 21-24 / 36-41 / 52-61 / 80-93 / 99-113 per Wowhead envChange). Wiki says the Forever version has only the global cooldown (Classic: 10 sec). Wowhead Forever wind serpent family abilities: Bite, Dive, Lightning Breath.",
+    "Soulflayer (npc 11359, 61, Zul'Gurub, elite per Wowhead) is listed as teaching Lightning Breath 6 only by Warcraft Tavern; the hevgirl comment and both Petopia pages list only Son of Hakkar for Rank 6 (plus Vale Screamer on Forever). Doubtful.",
+    "Spell ID series per Wowhead: 24844, 25008, 25009, 25010, 25011, 25012 (learn levels 1/12/24/36/48/60). warcraft.wiki.gg says the Forever IDs are the same as Classic."
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "ability": "growl",
+  "name": "Growl",
+  "icon": "ability_physical_taunt",
+  "trainerOnly": true,
+  "researcher": "trainer-abilities research agent, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=2649",
+          "spellIds": [
+            2649,
+            1853
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=2649",
+          "spellIds": [
+            2649,
+            1853
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": [
+            2649
+          ],
+          "petLevel": 1,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Training_point",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Pet_abilities_(Classic)",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Growl_(pet_ability)",
+          "spellIds": [
+            2649
+          ],
+          "petLevel": 1,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=14916",
+          "spellIds": [
+            14916,
+            14922
+          ],
+          "petLevel": 10,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=14916",
+          "spellIds": [
+            14916,
+            14922
+          ],
+          "petLevel": 10,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 10,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Training_point",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 0
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=14917",
+          "spellIds": [
+            14917,
+            14923
+          ],
+          "petLevel": 20,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=14917",
+          "spellIds": [
+            14917,
+            14923
+          ],
+          "petLevel": 20,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 20,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Training_point",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 0
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=14918",
+          "spellIds": [
+            14918,
+            14924
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=14918",
+          "spellIds": [
+            14918,
+            14924
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Training_point",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 0
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=14919",
+          "spellIds": [
+            14919,
+            14925
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=14919",
+          "spellIds": [
+            14919,
+            14925
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Training_point",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 0
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=14920",
+          "spellIds": [
+            14920,
+            14926
+          ],
+          "petLevel": 50,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=14920",
+          "spellIds": [
+            14920,
+            14926
+          ],
+          "petLevel": 50,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Training_point",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 0
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=14921",
+          "spellIds": [
+            14921,
+            14927
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=14921",
+          "spellIds": [
+            14921,
+            14927
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 60,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Training_point",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 0
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Growl_(pet_ability)",
+          "spellIds": [
+            14921
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [],
+  "notes": [
+    "Trainer-taught active ability (taunt); all pet families can learn it. 7 ranks in Classic Era and on Forever.",
+    "Automatic ranks: warcraft.wiki.gg Beast_Training (https://warcraft.wiki.gg/wiki/Beast_Training) says 'Beast Training comes with only Growl (ranks 1 and 2) by default' and higher ranks come from pet trainers. Warcraft Tavern (https://www.warcrafttavern.com/wow-classic/guides/hunter-pets/ and the Forever version https://www.warcrafttavern.com/forever/guides/hunter-pet-abilities/) says Growl 'is available every 10 levels starting from level 10' from the pet trainer. A Blizzard forum post (https://us.forums.blizzard.com/en/wow/t/hunter-please-read/307012) describes Growl 'that you learn at lvl 10, free from the trainer'. mmonster.co says Growl is taught by the trainer 'from rank 3'. So ranks 1-2 are reported as automatic/default by the wiki; forum wording is less clear.",
+    "Training points: warcraft.wiki.gg Training_point says 'Growl cost no training points at any rank'; mmonster.co (Forever) lists 0 TP at every rank; fan sites ForeverChanges/wow4ever also say 'Growl none'.",
+    "Rank 1 teach spell 1853 (Growl, 100 yd, Instant, Requires Hunter, level 1) exists on both Wowhead Classic and Forever; Wowhead Forever search lists 1853 as 'Uncategorized > Hunter' while 14927 (rank 7 teach) is 'Beast Training Abilities'.",
+    "Wowhead Classic and Forever tooltips for 2649 and 14916-14921 are identical apart from formatting ('Instant cast' vs 'Instant').",
+    "spellIds order in wowhead observations: [petSpellId, teachSpellId]. The first ID is the pet's own spell (what the pet casts / has as a passive; Wowhead Forever categorises it as 'Generic Pet Abilities'). The second ID is the hunter-side 'teach' spell (100 yd range, Instant, 'Requires Hunter'; Wowhead Classic shows its Effect #1 as 'Learn Spell' -> pet spell, e.g. 4195 -> 4187; Wowhead Forever categorises these as 'Beast Training Abilities').",
+    "Wowhead observations were read from Wowhead's tooltip JSON endpoint (nether.wowhead.com/classic|forever/tooltip/spell/<id>); petLevel = the 'Requires level N' line of the spell named in the observation url. Wowhead does not publish training point costs on spell pages, so tp is null there.",
+    "Wowhead Classic tooltips do not print rank numbers for Growl/Great Stamina/Natural Armor/resistances; rank order is by required level and effect value. Wowhead Forever tooltips/search results do print 'Rank N' and agree with this order.",
+    "mmonster.co is a WoW Forever fan guide; it says its trainer prices are 'Client data' read during the Forever beta and 'not checked again since' (page build 70959, updated 2026-11-18).",
+    "tentonhammer.com table is a 2016 page written for TBC-era data (it lists an extra rank 11 for Great Stamina/Natural Armor and rank 5 for resistances, which do not exist in Classic). Only the ranks that exist in Classic are recorded here; treat its levels with caution.",
+    "Petopia Classic (petopia.brashendeavors.net) could not be read: TLS certificate error on fetch; web.archive.org also blocked. Wowhead Classic guide/calculator pages returned HTTP 403 to direct fetch."
+  ]
+}

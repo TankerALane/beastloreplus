@@ -1,0 +1,304 @@
+{
+  "ability": "swipe",
+  "name": "Swipe",
+  "icon": "inv_misc_monsterclaw_03",
+  "trainerOnly": false,
+  "researcher": "research agent (Forever family abilities), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe1",
+          "spellIds": [],
+          "petLevel": 12,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264494",
+          "spellIds": [
+            1264494
+          ],
+          "petLevel": 12,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe2",
+          "spellIds": [],
+          "petLevel": 24,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264497",
+          "spellIds": [
+            1264497
+          ],
+          "petLevel": 24,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe3",
+          "spellIds": [],
+          "petLevel": 36,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264498",
+          "spellIds": [
+            1264498
+          ],
+          "petLevel": 36,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe4",
+          "spellIds": [],
+          "petLevel": 48,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264501",
+          "spellIds": [
+            1264501
+          ],
+          "petLevel": 48,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe5",
+          "spellIds": [],
+          "petLevel": 60,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264502",
+          "spellIds": [
+            1264502
+          ],
+          "petLevel": 60,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 1797,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe1",
+          "name": "Giant Grizzled Bear",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1797",
+          "name": "Giant Grizzled Bear",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1188,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe1",
+          "name": "Grizzled Black Bear",
+          "rank": 1,
+          "minLevel": 13,
+          "maxLevel": 14,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1188",
+          "name": "Grizzled Black Bear",
+          "rank": null,
+          "minLevel": 13,
+          "maxLevel": 14,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 259388,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe1",
+          "name": "Mystmane",
+          "rank": 1,
+          "minLevel": 13,
+          "maxLevel": 13,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "elite": false,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=259388",
+          "name": "Mystmane",
+          "rank": null,
+          "minLevel": 13,
+          "maxLevel": 13,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 271334,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe2",
+          "name": "Maddened Rotclaw",
+          "rank": 2,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Wetlands"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=271334",
+          "name": "Maddened Rotclaw",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Wetlands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2356,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe2",
+          "name": "Elder Gray Bear",
+          "rank": 2,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2356",
+          "name": "Elder Gray Bear",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 10806,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#swipe5",
+          "name": "Ursius",
+          "rank": 5,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Winterspring"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=10806",
+          "name": "Ursius",
+          "rank": null,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Winterspring"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Petopia: no known taming source for ranks 3 and 4. Ursius (rank 5) is Elite per both sources. warcraft.wiki.gg Swipe (Forever) page not found.",
+    "Petopia Forever (wow-petopia.com/forever/abilities.php) lists ranks with pet level, TP cost and beasts per rank; beast NPC IDs come from its Wowhead Forever links. Petopia states its data comes from a limited beta and may change. Petopia gives no spell IDs. Its rank/beast lists are its own work, but its NPC IDs/links point to Wowhead.",
+    "wowhead-forever observations come from nether.wowhead.com/forever/tooltip/{spell,npc}/<id> (full www.wowhead.com pages return 403) and the www.wowhead.com/forever/search/suggestions-template endpoint (used for rank labels and spell IDs). Spell tooltips give 'Requires level N' (recorded as petLevel) and a 'Rank N' label; they do NOT show training point cost, so tp is null for wowhead-forever.",
+    "Wowhead NPC tooltips show level range, classification (Normal/Elite/Rare) and a zone ID only; they do not say which ability rank the beast teaches, so wowhead-forever beast observations have rank null (the list of beasts itself comes from Petopia). Zone IDs were turned into names with a fixed classic zone-ID table; Forever-only zone IDs were confirmed via Wowhead search (16591 Riverglades, 16593 Zephras Isle, 16611 Ruins of Lordaeron, 16550 The Drowned City, 16732 Excavation Site: Wetlands).",
+    "Petopia elite/rare flags come from its 'Rare Pets' and 'Elite Pets' browse pages (matched by name); when a beast is not on those pages the flag is omitted, not set false.",
+    "Blizzard announcement https://worldofwarcraft.blizzard.com/news/24301515 confirms the ability name and family only (no ranks, levels, TP or beasts), so no blizzard observation rows were added.",
+    "Spell IDs recorded are the 'Pet Abilities' (pet-cast) spells. Wowhead also lists separate hunter-side 'Abilities' spells with the same name/rank (presumably the learn/teach spells); those are listed in notes, not in spellIds.",
+    "Petopia lists the TP cost of every rank of these Forever family abilities as 0."
+  ]
+}

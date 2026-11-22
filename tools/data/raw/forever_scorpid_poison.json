@@ -1,0 +1,540 @@
+{
+  "ability": "scorpid_poison",
+  "name": "Scorpid Poison",
+  "icon": "ability_poisonsting",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "spellIds": null,
+          "petLevel": 8,
+          "tp": 10,
+          "description": "Inflicts 5 Nature damage over 10 sec. Effect can stack up to 5 times on a single target."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 15,
+          "description": "Inflicts 10 Nature damage over 10 sec. Effect can stack up to 5 times on a single target."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20,
+          "description": "Inflicts 20 Nature damage over 10 sec. Effect can stack up to 5 times on a single target."
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25,
+          "description": "Inflicts 25 Nature damage over 10 sec. Effect can stack up to 5 times on a single target."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 3127,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Venomtail Scorpid",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3127"
+        }
+      ]
+    },
+    {
+      "npcId": 3226,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Corrupted Scorpid",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3226"
+        }
+      ]
+    },
+    {
+      "npcId": 5823,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Death Flayer",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5823"
+        }
+      ]
+    },
+    {
+      "npcId": 3250,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Silithid Creeper",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3250"
+        }
+      ]
+    },
+    {
+      "npcId": 3252,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Sillithid Swarmer",
+          "rank": 1,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3252"
+        }
+      ]
+    },
+    {
+      "npcId": 4696,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpashi Snapper",
+          "rank": 2,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4696"
+        }
+      ]
+    },
+    {
+      "npcId": 4140,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpid Reaver",
+          "rank": 2,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4140"
+        }
+      ]
+    },
+    {
+      "npcId": 4139,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpid Terror",
+          "rank": 2,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4139"
+        }
+      ]
+    },
+    {
+      "npcId": 4697,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpashi Lasher",
+          "rank": 2,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4697"
+        }
+      ]
+    },
+    {
+      "npcId": 5937,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Vile Sting",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5937"
+        }
+      ]
+    },
+    {
+      "npcId": 7078,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Cleft Scorpid",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7078"
+        }
+      ]
+    },
+    {
+      "npcId": 4699,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpashi Venomlash",
+          "rank": 2,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4699"
+        }
+      ]
+    },
+    {
+      "npcId": 5422,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpid Hunter",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5422"
+        }
+      ]
+    },
+    {
+      "npcId": 7405,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Deadly Cleft Scorpid",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7405"
+        }
+      ]
+    },
+    {
+      "npcId": 5423,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpid Tail Lasher",
+          "rank": 3,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5423"
+        }
+      ]
+    },
+    {
+      "npcId": 5424,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpid Dunestalker",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5424"
+        }
+      ]
+    },
+    {
+      "npcId": 7803,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpid Duneburrower",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7803"
+        }
+      ]
+    },
+    {
+      "npcId": 8926,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Deep Stinger",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths (Dungeon)"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8926"
+        }
+      ]
+    },
+    {
+      "npcId": 5988,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpok Stinger",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5988"
+        }
+      ]
+    },
+    {
+      "npcId": 9691,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Venomtip Scorpid",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=9691"
+        }
+      ]
+    },
+    {
+      "npcId": 9695,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Deathlash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=9695"
+        }
+      ]
+    },
+    {
+      "npcId": 11735,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Stonelash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Silithus"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=11735"
+        }
+      ]
+    },
+    {
+      "npcId": 14476,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "name": "Krellack",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Silithus"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=14476"
+        }
+      ]
+    },
+    {
+      "npcId": 9698,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "name": "Firetail Scorpid",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=9698"
+        }
+      ]
+    },
+    {
+      "npcId": 11736,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "name": "Stonelash Pincer",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Silithus"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=11736"
+        }
+      ]
+    },
+    {
+      "npcId": 11737,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "name": "Stonelash Flayer",
+          "rank": 4,
+          "minLevel": 58,
+          "maxLevel": 59,
+          "zones": [
+            "Silithus"
+          ],
+          "family": "Scorpid",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=11737"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #scorpidpoison was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Scorpids. Petopia Classic lists: Scorpids.",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (1): Scorpashi Lasher 4697 r2 (Scorpid, 34-35, Desolace)",
+    "No beasts removed vs Petopia Classic."
+  ]
+}

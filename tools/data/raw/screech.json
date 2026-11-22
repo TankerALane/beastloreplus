@@ -1,0 +1,502 @@
+{
+  "ability": "screech",
+  "name": "Screech",
+  "icon": "ability_hunter_pet_bat",
+  "trainerOnly": false,
+  "researcher": "research agent (dive/screech), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24423",
+          "spellIds": [
+            24423
+          ],
+          "petLevel": 8,
+          "tp": 10
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Screech_(pet_ability)",
+          "spellIds": [
+            24423
+          ],
+          "petLevel": 8,
+          "tp": 10
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech1",
+          "spellIds": null,
+          "petLevel": 8,
+          "tp": 10
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24577",
+          "spellIds": [
+            24577
+          ],
+          "petLevel": 24,
+          "tp": 15
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Screech_(pet_ability)",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 15
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech2",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 15
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24578",
+          "spellIds": [
+            24578
+          ],
+          "petLevel": 48,
+          "tp": 20
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Screech_(pet_ability)",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 20
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech3",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 20
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24579",
+          "spellIds": [
+            24579
+          ],
+          "petLevel": 56,
+          "tp": 25
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Screech_(pet_ability)",
+          "spellIds": [
+            24579
+          ],
+          "petLevel": 56,
+          "tp": 25
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech4",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 154,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=154",
+          "name": "Greater Fleshripper",
+          "rank": 1,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Westfall"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech1",
+          "name": "Greater Fleshripper",
+          "rank": 1,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "warcrafttavern-classic",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/greater-fleshripper/",
+          "name": "Greater Fleshripper",
+          "rank": 1,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Westfall"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4158,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4158",
+          "name": "Salt Flats Vulture",
+          "rank": 2,
+          "minLevel": 32,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech2",
+          "name": "Salt Flats Vulture",
+          "rank": 2,
+          "minLevel": 32,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "warcrafttavern-classic",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/salt-flats-vulture/",
+          "name": "Salt Flats Vulture",
+          "rank": 2,
+          "minLevel": 32,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4861,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4861",
+          "name": "Shrike Bat",
+          "rank": 2,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Uldaman"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech2",
+          "name": "Shrike Bat",
+          "rank": 2,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern-classic",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/shrike-bat/",
+          "name": "Shrike Bat",
+          "rank": 2,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Uldaman"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4694,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4694",
+          "name": "Dread Ripper",
+          "rank": 2,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech2",
+          "name": "Dread Ripper",
+          "rank": 2,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "warcrafttavern-classic",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/dread-ripper/",
+          "name": "Dread Ripper",
+          "rank": 2,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Desolace"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 7097,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=7097",
+          "name": "Ironbeak Owl",
+          "rank": 3,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech3",
+          "name": "Ironbeak Owl",
+          "rank": 3,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ]
+        },
+        {
+          "source": "warcrafttavern-classic",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ironbeak-owl/",
+          "name": "Ironbeak Owl",
+          "rank": 3,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8927,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=8927",
+          "name": "Dark Screecher",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech3",
+          "name": "Dark Screecher",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern-classic",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/dark-screecher/",
+          "name": "Dark Screecher",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1809,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1809",
+          "name": "Carrion Vulture",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Western Plaguelands",
+            "Tirisfal Glades"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech3",
+          "name": "Carrion Vulture",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Western Plaguelands"
+          ]
+        },
+        {
+          "source": "warcrafttavern-classic",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/carrion-vulture/",
+          "name": "Carrion Vulture",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Western Plaguelands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8602,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=8602",
+          "name": "Monstrous Plaguebat",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 58,
+          "zones": [
+            "Eastern Plaguelands"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech4",
+          "name": "Monstrous Plaguebat",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 58,
+          "zones": [
+            "Eastern Plaguelands"
+          ]
+        },
+        {
+          "source": "warcrafttavern-classic",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/monstrous-plaguebat/",
+          "name": "Monstrous Plaguebat",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 58,
+          "zones": [
+            "Eastern Plagulands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 7456,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=7456",
+          "name": "Winterspring Screecher",
+          "rank": 4,
+          "minLevel": 57,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#screech4",
+          "name": "Winterspring Screecher",
+          "rank": 4,
+          "minLevel": 57,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ]
+        },
+        {
+          "source": "warcrafttavern-classic",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/winterspring-screecher/",
+          "name": "Winterspring Screecher",
+          "rank": 4,
+          "minLevel": 57,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "wowhead-classic rank rows: spell ID and petLevel come from each Wowhead Classic spell page ('Requires level N' in tooltip/infobox; the hunter-learnable version). TP is NOT in Wowhead's own data: it comes from a user comment by 'hevgirl' on the spell pages (table 'Pet Level: N, Cost: N TP'). The spell pages have no 'Taught by NPC' listview for these abilities, and Wowhead NPC pages do not list pet-teachable abilities (their 'abilities' tab shows only NPC combat spells).",
+    "wowhead-classic beast observations: the beast->rank mapping comes from the same hevgirl user comment on the spell page (2019). Name/level/zones/elite/rare come from the Wowhead Classic NPC page (g_npcs data: minlevel/maxlevel/classification; zones from the page's meta description). Classification mapping used: 0=normal, 1=elite, 2=rare elite, 4=rare.",
+    "IMPORTANT for the generator: the hevgirl comment's beast lists are identical in membership and order to Petopia Classic's lists, so they are very likely copied from Petopia. Treat wowhead-classic and petopia-classic as ONE source for the beast->rank mapping. Levels, zones and flags from the Wowhead NPC pages are independent.",
+    "warcrafttavern-classic (warcrafttavern.com/wow-classic/hunter-pets/pets/<slug>/) gives per-pet 'Skills When Tamed', Zone and Pet Level. It is a third site and agrees with Petopia on every beast/rank here. It gives no NPC IDs, so its observations are attached by name. Its zone spellings are recorded as shown ('Ferelas', 'Eastern Plagulands'). 'The Temple of Atal’Hakkar' uses a typographic apostrophe as on the site. Its independence from Petopia is unknown.",
+    "Completeness check: Warcraft Tavern pet pages were fetched for every Classic-ID (<100000) Bat, Carrion Bird, Owl/Bird of Prey and Wind Serpent that outof.games' Forever creature database lists (about 90 NPCs). No Dive/Screech teachers turned up beyond those listed here. These pages returned 404 and were not checked: 1810 Rotting Condor, 1811 Plaguewing Vulture, 4011 Young Pridewing, 4346-4348 Noxious Flayer/Reaver/Shredder, 4862 Rabid Shrike Bat, 5983 Bonepicker, 10581 Young Arikara, 11369.",
+    "warcraft.wiki.gg blocks curl (it returns 'Blocked - wiki.gg'), but WebFetch worked. The wiki gives rank/level/TP, plus spell IDs for only the first and last rank (in its external links). It lists no individual beasts.",
+    "Wowhead Forever (https://www.wowhead.com/forever/...) returned HTTP 403 for every spell/NPC URL tried, so whether Wowhead has a Forever section with data could not be checked.",
+    "FOREVER-SPECIFIC (major): Warcraft Tavern's WoW Forever guide (https://www.warcrafttavern.com/forever/guides/hunter-pet-families/, beta-era) describes REDESIGNED pet families: each family has one special ability plus shared secondaries. Bat: special Sonic Blast; secondaries Bite, Dive, Cower. Bird of Prey (replaces Owl): special 'Mine!'; Claw, Dive, Cower. Carrion Bird: special 'Demoralizing Screech' (marked Updated, 'Does not stack with Demoralizing Roar'); Bite, Claw, Dive, Cower. Wind Serpent: special Lightning Breath; Bite, Dive, Cower. A classic-hunter/forever-hunter GitHub wiki (https://github-wiki-see.page/m/classic-hunter/forever-hunter/wiki/Pet-Families-and-Abilities) agrees: Dive for Bat, Bird of Prey, Carrion Bird, Wind Serpent (+40/60/80% by rank); Demoralizing Screech is Carrion Bird's unique ability, 'not a shared trainable ability' for Bat or Bird of Prey. If this is right, on Forever Screech may be Carrion-Bird-only and possibly not learned from beasts at all, and the Classic-era beast lists in this file may not apply. Neither Forever source gives ranks, levels, TP or beast lists.",
+    "outof.games Forever DB (game data 1.60.1, https://outof.games/realms/forever/creatures/family/...) confirms that every beast in this file exists and is tameable on Forever, with these families: Bat (4538, 4539, 4861, 8600, 8602, 8927), Carrion Bird (154, 1809, 2578, 2579, 2931, 4158, 4693, 4694, 5428, 5429, 5430, 6013, 8207, 8299), Bird of Prey (7097, 7098, 7099, 7455, 7456, 14343), Wind Serpent (5307, 5308, 5349, 5708). It also lists Forever-only creatures in these families (IDs 2xxxxx, e.g. 272342 Gargantuan Plaguebat, 255174 Blind Screecher, 247033 Bloodshrike, 272401 Vale Screamer). It gives no ability, level or zone data for them, so whether they teach Dive/Screech is unknown.",
+    "The warcraft.wiki.gg Screech (pet ability) rank table also lists a Rank 5 (33-61 dmg, -210 AP, level 64, 29 TP), which is TBC; the Classic infobox says 4 ranks. Rank 5 is left out here.",
+    "Wowhead Classic 'Used by Pet' for Screech: Bat, Carrion Bird, Owl. Petopia: Bats, Carrion Birds, Owls.",
+    "Warcraft Tavern's Classic 'Hunter Pet Abilities' guide lists Screech max rank R4 for Bats, Carrion Birds, Owls, with source 'Monstrous Plaguebat'."
+  ]
+}

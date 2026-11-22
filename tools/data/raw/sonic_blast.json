@@ -1,0 +1,275 @@
+{
+  "ability": "sonic_blast",
+  "name": "Sonic Blast",
+  "icon": "ability_vehicle_sonicshockwave",
+  "trainerOnly": false,
+  "researcher": "research agent (Forever family abilities), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast1",
+          "spellIds": [],
+          "petLevel": 12,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264478",
+          "spellIds": [
+            1264478
+          ],
+          "petLevel": 12,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast2",
+          "spellIds": [],
+          "petLevel": 24,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264479",
+          "spellIds": [
+            1264479
+          ],
+          "petLevel": 24,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast3",
+          "spellIds": [],
+          "petLevel": 36,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264480",
+          "spellIds": [
+            1264480
+          ],
+          "petLevel": 36,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast4",
+          "spellIds": [],
+          "petLevel": 48,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264481",
+          "spellIds": [
+            1264481
+          ],
+          "petLevel": 48,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast5",
+          "spellIds": [],
+          "petLevel": 60,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264482",
+          "spellIds": [
+            1264482
+          ],
+          "petLevel": 60,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 277882,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast1",
+          "name": "Foothills Duskbat",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=277882",
+          "name": "Foothills Duskbat",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3868,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast1",
+          "name": "Blood Seeker",
+          "rank": 1,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Shadowfang Keep (Dungeon)"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3868",
+          "name": "Blood Seeker",
+          "rank": null,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Shadowfang Keep"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 10357,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast2",
+          "name": "Ressan the Needler",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "elite": false,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=10357",
+          "name": "Ressan the Needler",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 277881,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast2",
+          "name": "Bloodwing Bat",
+          "rank": 2,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=277881",
+          "name": "Bloodwing Bat",
+          "rank": null,
+          "minLevel": 24,
+          "maxLevel": 26,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 262037,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#sonicblast3",
+          "name": "Roosting Duskbat",
+          "rank": 3,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=262037",
+          "name": "Roosting Duskbat",
+          "rank": null,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Wowhead tooltips for 1264478-1264482 show no 'Rank N' text, but the Wowhead search endpoint labels them Rank 1-5 and their required levels are 12/24/36/48/60. Wowhead also has 'Uncategorized' Sonic Blast spells 1264483, 1264484, 1264486, 1264487, 1264488 (Rank 1-5, icon spell_nature_lightning, stun wording) - likely NPC versions, not recorded.",
+    "Petopia: no known taming source for ranks 4 and 5.",
+    "Level differences: Ressan the Needler Petopia 12 vs Wowhead 11-12; Bloodwing Bat Petopia 25-26 vs Wowhead 24-26. Petopia lists Ressan (level 12) under rank 2 (pet level 24) - doubtful but recorded as Petopia shows it. Blood Seeker (Shadowfang Keep) is Elite per Wowhead but not on Petopia's elite page.",
+    "Petopia Forever (wow-petopia.com/forever/abilities.php) lists ranks with pet level, TP cost and beasts per rank; beast NPC IDs come from its Wowhead Forever links. Petopia states its data comes from a limited beta and may change. Petopia gives no spell IDs. Its rank/beast lists are its own work, but its NPC IDs/links point to Wowhead.",
+    "wowhead-forever observations come from nether.wowhead.com/forever/tooltip/{spell,npc}/<id> (full www.wowhead.com pages return 403) and the www.wowhead.com/forever/search/suggestions-template endpoint (used for rank labels and spell IDs). Spell tooltips give 'Requires level N' (recorded as petLevel) and a 'Rank N' label; they do NOT show training point cost, so tp is null for wowhead-forever.",
+    "Wowhead NPC tooltips show level range, classification (Normal/Elite/Rare) and a zone ID only; they do not say which ability rank the beast teaches, so wowhead-forever beast observations have rank null (the list of beasts itself comes from Petopia). Zone IDs were turned into names with a fixed classic zone-ID table; Forever-only zone IDs were confirmed via Wowhead search (16591 Riverglades, 16593 Zephras Isle, 16611 Ruins of Lordaeron, 16550 The Drowned City, 16732 Excavation Site: Wetlands).",
+    "Petopia elite/rare flags come from its 'Rare Pets' and 'Elite Pets' browse pages (matched by name); when a beast is not on those pages the flag is omitted, not set false.",
+    "Blizzard announcement https://worldofwarcraft.blizzard.com/news/24301515 confirms the ability name and family only (no ranks, levels, TP or beasts), so no blizzard observation rows were added.",
+    "Spell IDs recorded are the 'Pet Abilities' (pet-cast) spells. Wowhead also lists separate hunter-side 'Abilities' spells with the same name/rank (presumably the learn/teach spells); those are listed in notes, not in spellIds.",
+    "Petopia lists the TP cost of every rank of these Forever family abilities as 0."
+  ]
+}

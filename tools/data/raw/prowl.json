@@ -1,0 +1,319 @@
+{
+  "ability": "prowl",
+  "name": "Prowl",
+  "icon": "ability_druid_supriseattack",
+  "trainerOnly": false,
+  "researcher": "research agent (Cower/Dash/Prowl), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24450",
+          "spellIds": [
+            24450
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Prowl_(pet_ability)",
+          "spellIds": [
+            24450
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl1",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 15
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24452",
+          "spellIds": [
+            24452
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl2",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24453",
+          "spellIds": [
+            24453
+          ],
+          "petLevel": 50,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Prowl_(pet_ability)",
+          "spellIds": [
+            24453
+          ],
+          "petLevel": null,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl3",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 25
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://warcrafttavern.com/wow-classic/guides/hunter-pet-abilities",
+          "spellIds": [
+            24455
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 2406,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl1",
+          "name": "Mountain Lion",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Alterac Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/mountain-lion/",
+          "name": "Mountain Lion",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2731,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl1",
+          "name": "Ridge Stalker",
+          "rank": 1,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ridge-stalker/",
+          "name": "Ridge Stalker",
+          "rank": 1,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 684,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl1",
+          "name": "Shadowmaw Panther",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/shadowmaw-panther/",
+          "name": "Shadowmaw Panther",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 768,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl1",
+          "name": "Shadow Panther",
+          "rank": 1,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Swamp of Sorrows"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2734,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl2",
+          "name": "Ridge Stalker Patriarch",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ridge-stalker-patriarch/",
+          "name": "Ridge Stalker Patriarch",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1713,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl2",
+          "name": "Elder Shadowmaw Panther",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-shadowmaw-panther/",
+          "name": "Elder Shadowmaw Panther",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2522,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl3",
+          "name": "Jaguero Stalker",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/jaguero-stalker/",
+          "name": "Jaguero Stalker",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 7432,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#prowl3",
+          "name": "Frostsaber Stalker",
+          "rank": 3,
+          "minLevel": 59,
+          "maxLevel": 60,
+          "zones": [
+            "Winterspring"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/frostsaber-stalker/",
+          "name": "Frostsaber Stalker",
+          "rank": 3,
+          "minLevel": 59,
+          "maxLevel": 60,
+          "zones": [
+            "Winterspring"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Wowhead Classic spell pages (classic/spell=<id>) have NO 'Taught by NPC' / 'Learned from' listview for these pet abilities; only 'Used by Pet' (families) and 'See also' (other ranks). Rank spell IDs and 'Requires level N' (recorded as petLevel) come from those pages. Wowhead shows no TP cost.",
+    "Wowhead Classic NPC pages: the one page fetched (npc=3121 Durotar Tiger: 'Level: 7 - 8', Durotar, 'Tameable (Cat)') does not list the abilities the beast teaches; further NPC page fetches were then blocked by Wowhead (HTTP 403 'Request blocked'), so no Wowhead beast observations were recorded and elite/rare flags could not be taken from Wowhead.",
+    "Wowhead has a Forever section (search results show wowhead.com/forever/... NPC URLs) but every /forever/ page returned HTTP 403 to both curl and WebFetch; no wowhead-forever data recorded.",
+    "warcraft.wiki.gg ability pages give only general data (rank count, base level, some spell IDs in external-link headers, icon); no per-rank TP costs and no beast lists. The wiki's Beast Training page states Cower, Dash and Prowl are learned from tamed beasts (not pet trainers), hence trainerOnly=false.",
+    "petopia-classic = https://www.wow-petopia.com/classic/abilities.php (one page, anchors per rank). Gives pet level + TP per rank and beasts with (classic.wowhead.com) NPC IDs, family, level range, zone. No elite/rare flags. No spell IDs (null).",
+    "warcrafttavern = warcrafttavern.com WoW Classic hunter-pet model pages (per beast: Pet Level, 'Skills When Tamed', Zone). No NPC IDs; matched to Petopia's IDs by exact name. Probably compiled from the same community data as Petopia, but it differs in places (see notes below), so it is recorded as a separate source; the generator may want to weight it as partially dependent on Petopia. Zone strings are recorded as shown, including site typos (e.g. 'Eastern Plagulands', 'Ferelas'). Its hunter-pet-abilities guide links one spell ID per ability for the max rank (16698 Cower, 23112 Dash, 24455 Prowl); these differ from the Wowhead pet-spell IDs and look like the Beast Training 'teach' spell variants. Recorded as-is in the warcrafttavern rank observation, unverified.",
+    "No source that loaded showed elite/rare flags, so elite/rare are omitted. Nothing Forever-specific was found; all data is the Classic Era baseline. (The wiki's Cower page says the ability 'remains in Classic and Forever'.)",
+    "Petopia rank data: pet levels 30/40/50, TP 15/20/25. Wowhead 'Requires level' matches the levels.",
+    "Conflict: Mountain Lion (npc 2406) zone: Petopia 'Alterac Mountains', warcrafttavern 'Hillsbrad Foothills'.",
+    "Shadow Panther (npc 768, Swamp of Sorrows, Prowl 1) appears only on Petopia; warcrafttavern has no entry for it.",
+    "Doubt: warcraft.wiki.gg Talk:Prowl_(pet_ability) has one player saying Jaguero Stalkers did not give Prowl 3 after taming twelve, and another saying they did. Both Petopia and warcrafttavern list Jaguero Stalker (npc 2522) as Prowl 3."
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "ability": "shell_shield",
+  "name": "Shell Shield",
+  "icon": "ability_hunter_pet_turtle",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "spellIds": null,
+          "petLevel": 20,
+          "tp": 15,
+          "description": "Reduces all damage your pet takes by 50% and increases the time between your pet's attacks by 60%, but deals more damage with each attack. Lasts 12 sec."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 3653,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Kresh",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3653"
+        }
+      ]
+    },
+    {
+      "npcId": 4824,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Aku'mai Fisher",
+          "rank": 1,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4824"
+        }
+      ]
+    },
+    {
+      "npcId": 4887,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Ghamoo-ra",
+          "rank": 1,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4887"
+        }
+      ]
+    },
+    {
+      "npcId": 4825,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Aku'mai Snapjaw",
+          "rank": 1,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4825"
+        }
+      ]
+    },
+    {
+      "npcId": 2408,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Snapjaw",
+          "rank": 1,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2408"
+        }
+      ]
+    },
+    {
+      "npcId": 14223,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Cranky Benj",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Alterac Mountains"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=14223"
+        }
+      ]
+    },
+    {
+      "npcId": 263615,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Krek the Noxious",
+          "rank": 1,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=263615"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #shellshield was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Turtles. Petopia Classic lists: Turtles.",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (1): Krek the Noxious 263615 r1 (Turtle, 42, Riverglades)",
+    "No beasts removed vs Petopia Classic.",
+    "INCONSISTENCY on Petopia Forever: these beasts are listed as teachers but their family is not in the page's 'Can be learned by' list: Aku'mai Snapjaw 4825 (Crab, r1). Recorded as listed."
+  ]
+}

@@ -1,0 +1,1513 @@
+{
+  "ability": "bite",
+  "name": "Bite",
+  "icon": "ability_racial_cannibalize",
+  "trainerOnly": false,
+  "researcher": "research agent (Bite r5-8), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=17258",
+          "spellIds": [
+            17258
+          ],
+          "petLevel": 32,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "spellIds": null,
+          "petLevel": 32,
+          "tp": 13
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "spellIds": null,
+          "petLevel": 32,
+          "tp": 13
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "spellIds": null,
+          "petLevel": 32,
+          "tp": 13
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=17259",
+          "spellIds": [
+            17259
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 17
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 17
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 17
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=17260",
+          "spellIds": [
+            17260
+          ],
+          "petLevel": 48,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 21
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 21
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 21
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=17261",
+          "spellIds": [
+            17261
+          ],
+          "petLevel": 56,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite8",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite8",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 769,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Deathstrike Tarantula",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Swamp of Sorrows"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Deathstrike Tarantula",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Swamp of Sorrows"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Deathstrike Tarantula",
+          "rank": 6,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Swamp of Sorrows"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1087,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Sawtooth Snapper",
+          "rank": 6,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Swamp of Sorrows"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Sawtooth Snapper",
+          "rank": 6,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Swamp of Sorrows"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1817,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Diseased Wolf",
+          "rank": 7,
+          "minLevel": 53,
+          "maxLevel": 54,
+          "zones": [
+            "Western Plaguelands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Diseased Wolf",
+          "rank": 7,
+          "minLevel": 53,
+          "maxLevel": 54,
+          "zones": [
+            "Western Plaguelands"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Diseased Wolf",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Western Plagueland"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1824,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Plague Lurker",
+          "rank": 7,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Western Plaguelands"
+          ]
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite8",
+          "name": "Plague Lurker",
+          "rank": 8,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Western Plaguelands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Plague Lurker",
+          "rank": 7,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Western Plaguelands"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Plague Lurker",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Western Plagueland"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2505,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Saltwater Snapjaw",
+          "rank": 7,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Saltwater Snapjaw",
+          "rank": 7,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Saltwater Snapjaw",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Hinterlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2563,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Plains Creeper",
+          "rank": 5,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Arathi Highlands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Plains Creeper",
+          "rank": 5,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Arathi Highlands"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Plains Creeper",
+          "rank": 5,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Arathi Highlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2565,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Giant Plains Creeper",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Arathi Highlands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Giant Plains Creeper",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Arathi Highlands"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Giant Plains Creeper",
+          "rank": 5,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Arathi Highlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2681,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Vilebranch Raiding Wolf",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "elite": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Vilebranch Raiding Wolf",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "elite": true
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Vilebranch Raiding Wolf",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Hinterlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2727,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Crag Coyote",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Crag Coyote",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Crag Coyote",
+          "rank": 5,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Badlads"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2753,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Barnabus",
+          "rank": 6,
+          "minLevel": 38,
+          "maxLevel": 38,
+          "zones": [
+            "Badlands"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Barnabus",
+          "rank": 6,
+          "minLevel": 38,
+          "maxLevel": 38,
+          "zones": [
+            "Badlands"
+          ],
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 3581,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Sewer Beast",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Stormwind City"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Sewer Beast",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Stormwind City"
+          ],
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 4143,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Sparkleshell Snapper",
+          "rank": 5,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Sparkleshell Snapper",
+          "rank": 5,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4341,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Drywallow Crocolisk",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Drywallow Crocolisk",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Drywallow Crocolisk",
+          "rank": 5,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4343,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Drywallow Snapper",
+          "rank": 5,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4344,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Mottled Drywallow Crocolisk",
+          "rank": 5,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Mottled Drywallow Crocolisk",
+          "rank": 5,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4345,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Drywallow Daggermaw",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Drywallow Daggermaw",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4396,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Mudrock Tortoise",
+          "rank": 5,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Mudrock Tortoise",
+          "rank": 5,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4400,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Mudrock Snapjaw",
+          "rank": 6,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Mudrock Snapjaw",
+          "rank": 6,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4411,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Darkfang Lurker",
+          "rank": 5,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Darkfang Lurker",
+          "rank": 5,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Darkfang Lurker",
+          "rank": 5,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4412,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Darkfang Creeper",
+          "rank": 5,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Darkfang Creeper",
+          "rank": 6,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Darkfang Creeper",
+          "rank": 5,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4413,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Darkfang Spider",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Darkfang Spider",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4841,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Deadmire",
+          "rank": 6,
+          "minLevel": 45,
+          "maxLevel": 45,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Deadmire",
+          "rank": 6,
+          "minLevel": 45,
+          "maxLevel": 45,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 5286,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Longtooth Runner",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Longtooth Runner",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Longtooth Runner",
+          "rank": 6,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Feralas"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 5356,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Snarler",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Feralas"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Snarler",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Feralas"
+          ],
+          "rare": true
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Snarler",
+          "rank": 6,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Feralas"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 6585,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Uhk'loc",
+          "rank": 7,
+          "minLevel": 52,
+          "maxLevel": 52,
+          "zones": [
+            "Un'Goro Crater"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Uhk'loc",
+          "rank": 7,
+          "minLevel": 52,
+          "maxLevel": 52,
+          "zones": [
+            "Un'Goro Crater"
+          ],
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 8211,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Old Cliff Jumper",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Old Cliff Jumper",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 8213,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Ironback",
+          "rank": 7,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Ironback",
+          "rank": 7,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 8277,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Rekk'tilac",
+          "rank": 7,
+          "minLevel": 48,
+          "maxLevel": 48,
+          "zones": [
+            "Searing Gorge"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Rekk'tilac",
+          "rank": 7,
+          "minLevel": 48,
+          "maxLevel": 48,
+          "zones": [
+            "Searing Gorge"
+          ],
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 8762,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Timberweb Recluse",
+          "rank": 6,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Azshara"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Timberweb Recluse",
+          "rank": 6,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Azshara"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8933,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Cave Creeper",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Cave Creeper",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths (Dungeon)"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8959,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Felpaw Wolf",
+          "rank": 6,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Felwood"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Felpaw Wolf",
+          "rank": 6,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Felwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8961,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Felpaw Ravager",
+          "rank": 7,
+          "minLevel": 51,
+          "maxLevel": 52,
+          "zones": [
+            "Felwood"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Felpaw Ravager",
+          "rank": 7,
+          "minLevel": 51,
+          "maxLevel": 52,
+          "zones": [
+            "Felwood"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Felpaw Ravager",
+          "rank": 7,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Felwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 9696,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite8",
+          "name": "Bloodaxe Worg",
+          "rank": 8,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite8",
+          "name": "Bloodaxe Worg",
+          "rank": 8,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire (Dungeon)"
+          ]
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Bloodaxe Warg",
+          "rank": 8,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Backrock Spires"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://warcrafttavern.com/wow-classic/guides/hunter-pet-abilities",
+          "name": "Bloodaxe Worg",
+          "rank": 8,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Lower Blackrock Spire"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 14223,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite5",
+          "name": "Cranky Benj",
+          "rank": 5,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Alterac Mountains"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Cranky Benj",
+          "rank": 5,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Alterac Mountains"
+          ],
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 14233,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Ripscale",
+          "rank": 6,
+          "minLevel": 39,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Ripscale",
+          "rank": 6,
+          "minLevel": 39,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 14339,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite6",
+          "name": "Death Howl",
+          "rank": 6,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#bite7",
+          "name": "Death Howl",
+          "rank": 7,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Death Howl",
+          "rank": 6,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "rare": true
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Death Howl",
+          "rank": 7,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 258522,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Sootfur",
+          "rank": 5,
+          "minLevel": 38,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 259267,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Plains Coyote",
+          "rank": 5,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Riverglades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 263380,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Ghostmaw",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Riverglades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 263615,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Krek the Noxious",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Riverglades"
+          ],
+          "elite": true
+        }
+      ]
+    },
+    {
+      "npcId": 266862,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Juvenile Paletusk",
+          "rank": 5,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Riverglades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 268831,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Plains Prowler",
+          "rank": 5,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Plains Prowler",
+          "rank": 6,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Riverglades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 272392,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite8",
+          "name": "Giant Moonstrider",
+          "rank": 8,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Moonglade"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": null,
+      "observations": [
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Undead Wolf",
+          "rank": 6,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Feralas"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": null,
+      "observations": [
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-1",
+          "name": "Witherbark Broodguard",
+          "rank": 6,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Hinterlands"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Wowhead Classic spell pages 17258/17259/17260/17261 load (titles 'Bite - Spell - Classic', Rank 5..8, tooltip damage 40-48 for r5). petLevel recorded from the tooltip's 'Requires level N' line. Wowhead shows no training point cost, so tp is null. The spell pages have NO 'Taught by NPC'/'Learned from' listview for pet abilities (only 'used-by-pet' families), so Wowhead could not provide beast-to-rank data.",
+    "Wowhead Forever (www.wowhead.com/forever/...) exists (Petopia links to it) but returned HTTP 403 (CloudFront 'Request blocked') to curl. Wowhead Classic NPC pages also began returning 403 after the first request, so no Wowhead NPC observations (levels/zones/classification) were recorded. Not retried further.",
+    "warcraft.wiki.gg: curl gets a 'Blocked - wiki.gg' page; WebFetch of /wiki/Bite_(hunter_pet_ability) is 404; /wiki/Bite has a Classic section but (per WebFetch summary) no per-rank pet level, TP or beast list. No observations recorded from it. Hunter_abilities_(Forever) page has no pet-ability ranks.",
+    "petopia-classic and petopia-forever are the SAME SITE (wow-petopia.com, /classic/ and /forever/ sections). Treat them as ONE source. The Forever section is the most relevant to the target game. Rare/elite flags come from the Petopia family pages (family.php?id=wolf, spider, turtle, crocolisk, boar, gorilla, tallstrider), where the level cell shows 'Rare' or 'Elite'. When no marker is shown, the flag is omitted.",
+    "Petopia lists some boundary beasts under two adjacent ranks, recorded as stated. Classic: Darkfang Creeper (4412) under r5 and r6, Death Howl (14339) under r6 and r7, Plague Lurker (1824) under r7 and r8. Forever: Plains Prowler (268831) under r5 and r6, Death Howl (14339) under r6 and r7. Cranky Benj (14223, lvl 32) is under r5 in both sections (the Forever page also lists him under r4, which is out of scope).",
+    "Forever-only beasts (new NPC IDs, not in Classic Era): 266862 Juvenile Paletusk (Boar, r5, Riverglades/Bolder'ok), 259267 Plains Coyote (r5, Riverglades), 258522 Sootfur (r5, Riverglades), 268831 Plains Prowler (r5/r6, Windstead, Riverglades), 263615 Krek the Noxious (Turtle, r6, Riverglades, Elite), 263380 Ghostmaw (Crocolisk, r6, Riverglades), 272392 Giant Moonstrider (Tallstrider, r8, level 60, Moonglade). Riverglades appears to be a new Forever zone.",
+    "Differences between the Forever and Classic sections for r8: Forever lists Bloodaxe Worg + Giant Moonstrider and drops Plague Lurker (which Classic lists under both r7 and r8). Forever also lists Drywallow Snapper (4343) under r5, while Classic does not list it under any of r5-r8. The Classic family page does list Drywallow Snapper 37-38 Dustwallow Marsh.",
+    "Warcraft Tavern says Bloodaxe Worg is 'the only mob in the game with the highest rank of Bite' (r8), which contradicts Petopia Classic's Plague Lurker r8 entry. Its zone is recorded as 'Lower Blackrock Spire'.",
+    "Tenton Hammer is a TBC-era guide (lists r9 at level 64 and Outland beasts). Its r7 damage (68-80) differs from Petopia/Wowhead (66-80). It gives zones but no levels or IDs. Spellings are recorded as given ('Badlads', 'Western Plagueland', 'Backrock Spires', 'Bloodaxe Warg'). 'Bloodaxe Warg' is attached to 9696 Bloodaxe Worg. Its r8 'Thornfang Venomspitter (Hellfire Peninsula)' is TBC-only and was omitted. Its r5 entry 'Turtles in Salt Flats (Thousand Needles)' is generic and was not matched to an NPC. 'Undead Wolf' (Feralas, r6) and 'Witherbark Broodguard' (Hinterlands, r6) have no matching ID in other sources, so they are kept with npcId null.",
+    "Bite rank 5-8 numbers agree across sources: r5 pet lvl 32 / 13 TP, r6 40 / 17, r7 48 / 21, r8 56 / 25 (Petopia classic+forever and Tenton Hammer). Spell IDs 17258-17261 come only from Wowhead Classic. Nothing Forever-specific was seen in the rank costs."
+  ]
+}

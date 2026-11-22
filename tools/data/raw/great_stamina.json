@@ -1,0 +1,531 @@
+{
+  "ability": "great_stamina",
+  "name": "Great Stamina",
+  "icon": "spell_nature_unyeildingstamina",
+  "trainerOnly": true,
+  "researcher": "trainer-abilities research agent, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=4187",
+          "spellIds": [
+            4187,
+            4195
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=4195",
+          "spellIds": [
+            4187,
+            4195
+          ],
+          "petLevel": 10,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=4187",
+          "spellIds": [
+            4187,
+            4195
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=4195",
+          "spellIds": [
+            4187,
+            4195
+          ],
+          "petLevel": 10,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": [
+            4187
+          ],
+          "petLevel": 1,
+          "tp": 5
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 20,
+          "tp": 5
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 5
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Pet_abilities_(Classic)",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 5
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Great_Stamina",
+          "spellIds": [
+            4187
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=4188",
+          "spellIds": [
+            4188,
+            4196
+          ],
+          "petLevel": 12,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=4188",
+          "spellIds": [
+            4188,
+            4196
+          ],
+          "petLevel": 12,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 12,
+          "tp": 10
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 12,
+          "tp": 10
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 10
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=4189",
+          "spellIds": [
+            4189,
+            4197
+          ],
+          "petLevel": 18,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=4189",
+          "spellIds": [
+            4189,
+            4197
+          ],
+          "petLevel": 18,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 18,
+          "tp": 15
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 18,
+          "tp": 15
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 15
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=4190",
+          "spellIds": [
+            4190,
+            4198
+          ],
+          "petLevel": 24,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=4190",
+          "spellIds": [
+            4190,
+            4198
+          ],
+          "petLevel": 24,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 25
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 25
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 25
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=4191",
+          "spellIds": [
+            4191,
+            4199
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=4191",
+          "spellIds": [
+            4191,
+            4199
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 50
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 50
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 50
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=4192",
+          "spellIds": [
+            4192,
+            4200
+          ],
+          "petLevel": 36,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=4192",
+          "spellIds": [
+            4192,
+            4200
+          ],
+          "petLevel": 36,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 36,
+          "tp": 75
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 36,
+          "tp": 75
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 75
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=4193",
+          "spellIds": [
+            4193,
+            4201
+          ],
+          "petLevel": 42,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=4193",
+          "spellIds": [
+            4193,
+            4201
+          ],
+          "petLevel": 42,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 42,
+          "tp": 100
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 42,
+          "tp": 100
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 100
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=4194",
+          "spellIds": [
+            4194,
+            4202
+          ],
+          "petLevel": 48,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=4194",
+          "spellIds": [
+            4194,
+            4202
+          ],
+          "petLevel": 48,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 125
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 125
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 125
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=5041",
+          "spellIds": [
+            5041,
+            5048
+          ],
+          "petLevel": 54,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=5041",
+          "spellIds": [
+            5041,
+            5048
+          ],
+          "petLevel": 54,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 54,
+          "tp": 150
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 54,
+          "tp": 150
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 150
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=5042",
+          "spellIds": [
+            5042,
+            5049
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=5042",
+          "spellIds": [
+            5042,
+            5049
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 60,
+          "tp": 185
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 60,
+          "tp": 185
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/hunter-pet-training",
+          "spellIds": null,
+          "petLevel": null,
+          "tp": 185
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Great_Stamina",
+          "spellIds": [
+            5042
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [],
+  "notes": [
+    "Trainer-taught passive. 10 ranks in Classic Era (warcraft.wiki.gg Great_Stamina '(10 ranks)'; Warcraft Tavern 'R10').",
+    "Classic values (Wowhead Classic pet spell tooltips): Stamina +3/5/7/10/13/17/21/26/32/40 for ranks 1-10.",
+    "FOREVER DIFFERENCE: on Wowhead Forever the pet spells 4187-4194, 5041, 5042 read 'Health increased by 30/50/70/100/130/170/210/260/320/400' (10x the Classic stamina number, now a flat Health bonus), while the teach spells 4195-4202, 5048, 5049 read 'Stamina increased by 30...400' (apparently the teach tooltip text was not updated). Same spell IDs and same required levels as Classic.",
+    "Rank 1 level: pet spell 4187 says 'Requires level 1' but teach spell 4195 says 'Requires level 10' (same on Classic and Forever). warcraft.wiki.gg and mmonster.co say level 1; tentonhammer (TBC page) says 20 for rank 1, which looks like an error in that table (rank 2 is 12).",
+    "wowhead-classic observations with url hunter-pet-training (calculator): numbers come from a search-engine summary of https://www.wowhead.com/classic/hunter-pet-training (TP list 5,10,15,25,50,75,100,125,150,185, rank numbers implied by order); the page itself returned HTTP 403 to direct fetch, so it was NOT read directly. Treat as weak.",
+    "Extra Classic IDs 24636 ('Great Stamina', 100 yd, 'Increases Stamina by 40', no class/level) exists on Wowhead Classic but not on Wowhead Forever; not used by the trainer as far as found.",
+    "spellIds order in wowhead observations: [petSpellId, teachSpellId]. The first ID is the pet's own spell (what the pet casts / has as a passive; Wowhead Forever categorises it as 'Generic Pet Abilities'). The second ID is the hunter-side 'teach' spell (100 yd range, Instant, 'Requires Hunter'; Wowhead Classic shows its Effect #1 as 'Learn Spell' -> pet spell, e.g. 4195 -> 4187; Wowhead Forever categorises these as 'Beast Training Abilities').",
+    "Wowhead observations were read from Wowhead's tooltip JSON endpoint (nether.wowhead.com/classic|forever/tooltip/spell/<id>); petLevel = the 'Requires level N' line of the spell named in the observation url. Wowhead does not publish training point costs on spell pages, so tp is null there.",
+    "Wowhead Classic tooltips do not print rank numbers for Growl/Great Stamina/Natural Armor/resistances; rank order is by required level and effect value. Wowhead Forever tooltips/search results do print 'Rank N' and agree with this order.",
+    "mmonster.co is a WoW Forever fan guide; it says its trainer prices are 'Client data' read during the Forever beta and 'not checked again since' (page build 70959, updated 2026-11-18).",
+    "tentonhammer.com table is a 2016 page written for TBC-era data (it lists an extra rank 11 for Great Stamina/Natural Armor and rank 5 for resistances, which do not exist in Classic). Only the ranks that exist in Classic are recorded here; treat its levels with caution.",
+    "Petopia Classic (petopia.brashendeavors.net) could not be read: TLS certificate error on fetch; web.archive.org also blocked. Wowhead Classic guide/calculator pages returned HTTP 403 to direct fetch."
+  ]
+}

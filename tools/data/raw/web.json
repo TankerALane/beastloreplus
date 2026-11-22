@@ -1,0 +1,829 @@
+{
+  "ability": "web",
+  "name": "Web",
+  "icon": "spell_nature_web",
+  "trainerOnly": false,
+  "researcher": "research agent (Forever family abilities), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "spellIds": [],
+          "petLevel": 12,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265843",
+          "spellIds": [
+            1265843
+          ],
+          "petLevel": 12,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web2",
+          "spellIds": [],
+          "petLevel": 24,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265878",
+          "spellIds": [
+            1265878
+          ],
+          "petLevel": 24,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web3",
+          "spellIds": [],
+          "petLevel": 36,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265880",
+          "spellIds": [
+            1265880
+          ],
+          "petLevel": 36,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web4",
+          "spellIds": [],
+          "petLevel": 48,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265881",
+          "spellIds": [
+            1265881
+          ],
+          "petLevel": 48,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web5",
+          "spellIds": [],
+          "petLevel": 60,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265883",
+          "spellIds": [
+            1265883
+          ],
+          "petLevel": 60,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 1780,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Moss Stalker",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1780",
+          "name": "Moss Stalker",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1781,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Mist Creeper",
+          "rank": 1,
+          "minLevel": 13,
+          "maxLevel": 14,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1781",
+          "name": "Mist Creeper",
+          "rank": null,
+          "minLevel": 13,
+          "maxLevel": 14,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 10359,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Sri'Skulk",
+          "rank": 1,
+          "minLevel": 13,
+          "maxLevel": 13,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "elite": false,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=10359",
+          "name": "Sri'skulk",
+          "rank": null,
+          "minLevel": 13,
+          "maxLevel": 13,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 1184,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Cliff Lurker",
+          "rank": 1,
+          "minLevel": 13,
+          "maxLevel": 14,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1184",
+          "name": "Cliff Lurker",
+          "rank": null,
+          "minLevel": 13,
+          "maxLevel": 14,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4263,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Deepmoss Hatchling",
+          "rank": 1,
+          "minLevel": 14,
+          "maxLevel": 14,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4263",
+          "name": "Deepmoss Hatchling",
+          "rank": null,
+          "minLevel": 14,
+          "maxLevel": 14,
+          "zones": [
+            "Stonetalon Mountains"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 256040,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Deep Widow",
+          "rank": 1,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "Ruins of Lordaeron (Dungeon)"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=256040",
+          "name": "Deep Widow",
+          "rank": null,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Ruins of Lordaeron"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 250484,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Spider",
+          "rank": 1,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "Ruins of Lordaeron (Dungeon)"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=250484",
+          "name": "Spider",
+          "rank": null,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": [
+            "Ruins of Lordaeron"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4007,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Deepmoss Venomspitter",
+          "rank": 1,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4007",
+          "name": "Deepmoss Venomspitter",
+          "rank": null,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Stonetalon Mountains"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 539,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Pygmy Venom Web Spider",
+          "rank": 1,
+          "minLevel": 18,
+          "maxLevel": 19,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=539",
+          "name": "Pygmy Venom Web Spider",
+          "rank": null,
+          "minLevel": 18,
+          "maxLevel": 19,
+          "zones": [
+            "Duskwood"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 217,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Venom Web Spider",
+          "rank": 1,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=217",
+          "name": "Venom Web Spider",
+          "rank": null,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Duskwood"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3819,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Wildthorn Stalker",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3819",
+          "name": "Wildthorn Stalker",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1111,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Leech Stalker",
+          "rank": 1,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Wetlands"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1111",
+          "name": "Leech Stalker",
+          "rank": null,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Wetlands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4040,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Cave Stalker",
+          "rank": 1,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Wetlands"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4040",
+          "name": "Cave Stalker",
+          "rank": null,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Wetlands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4264,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web1",
+          "name": "Deepmoss Matriarch",
+          "rank": 1,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4264",
+          "name": "Deepmoss Matriarch",
+          "rank": null,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Stonetalon Mountains"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 949,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web2",
+          "name": "Carrion Recluse",
+          "rank": 2,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=949",
+          "name": "Carrion Recluse",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3820,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web2",
+          "name": "Wildthorn Venomspitter",
+          "rank": 2,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3820",
+          "name": "Wildthorn Venomspitter",
+          "rank": null,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2349,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web2",
+          "name": "Giant Moss Creeper",
+          "rank": 2,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2349",
+          "name": "Giant Moss Creeper",
+          "rank": null,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 930,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web2",
+          "name": "Black Widow Hatchling",
+          "rank": 2,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=930",
+          "name": "Black Widow Hatchling",
+          "rank": null,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Duskwood"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4378,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web3",
+          "name": "Darkmist Recluse",
+          "rank": 3,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4378",
+          "name": "Darkmist Recluse",
+          "rank": null,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4414,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web3",
+          "name": "Darkfang Venomspitter",
+          "rank": 3,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4414",
+          "name": "Darkfang Venomspitter",
+          "rank": null,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 270664,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web3",
+          "name": "Venomweb Spitter",
+          "rank": 3,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=270664",
+          "name": "Venomweb Spitter",
+          "rank": null,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4377,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web3",
+          "name": "Darkmist Lurker",
+          "rank": 3,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4377",
+          "name": "Darkmist Lurker",
+          "rank": null,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4379,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web3",
+          "name": "Darkmist Silkspinner",
+          "rank": 3,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4379",
+          "name": "Darkmist Silkspinner",
+          "rank": null,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4415,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#web3",
+          "name": "Giant Darkfang Spider",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4415",
+          "name": "Giant Darkfang Spider",
+          "rank": null,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Hunter-side 'Abilities' Web spell on Wowhead: 1265887 (R1); other ranks not shown in search results.",
+    "Petopia: no known taming source for ranks 4 and 5. Carrion Recluse: Petopia 21-22 vs Wowhead 25-26. Sri'Skulk is spelled \"Sri'skulk\" on Wowhead; Rare per both. Deep Widow 256040 and 'Spider' 250484 (Ruins of Lordaeron dungeon) are Elite per both; Wowhead tooltip shows no level for them. warcraft.wiki.gg Web (Forever) page not found.",
+    "Petopia Forever (wow-petopia.com/forever/abilities.php) lists ranks with pet level, TP cost and beasts per rank; beast NPC IDs come from its Wowhead Forever links. Petopia states its data comes from a limited beta and may change. Petopia gives no spell IDs. Its rank/beast lists are its own work, but its NPC IDs/links point to Wowhead.",
+    "wowhead-forever observations come from nether.wowhead.com/forever/tooltip/{spell,npc}/<id> (full www.wowhead.com pages return 403) and the www.wowhead.com/forever/search/suggestions-template endpoint (used for rank labels and spell IDs). Spell tooltips give 'Requires level N' (recorded as petLevel) and a 'Rank N' label; they do NOT show training point cost, so tp is null for wowhead-forever.",
+    "Wowhead NPC tooltips show level range, classification (Normal/Elite/Rare) and a zone ID only; they do not say which ability rank the beast teaches, so wowhead-forever beast observations have rank null (the list of beasts itself comes from Petopia). Zone IDs were turned into names with a fixed classic zone-ID table; Forever-only zone IDs were confirmed via Wowhead search (16591 Riverglades, 16593 Zephras Isle, 16611 Ruins of Lordaeron, 16550 The Drowned City, 16732 Excavation Site: Wetlands).",
+    "Petopia elite/rare flags come from its 'Rare Pets' and 'Elite Pets' browse pages (matched by name); when a beast is not on those pages the flag is omitted, not set false.",
+    "Blizzard announcement https://worldofwarcraft.blizzard.com/news/24301515 confirms the ability name and family only (no ranks, levels, TP or beasts), so no blizzard observation rows were added.",
+    "Spell IDs recorded are the 'Pet Abilities' (pet-cast) spells. Wowhead also lists separate hunter-side 'Abilities' spells with the same name/rank (presumably the learn/teach spells); those are listed in notes, not in spellIds.",
+    "Petopia lists the TP cost of every rank of these Forever family abilities as 0."
+  ]
+}

@@ -1,0 +1,290 @@
+{
+  "ability": "screech",
+  "name": "Demoralizing Screech",
+  "icon": "ability_hunter_pet_bat",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech1",
+          "spellIds": null,
+          "petLevel": 8,
+          "tp": 10,
+          "description": "Blasts a single enemy for 7 to 9 damage and lowers the melee attack power of all enemies in melee range by 63 for 30 sec."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech2",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 15,
+          "description": "Blasts a single enemy for 9 to 13 damage and lowers the melee attack power of all enemies in melee range by 111 for 30 sec."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech3",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 20,
+          "description": "Blasts a single enemy for 21 to 27 damage and lowers the melee attack power of all enemies in melee range by 164 for 30 sec."
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech4",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25,
+          "description": "Blasts a single enemy for 24 to 42 damage and lowers the melee attack power of all enemies in melee range by 204 for 30 sec."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 2971,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech1",
+          "name": "Taloned Swoop",
+          "rank": 1,
+          "minLevel": 8,
+          "maxLevel": 10,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2971"
+        }
+      ]
+    },
+    {
+      "npcId": 199,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech1",
+          "name": "Young Fleshripper",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Westfall"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=199"
+        }
+      ]
+    },
+    {
+      "npcId": 154,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech1",
+          "name": "Greater Fleshripper",
+          "rank": 1,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Westfall"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=154"
+        }
+      ]
+    },
+    {
+      "npcId": 4158,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech2",
+          "name": "Salt Flats Vulture",
+          "rank": 2,
+          "minLevel": 32,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4158"
+        }
+      ]
+    },
+    {
+      "npcId": 4861,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech2",
+          "name": "Shrike Bat",
+          "rank": 2,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4861"
+        }
+      ]
+    },
+    {
+      "npcId": 4694,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech2",
+          "name": "Dread Ripper",
+          "rank": 2,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4694"
+        }
+      ]
+    },
+    {
+      "npcId": 213795,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech2",
+          "name": "Gharrik",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=213795"
+        }
+      ]
+    },
+    {
+      "npcId": 7097,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech3",
+          "name": "Ironbeak Owl",
+          "rank": 3,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7097"
+        }
+      ]
+    },
+    {
+      "npcId": 1809,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech3",
+          "name": "Carrion Vulture",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Western Plaguelands"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1809"
+        }
+      ]
+    },
+    {
+      "npcId": 8927,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech3",
+          "name": "Dark Screecher",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8927"
+        }
+      ]
+    },
+    {
+      "npcId": 8602,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech4",
+          "name": "Monstrous Plaguebat",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 58,
+          "zones": [
+            "Eastern Plaguelands"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8602"
+        }
+      ]
+    },
+    {
+      "npcId": 7456,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#demoralizingscreech4",
+          "name": "Winterspring Screecher",
+          "rank": 4,
+          "minLevel": 57,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7456"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #demoralizingscreech was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Carrion Birds. Petopia Classic lists: Bats, Carrion Birds, Owls.",
+    "NAME CHANGE: called 'Demoralizing Screech' in Forever (Classic: 'Screech'). Forever anchor #demoralizingscreech.",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (3): Taloned Swoop 2971 r1 (Carrion Bird, 8-10, Mulgore); Young Fleshripper 199 r1 (Carrion Bird, 10-11, Westfall); Gharrik 213795 r2 (Carrion Bird, 40, Badlands)",
+    "No beasts removed vs Petopia Classic.",
+    "INCONSISTENCY on Petopia Forever: these beasts are listed as teachers but their family is not in the page's 'Can be learned by' list: Shrike Bat 4861 (Bat, r2); Ironbeak Owl 7097 (Bird of Prey, r3); Dark Screecher 8927 (Bat, r3); Monstrous Plaguebat 8602 (Bat, r4); Winterspring Screecher 7456 (Bird of Prey, r4). Recorded as listed."
+  ]
+}

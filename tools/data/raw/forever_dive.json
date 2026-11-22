@@ -1,0 +1,545 @@
+{
+  "ability": "dive",
+  "name": "Dive",
+  "icon": "spell_shadow_burningspirit",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive1",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 15,
+          "description": "Increases movement speed by 40% for 15 seconds."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive2",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20,
+          "description": "Increases movement speed by 60% for 15 seconds."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 25,
+          "description": "Increases movement speed by 80% for 15 seconds."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 4538,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive1",
+          "name": "Kraul Bat",
+          "rank": 1,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4538"
+        }
+      ]
+    },
+    {
+      "npcId": 2578,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive1",
+          "name": "Young Mesa Buzzard",
+          "rank": 1,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Arathi Highlands"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2578"
+        }
+      ]
+    },
+    {
+      "npcId": 4425,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive1",
+          "name": "Blind Hunter",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4425"
+        }
+      ]
+    },
+    {
+      "npcId": 4539,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive1",
+          "name": "Greater Kraul Bat",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4539"
+        }
+      ]
+    },
+    {
+      "npcId": 2579,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive1",
+          "name": "Mesa Buzzard",
+          "rank": 1,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Arathi Highlands"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2579"
+        }
+      ]
+    },
+    {
+      "npcId": 6013,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive1",
+          "name": "Wayward Buzzard",
+          "rank": 1,
+          "minLevel": 35,
+          "maxLevel": 37,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=6013"
+        }
+      ]
+    },
+    {
+      "npcId": 4693,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive1",
+          "name": "Dread Flyer",
+          "rank": 1,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4693"
+        }
+      ]
+    },
+    {
+      "npcId": 4861,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive1",
+          "name": "Shrike Bat",
+          "rank": 1,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4861"
+        }
+      ]
+    },
+    {
+      "npcId": 5307,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive2",
+          "name": "Vale Screecher",
+          "rank": 2,
+          "minLevel": 41,
+          "maxLevel": 43,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5307"
+        }
+      ]
+    },
+    {
+      "npcId": 5428,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive2",
+          "name": "Roc",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5428"
+        }
+      ]
+    },
+    {
+      "npcId": 5429,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive2",
+          "name": "Fire Roc",
+          "rank": 2,
+          "minLevel": 43,
+          "maxLevel": 45,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5429"
+        }
+      ]
+    },
+    {
+      "npcId": 5308,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive2",
+          "name": "Rogue Vale Screecher",
+          "rank": 2,
+          "minLevel": 44,
+          "maxLevel": 46,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5308"
+        }
+      ]
+    },
+    {
+      "npcId": 8207,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive2",
+          "name": "Greater Firebird",
+          "rank": 2,
+          "minLevel": 46,
+          "maxLevel": 46,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8207"
+        }
+      ]
+    },
+    {
+      "npcId": 5430,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive2",
+          "name": "Searing Roc",
+          "rank": 2,
+          "minLevel": 47,
+          "maxLevel": 49,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5430"
+        }
+      ]
+    },
+    {
+      "npcId": 7097,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive2",
+          "name": "Ironbeak Owl",
+          "rank": 2,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7097"
+        }
+      ]
+    },
+    {
+      "npcId": 5349,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive2",
+          "name": "Arash-ethis",
+          "rank": 2,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5349"
+        }
+      ]
+    },
+    {
+      "npcId": 8927,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Dark Screecher",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths (Dungeon)"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8927"
+        }
+      ]
+    },
+    {
+      "npcId": 1809,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Carrion Vulture",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Western Plaguelands"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1809"
+        }
+      ]
+    },
+    {
+      "npcId": 7099,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Ironbeak Hunter",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7099"
+        }
+      ]
+    },
+    {
+      "npcId": 5708,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Spawn of Hakkar",
+          "rank": 3,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5708"
+        }
+      ]
+    },
+    {
+      "npcId": 7098,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Ironbeak Screecher",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7098"
+        }
+      ]
+    },
+    {
+      "npcId": 8299,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Spiteflayer",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 52,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8299"
+        }
+      ]
+    },
+    {
+      "npcId": 8600,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Plaguebat",
+          "rank": 3,
+          "minLevel": 53,
+          "maxLevel": 55,
+          "zones": [
+            "Eastern Plaguelands"
+          ],
+          "family": "Bat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8600"
+        }
+      ]
+    },
+    {
+      "npcId": 7455,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Winterspring Owl",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 56,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7455"
+        }
+      ]
+    },
+    {
+      "npcId": 2931,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Zaricotl",
+          "rank": 3,
+          "minLevel": 55,
+          "maxLevel": 55,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Carrion Bird",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2931"
+        }
+      ]
+    },
+    {
+      "npcId": 7456,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Winterspring Screecher",
+          "rank": 3,
+          "minLevel": 57,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Bird of Prey",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7456"
+        }
+      ]
+    },
+    {
+      "npcId": 272401,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dive3",
+          "name": "Vale Screamer",
+          "rank": 3,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=272401"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #dive was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Bats, Birds of Prey, Carrion Birds, Wind Serpents. Petopia Classic lists: Bats, Carrion Birds, Owls, Wind Serpents.",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (2): Blind Hunter 4425 r1 (Bat, 32, Razorfen Kraul (Dungeon)); Vale Screamer 272401 r3 (Wind Serpent, 60, Feralas)",
+    "Beasts in Petopia Classic's list but NOT in Petopia Forever's (1): Olm the Wise 14343 r3 (Owl, 52, Felwood)"
+  ]
+}

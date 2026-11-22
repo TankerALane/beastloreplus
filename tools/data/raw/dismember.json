@@ -1,0 +1,525 @@
+{
+  "ability": "dismember",
+  "name": "Dismember",
+  "icon": "ability_hunter_pet_crocolisk",
+  "trainerOnly": false,
+  "researcher": "research agent (Forever family abilities), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember1",
+          "spellIds": [],
+          "petLevel": 12,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264758",
+          "spellIds": [
+            1264758
+          ],
+          "petLevel": 12,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Dismember",
+          "spellIds": [
+            1264758
+          ],
+          "petLevel": 12,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember2",
+          "spellIds": [],
+          "petLevel": 24,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264927",
+          "spellIds": [
+            1264927
+          ],
+          "petLevel": 24,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember3",
+          "spellIds": [],
+          "petLevel": 36,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264929",
+          "spellIds": [
+            1264929
+          ],
+          "petLevel": 36,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember4",
+          "spellIds": [],
+          "petLevel": 48,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264930",
+          "spellIds": [
+            1264930
+          ],
+          "petLevel": 48,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember5",
+          "spellIds": [],
+          "petLevel": 60,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264933",
+          "spellIds": [
+            1264933
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Dismember",
+          "spellIds": [
+            1264933
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 1693,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember1",
+          "name": "Loch Crocolisk",
+          "rank": 1,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1693",
+          "name": "Loch Crocolisk",
+          "rank": null,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 270693,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember1",
+          "name": "Daggerfang",
+          "rank": 1,
+          "minLevel": 15,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=270693",
+          "name": "Daggerfang",
+          "rank": null,
+          "minLevel": 15,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1417,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember1",
+          "name": "Young Wetlands Crocolisk",
+          "rank": 1,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Wetlands"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1417",
+          "name": "Young Wetlands Crocolisk",
+          "rank": null,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Wetlands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1400,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember1",
+          "name": "Wetlands Crocolisk",
+          "rank": 1,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Wetlands"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1400",
+          "name": "Wetlands Crocolisk",
+          "rank": null,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Wetlands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 260796,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember2",
+          "name": "Marsh Crocolisk",
+          "rank": 2,
+          "minLevel": 26,
+          "maxLevel": 26,
+          "zones": [
+            "Excavation Site: Wetlands (Dungeon)"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=260796",
+          "name": "Marsh Crocolisk",
+          "rank": null,
+          "minLevel": 26,
+          "maxLevel": 26,
+          "zones": [
+            "Excavation Site: Wetlands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 260797,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember2",
+          "name": "Elder Crocolisk",
+          "rank": 2,
+          "minLevel": 27,
+          "maxLevel": 27,
+          "zones": [
+            "Excavation Site: Wetlands (Dungeon)"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=260797",
+          "name": "Elder Crocolisk",
+          "rank": null,
+          "minLevel": 27,
+          "maxLevel": 27,
+          "zones": [
+            "Excavation Site: Wetlands"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1150,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember2",
+          "name": "River Crocolisk",
+          "rank": 2,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1150",
+          "name": "River Crocolisk",
+          "rank": null,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1151,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember2",
+          "name": "Saltwater Crocolisk",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1151",
+          "name": "Saltwater Crocolisk",
+          "rank": null,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4342,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember3",
+          "name": "Drywallow Vicejaw",
+          "rank": 3,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4342",
+          "name": "Drywallow Vicejaw",
+          "rank": null,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 258922,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember3",
+          "name": "Hungry Crocolisk",
+          "rank": 3,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=258922",
+          "name": "Hungry Crocolisk",
+          "rank": null,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 259046,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember3",
+          "name": "Freshwater Crocolisk",
+          "rank": 3,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=259046",
+          "name": "Freshwater Crocolisk",
+          "rank": null,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Riverglades"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 263380,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember3",
+          "name": "Ghostmaw",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=263380",
+          "name": "Ghostmaw",
+          "rank": null,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Riverglades"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 272384,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dismember4",
+          "name": "Elder Daggermaw",
+          "rank": 4,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=272384",
+          "name": "Elder Daggermaw",
+          "rank": null,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Hunter-side 'Abilities' Dismember spells on Wowhead: 1264937 (R1), 1264939 (R2), 1264971 (R4), 1264972 (R5) (R3 not shown in search results).",
+    "warcraft.wiki.gg Dismember (Forever) gives rank 1 ID 1264758 (level 12) and rank 5 ID 1264933; its text says healing reduced by 25% for 6 sec whereas Petopia says 50% for 10 sec. Probably taken from game data/Wowhead.",
+    "Petopia: no known taming source for rank 5. Ghostmaw is Elite per Wowhead, not on Petopia's elite page. Elder Crocolisk is Elite per both.",
+    "Petopia Forever (wow-petopia.com/forever/abilities.php) lists ranks with pet level, TP cost and beasts per rank; beast NPC IDs come from its Wowhead Forever links. Petopia states its data comes from a limited beta and may change. Petopia gives no spell IDs. Its rank/beast lists are its own work, but its NPC IDs/links point to Wowhead.",
+    "wowhead-forever observations come from nether.wowhead.com/forever/tooltip/{spell,npc}/<id> (full www.wowhead.com pages return 403) and the www.wowhead.com/forever/search/suggestions-template endpoint (used for rank labels and spell IDs). Spell tooltips give 'Requires level N' (recorded as petLevel) and a 'Rank N' label; they do NOT show training point cost, so tp is null for wowhead-forever.",
+    "Wowhead NPC tooltips show level range, classification (Normal/Elite/Rare) and a zone ID only; they do not say which ability rank the beast teaches, so wowhead-forever beast observations have rank null (the list of beasts itself comes from Petopia). Zone IDs were turned into names with a fixed classic zone-ID table; Forever-only zone IDs were confirmed via Wowhead search (16591 Riverglades, 16593 Zephras Isle, 16611 Ruins of Lordaeron, 16550 The Drowned City, 16732 Excavation Site: Wetlands).",
+    "Petopia elite/rare flags come from its 'Rare Pets' and 'Elite Pets' browse pages (matched by name); when a beast is not on those pages the flag is omitted, not set false.",
+    "Blizzard announcement https://worldofwarcraft.blizzard.com/news/24301515 confirms the ability name and family only (no ranks, levels, TP or beasts), so no blizzard observation rows were added.",
+    "Spell IDs recorded are the 'Pet Abilities' (pet-cast) spells. Wowhead also lists separate hunter-side 'Abilities' spells with the same name/rank (presumably the learn/teach spells); those are listed in notes, not in spellIds.",
+    "Petopia lists the TP cost of every rank of these Forever family abilities as 0."
+  ]
+}

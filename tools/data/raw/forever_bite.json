@@ -1,0 +1,2087 @@
+{
+  "ability": "bite",
+  "name": "Bite",
+  "icon": "ability_druid_ferociousbite",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 1,
+          "description": "Bite the enemy, causing 7 to 9 damage."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "spellIds": null,
+          "petLevel": 8,
+          "tp": 4,
+          "description": "Bite the enemy, causing 16 to 18 damage."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "spellIds": null,
+          "petLevel": 16,
+          "tp": 7,
+          "description": "Bite the enemy, causing 24 to 28 damage."
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 10,
+          "description": "Bite the enemy, causing 31 to 37 damage."
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "spellIds": null,
+          "petLevel": 32,
+          "tp": 13,
+          "description": "Bite the enemy, causing 40 to 48 damage."
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 17,
+          "description": "Bite the enemy, causing 49 to 59 damage."
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 21,
+          "description": "Bite the enemy, causing 66 to 80 damage."
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite8",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25,
+          "description": "Bite the enemy, causing 81 to 99 damage."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 250873,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Juvenile Vuldren",
+          "rank": 1,
+          "minLevel": 1,
+          "maxLevel": 1,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Fox",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=250873"
+        }
+      ]
+    },
+    {
+      "npcId": 1509,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Ragged Scavenger",
+          "rank": 1,
+          "minLevel": 2,
+          "maxLevel": 3,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1509"
+        }
+      ]
+    },
+    {
+      "npcId": 1505,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Night Web Spider",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1505"
+        }
+      ]
+    },
+    {
+      "npcId": 2958,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Prairie Wolf",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2958"
+        }
+      ]
+    },
+    {
+      "npcId": 30,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Forest Spider",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=30"
+        }
+      ]
+    },
+    {
+      "npcId": 1688,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Night Web Matriarch",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 5,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1688"
+        }
+      ]
+    },
+    {
+      "npcId": 1994,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Githyiss the Vile",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 5,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1994"
+        }
+      ]
+    },
+    {
+      "npcId": 250868,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Vuldren",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 6,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Fox",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=250868"
+        }
+      ]
+    },
+    {
+      "npcId": 1138,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Snow Tracker Wolf",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1138"
+        }
+      ]
+    },
+    {
+      "npcId": 1922,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Gray Forest Wolf",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1922"
+        }
+      ]
+    },
+    {
+      "npcId": 1999,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Webwood Venomfang",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1999"
+        }
+      ]
+    },
+    {
+      "npcId": 1131,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Winter Wolf",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1131"
+        }
+      ]
+    },
+    {
+      "npcId": 471,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Mother Fang",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 7,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=471"
+        }
+      ]
+    },
+    {
+      "npcId": 2959,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Prairie Stalker",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2959"
+        }
+      ]
+    },
+    {
+      "npcId": 266851,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Ukorsbane",
+          "rank": 1,
+          "minLevel": 8,
+          "maxLevel": 8,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=266851"
+        }
+      ]
+    },
+    {
+      "npcId": 3110,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite1",
+          "name": "Dreadmaw Crocolisk",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3110"
+        }
+      ]
+    },
+    {
+      "npcId": 254589,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Vulgara the Insatiable",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 8,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Fox",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=254589"
+        }
+      ]
+    },
+    {
+      "npcId": 1133,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Starving Winter Wolf",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1133"
+        }
+      ]
+    },
+    {
+      "npcId": 118,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Prowler",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=118"
+        }
+      ]
+    },
+    {
+      "npcId": 2960,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Prairie Wolf Alpha",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2960"
+        }
+      ]
+    },
+    {
+      "npcId": 1555,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Vicious Night Web Spider",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1555"
+        }
+      ]
+    },
+    {
+      "npcId": 268530,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Bloodtalon Matriarch",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Raptor",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=268530"
+        }
+      ]
+    },
+    {
+      "npcId": 2001,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Giant Webwood Spider",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2001"
+        }
+      ]
+    },
+    {
+      "npcId": 1132,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Timber",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1132"
+        }
+      ]
+    },
+    {
+      "npcId": 1195,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Forest Lurker",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1195"
+        }
+      ]
+    },
+    {
+      "npcId": 834,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Coyote",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Westfall"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=834"
+        }
+      ]
+    },
+    {
+      "npcId": 250874,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Vuldren Alpha",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Zephras Isle"
+          ],
+          "family": "Fox",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=250874"
+        }
+      ]
+    },
+    {
+      "npcId": 1765,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Worg",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1765"
+        }
+      ]
+    },
+    {
+      "npcId": 833,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Coyote Packleader",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Westfall"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=833"
+        }
+      ]
+    },
+    {
+      "npcId": 7319,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Lady Sathrah",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7319"
+        }
+      ]
+    },
+    {
+      "npcId": 10359,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Sri'Skulk",
+          "rank": 2,
+          "minLevel": 13,
+          "maxLevel": 13,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=10359"
+        }
+      ]
+    },
+    {
+      "npcId": 1693,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Loch Crocolisk",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1693"
+        }
+      ]
+    },
+    {
+      "npcId": 270693,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Daggerfang",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=270693"
+        }
+      ]
+    },
+    {
+      "npcId": 442,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Tarantula",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "Redridge Mountains"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=442"
+        }
+      ]
+    },
+    {
+      "npcId": 3461,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite2",
+          "name": "Oasis Snapjaw",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3461"
+        }
+      ]
+    },
+    {
+      "npcId": 4005,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Deepmoss Creeper",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Stonetalon Mountains"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4005"
+        }
+      ]
+    },
+    {
+      "npcId": 1923,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Bloodsnout Worg",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1923"
+        }
+      ]
+    },
+    {
+      "npcId": 1185,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Wood Lurker",
+          "rank": 3,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1185"
+        }
+      ]
+    },
+    {
+      "npcId": 505,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Greater Tarantula",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Redridge Mountains"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=505"
+        }
+      ]
+    },
+    {
+      "npcId": 14266,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Shanda the Spinner",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 19,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=14266"
+        }
+      ]
+    },
+    {
+      "npcId": 3823,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Ghostpaw Runner",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3823"
+        }
+      ]
+    },
+    {
+      "npcId": 4006,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Deepmoss Webspinner",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Stonetalon Mountains"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4006"
+        }
+      ]
+    },
+    {
+      "npcId": 3653,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Kresh",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3653"
+        }
+      ]
+    },
+    {
+      "npcId": 2172,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Strider Clutchmother",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Darkshore"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2172"
+        }
+      ]
+    },
+    {
+      "npcId": 2350,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Forest Moss Creeper",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2350"
+        }
+      ]
+    },
+    {
+      "npcId": 569,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Green Recluse",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Duskwood"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=569"
+        }
+      ]
+    },
+    {
+      "npcId": 11921,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Besseleth",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 21,
+          "zones": [
+            "Stonetalon Mountains"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=11921"
+        }
+      ]
+    },
+    {
+      "npcId": 2476,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Large Loch Crocolisk",
+          "rank": 3,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2476"
+        }
+      ]
+    },
+    {
+      "npcId": 616,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Chatter",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 23,
+          "zones": [
+            "Redridge Mountains"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=616"
+        }
+      ]
+    },
+    {
+      "npcId": 4824,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Aku'mai Fisher",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4824"
+        }
+      ]
+    },
+    {
+      "npcId": 521,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Lupos",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 23,
+          "zones": [
+            "Duskwood"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=521"
+        }
+      ]
+    },
+    {
+      "npcId": 14279,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite3",
+          "name": "Creepthess",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=14279"
+        }
+      ]
+    },
+    {
+      "npcId": 1112,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Leech Widow",
+          "rank": 4,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Wetlands"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1112"
+        }
+      ]
+    },
+    {
+      "npcId": 628,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Black Ravager",
+          "rank": 4,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Duskwood"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=628"
+        }
+      ]
+    },
+    {
+      "npcId": 2349,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Giant Moss Creeper",
+          "rank": 4,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2349"
+        }
+      ]
+    },
+    {
+      "npcId": 1258,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Black Ravager Mastiff",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1258"
+        }
+      ]
+    },
+    {
+      "npcId": 4887,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Ghamoo-ra",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4887"
+        }
+      ]
+    },
+    {
+      "npcId": 2089,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Giant Wetlands Crocolisk",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Wetlands"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2089"
+        }
+      ]
+    },
+    {
+      "npcId": 2348,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Elder Moss Creeper",
+          "rank": 4,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2348"
+        }
+      ]
+    },
+    {
+      "npcId": 260809,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Highland Tortoise",
+          "rank": 4,
+          "minLevel": 26,
+          "maxLevel": 26,
+          "zones": [
+            "Wetlands"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=260809"
+        }
+      ]
+    },
+    {
+      "npcId": 4825,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Aku'mai Snapjaw",
+          "rank": 4,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ],
+          "family": "Crab",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4825"
+        }
+      ]
+    },
+    {
+      "npcId": 574,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Naraxis",
+          "rank": 4,
+          "minLevel": 27,
+          "maxLevel": 27,
+          "zones": [
+            "Duskwood"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=574"
+        }
+      ]
+    },
+    {
+      "npcId": 3825,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Ghostpaw Alpha",
+          "rank": 4,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3825"
+        }
+      ]
+    },
+    {
+      "npcId": 260803,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Highland Spider",
+          "rank": 4,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Wetlands"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=260803"
+        }
+      ]
+    },
+    {
+      "npcId": 3821,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Wildthorn Lurker",
+          "rank": 4,
+          "minLevel": 28,
+          "maxLevel": 29,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3821"
+        }
+      ]
+    },
+    {
+      "npcId": 2408,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Snapjaw",
+          "rank": 4,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2408"
+        }
+      ]
+    },
+    {
+      "npcId": 14223,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite4",
+          "name": "Cranky Benj",
+          "rank": 4,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Alterac Mountains"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=14223"
+        }
+      ]
+    },
+    {
+      "npcId": 2563,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Plains Creeper",
+          "rank": 5,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Arathi Highlands"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2563"
+        }
+      ]
+    },
+    {
+      "npcId": 266862,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Juvenile Paletusk",
+          "rank": 5,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=266862"
+        }
+      ]
+    },
+    {
+      "npcId": 4143,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Sparkleshell Snapper",
+          "rank": 5,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4143"
+        }
+      ]
+    },
+    {
+      "npcId": 4413,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Darkfang Spider",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4413"
+        }
+      ]
+    },
+    {
+      "npcId": 2565,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Giant Plains Creeper",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Arathi Highlands"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2565"
+        }
+      ]
+    },
+    {
+      "npcId": 4341,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Drywallow Crocolisk",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4341"
+        }
+      ]
+    },
+    {
+      "npcId": 2727,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Crag Coyote",
+          "rank": 5,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2727"
+        }
+      ]
+    },
+    {
+      "npcId": 4396,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Mudrock Tortoise",
+          "rank": 5,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4396"
+        }
+      ]
+    },
+    {
+      "npcId": 259267,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Plains Coyote",
+          "rank": 5,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=259267"
+        }
+      ]
+    },
+    {
+      "npcId": 4411,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Darkfang Lurker",
+          "rank": 5,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4411"
+        }
+      ]
+    },
+    {
+      "npcId": 4343,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Drywallow Snapper",
+          "rank": 5,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4343"
+        }
+      ]
+    },
+    {
+      "npcId": 4412,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Darkfang Creeper",
+          "rank": 5,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4412"
+        }
+      ]
+    },
+    {
+      "npcId": 4344,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Mottled Drywallow Crocolisk",
+          "rank": 5,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4344"
+        }
+      ]
+    },
+    {
+      "npcId": 258522,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Sootfur",
+          "rank": 5,
+          "minLevel": 38,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=258522"
+        }
+      ]
+    },
+    {
+      "npcId": 268831,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite5",
+          "name": "Plains Prowler",
+          "rank": 5,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=268831"
+        }
+      ]
+    },
+    {
+      "npcId": 2753,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Barnabus",
+          "rank": 6,
+          "minLevel": 38,
+          "maxLevel": 38,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2753"
+        }
+      ]
+    },
+    {
+      "npcId": 14233,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Ripscale",
+          "rank": 6,
+          "minLevel": 39,
+          "maxLevel": 39,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=14233"
+        }
+      ]
+    },
+    {
+      "npcId": 5286,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Longtooth Runner",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5286"
+        }
+      ]
+    },
+    {
+      "npcId": 4345,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Drywallow Daggermaw",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4345"
+        }
+      ]
+    },
+    {
+      "npcId": 769,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Deathstrike Tarantula",
+          "rank": 6,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Swamp of Sorrows"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=769"
+        }
+      ]
+    },
+    {
+      "npcId": 4400,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Mudrock Snapjaw",
+          "rank": 6,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4400"
+        }
+      ]
+    },
+    {
+      "npcId": 1087,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Sawtooth Snapper",
+          "rank": 6,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Swamp of Sorrows"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1087"
+        }
+      ]
+    },
+    {
+      "npcId": 263615,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Krek the Noxious",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=263615"
+        }
+      ]
+    },
+    {
+      "npcId": 263380,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Ghostmaw",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=263380"
+        }
+      ]
+    },
+    {
+      "npcId": 8211,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Old Cliff Jumper",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8211"
+        }
+      ]
+    },
+    {
+      "npcId": 5356,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Snarler",
+          "rank": 6,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5356"
+        }
+      ]
+    },
+    {
+      "npcId": 4841,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Deadmire",
+          "rank": 6,
+          "minLevel": 45,
+          "maxLevel": 45,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4841"
+        }
+      ]
+    },
+    {
+      "npcId": 8762,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Timberweb Recluse",
+          "rank": 6,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Azshara"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8762"
+        }
+      ]
+    },
+    {
+      "npcId": 8959,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Felpaw Wolf",
+          "rank": 6,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8959"
+        }
+      ]
+    },
+    {
+      "npcId": 14339,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite6",
+          "name": "Death Howl",
+          "rank": 6,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=14339"
+        }
+      ]
+    },
+    {
+      "npcId": 8277,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Rekk'tilac",
+          "rank": 7,
+          "minLevel": 48,
+          "maxLevel": 48,
+          "zones": [
+            "Searing Gorge"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8277"
+        }
+      ]
+    },
+    {
+      "npcId": 2505,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Saltwater Snapjaw",
+          "rank": 7,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2505"
+        }
+      ]
+    },
+    {
+      "npcId": 2681,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Vilebranch Raiding Wolf",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2681"
+        }
+      ]
+    },
+    {
+      "npcId": 3581,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Sewer Beast",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Stormwind City"
+          ],
+          "family": "Crocolisk",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3581"
+        }
+      ]
+    },
+    {
+      "npcId": 8933,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Cave Creeper",
+          "rank": 7,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths (Dungeon)"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8933"
+        }
+      ]
+    },
+    {
+      "npcId": 8213,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Ironback",
+          "rank": 7,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "family": "Turtle",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8213"
+        }
+      ]
+    },
+    {
+      "npcId": 8961,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Felpaw Ravager",
+          "rank": 7,
+          "minLevel": 51,
+          "maxLevel": 52,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8961"
+        }
+      ]
+    },
+    {
+      "npcId": 6585,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Uhk'loc",
+          "rank": 7,
+          "minLevel": 52,
+          "maxLevel": 52,
+          "zones": [
+            "Un'Goro Crater"
+          ],
+          "family": "Gorilla",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=6585"
+        }
+      ]
+    },
+    {
+      "npcId": 1817,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Diseased Wolf",
+          "rank": 7,
+          "minLevel": 53,
+          "maxLevel": 54,
+          "zones": [
+            "Western Plaguelands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1817"
+        }
+      ]
+    },
+    {
+      "npcId": 1824,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite7",
+          "name": "Plague Lurker",
+          "rank": 7,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Western Plaguelands"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1824"
+        }
+      ]
+    },
+    {
+      "npcId": 9696,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite8",
+          "name": "Bloodaxe Worg",
+          "rank": 8,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire (Dungeon)"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=9696"
+        }
+      ]
+    },
+    {
+      "npcId": 272392,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#bite8",
+          "name": "Giant Moonstrider",
+          "rank": 8,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Moonglade"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=272392"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #bite was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Bats, Bears, Boars, Carrion Birds, Cats, Core Hounds, Crocolisks, Foxes, Gorillas, Hyenas, Raptors, Spiders, Tallstriders, Turtles, Wind Serpents, Wolves. Petopia Classic lists: Bats, Bears, Boars, Carrion Birds, Cats, Crocolisks, Gorillas, Hyenas, Raptors, Spiders, Tallstriders, Turtles, Wind Serpents, Wolves.",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (20): Juvenile Vuldren 250873 r1 (Fox, 1, Zephras Isle); Vuldren 250868 r1 (Fox, 6, Zephras Isle); Mother Fang 471 r1 (Spider, 7, Elwynn Forest); Ukorsbane 266851 r1 (Spider, 8, Durotar); Vulgara the Insatiable 254589 r2 (Fox, 8, Zephras Isle); Bloodtalon Matriarch 268530 r2 (Raptor, 9, Durotar); Vuldren Alpha 250874 r2 (Fox, 10, Zephras Isle); Sri'Skulk 10359 r2 (Spider, 13, Tirisfal Glades); Daggerfang 270693 r2 (Crocolisk, 15, Loch Modan); Strider Clutchmother 2172 r3 (Tallstrider, 20, Darkshore); Highland Tortoise 260809 r4 (Turtle, 26, Wetlands); Highland Spider 260803 r4 (Spider, 27-28, Wetlands); Juvenile Paletusk 266862 r5 (Boar, 33-34, Riverglades); Plains Coyote 259267 r5 (Wolf, 36-37, Riverglades); Drywallow Snapper 4343 r5 (Crocolisk, 37-38, Dustwallow Marsh); Sootfur 258522 r5 (Wolf, 38, Riverglades); Plains Prowler 268831 r5 (Wolf, 39-40, Riverglades); Krek the Noxious 263615 r6 (Turtle, 42, Riverglades); Ghostmaw 263380 r6 (Crocolisk, 42, Riverglades); Giant Moonstrider 272392 r8 (Tallstrider, 60, Moonglade)",
+    "Beasts in Petopia Classic's list but NOT in Petopia Forever's (2): Webwood Silkspinner 2000 r2 (Spider, 8-9, Teldrassil); Deviate Crocolisk 5053 r3 (Crocolisk, 18-19, Wailing Caverns (Dungeon))",
+    "INCONSISTENCY on Petopia Forever: these beasts are listed as teachers but their family is not in the page's 'Can be learned by' list: Aku'mai Snapjaw 4825 (Crab, r4). Recorded as listed."
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "ability": "mine",
+  "name": "Mine!",
+  "icon": "spell_nature_natureswrath",
+  "trainerOnly": false,
+  "researcher": "research agent (Forever family abilities), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#mine!1",
+          "spellIds": [],
+          "petLevel": 10,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265054",
+          "spellIds": [
+            1265054
+          ],
+          "petLevel": 10,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Mine!",
+          "spellIds": [
+            1265054
+          ],
+          "petLevel": 10,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#mine!2",
+          "spellIds": [],
+          "petLevel": 20,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265055",
+          "spellIds": [
+            1265055
+          ],
+          "petLevel": 20,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#mine!3",
+          "spellIds": [],
+          "petLevel": 30,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265056",
+          "spellIds": [
+            1265056
+          ],
+          "petLevel": 30,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#mine!4",
+          "spellIds": [],
+          "petLevel": 40,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265057",
+          "spellIds": [
+            1265057
+          ],
+          "petLevel": 40,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#mine!5",
+          "spellIds": [],
+          "petLevel": 50,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265058",
+          "spellIds": [
+            1265058
+          ],
+          "petLevel": 50,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Mine!",
+          "spellIds": [
+            1265058
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 276101,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#mine!1",
+          "name": "Nightscreech",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=276101",
+          "name": "Nightscreech",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 270298,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#mine!1",
+          "name": "Child of Jai'vhanel",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Darkshore"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=270298",
+          "name": "Child of Jai'vhanel",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 12,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 270196,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#mine!1",
+          "name": "Jai'vhanel",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Darkshore"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=270196",
+          "name": "Jai'vhanel",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 272389,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#mine!3",
+          "name": "Marsh Owl",
+          "rank": 3,
+          "minLevel": 34,
+          "maxLevel": 36,
+          "zones": [
+            "Alterac Mountains"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=272389",
+          "name": "Marsh Owl",
+          "rank": null,
+          "minLevel": 34,
+          "maxLevel": 36,
+          "zones": [
+            "Alterac Mountains"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Mine! rank 2-4 spell IDs 1265055-1265057 were found by tooltip scan (Wowhead labels them Rank 2/3/4, levels 20/30/40). Wowhead also has Mine! 1265059 and 1265060 (100 yd range, 'Requires level 1', no rank label, 10-12 and 14-16 damage) - not recorded as pet ranks; probably NPC/test versions.",
+    "Wowhead tooltip says disarm 3 sec; Petopia text says 4 sec.",
+    "Petopia: no known taming source for ranks 2, 4, 5. Child of Jai'vhanel: Petopia 11-12 vs Wowhead 10-12.",
+    "warcraft.wiki.gg Mine! page (Forever) gives only rank 1 ID 1265054 (level 10) and rank 5 ID 1265058; it appears to use the same game data as Wowhead.",
+    "Petopia Forever (wow-petopia.com/forever/abilities.php) lists ranks with pet level, TP cost and beasts per rank; beast NPC IDs come from its Wowhead Forever links. Petopia states its data comes from a limited beta and may change. Petopia gives no spell IDs. Its rank/beast lists are its own work, but its NPC IDs/links point to Wowhead.",
+    "wowhead-forever observations come from nether.wowhead.com/forever/tooltip/{spell,npc}/<id> (full www.wowhead.com pages return 403) and the www.wowhead.com/forever/search/suggestions-template endpoint (used for rank labels and spell IDs). Spell tooltips give 'Requires level N' (recorded as petLevel) and a 'Rank N' label; they do NOT show training point cost, so tp is null for wowhead-forever.",
+    "Wowhead NPC tooltips show level range, classification (Normal/Elite/Rare) and a zone ID only; they do not say which ability rank the beast teaches, so wowhead-forever beast observations have rank null (the list of beasts itself comes from Petopia). Zone IDs were turned into names with a fixed classic zone-ID table; Forever-only zone IDs were confirmed via Wowhead search (16591 Riverglades, 16593 Zephras Isle, 16611 Ruins of Lordaeron, 16550 The Drowned City, 16732 Excavation Site: Wetlands).",
+    "Petopia elite/rare flags come from its 'Rare Pets' and 'Elite Pets' browse pages (matched by name); when a beast is not on those pages the flag is omitted, not set false.",
+    "Blizzard announcement https://worldofwarcraft.blizzard.com/news/24301515 confirms the ability name and family only (no ranks, levels, TP or beasts), so no blizzard observation rows were added.",
+    "Spell IDs recorded are the 'Pet Abilities' (pet-cast) spells. Wowhead also lists separate hunter-side 'Abilities' spells with the same name/rank (presumably the learn/teach spells); those are listed in notes, not in spellIds.",
+    "Petopia lists the TP cost of every rank of these Forever family abilities as 0."
+  ]
+}

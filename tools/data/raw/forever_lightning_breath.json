@@ -1,0 +1,442 @@
+{
+  "ability": "lightning_breath",
+  "name": "Lightning Breath",
+  "icon": "spell_nature_lightning",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath1",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 1,
+          "description": "Breathes lightning, instantly dealing 8 to 10 Nature damage to a single target.",
+          "trainingSource": "No known training source."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "spellIds": null,
+          "petLevel": 12,
+          "tp": 5,
+          "description": "Breathes lightning, instantly dealing 20 to 22 Nature damage to a single target."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 10,
+          "description": "Breathes lightning, instantly dealing 32 to 36 Nature damage to a single target."
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath4",
+          "spellIds": null,
+          "petLevel": 36,
+          "tp": 15,
+          "description": "Breathes lightning, instantly dealing 46 to 54 Nature damage to a single target."
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 20,
+          "description": "Breathes lightning, instantly dealing 71 to 81 Nature damage to a single target."
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath6",
+          "spellIds": null,
+          "petLevel": 60,
+          "tp": 25,
+          "description": "Breathes lightning, instantly dealing 86 to 98 Nature damage to a single target."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 3630,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Deviate Coiler",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3630"
+        }
+      ]
+    },
+    {
+      "npcId": 3631,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Deviate Stinglash",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3631"
+        }
+      ]
+    },
+    {
+      "npcId": 3247,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Thunderhawk Hatchling",
+          "rank": 2,
+          "minLevel": 18,
+          "maxLevel": 20,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3247"
+        }
+      ]
+    },
+    {
+      "npcId": 3424,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Thunderhawk Cloudscraper",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3424"
+        }
+      ]
+    },
+    {
+      "npcId": 5056,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Deviate Dreadfang",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5056"
+        }
+      ]
+    },
+    {
+      "npcId": 5756,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Deviate Venomwing",
+          "rank": 2,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5756"
+        }
+      ]
+    },
+    {
+      "npcId": 3249,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath2",
+          "name": "Greater Thunderhawk",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3249"
+        }
+      ]
+    },
+    {
+      "npcId": 4117,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "name": "Cloud Serpent",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4117"
+        }
+      ]
+    },
+    {
+      "npcId": 3472,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "name": "Washte Pawne",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "The Barrens"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3472"
+        }
+      ]
+    },
+    {
+      "npcId": 4118,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "name": "Venomous Cloud Serpent",
+          "rank": 3,
+          "minLevel": 26,
+          "maxLevel": 28,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4118"
+        }
+      ]
+    },
+    {
+      "npcId": 4119,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath3",
+          "name": "Elder Cloud Serpent",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 29,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4119"
+        }
+      ]
+    },
+    {
+      "npcId": 5307,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath4",
+          "name": "Vale Screecher",
+          "rank": 4,
+          "minLevel": 41,
+          "maxLevel": 43,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5307"
+        }
+      ]
+    },
+    {
+      "npcId": 5308,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath4",
+          "name": "Rogue Vale Screecher",
+          "rank": 4,
+          "minLevel": 44,
+          "maxLevel": 46,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5308"
+        }
+      ]
+    },
+    {
+      "npcId": 5349,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "name": "Arash-ethis",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5349"
+        }
+      ]
+    },
+    {
+      "npcId": 8336,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "name": "Hakkari Sapper",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8336"
+        }
+      ]
+    },
+    {
+      "npcId": 5291,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "name": "Hakkari Frostwing",
+          "rank": 5,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5291"
+        }
+      ]
+    },
+    {
+      "npcId": 5708,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath5",
+          "name": "Spawn of Hakkar",
+          "rank": 5,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "The Temple of Atal'Hakkar (Dungeon)"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5708"
+        }
+      ]
+    },
+    {
+      "npcId": 272401,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath6",
+          "name": "Vale Screamer",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=272401"
+        }
+      ]
+    },
+    {
+      "npcId": 11357,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lightningbreath6",
+          "name": "Son of Hakkar",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Zul'Gurub (Raid)"
+          ],
+          "family": "Wind Serpent",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=11357"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #lightningbreath was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Wind Serpents. Petopia Classic lists: Wind Serpents.",
+    "Rank 1: Petopia Forever says 'No known training source.' (no beast listed).",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (1): Vale Screamer 272401 r6 (Wind Serpent, 60, Feralas)",
+    "No beasts removed vs Petopia Classic."
+  ]
+}

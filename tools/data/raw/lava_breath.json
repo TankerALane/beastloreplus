@@ -1,0 +1,64 @@
+{
+  "ability": "lava_breath",
+  "name": "Lava Breath",
+  "icon": "spell_fire_windsofwoe",
+  "trainerOnly": false,
+  "researcher": "research agent (Forever family abilities), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lavabreath1",
+          "spellIds": [],
+          "petLevel": 48,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=444678",
+          "spellIds": [
+            444678
+          ],
+          "petLevel": 48,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#lavabreath2",
+          "spellIds": [],
+          "petLevel": 48,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=444681",
+          "spellIds": [
+            444681
+          ],
+          "petLevel": 48,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [],
+  "notes": [
+    "NEW KEY (not in the RAW_SCHEMA list): Lava Breath, Core Hound family. Petopia Forever lists Core Hounds as a probable Forever family with Lava Breath ranks 1-2, both pet level 48, 0 TP, 'No known training source'. Petopia says no tameable Core Hounds were found during the beta.",
+    "Wowhead Forever: pet spells 444678 (Rank 1) and 444681 (Rank 2), both 'Requires level 48', icon spell_fire_windsofwoe; hunter-side 'Abilities' versions 444680 (R1) and 444682 (R2). The 444xxx IDs look like Season of Discovery-era spells reused in Forever, so this may not be a deliberately added Forever ability. No beasts known; beasts list empty.",
+    "Blizzard's announcement does not mention Core Hounds or Lava Breath.",
+    "Petopia Forever (wow-petopia.com/forever/abilities.php) lists ranks with pet level, TP cost and beasts per rank; beast NPC IDs come from its Wowhead Forever links. Petopia states its data comes from a limited beta and may change. Petopia gives no spell IDs. Its rank/beast lists are its own work, but its NPC IDs/links point to Wowhead.",
+    "wowhead-forever observations come from nether.wowhead.com/forever/tooltip/{spell,npc}/<id> (full www.wowhead.com pages return 403) and the www.wowhead.com/forever/search/suggestions-template endpoint (used for rank labels and spell IDs). Spell tooltips give 'Requires level N' (recorded as petLevel) and a 'Rank N' label; they do NOT show training point cost, so tp is null for wowhead-forever.",
+    "Wowhead NPC tooltips show level range, classification (Normal/Elite/Rare) and a zone ID only; they do not say which ability rank the beast teaches, so wowhead-forever beast observations have rank null (the list of beasts itself comes from Petopia). Zone IDs were turned into names with a fixed classic zone-ID table; Forever-only zone IDs were confirmed via Wowhead search (16591 Riverglades, 16593 Zephras Isle, 16611 Ruins of Lordaeron, 16550 The Drowned City, 16732 Excavation Site: Wetlands).",
+    "Petopia elite/rare flags come from its 'Rare Pets' and 'Elite Pets' browse pages (matched by name); when a beast is not on those pages the flag is omitted, not set false.",
+    "Blizzard announcement https://worldofwarcraft.blizzard.com/news/24301515 confirms the ability name and family only (no ranks, levels, TP or beasts), so no blizzard observation rows were added.",
+    "Spell IDs recorded are the 'Pet Abilities' (pet-cast) spells. Wowhead also lists separate hunter-side 'Abilities' spells with the same name/rank (presumably the learn/teach spells); those are listed in notes, not in spellIds.",
+    "Petopia lists the TP cost of every rank of these Forever family abilities as 0."
+  ]
+}

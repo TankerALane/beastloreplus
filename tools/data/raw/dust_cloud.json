@@ -1,0 +1,380 @@
+{
+  "ability": "dust_cloud",
+  "name": "Dust Cloud",
+  "icon": "spell_nature_sleep",
+  "trainerOnly": false,
+  "researcher": "research agent (Forever family abilities), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud1",
+          "spellIds": [],
+          "petLevel": 12,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265899",
+          "spellIds": [
+            1265899
+          ],
+          "petLevel": 12,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Dust_Cloud",
+          "spellIds": [
+            1265899
+          ],
+          "petLevel": 12,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud2",
+          "spellIds": [],
+          "petLevel": 24,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265901",
+          "spellIds": [
+            1265901
+          ],
+          "petLevel": 24,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud3",
+          "spellIds": [],
+          "petLevel": 36,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265902",
+          "spellIds": [
+            1265902
+          ],
+          "petLevel": 36,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud4",
+          "spellIds": [],
+          "petLevel": 48,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265903",
+          "spellIds": [
+            1265903
+          ],
+          "petLevel": 48,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud5",
+          "spellIds": [],
+          "petLevel": 60,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1265904",
+          "spellIds": [
+            1265904
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Dust_Cloud",
+          "spellIds": [
+            1265904
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 3246,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud1",
+          "name": "Fleeting Plainstrider",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3246",
+          "name": "Fleeting Plainstrider",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2322,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud1",
+          "name": "Foreststrider",
+          "rank": 1,
+          "minLevel": 14,
+          "maxLevel": 16,
+          "zones": [
+            "Darkshore"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2322",
+          "name": "Foreststrider",
+          "rank": null,
+          "minLevel": 14,
+          "maxLevel": 16,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2172,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud1",
+          "name": "Strider Clutchmother",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": true,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2172",
+          "name": "Strider Clutchmother",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Darkshore"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 4724,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud2",
+          "name": "Sandstrider",
+          "rank": 2,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4724",
+          "name": "Sandstrider",
+          "rank": null,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 263348,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud3",
+          "name": "Roving Tallstrider",
+          "rank": 3,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=263348",
+          "name": "Roving Tallstrider",
+          "rank": null,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Riverglades"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4725,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud3",
+          "name": "Crazed Sandstrider",
+          "rank": 3,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4725",
+          "name": "Crazed Sandstrider",
+          "rank": null,
+          "minLevel": 37,
+          "maxLevel": 39,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 272391,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud4",
+          "name": "Moonstrider",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Moonglade"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=272391",
+          "name": "Moonstrider",
+          "rank": null,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Moonglade"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 272392,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dustcloud5",
+          "name": "Giant Moonstrider",
+          "rank": 5,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Moonglade"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=272392",
+          "name": "Giant Moonstrider",
+          "rank": null,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Moonglade"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Hunter-side 'Abilities' Dust Cloud spells on Wowhead: 1265907 (R1), 1265908 (R2), 1265909 (R3), 1265911 (R5).",
+    "warcraft.wiki.gg Dust Cloud (Forever) gives IDs 1265899 and 1265904 (rank 1/5, level 12) - probably taken from Wowhead/game data.",
+    "Crazed Sandstrider: Petopia 39-40 vs Wowhead 37-39. Strider Clutchmother: Petopia Rare+Elite, Wowhead tooltip 'Rare' only.",
+    "Petopia Forever (wow-petopia.com/forever/abilities.php) lists ranks with pet level, TP cost and beasts per rank; beast NPC IDs come from its Wowhead Forever links. Petopia states its data comes from a limited beta and may change. Petopia gives no spell IDs. Its rank/beast lists are its own work, but its NPC IDs/links point to Wowhead.",
+    "wowhead-forever observations come from nether.wowhead.com/forever/tooltip/{spell,npc}/<id> (full www.wowhead.com pages return 403) and the www.wowhead.com/forever/search/suggestions-template endpoint (used for rank labels and spell IDs). Spell tooltips give 'Requires level N' (recorded as petLevel) and a 'Rank N' label; they do NOT show training point cost, so tp is null for wowhead-forever.",
+    "Wowhead NPC tooltips show level range, classification (Normal/Elite/Rare) and a zone ID only; they do not say which ability rank the beast teaches, so wowhead-forever beast observations have rank null (the list of beasts itself comes from Petopia). Zone IDs were turned into names with a fixed classic zone-ID table; Forever-only zone IDs were confirmed via Wowhead search (16591 Riverglades, 16593 Zephras Isle, 16611 Ruins of Lordaeron, 16550 The Drowned City, 16732 Excavation Site: Wetlands).",
+    "Petopia elite/rare flags come from its 'Rare Pets' and 'Elite Pets' browse pages (matched by name); when a beast is not on those pages the flag is omitted, not set false.",
+    "Blizzard announcement https://worldofwarcraft.blizzard.com/news/24301515 confirms the ability name and family only (no ranks, levels, TP or beasts), so no blizzard observation rows were added.",
+    "Spell IDs recorded are the 'Pet Abilities' (pet-cast) spells. Wowhead also lists separate hunter-side 'Abilities' spells with the same name/rank (presumably the learn/teach spells); those are listed in notes, not in spellIds.",
+    "Petopia lists the TP cost of every rank of these Forever family abilities as 0."
+  ]
+}

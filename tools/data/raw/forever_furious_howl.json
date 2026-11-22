@@ -1,0 +1,342 @@
+{
+  "ability": "furious_howl",
+  "name": "Furious Howl",
+  "icon": "ability_hunter_pet_wolf",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "spellIds": null,
+          "petLevel": 10,
+          "tp": 10,
+          "description": "The wolf howls, increasing the melee attack power of all party members within 15 yards by 139.  Lasts 1 min."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 15,
+          "description": "The wolf howls, increasing the melee attack power of all party members within 15 yards by 51 to 62.  Lasts 1 min."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20,
+          "description": "The wolf howls, increasing the melee attack power of all party members within 15 yards by 115.  Lasts 1 min."
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl4",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25,
+          "description": "The wolf howls, increasing the melee attack power of all party members within 15 yards by 45 to 57.  Lasts 1 min."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 1765,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "name": "Worg",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1765"
+        }
+      ]
+    },
+    {
+      "npcId": 833,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "name": "Coyote Packleader",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Westfall"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=833"
+        }
+      ]
+    },
+    {
+      "npcId": 274300,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "name": "Coldrasp",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=274300"
+        }
+      ]
+    },
+    {
+      "npcId": 10644,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "name": "Mist Howler",
+          "rank": 1,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=10644"
+        }
+      ]
+    },
+    {
+      "npcId": 1258,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Black Ravager Mastiff",
+          "rank": 2,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1258"
+        }
+      ]
+    },
+    {
+      "npcId": 3825,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Ghostpaw Alpha",
+          "rank": 2,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Ashenvale"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3825"
+        }
+      ]
+    },
+    {
+      "npcId": 2729,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Elder Crag Coyote",
+          "rank": 2,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2729"
+        }
+      ]
+    },
+    {
+      "npcId": 5287,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Longtooth Howler",
+          "rank": 2,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5287"
+        }
+      ]
+    },
+    {
+      "npcId": 2925,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Silvermane Howler",
+          "rank": 2,
+          "minLevel": 45,
+          "maxLevel": 46,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2925"
+        }
+      ]
+    },
+    {
+      "npcId": 5286,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Longtooth Runner",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5286"
+        }
+      ]
+    },
+    {
+      "npcId": 5356,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Snarler",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5356"
+        }
+      ]
+    },
+    {
+      "npcId": 2924,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Silvermane Wolf",
+          "rank": 3,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2924"
+        }
+      ]
+    },
+    {
+      "npcId": 8959,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Felpaw Wolf",
+          "rank": 3,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8959"
+        }
+      ]
+    },
+    {
+      "npcId": 14339,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Death Howl",
+          "rank": 3,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=14339"
+        }
+      ]
+    },
+    {
+      "npcId": 9696,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl4",
+          "name": "Bloodaxe Worg",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire (Dungeon)"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=9696"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #furioushowl was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Wolves. Petopia Classic lists: Wolves.",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (1): Coldrasp 274300 r1 (Wolf, 12, Tirisfal Glades)",
+    "Beasts in Petopia Classic's list but NOT in Petopia Forever's (1): Prairie Wolf Alpha 2960 r1 (Wolf, 9-10, Mulgore)"
+  ]
+}

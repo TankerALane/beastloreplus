@@ -1,0 +1,1837 @@
+{
+  "ability": "scorpid_poison",
+  "name": "Scorpid Poison",
+  "icon": "ability_poisonsting",
+  "trainerOnly": false,
+  "researcher": "research agent (lightning_breath/scorpid_poison), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24640",
+          "spellIds": [
+            24640
+          ],
+          "petLevel": 8,
+          "tp": 10
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=20",
+          "spellIds": [
+            24640
+          ],
+          "petLevel": 8,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Scorpid_Poison",
+          "spellIds": [
+            24640
+          ],
+          "petLevel": 8,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison1",
+          "spellIds": [],
+          "petLevel": 8,
+          "tp": 10
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "spellIds": [],
+          "petLevel": 8,
+          "tp": 10
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24583",
+          "spellIds": [
+            24583
+          ],
+          "petLevel": 24,
+          "tp": 15
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=20",
+          "spellIds": [
+            24583
+          ],
+          "petLevel": 24,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison2",
+          "spellIds": [],
+          "petLevel": 24,
+          "tp": 15
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "spellIds": [],
+          "petLevel": 24,
+          "tp": 15
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24586",
+          "spellIds": [
+            24586
+          ],
+          "petLevel": 40,
+          "tp": 20
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=20",
+          "spellIds": [
+            24586
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "spellIds": [],
+          "petLevel": 40,
+          "tp": 20
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "spellIds": [],
+          "petLevel": 40,
+          "tp": 20
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24587",
+          "spellIds": [
+            24587
+          ],
+          "petLevel": 56,
+          "tp": 25
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/pet=20",
+          "spellIds": [
+            24587
+          ],
+          "petLevel": 56,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Scorpid_Poison",
+          "spellIds": [
+            24587
+          ],
+          "petLevel": null,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison4",
+          "spellIds": [],
+          "petLevel": 56,
+          "tp": 25
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "spellIds": [],
+          "petLevel": 56,
+          "tp": 25
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 3127,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3127",
+          "name": "Venomtail Scorpid",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison1",
+          "name": "Venomtail Scorpid",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Venomtail Scorpid",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/yellow-scorpids/",
+          "name": "Venomtail Scorpid",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3127",
+          "name": "Venomtail Scorpid",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3226,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3226",
+          "name": "Corrupted Scorpid",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison1",
+          "name": "Corrupted Scorpid",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Corrupted Scorpid",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-scorpids/",
+          "name": "Corrupted Scorpid",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3226",
+          "name": "Corrupted Scorpid",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3250,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3250",
+          "name": "Silithid Creeper",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison1",
+          "name": "Silithid Creeper",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Silithid Creeper",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-scorpids/",
+          "name": "Silithid Creeper",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3250",
+          "name": "Silithid Creeper",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3252,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3252",
+          "name": "Silithid Swarmer",
+          "rank": 1,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison1",
+          "name": "Silithid Swarmer",
+          "rank": 1,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Sillithid Swarmer",
+          "rank": 1,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-scorpids/",
+          "name": "Silithid Swarmer",
+          "rank": 1,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3252",
+          "name": "Silithid Swarmer",
+          "rank": null,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "The Barrens"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5823,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5823",
+          "name": "Death Flayer",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "rare": true,
+          "elite": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison1",
+          "name": "Death Flayer",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison1",
+          "name": "Death Flayer",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-scorpids/",
+          "name": "Death Flayer",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5823",
+          "name": "Death Flayer",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "rare": true,
+          "elite": false
+        }
+      ]
+    },
+    {
+      "npcId": 4139,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4139",
+          "name": "Scorpid Terror",
+          "rank": 2,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison2",
+          "name": "Scorpid Terror",
+          "rank": 2,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpid Terror",
+          "rank": 2,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-scorpids/",
+          "name": "Scorpid Terror",
+          "rank": 2,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4139",
+          "name": "Scorpid Terror",
+          "rank": null,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4140,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4140",
+          "name": "Scorpid Reaver",
+          "rank": 2,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison2",
+          "name": "Scorpid Reaver",
+          "rank": 2,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpid Reaver",
+          "rank": 2,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-scorpids/",
+          "name": "Scorpid Reaver",
+          "rank": 2,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4140",
+          "name": "Scorpid Reaver",
+          "rank": null,
+          "minLevel": 31,
+          "maxLevel": 32,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4696,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4696",
+          "name": "Scorpashi Snapper",
+          "rank": 2,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison2",
+          "name": "Scorpashi Snapper",
+          "rank": 2,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpashi Snapper",
+          "rank": 2,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/golden-scorpids/",
+          "name": "Scorpashi Snapper",
+          "rank": 2,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4696",
+          "name": "Scorpashi Snapper",
+          "rank": null,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4697,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpashi Lasher",
+          "rank": 2,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4697",
+          "name": "Scorpashi Lasher",
+          "rank": null,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4697",
+          "name": "Scorpashi Lasher",
+          "rank": null,
+          "minLevel": 34,
+          "maxLevel": 35,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4699,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4699",
+          "name": "Scorpashi Venomlash",
+          "rank": 2,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison2",
+          "name": "Scorpashi Venomlash",
+          "rank": 2,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Scorpashi Venomlash",
+          "rank": 2,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/golden-scorpids/",
+          "name": "Scorpashi Venomlash",
+          "rank": 2,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4699",
+          "name": "Scorpashi Venomlash",
+          "rank": null,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Desolace"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5937,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5937",
+          "name": "Vile Sting",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": true,
+          "rare": true
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison2",
+          "name": "Vile Sting",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Vile Sting",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/silver-scorpids/",
+          "name": "Vile Sting",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5937",
+          "name": "Vile Sting",
+          "rank": null,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Thousand Needles"
+          ],
+          "elite": true,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 7078,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=7078",
+          "name": "Cleft Scorpid",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Uldaman"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison2",
+          "name": "Cleft Scorpid",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison2",
+          "name": "Cleft Scorpid",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-scorpids/",
+          "name": "Cleft Scorpid",
+          "rank": 2,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Uldaman"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=7078",
+          "name": "Cleft Scorpid",
+          "rank": null,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Uldaman"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5422,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5422",
+          "name": "Scorpid Hunter",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Tanaris"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Scorpid Hunter",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpid Hunter",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pink-scorpids/",
+          "name": "Scorpid Hunter",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5422",
+          "name": "Scorpid Hunter",
+          "rank": null,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Tanaris"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5423,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5423",
+          "name": "Scorpid Tail Lasher",
+          "rank": 3,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Tanaris"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Scorpid Tail Lasher",
+          "rank": 3,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpid Tail Lasher",
+          "rank": 3,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pink-scorpids/",
+          "name": "Scorpid Tail Lasher",
+          "rank": 3,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5423",
+          "name": "Scorpid Tail Lasher",
+          "rank": null,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Tanaris"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5424,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5424",
+          "name": "Scorpid Dunestalker",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Scorpid Dunestalker",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpid Dunestalker",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pink-scorpids/",
+          "name": "Scorpid Dunestalker",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5424",
+          "name": "Scorpid Dunestalker",
+          "rank": null,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5988,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Scorpok Stinger",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpok Stinger",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-scorpids/",
+          "name": "Scorpok Stinger",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5988",
+          "name": "Scorpok Stinger",
+          "rank": null,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5988",
+          "name": "Scorpok Stinger",
+          "rank": null,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 7405,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=7405",
+          "name": "Deadly Cleft Scorpid",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Uldaman"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Deadly Cleft Scorpid",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Deadly Cleft Scorpid",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Uldaman (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-scorpids/",
+          "name": "Deadly Cleft Scorpid",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Uldaman"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=7405",
+          "name": "Deadly Cleft Scorpid",
+          "rank": null,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Uldaman"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 7803,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=7803",
+          "name": "Scorpid Duneburrower",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Scorpid Duneburrower",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Scorpid Duneburrower",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pink-scorpids/",
+          "name": "Scorpid Duneburrower",
+          "rank": 3,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=7803",
+          "name": "Scorpid Duneburrower",
+          "rank": null,
+          "minLevel": 46,
+          "maxLevel": 47,
+          "zones": [
+            "Tanaris"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 8926,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=8926",
+          "name": "Deep Stinger",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Deep Stinger",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Deep Stinger",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-scorpids/",
+          "name": "Deep Stinger",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=8926",
+          "name": "Deep Stinger",
+          "rank": null,
+          "minLevel": 50,
+          "maxLevel": 52,
+          "zones": [
+            "Blackrock Depths"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 9691,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=9691",
+          "name": "Venomtip Scorpid",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Venomtip Scorpid",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Venomtip Scorpid",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/yellow-scorpids/",
+          "name": "Venomtip Scorpid",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=9691",
+          "name": "Venomtip Scorpid",
+          "rank": null,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 9695,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=9695",
+          "name": "Deathlash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Deathlash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Deathlash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/yellow-scorpids/",
+          "name": "Deathlash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=9695",
+          "name": "Deathlash Scorpid",
+          "rank": null,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 11735,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=11735",
+          "name": "Stonelash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Silithus"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison3",
+          "name": "Stonelash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison3",
+          "name": "Stonelash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/silver-scorpids/",
+          "name": "Stonelash Scorpid",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=11735",
+          "name": "Stonelash Scorpid",
+          "rank": null,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Silithus"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 9698,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=9698",
+          "name": "Firetail Scorpid",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison4",
+          "name": "Firetail Scorpid",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "name": "Firetail Scorpid",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/yellow-scorpids/",
+          "name": "Firetail Scorpid",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=9698",
+          "name": "Firetail Scorpid",
+          "rank": null,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 11736,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=11736",
+          "name": "Stonelash Pincer",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Silithus"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison4",
+          "name": "Stonelash Pincer",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "name": "Stonelash Pincer",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/golden-scorpids/",
+          "name": "Stonelash Pincer",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=11736",
+          "name": "Stonelash Pincer",
+          "rank": null,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Silithus"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 11737,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=11737",
+          "name": "Stonelash Flayer",
+          "rank": 4,
+          "minLevel": 57,
+          "maxLevel": 58,
+          "zones": [
+            "Silithus"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison4",
+          "name": "Stonelash Flayer",
+          "rank": 4,
+          "minLevel": 58,
+          "maxLevel": 59,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "name": "Stonelash Flayer",
+          "rank": 4,
+          "minLevel": 58,
+          "maxLevel": 59,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/silver-scorpids/",
+          "name": "Stonelash Flayer",
+          "rank": 4,
+          "minLevel": 58,
+          "maxLevel": 59,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=11737",
+          "name": "Stonelash Flayer",
+          "rank": null,
+          "minLevel": 57,
+          "maxLevel": 58,
+          "zones": [
+            "Silithus"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 14476,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=14476",
+          "name": "Krellack",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Silithus"
+          ],
+          "rare": true,
+          "elite": false
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#scorpidpoison4",
+          "name": "Krellack",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#scorpidpoison4",
+          "name": "Krellack",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-scorpids/",
+          "name": "Krellack",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Silithus"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=14476",
+          "name": "Krellack",
+          "rank": null,
+          "minLevel": 56,
+          "maxLevel": 56,
+          "zones": [
+            "Silithus"
+          ],
+          "rare": true,
+          "elite": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "wowhead-classic rank observations: spellIds and petLevel come from Wowhead Classic spell pages (see-also-ability listview 'level' field). The tp values in wowhead-classic rank observations come from a user comment by 'hevgirl' (2019) on the Rank 1 spell page, not from Wowhead's own data. Wowhead Classic spell pages have NO 'Taught by NPC' listview for pet abilities.",
+    "wowhead-classic beast observations: 'rank' comes from that same hevgirl user comment (table of beasts per rank with npc= links); minLevel/maxLevel/zones/elite/rare come from Wowhead's own 'Tameable' listview on the pet family page (https://www.wowhead.com/classic/pet=20). Zone names were mapped by the researcher from Wowhead numeric zone IDs (17=The Barrens, 400=Thousand Needles, 718=Wailing Caverns, 1477=The Temple of Atal'Hakkar, 357=Feralas, 1977=Zul'Gurub, 14=Durotar, 405=Desolace, 440=Tanaris, 4=Blasted Lands, 1337=Uldaman, 1584=Blackrock Depths, 46=Burning Steppes, 1377=Silithus). Wowhead location -6 (and Forever-only 16651) is unmapped and omitted. elite/rare derived from Wowhead 'classification' codes (0=normal, 1=elite, 2=rare elite, 4=rare).",
+    "wowhead-classic beast observations with rank null: the beast is in Wowhead's tameable list (levels from there) but is not in the hevgirl comment.",
+    "wowhead-forever: Wowhead HAS a Forever section. The Forever pet family page (https://www.wowhead.com/forever/pet=20) loaded and gives the same spell IDs and learn levels per rank, each marked envChange 'updated / values_changed' (damage reduced on Forever). It has no tp values and does not say which beast teaches which rank, so wowhead-forever beast observations have rank null and only record level/zone/classification from the Forever tameable listview. Wowhead Forever spell/NPC pages (and later all Wowhead pages) returned HTTP 403 after the first batch of requests; not retried.",
+    "petopia-classic and petopia-forever are the SAME SITE (wow-petopia.com /classic/abilities.php and /forever/abilities.php) and must count as one source. Petopia links its beasts to Wowhead NPC pages; that is where the npcIds in petopia observations come from. Petopia gives pet level and TP per rank but no spell IDs (spellIds [] = not given).",
+    "warcrafttavern (warcrafttavern.com/wow-classic/hunter-pets/<colour>-<family>/) lists beasts grouped by model colour with 'Pet Level', 'Skills When Tamed', 'Zone'. No NPC IDs (matched by name to Wowhead IDs). Probably not exhaustive. Curly apostrophes in zone names normalized to ASCII. Zone spelling 'Ferelas' is as the site shows it (typo for Feralas).",
+    "warcraft.wiki.gg: curl was blocked (403 'Blocked - wiki.gg'); WebFetch worked. The ability page gives spell IDs only for the first and last rank and a single 'Level learned' value; it lists no beasts and no TP costs. The wiki pet-family page lists no tameable beasts with ranks either.",
+    "FOREVER-SPECIFIC: Petopia Forever adds Scorpashi Lasher (npc 4697, 34-35, Desolace) to Rank 2. Petopia classic and the hevgirl comment do NOT list it for Scorpid Poison, and Warcraft Tavern lists Scorpashi Lasher with 'Claw 5' only. Could be a Forever change or a Petopia correction; unverified.",
+    "Petopia Forever spells it 'Sillithid Swarmer' (typo) for npc 3252; recorded as shown.",
+    "FOREVER-SPECIFIC: damage reduced on Forever (R1 5, R2 10, R3 20, R4 25 Nature over 10 sec vs Classic 10/15/30/40) per Wowhead Forever envChange, Petopia Forever and wiki. Wowhead Forever scorpid family abilities: Claw, Dash, Scorpid Poison.",
+    "Wowhead Forever gives Scorpashi Venomlash (4699) extra locations [405 Desolace, 16651, -6]; 16651 and -6 not mapped.",
+    "Vile Sting (5937) has Wowhead classification code 2 (rare elite) in both Classic and Forever lists; recorded as elite+rare. Petopia/Warcraft Tavern give no flags. Treat the elite flag as doubtful.",
+    "Level disagreements: Stonelash Pincer (11736) Wowhead 56-56 vs Petopia/Warcraft Tavern 56-57; Stonelash Flayer (11737) Wowhead 57-58 vs Petopia/Warcraft Tavern 58-59. Recorded as each source states.",
+    "warcraft.wiki.gg Scorpid Poison page gives spell IDs only for Rank 1 (24640) and Rank 4 (24587) and a single 'learned at level 8' (so wiki Rank 4 petLevel is null). Wiki patch notes: added 1.7.0; duration slightly lengthened 1.11.0.",
+    "Spell ID series per Wowhead: 24640, 24583, 24586, 24587 (learn levels 8/24/40/56). Note the Rank 1 ID is higher than Ranks 2-4.",
+    "Scorpok Stinger (5988, 50-51, Blasted Lands) is listed for Rank 3 by Petopia (classic+forever) and Warcraft Tavern but is missing from the hevgirl Wowhead comment, so its wowhead-classic observation has rank null."
+  ]
+}

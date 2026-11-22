@@ -1,0 +1,493 @@
+{
+  "ability": "shell_shield",
+  "name": "Shell Shield",
+  "icon": "ability_hunter_pet_turtle",
+  "trainerOnly": false,
+  "researcher": "research agent (Opus 5.5) for charge/furious_howl/thunderstomp/shell_shield, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#shellshield1",
+          "spellIds": null,
+          "petLevel": 20,
+          "tp": 15
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "spellIds": null,
+          "petLevel": 20,
+          "tp": 15
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=26064",
+          "spellIds": [
+            26064
+          ],
+          "petLevel": 20,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=26064",
+          "spellIds": [
+            26064
+          ],
+          "petLevel": 20,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Shell_Shield",
+          "spellIds": [
+            26064
+          ],
+          "petLevel": 20,
+          "tp": 15
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 2408,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#shellshield1",
+          "name": "Snapjaw",
+          "rank": 1,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Snapjaw",
+          "rank": 1,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/snapjaw/",
+          "name": "Snapjaw",
+          "rank": 1,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2408",
+          "name": "Snapjaw",
+          "rank": null,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Hillsbrad Foothills"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2408",
+          "name": "Snapjaw",
+          "rank": null,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Alterac Mountains"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3653,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#shellshield1",
+          "name": "Kresh",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Kresh",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Wailing Caverns (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/kresh/",
+          "name": "Kresh",
+          "rank": 1,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Wailing Caverns"
+          ],
+          "elite": true
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Shell_Shield",
+          "name": "Kresh",
+          "rank": 1,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": []
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3653",
+          "name": "Kresh",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Wailing Caverns"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3653",
+          "name": "Kresh",
+          "rank": null,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Wailing Caverns"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4824,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#shellshield1",
+          "name": "Aku'mai Fisher",
+          "rank": 1,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Aku'mai Fisher",
+          "rank": 1,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/akumai-fisher/",
+          "name": "Aku'mai Fisher",
+          "rank": 1,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4824",
+          "name": "Aku'mai Fisher",
+          "rank": null,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4824",
+          "name": "Aku'mai Fisher",
+          "rank": null,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4825,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#shellshield1",
+          "name": "Aku'mai Snapjaw",
+          "rank": 1,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Aku'mai Snapjaw",
+          "rank": 1,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/akumai-snapjaw/",
+          "name": "Aku'mai Snapjaw",
+          "rank": 1,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4825",
+          "name": "Aku'mai Snapjaw",
+          "rank": null,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4825",
+          "name": "Aku'mai Snapjaw",
+          "rank": null,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4887,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#shellshield1",
+          "name": "Ghamoo-ra",
+          "rank": 1,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Ghamoo-ra",
+          "rank": 1,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ghamoo-ra/",
+          "name": "Ghamoo-ra",
+          "rank": 1,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Shell_Shield",
+          "name": "Ghamoo-Ra",
+          "rank": 1,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": []
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4887",
+          "name": "Ghamoo-ra",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4887",
+          "name": "Ghamoo-ra",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 14223,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#shellshield1",
+          "name": "Cranky Benj",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Alterac Mountains"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Cranky Benj",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Alterac Mountains"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=14223",
+          "name": "Cranky Benj",
+          "rank": null,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Alterac Mountains"
+          ],
+          "elite": false,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=14223",
+          "name": "Cranky Benj",
+          "rank": null,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Alterac Mountains"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 263615,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#shellshield1",
+          "name": "Krek the Noxious",
+          "rank": 1,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=263615",
+          "name": "Krek the Noxious",
+          "rank": null,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Sources: petopia-classic (wow-petopia.com/classic/abilities.php) and petopia-forever (wow-petopia.com/forever/abilities.php) are the SAME SITE (count as one source); they are separate datasets for Classic Era and WoW Forever. Petopia gives no spell IDs; its NPC links point to Wowhead (classic.wowhead.com / wowhead.com/forever).",
+    "wowhead-classic and wowhead-forever are the SAME SITE (count as one source). Wowhead DOES have a Forever section (wowhead.com/forever/...). Full Wowhead pages are behind an AWS WAF JS challenge (curl gets HTTP 202, empty body) and WebFetch strips page scripts, so the 'Taught by NPC' listviews could NOT be read. Wowhead data here comes only from nether.wowhead.com tooltip JSON: spell 'Requires level' (recorded as petLevel; TP is not in tooltips, so null) and NPC name/level/classification/primary map zone. Wowhead beast observations therefore have rank=null: they confirm identity, level and elite/rare, NOT which rank the NPC teaches. Classic tooltips carry no 'Rank N' label; the rank for classic spell IDs was assigned by matching required level to the Forever tooltip (which shows 'Rank N') and to Petopia's rank levels.",
+    "Wowhead NPC zones were converted from the tooltip's numeric map zone id using standard AreaTable ids (e.g. 491=Razorfen Kraul, 719=Blackfathom Deeps); the tooltip gives only one primary zone.",
+    "warcrafttavern = warcrafttavern.com/wow-classic/hunter-pets/ (Classic Era; per-model listing pages plus per-pet pages). No NPC IDs (observations matched to IDs by name). elite/rare set only where the per-pet page shows a 'Class' field (Elite or Rare); omitted otherwise. Looks like an independent dataset (it disagrees with Petopia in places), origin not stated.",
+    "warcraft.wiki.gg ability pages give few per-rank values and no beast lists; 'Pet abilities (Classic)' gives only rank-1 level and TP per ability. The old URLs Charge_(Boar) returned 404; the working page is Charge_(boar_pet_ability).",
+    "warcraft.wiki.gg Shell Shield: only spell 26064, level 20; TP 15 from 'Pet abilities (Classic)'. Trivia names Kresh (Wailing Caverns) and Ghamoo-Ra (Blackfathom Deeps) as low-level turtles that knew the ability (no levels or IDs given; rank 1 because there is only one rank).",
+    "CONFLICT Cranky Benj (14223, Alterac Mountains, 32, Rare): both Petopia pages list Shell Shield 1; warcrafttavern shows Skills When Tamed 'None' (no warcrafttavern observation recorded).",
+    "FOREVER-SPECIFIC: Krek the Noxious (263615, Turtle, 42, Riverglades; Wowhead Forever tooltip: Elite) teaches Shell Shield 1 on Forever only.",
+    "FOREVER-SPECIFIC: Shell Shield changed on Forever: attack interval +60% (Classic +43%) 'but deals more damage with each attack'. Petopia Forever lists Aku'mai Snapjaw (4825) with family 'Crab' (Wowhead Forever tooltip still says Turtle).",
+    "Snapjaw (2408): Wowhead classic tooltip primary zone = Hillsbrad Foothills (267), Wowhead Forever = Alterac Mountains (36); both Petopia pages and warcrafttavern say Hillsbrad Foothills.",
+    "wowhead-forever npc 263615 (Krek the Noxious): tooltip map zone id 16591 (not a Classic zone id; presumably the new Forever zone Riverglades) - zones left empty.",
+    "NPC 4825: family differs between Petopia pages: petopia-classic=Turtle, petopia-forever=Crab"
+  ]
+}

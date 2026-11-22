@@ -1,0 +1,725 @@
+{
+  "ability": "dash",
+  "name": "Dash",
+  "icon": "ability_druid_dash",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 15,
+          "description": "Increases movement speed by 40% for 15 seconds."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20,
+          "description": "Increases movement speed by 60% for 15 seconds."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 25,
+          "description": "Increases movement speed by 80% for 15 seconds."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 4724,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Sandstrider",
+          "rank": 1,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4724"
+        }
+      ]
+    },
+    {
+      "npcId": 976,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Kurzen War Tiger",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=976"
+        }
+      ]
+    },
+    {
+      "npcId": 682,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Stranglethorn Tiger",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=682"
+        }
+      ]
+    },
+    {
+      "npcId": 4688,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Bonepaw Hyena",
+          "rank": 1,
+          "minLevel": 33,
+          "maxLevel": 35,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Hyena",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4688"
+        }
+      ]
+    },
+    {
+      "npcId": 4304,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Scarlet Tracking Hound",
+          "rank": 1,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Scarlet Monastery (Dungeon)"
+          ],
+          "family": "Hyena",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4304"
+        }
+      ]
+    },
+    {
+      "npcId": 4950,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Spot",
+          "rank": 1,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Dustwallow Marsh"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4950"
+        }
+      ]
+    },
+    {
+      "npcId": 2727,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Crag Coyote",
+          "rank": 1,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2727"
+        }
+      ]
+    },
+    {
+      "npcId": 767,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Swamp Jaguar",
+          "rank": 1,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Swamp of Sorrows"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=767"
+        }
+      ]
+    },
+    {
+      "npcId": 2850,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Broken Tooth",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 37,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2850"
+        }
+      ]
+    },
+    {
+      "npcId": 2728,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Feral Crag Coyote",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2728"
+        }
+      ]
+    },
+    {
+      "npcId": 4662,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Magram Bonepaw",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Hyena",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4662"
+        }
+      ]
+    },
+    {
+      "npcId": 729,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Sin'Dall",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 37,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=729"
+        }
+      ]
+    },
+    {
+      "npcId": 2729,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Elder Crag Coyote",
+          "rank": 1,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2729"
+        }
+      ]
+    },
+    {
+      "npcId": 4725,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash1",
+          "name": "Crazed Sandstrider",
+          "rank": 1,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Desolace"
+          ],
+          "family": "Tallstrider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4725"
+        }
+      ]
+    },
+    {
+      "npcId": 2734,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Ridge Stalker Patriarch",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2734"
+        }
+      ]
+    },
+    {
+      "npcId": 728,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Bhag'thera",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 40,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=728"
+        }
+      ]
+    },
+    {
+      "npcId": 5286,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Longtooth Runner",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5286"
+        }
+      ]
+    },
+    {
+      "npcId": 263315,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Ombassa",
+          "rank": 2,
+          "minLevel": 41,
+          "maxLevel": 41,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=263315"
+        }
+      ]
+    },
+    {
+      "npcId": 5425,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Starving Blisterpaw",
+          "rank": 2,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Hyena",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5425"
+        }
+      ]
+    },
+    {
+      "npcId": 8211,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Old Cliff Jumper",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8211"
+        }
+      ]
+    },
+    {
+      "npcId": 1713,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Elder Shadowmaw Panther",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1713"
+        }
+      ]
+    },
+    {
+      "npcId": 2730,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Rabid Crag Coyote",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Badlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2730"
+        }
+      ]
+    },
+    {
+      "npcId": 8208,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Murderous Blisterpaw",
+          "rank": 2,
+          "minLevel": 43,
+          "maxLevel": 43,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Hyena",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8208"
+        }
+      ]
+    },
+    {
+      "npcId": 5426,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Blisterpaw Hyena",
+          "rank": 2,
+          "minLevel": 44,
+          "maxLevel": 45,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Hyena",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5426"
+        }
+      ]
+    },
+    {
+      "npcId": 5427,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Rabid Blisterpaw",
+          "rank": 2,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Tanaris"
+          ],
+          "family": "Hyena",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5427"
+        }
+      ]
+    },
+    {
+      "npcId": 2926,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash2",
+          "name": "Silvermane Stalker",
+          "rank": 2,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2926"
+        }
+      ]
+    },
+    {
+      "npcId": 250619,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Broodwidow",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 16,
+          "zones": [
+            "Ruins of Lordaeron (Dungeon)"
+          ],
+          "family": "Spider",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=250619"
+        }
+      ]
+    },
+    {
+      "npcId": 8303,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Grunter",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8303"
+        }
+      ]
+    },
+    {
+      "npcId": 2681,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Vilebranch Raiding Wolf",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2681"
+        }
+      ]
+    },
+    {
+      "npcId": 8300,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Ravage",
+          "rank": 3,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "family": "Hyena",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8300"
+        }
+      ]
+    },
+    {
+      "npcId": 9416,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Scarshield Worg",
+          "rank": 3,
+          "minLevel": 53,
+          "maxLevel": 54,
+          "zones": [
+            "Blackrock Spire (Dungeon)"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=9416"
+        }
+      ]
+    },
+    {
+      "npcId": 7055,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Blackrock Worg",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7055"
+        }
+      ]
+    },
+    {
+      "npcId": 9696,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Bloodaxe Worg",
+          "rank": 3,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire (Dungeon)"
+          ],
+          "family": "Wolf",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=9696"
+        }
+      ]
+    },
+    {
+      "npcId": 10200,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Rak'Shiri",
+          "rank": 3,
+          "minLevel": 57,
+          "maxLevel": 57,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=10200"
+        }
+      ]
+    },
+    {
+      "npcId": 7433,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Frostsaber Huntress",
+          "rank": 3,
+          "minLevel": 58,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7433"
+        }
+      ]
+    },
+    {
+      "npcId": 7432,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Frostsaber Stalker",
+          "rank": 3,
+          "minLevel": 59,
+          "maxLevel": 60,
+          "zones": [
+            "Winterspring"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=7432"
+        }
+      ]
+    },
+    {
+      "npcId": 11365,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#dash3",
+          "name": "Zulian Panther",
+          "rank": 3,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Zul'Gurub (Raid)"
+          ],
+          "family": "Cat",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=11365"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #dash was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Bears, Boars, Cats, Crabs, Crocolisks, Foxes, Gorillas, Hyenas, Raptors, Scorpids, Spiders, Tallstriders, Turtles, Wolves. Petopia Classic lists: Boars, Cats, Hyenas, Tallstriders, Wolves.",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (4): Sandstrider 4724 r1 (Tallstrider, 30-31, Desolace); Crazed Sandstrider 4725 r1 (Tallstrider, 39-40, Desolace); Ombassa 263315 r2 (Cat, 41, Riverglades); Broodwidow 250619 r3 (Spider, 16, Ruins of Lordaeron (Dungeon))",
+    "Beasts in Petopia Classic's list but NOT in Petopia Forever's (1): King Bangalash 731 r2 (Cat, 43, Stranglethorn Vale)"
+  ]
+}

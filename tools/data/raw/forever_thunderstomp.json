@@ -1,0 +1,184 @@
+{
+  "ability": "thunderstomp",
+  "name": "Thunderstomp",
+  "icon": "ability_hunter_pet_gorilla",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp1",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 15,
+          "description": "Shakes the ground with thundering force, doing 53 to 61 Nature damage to all enemies within 8 yards."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp2",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20,
+          "description": "Shakes the ground with thundering force, doing 69 to 79 Nature damage to all enemies within 8 yards."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp3",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 25,
+          "description": "Shakes the ground with thundering force, doing 92 to 106 Nature damage to all enemies within 8 yards."
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp4",
+          "spellIds": null,
+          "petLevel": 60,
+          "tp": 0,
+          "description": "Shakes the ground with thundering force, doing 122 to 142 Nature damage to all enemies within 8 yards.",
+          "trainingSource": "No known training source."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 1108,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp1",
+          "name": "Mistvale Gorilla",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Gorilla",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1108"
+        }
+      ]
+    },
+    {
+      "npcId": 1114,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp1",
+          "name": "Jungle Thunderer",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Gorilla",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1114"
+        }
+      ]
+    },
+    {
+      "npcId": 1557,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp2",
+          "name": "Elder Mistvale Gorilla",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "family": "Gorilla",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1557"
+        }
+      ]
+    },
+    {
+      "npcId": 5262,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp2",
+          "name": "Groddoc Thunderer",
+          "rank": 2,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "Feralas"
+          ],
+          "family": "Gorilla",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5262"
+        }
+      ]
+    },
+    {
+      "npcId": 6516,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp3",
+          "name": "Un'Goro Thunderer",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Un'Goro Crater"
+          ],
+          "family": "Gorilla",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=6516"
+        }
+      ]
+    },
+    {
+      "npcId": 9622,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp3",
+          "name": "U'cha",
+          "rank": 3,
+          "minLevel": 55,
+          "maxLevel": 55,
+          "zones": [
+            "Un'Goro Crater"
+          ],
+          "family": "Gorilla",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=9622"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #thunderstomp was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Gorillas. Petopia Classic lists: Gorillas.",
+    "Rank differences vs Petopia Classic: rank 4 (pet level 60, 0 TP) does not exist in Petopia Classic.",
+    "Rank 4: Petopia Forever says 'No known training source.' (no beast listed).",
+    "Rank 4 is shown on Petopia Forever as 'Pet Level 60, Cost 0 TP' with 'No known training source.' The 0 TP is recorded verbatim; it may be a placeholder.",
+    "No beasts added vs Petopia Classic.",
+    "No beasts removed vs Petopia Classic."
+  ]
+}

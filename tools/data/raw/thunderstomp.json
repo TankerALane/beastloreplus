@@ -1,0 +1,566 @@
+{
+  "ability": "thunderstomp",
+  "name": "Thunderstomp",
+  "icon": "ability_hunter_pet_gorilla",
+  "trainerOnly": false,
+  "researcher": "research agent (Opus 5.5) for charge/furious_howl/thunderstomp/shell_shield, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#thunderstomp1",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 15
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp1",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 15
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=26090",
+          "spellIds": [
+            26090
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=26090",
+          "spellIds": [
+            26090
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Thunderstomp_(pet_ability)",
+          "spellIds": [
+            26090
+          ],
+          "petLevel": 30,
+          "tp": 15
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#thunderstomp2",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp2",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=26187",
+          "spellIds": [
+            26187
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=26187",
+          "spellIds": [
+            26187
+          ],
+          "petLevel": 40,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#thunderstomp3",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 25
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp3",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 25
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=26188",
+          "spellIds": [
+            26188
+          ],
+          "petLevel": 50,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=26188",
+          "spellIds": [
+            26188
+          ],
+          "petLevel": 50,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Thunderstomp_(pet_ability)",
+          "spellIds": [
+            26188
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp4",
+          "spellIds": null,
+          "petLevel": 60,
+          "tp": 0
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=1264455",
+          "spellIds": [
+            1264455
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Thunderstomp_(pet_ability)",
+          "spellIds": [
+            1264455
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 1108,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#thunderstomp1",
+          "name": "Mistvale Gorilla",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp1",
+          "name": "Mistvale Gorilla",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/mistvale-gorilla/",
+          "name": "Mistvale Gorilla",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1108",
+          "name": "Mistvale Gorilla",
+          "rank": null,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1108",
+          "name": "Mistvale Gorilla",
+          "rank": null,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1114,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#thunderstomp1",
+          "name": "Jungle Thunderer",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp1",
+          "name": "Jungle Thunderer",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/jungle-thunderer/",
+          "name": "Jungle Thunderer",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1114",
+          "name": "Jungle Thunderer",
+          "rank": null,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1114",
+          "name": "Jungle Thunderer",
+          "rank": null,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1557,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#thunderstomp2",
+          "name": "Elder Mistvale Gorilla",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp2",
+          "name": "Elder Mistvale Gorilla",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-mistvale-gorilla/",
+          "name": "Elder Mistvale Gorilla",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1557",
+          "name": "Elder Mistvale Gorilla",
+          "rank": null,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1557",
+          "name": "Elder Mistvale Gorilla",
+          "rank": null,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Stranglethorn Vale"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5262,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#thunderstomp2",
+          "name": "Groddoc Thunderer",
+          "rank": 2,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp2",
+          "name": "Groddoc Thunderer",
+          "rank": 2,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/groddoc-thunderer/",
+          "name": "Groddoc Thunderer",
+          "rank": 2,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "Ferelas"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5262",
+          "name": "Groddoc Thunderer",
+          "rank": null,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5262",
+          "name": "Groddoc Thunderer",
+          "rank": null,
+          "minLevel": 49,
+          "maxLevel": 50,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 6516,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#thunderstomp3",
+          "name": "Un'Goro Thunderer",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Un'Goro Crater"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp3",
+          "name": "Un'Goro Thunderer",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Un'Goro Crater"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ungoro-thunderer/",
+          "name": "Un'Goro Thunderer",
+          "rank": 3,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Un’Goro Crater"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=6516",
+          "name": "Un'Goro Thunderer",
+          "rank": null,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Un'Goro Crater"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=6516",
+          "name": "Un'Goro Thunderer",
+          "rank": null,
+          "minLevel": 52,
+          "maxLevel": 53,
+          "zones": [
+            "Un'Goro Crater"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 9622,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#thunderstomp3",
+          "name": "U'cha",
+          "rank": 3,
+          "minLevel": 55,
+          "maxLevel": 55,
+          "zones": [
+            "Un'Goro Crater"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#thunderstomp3",
+          "name": "U'cha",
+          "rank": 3,
+          "minLevel": 55,
+          "maxLevel": 55,
+          "zones": [
+            "Un'Goro Crater"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ucha/",
+          "name": "U'cha",
+          "rank": 3,
+          "minLevel": 55,
+          "maxLevel": 55,
+          "zones": [
+            "Un’Goro Crater"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=9622",
+          "name": "U'cha",
+          "rank": null,
+          "minLevel": 55,
+          "maxLevel": 55,
+          "zones": [
+            "Un'Goro Crater"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=9622",
+          "name": "U'cha",
+          "rank": null,
+          "minLevel": 55,
+          "maxLevel": 55,
+          "zones": [
+            "Un'Goro Crater"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Sources: petopia-classic (wow-petopia.com/classic/abilities.php) and petopia-forever (wow-petopia.com/forever/abilities.php) are the SAME SITE (count as one source); they are separate datasets for Classic Era and WoW Forever. Petopia gives no spell IDs; its NPC links point to Wowhead (classic.wowhead.com / wowhead.com/forever).",
+    "wowhead-classic and wowhead-forever are the SAME SITE (count as one source). Wowhead DOES have a Forever section (wowhead.com/forever/...). Full Wowhead pages are behind an AWS WAF JS challenge (curl gets HTTP 202, empty body) and WebFetch strips page scripts, so the 'Taught by NPC' listviews could NOT be read. Wowhead data here comes only from nether.wowhead.com tooltip JSON: spell 'Requires level' (recorded as petLevel; TP is not in tooltips, so null) and NPC name/level/classification/primary map zone. Wowhead beast observations therefore have rank=null: they confirm identity, level and elite/rare, NOT which rank the NPC teaches. Classic tooltips carry no 'Rank N' label; the rank for classic spell IDs was assigned by matching required level to the Forever tooltip (which shows 'Rank N') and to Petopia's rank levels.",
+    "Wowhead NPC zones were converted from the tooltip's numeric map zone id using standard AreaTable ids (e.g. 491=Razorfen Kraul, 719=Blackfathom Deeps); the tooltip gives only one primary zone.",
+    "warcrafttavern = warcrafttavern.com/wow-classic/hunter-pets/ (Classic Era; per-model listing pages plus per-pet pages). No NPC IDs (observations matched to IDs by name). elite/rare set only where the per-pet page shows a 'Class' field (Elite or Rare); omitted otherwise. Looks like an independent dataset (it disagrees with Petopia in places), origin not stated.",
+    "warcraft.wiki.gg ability pages give few per-rank values and no beast lists; 'Pet abilities (Classic)' gives only rank-1 level and TP per ability. The old URLs Charge_(Boar) returned 404; the working page is Charge_(boar_pet_ability).",
+    "warcraft.wiki.gg Thunderstomp (pet ability): Classic = 3 ranks (26090 rank 1, 26188 rank 3; level 30). Its Forever section lists 4 ranks, rank 4 = spell 1264455 (the wiki rank-4 observation comes from that Forever section). TP 15 for rank 1 from 'Pet abilities (Classic)'. (The page 'Thunderstomp' is a rare mob, not the ability.)",
+    "FOREVER-SPECIFIC: Thunderstomp Rank 4 (spell 1264455, requires level 60, 122-142 Nature damage) exists only on Forever (Wowhead Forever tooltip; the classic tooltip returns 'Entity not found'). Petopia Forever: 'Pet Level 60, Cost 0 TP' with 'No known training source' - the 0 TP looks like a placeholder; no source names a beast that teaches it.",
+    "FOREVER-SPECIFIC: damage lowered on Forever (R1 53-61, R2 69-79, R3 92-106) vs Classic Era (Petopia classic 67-77/87-99/115-133; Wowhead classic tooltip 70-80/91-103/123-141).",
+    "U'cha (9622, 55, Un'Goro) is a named mob but Wowhead tooltips classify it (Normal).",
+    "petopia-forever: Thunderstomp 4 is shown with \"No known training source\"."
+  ]
+}

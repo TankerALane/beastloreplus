@@ -1,0 +1,692 @@
+{
+  "ability": "charge",
+  "name": "Charge",
+  "icon": "ability_hunter_pet_boar",
+  "trainerOnly": false,
+  "researcher": "forever-petopia agent, 2026-11-21",
+  "foreverComplete": true,
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 5,
+          "description": "Charges an enemy, immobilizes it for 1 sec, and adds 66 melee attack power to the boar's next attack."
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "spellIds": null,
+          "petLevel": 12,
+          "tp": 9,
+          "description": "Charges an enemy, immobilizes it for 1 sec, and adds 130 melee attack power to the boar's next attack."
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 13,
+          "description": "Charges an enemy, immobilizes it for 1 sec, and adds 204 melee attack power to the boar's next attack."
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge4",
+          "spellIds": null,
+          "petLevel": 36,
+          "tp": 17,
+          "description": "Charges an enemy, immobilizes it for 1 sec, and adds 294 melee attack power to the boar's next attack."
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge5",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 21,
+          "description": "Charges an enemy, immobilizes it for 1 sec, and adds 430 melee attack power to the boar's next attack."
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge6",
+          "spellIds": null,
+          "petLevel": 60,
+          "tp": 25,
+          "description": "Charges an enemy, immobilizes it for 1 sec, and adds 520 melee attack power to the boar's next attack."
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 3098,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Mottled Boar",
+          "rank": 1,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3098"
+        }
+      ]
+    },
+    {
+      "npcId": 1984,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Young Thistle Boar",
+          "rank": 1,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1984"
+        }
+      ]
+    },
+    {
+      "npcId": 1985,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Thistle Boar",
+          "rank": 1,
+          "minLevel": 2,
+          "maxLevel": 3,
+          "zones": [
+            "Teldrassil"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1985"
+        }
+      ]
+    },
+    {
+      "npcId": 2966,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Battleboar",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2966"
+        }
+      ]
+    },
+    {
+      "npcId": 708,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Small Crag Boar",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=708"
+        }
+      ]
+    },
+    {
+      "npcId": 2954,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Bristleback Battleboar",
+          "rank": 1,
+          "minLevel": 4,
+          "maxLevel": 5,
+          "zones": [
+            "Mulgore"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=2954"
+        }
+      ]
+    },
+    {
+      "npcId": 1125,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Crag Boar",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1125"
+        }
+      ]
+    },
+    {
+      "npcId": 113,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Stonetusk Boar",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=113"
+        }
+      ]
+    },
+    {
+      "npcId": 1126,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Large Crag Boar",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1126"
+        }
+      ]
+    },
+    {
+      "npcId": 3099,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Dire Mottled Boar",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3099"
+        }
+      ]
+    },
+    {
+      "npcId": 1127,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Elder Crag Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1127"
+        }
+      ]
+    },
+    {
+      "npcId": 390,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Porcine Entourage",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 7,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=390"
+        }
+      ]
+    },
+    {
+      "npcId": 524,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Rockhide Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=524"
+        }
+      ]
+    },
+    {
+      "npcId": 1689,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Scarred Crag Boar",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1689"
+        }
+      ]
+    },
+    {
+      "npcId": 3100,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Elder Mottled Boar",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3100"
+        }
+      ]
+    },
+    {
+      "npcId": 330,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Princess",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=330"
+        }
+      ]
+    },
+    {
+      "npcId": 3225,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Corrupted Mottled Boar",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=3225"
+        }
+      ]
+    },
+    {
+      "npcId": 1190,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Mountain Boar",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1190"
+        }
+      ]
+    },
+    {
+      "npcId": 119,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Longsnout",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=119"
+        }
+      ]
+    },
+    {
+      "npcId": 454,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Young Goretusk",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Westfall"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=454"
+        }
+      ]
+    },
+    {
+      "npcId": 1191,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Mangy Mountain Boar",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1191"
+        }
+      ]
+    },
+    {
+      "npcId": 157,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Goretusk",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Westfall"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=157"
+        }
+      ]
+    },
+    {
+      "npcId": 547,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Great Goretusk",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Westfall; Redridge Mountains"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=547"
+        }
+      ]
+    },
+    {
+      "npcId": 1192,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Elder Mountain Boar",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=1192"
+        }
+      ]
+    },
+    {
+      "npcId": 4511,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "name": "Agam'ar",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4511"
+        }
+      ]
+    },
+    {
+      "npcId": 345,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "name": "Bellygrub",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Redridge Mountains"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=345"
+        }
+      ]
+    },
+    {
+      "npcId": 4514,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "name": "Raging Agam'ar",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4514"
+        }
+      ]
+    },
+    {
+      "npcId": 4512,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "name": "Rotting Agam'ar",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=4512"
+        }
+      ]
+    },
+    {
+      "npcId": 258331,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge4",
+          "name": "Young Paletusk",
+          "rank": 4,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=258331"
+        }
+      ]
+    },
+    {
+      "npcId": 255851,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge4",
+          "name": "Mature Paletusk",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Riverglades"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=255851"
+        }
+      ]
+    },
+    {
+      "npcId": 5992,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge5",
+          "name": "Ashmane Boar",
+          "rank": 5,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=5992"
+        }
+      ]
+    },
+    {
+      "npcId": 8303,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge5",
+          "name": "Grunter",
+          "rank": 5,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=8303"
+        }
+      ]
+    },
+    {
+      "npcId": 16117,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge6",
+          "name": "Plagued Swine",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Eastern Plaguelands"
+          ],
+          "family": "Boar",
+          "linkedUrl": "https://www.wowhead.com/forever/npc=16117"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Source: Petopia Forever 'Pet Family Abilities' page (https://www.wow-petopia.com/forever/abilities.php), fetched 2026-11-21 with curl and parsed from HTML. Every rank and every beast listed in the section #charge was captured, so foreverComplete = true.",
+    "petopia-forever and petopia-classic are two sections of the SAME site (wow-petopia.com); count them as one source for independence.",
+    "Petopia shows no spell IDs (spellIds = null) and no elite/rare flags (omitted). Beast lines read '<Name> (<Family>, <levels>, <Zone>)'; instance zones are kept verbatim, e.g. 'Blackfathom Deeps (Dungeon)'. linkedUrl is Petopia's Wowhead Forever link that gave the npcId. 'description' is Petopia's rank tooltip text.",
+    "Families that can learn it (Forever): Boars. Petopia Classic lists: Boars.",
+    "Beasts in Petopia Forever not in Petopia Classic's list for this ability (2): Young Paletusk 258331 r4 (Boar, 36-37, Riverglades); Mature Paletusk 255851 r4 (Boar, 38-39, Riverglades)",
+    "No beasts removed vs Petopia Classic."
+  ]
+}

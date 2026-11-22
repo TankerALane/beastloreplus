@@ -1,0 +1,1659 @@
+{
+  "ability": "bite",
+  "name": "Bite",
+  "icon": null,
+  "trainerOnly": false,
+  "researcher": "bite r1-4 research agent, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 1
+        },
+        {
+          "source": "classicdb",
+          "url": "https://classicdb.ch/?spell=17253",
+          "spellIds": [
+            17253
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=17253",
+          "spellIds": [
+            17253
+          ],
+          "petLevel": null,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Pet_abilities_(Classic)",
+          "spellIds": [
+            17253
+          ],
+          "petLevel": 1,
+          "tp": 1
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "spellIds": null,
+          "petLevel": 8,
+          "tp": 4
+        },
+        {
+          "source": "classicdb",
+          "url": "https://classicdb.ch/?spell=17255",
+          "spellIds": [
+            17255
+          ],
+          "petLevel": 8,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=17255/bite",
+          "spellIds": [
+            17255
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "spellIds": null,
+          "petLevel": 16,
+          "tp": 7
+        },
+        {
+          "source": "classicdb",
+          "url": "https://classicdb.ch/?spell=17256",
+          "spellIds": [
+            17256
+          ],
+          "petLevel": 16,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 10
+        },
+        {
+          "source": "classicdb",
+          "url": "https://classicdb.ch/?spell=17257",
+          "spellIds": [
+            17257
+          ],
+          "petLevel": 24,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 1509,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Ragged Scavenger",
+          "rank": 1,
+          "minLevel": 2,
+          "maxLevel": 3,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/timber-wolves/",
+          "name": "Ragged Scavenger",
+          "rank": 1,
+          "minLevel": 2,
+          "maxLevel": 3,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1505,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Night Web Spider",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-spiders/",
+          "name": "Night Web Spider",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2958,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Prairie Wolf",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/coyotes/",
+          "name": "Prairie Wolf",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Mulgore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1688,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Night Web Matriarch",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 5,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-spiders/",
+          "name": "Night Web Matriarch",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 5,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1994,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Githyiss the Vile",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 5,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-tarantulas/",
+          "name": "Githyiss the Vile",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 5,
+          "zones": [
+            "Teldrassil"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 30,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Forest Spider",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/orange-tarantulas/",
+          "name": "Forest Spider",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1138,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Snow Tracker Wolf",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/timber-wolves/",
+          "name": "Snow Tracker Wolf",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2959,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Prairie Stalker",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/coyotes/",
+          "name": "Prairie Stalker",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Mulgore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1922,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Gray Forest Wolf",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/timber-wolves/",
+          "name": "Gray Forest Wolf",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1999,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Webwood Venomfang",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-tarantulas/",
+          "name": "Webwood Venomfang",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Teldrassil"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1131,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Winter Wolf",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-wolves/",
+          "name": "Winter Wolf",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3110,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Dreadmaw Crocolisk",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/river-crocolisks/",
+          "name": "Dreadmaw Crocolisk",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1133,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Starving Winter Wolf",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-wolves/",
+          "name": "Starving Winter Wolf",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Dun Morogh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2000,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Webwood Silkspinner",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-tarantulas/",
+          "name": "Webwood Silkspinner",
+          "rank": 2,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Teldrassil"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1555,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Vicious Night Web Spider",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-spiders/",
+          "name": "Vicious Night Web Spider",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 118,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Prowler",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/light-gray-dire-wolves/",
+          "name": "Prowler",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2960,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Prairie Wolf Alpha",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/coyotes/",
+          "name": "Prairie Wolf Alpha",
+          "rank": 2,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Mulgore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1195,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Forest Lurker",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/brown-tarantulas/",
+          "name": "Forest Lurker",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Loch Modan"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2001,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Giant Webwood Spider",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-tarantulas/",
+          "name": "Giant Webwood Spider",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Teldrassil"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 834,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Coyote",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/coyotes/",
+          "name": "Coyote",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Westfall"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1765,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Worg",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-dire-wolves/",
+          "name": "Worg",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1132,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Timber",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-dire-wolves/",
+          "name": "Timber",
+          "rank": 2,
+          "minLevel": 10,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 833,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Coyote Packleader",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/coyotes/",
+          "name": "Coyote Packleader",
+          "rank": 2,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Westfall"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 7319,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Lady Sathrah",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/gray-tarantulas/",
+          "name": "Lady Sathrah",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Teldrassil"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1693,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Loch Crocolisk",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/swamp-crocolisks/",
+          "name": "Loch Crocolisk",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 442,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Tarantula",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/orange-tarantulas/",
+          "name": "Tarantula",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3461,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Oasis Snapjaw",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/blue-turtles/",
+          "name": "Oasis Snapjaw",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1923,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Bloodsnout Worg",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-dire-wolves/",
+          "name": "Bloodsnout Worg",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4005,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Deepmoss Creeper",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-tarantulas/",
+          "name": "Deepmoss Creeper",
+          "rank": 3,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1185,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Wood Lurker",
+          "rank": 3,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/brown-tarantulas/",
+          "name": "Wood Lurker",
+          "rank": 3,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Loch Modan"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 5053,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Deviate Crocolisk",
+          "rank": 3,
+          "minLevel": 18,
+          "maxLevel": 19,
+          "zones": [
+            "Wailing Caverns"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/albino-crocolisks/",
+          "name": "Deviate Crocolisk",
+          "rank": 3,
+          "minLevel": 18,
+          "maxLevel": 19,
+          "zones": [
+            "Wailing Caverns"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 505,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Greater Tarantula",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/brown-tarantulas/",
+          "name": "Greater Tarantula",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3823,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Ghostpaw Runner",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-wolves/",
+          "name": "Ghostpaw Runner",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Ashenvale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4006,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Deepmoss Webspinner",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-tarantulas/",
+          "name": "Deepmoss Webspinner",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 20,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 14266,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Shanda the Spinner",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 19,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/gray-tarantulas/",
+          "name": "Shanda the Spinner",
+          "rank": 3,
+          "minLevel": 19,
+          "maxLevel": 19,
+          "zones": [
+            "Loch Modan"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2350,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Forest Moss Creeper",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-tarantulas/",
+          "name": "Forest Moss Creeper",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 21,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3653,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Kresh",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Wailing Caverns"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/blue-turtles/",
+          "name": "Kresh",
+          "rank": 3,
+          "minLevel": 20,
+          "maxLevel": 20,
+          "zones": [
+            "Wailing Caverns"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 11921,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Besseleth",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 21,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/orange-tarantulas/",
+          "name": "Besseleth",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 21,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 569,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Green Recluse",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-spiders/",
+          "name": "Green Recluse",
+          "rank": 3,
+          "minLevel": 21,
+          "maxLevel": 22,
+          "zones": [
+            "Duskwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2476,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Large Loch Crocolisk",
+          "rank": 3,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/swamp-crocolisks/",
+          "name": "Large Loch Crocolisk",
+          "rank": 3,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Loch Modan"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 616,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Chatter",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 23,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/brown-tarantulas/",
+          "name": "Chatter",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 23,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 521,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Lupos",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 23,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-dire-wolves/",
+          "name": "Lupos",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 23,
+          "zones": [
+            "Duskwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4824,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Aku'mai Fisher",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-turtles/",
+          "name": "Aku'mai Fisher",
+          "rank": 3,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Blackfathom Deeps"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 14279,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Creepthess",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/gray-tarantulas/",
+          "name": "Creepthess",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1112,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Leech Widow",
+          "rank": 4,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Wetlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/blue-spiders/",
+          "name": "Leech Widow",
+          "rank": 4,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Wetlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2349,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Giant Moss Creeper",
+          "rank": 4,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-tarantulas/",
+          "name": "Giant Moss Creeper",
+          "rank": 4,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 628,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Black Ravager",
+          "rank": 4,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-dire-wolves/",
+          "name": "Black Ravager",
+          "rank": 4,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Duskwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4887,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Ghamoo-ra",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-turtles/",
+          "name": "Ghamoo-ra",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 25,
+          "zones": [
+            "Blackfathom Deeps"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2089,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Giant Wetlands Crocolisk",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Wetlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/marsh-crocolisks/",
+          "name": "Giant Wetlands Crocolisk",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Wetlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1258,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Black Ravager Mastiff",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/black-dire-wolves/",
+          "name": "Black Ravager Mastiff",
+          "rank": 4,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2348,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Elder Moss Creeper",
+          "rank": 4,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/brown-tarantulas/",
+          "name": "Elder Moss Creeper",
+          "rank": 4,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4825,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Aku'mai Snapjaw",
+          "rank": 4,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Blackfathom Deeps"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/red-turtles/",
+          "name": "Aku'mai Snapjaw",
+          "rank": 4,
+          "minLevel": 26,
+          "maxLevel": 27,
+          "zones": [
+            "Blackfathom Deeps"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 574,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Naraxis",
+          "rank": 4,
+          "minLevel": 27,
+          "maxLevel": 27,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/blood-spiders/",
+          "name": "Naraxis",
+          "rank": 4,
+          "minLevel": 27,
+          "maxLevel": 27,
+          "zones": [
+            "Duskwood"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3825,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Ghostpaw Alpha",
+          "rank": 4,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/white-wolves/",
+          "name": "Ghostpaw Alpha",
+          "rank": 4,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Ashenvale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3821,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Wildthorn Lurker",
+          "rank": 4,
+          "minLevel": 28,
+          "maxLevel": 29,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/gray-tarantulas/",
+          "name": "Wildthorn Lurker",
+          "rank": 4,
+          "minLevel": 28,
+          "maxLevel": 29,
+          "zones": [
+            "Ashenvale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2408,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Snapjaw",
+          "rank": 4,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/green-turtles/",
+          "name": "Snapjaw",
+          "rank": 4,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 14223,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php",
+          "name": "Cranky Benj",
+          "rank": 4,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Alterac Mountains"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Wowhead (classic and forever) beast listviews could not be read: WebFetch strips the embedded Listview script data, direct curl got HTTP 403, and later WebFetch calls to wowhead also returned 403. So there are no wowhead beast observations. Wowhead does have a Forever section: the classic spell=17255 page links to /forever/spell=17255/bite (Bite, 35 Focus, 10 s cooldown, damage effect value 17). The classic spell=17253 page showed Bite, 35 Focus, damage effect value 7; rank/level/TP were not visible in the fetched text, so the wowhead-classic rank 1 spellId rests on the page URL/title only.",
+    "warcraft.wiki.gg: the Bite article has one Classic stat block (Level 1, 35 Focus, 7 to 9 damage, '8 ranks') and no per-rank table or teaching-beast list. The Pet abilities (Classic) table gives Bite level 1, 1 TP (recorded as rank 1); the Bite article's external links include wowhead classic spell=17253. No rank 2-4 data and no beast list. Bite_(hunter_pet_ability) and Bite_(Classic) return 404; Training_point has no Bite table.",
+    "classicdb.ch (vanilla DB) spell pages: R1 17253 level 1 '7 to 10 damage'; R2 17255 level 8 '16 to 19'; R3 17256 level 16 '24 to 29'; R4 17257 level 24 '31 to 38'. No TP, icon, or taught-by list could be read. Petopia damage: R1 7-9, R2 16-18, R3 24-28, R4 31-37 (small top-end differences from classicdb; damage is not in the schema). classicdb NPC pages showed no level/abilities, so they were not used for beasts.",
+    "petopia-classic: one abilities page (abilities.php#bite) lists the Bite 1-4 beasts with family, level, zone and wowhead NPC links (classic.wowhead.com/npc=<id>). All npcIds in this file come from those links. Petopia shows no rare/elite markers. It labels dungeon zones with '(Dungeon)' (Wailing Caverns: Deviate Crocolisk, Kresh; Blackfathom Deeps: Aku'mai Fisher, Ghamoo-ra, Aku'mai Snapjaw), and that suffix was stripped from the zone names here. Petopia's Bite icon image is ability_druid_ferociousbite.png (a site image, not necessarily the game icon). icon is left null because no game-data source showed it.",
+    "warcrafttavern (warcrafttavern.com/wow-classic/hunter-pets/<skin>/ pages, 'Skills When Tamed' field): all wolf, spider, crocolisk and turtle skin pages were checked. It matched petopia for 56 of 57 beasts (same names, ranks, levels, zones) and gives no NPC IDs, so its entries were attached by name. Cranky Benj (petopia: rank 4, level 32, Alterac Mountains) was not found on any warcrafttavern turtle page. Wildthorn Stalker (20-21, Ashenvale) shows 'Skills When Tamed: None' on warcrafttavern and is not on petopia's list. warcrafttavern and petopia agree exactly, so they may share an upstream data origin; treat their agreement with some caution.",
+    "Elite/rare flags: neither source marked any beast, so the flags are omitted. Several entries are named mobs (e.g. Githyiss the Vile, Timber, Lady Sathrah, Shanda the Spinner, Besseleth, Chatter, Lupos, Creepthess, Naraxis, Cranky Benj, Night Web Matriarch) or dungeon bosses (Kresh, Ghamoo-ra) that may be rare or elite, but no source confirmed it.",
+    "Forever-specific: the GitHub wiki classic-hunter/forever-hunter 'Pet Families and Abilities' (https://github-wiki-see.page/m/classic-hunter/forever-hunter/wiki/Pet-Families-and-Abilities) says 'Forever guarantees that every family can learn either Bite or Claw, although not every family can learn both' and lists the Bite families as Bat, Bear, Boar, Carrion Bird, Cat, Crocolisk, Gorilla, Hyena, Raptor, Spider, Tallstrider, Turtle, Wind Serpent, Wolf (the same as the warcraft.wiki.gg Classic list). No Forever-specific rank or beast data was found. Per both beast sources, only wolf, spider, crocolisk and turtle beasts teach ranks 1-4."
+  ]
+}

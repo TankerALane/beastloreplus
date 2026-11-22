@@ -1,0 +1,21 @@
+{
+  "_doc": "Source independence rules for tools/build_data.py. 'aliases' maps a source id to the site it really is. 'beastRankCopies' says that, in one raw file, a source's beast->rank observations are a copy of another site (they then count as that site, not as a second source).",
+  "aliases": {
+    "warcrafttavern-classic": "warcrafttavern",
+    "wowpedia": "warcraft.wiki.gg",
+    "wowhead": "wowhead-classic",
+    "wowhead-forever": "wowhead-classic",
+    "petopia": "petopia-classic",
+    "petopia-forever": "petopia-classic"
+  },
+  "beastRankCopies": {
+    "dive.json": { "wowhead-classic": "petopia-classic" },
+    "screech.json": { "wowhead-classic": "petopia-classic" },
+    "scorpid_poison.json": { "wowhead-classic": "petopia-classic" },
+    "lightning_breath.json": { "wowhead-classic": "petopia-classic" }
+  },
+  "_why": {
+    "beastRankCopies": "Wowhead Classic has no 'Taught by NPC' lists for pet abilities. The researchers took beast->rank data for these four abilities from a 2019 Wowhead user comment ('hevgirl') that reproduces Petopia's lists in the same order. Wowhead's own data (levels, zones, elite/rare) is still used.",
+    "warcrafttavern": "Kept as its own source, but it agrees with Petopia almost perfectly and may derive from the same community data. Noted in BUILD_LOG.md and REVIEW.md."
+  }
+}

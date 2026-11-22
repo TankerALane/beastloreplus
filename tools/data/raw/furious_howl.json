@@ -1,0 +1,1150 @@
+{
+  "ability": "furious_howl",
+  "name": "Furious Howl",
+  "icon": "ability_hunter_pet_wolf",
+  "trainerOnly": false,
+  "researcher": "research agent (Opus 5.5) for charge/furious_howl/thunderstomp/shell_shield, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl1",
+          "spellIds": null,
+          "petLevel": 10,
+          "tp": 10
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "spellIds": null,
+          "petLevel": 10,
+          "tp": 10
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24604",
+          "spellIds": [
+            24604
+          ],
+          "petLevel": 10,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=24604",
+          "spellIds": [
+            24604
+          ],
+          "petLevel": 10,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Furious_Howl",
+          "spellIds": [
+            24604
+          ],
+          "petLevel": 10,
+          "tp": 10
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl2",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 15
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 15
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24605",
+          "spellIds": [
+            24605
+          ],
+          "petLevel": 24,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=24605",
+          "spellIds": [
+            24605
+          ],
+          "petLevel": 24,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl3",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24603",
+          "spellIds": [
+            24603
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=24603",
+          "spellIds": [
+            24603
+          ],
+          "petLevel": 40,
+          "tp": null
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl4",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl4",
+          "spellIds": null,
+          "petLevel": 56,
+          "tp": 25
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24597",
+          "spellIds": [
+            24597
+          ],
+          "petLevel": 56,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=24597",
+          "spellIds": [
+            24597
+          ],
+          "petLevel": 56,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Furious_Howl",
+          "spellIds": [
+            24597
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 833,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl1",
+          "name": "Coyote Packleader",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "name": "Coyote Packleader",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/coyote-packleader/",
+          "name": "Coyote Packleader",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=833",
+          "name": "Coyote Packleader",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Westfall"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=833",
+          "name": "Coyote Packleader",
+          "rank": null,
+          "minLevel": 11,
+          "maxLevel": 12,
+          "zones": [
+            "Westfall"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1258,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl2",
+          "name": "Black Ravager Mastiff",
+          "rank": 2,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Black Ravager Mastiff",
+          "rank": 2,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/black-ravager-mastiff/",
+          "name": "Black Ravager Mastiff",
+          "rank": 2,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1258",
+          "name": "Black Ravager Mastiff",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1258",
+          "name": "Black Ravager Mastiff",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Duskwood"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1765,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl1",
+          "name": "Worg",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "name": "Worg",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/worg/",
+          "name": "Worg",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Silverpine Forest"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1765",
+          "name": "Worg",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1765",
+          "name": "Worg",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Silverpine Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2729,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl2",
+          "name": "Elder Crag Coyote",
+          "rank": 2,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Elder Crag Coyote",
+          "rank": 2,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-crag-coyote/",
+          "name": "Elder Crag Coyote",
+          "rank": 2,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2729",
+          "name": "Elder Crag Coyote",
+          "rank": null,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2729",
+          "name": "Elder Crag Coyote",
+          "rank": null,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2924,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl3",
+          "name": "Silvermane Wolf",
+          "rank": 3,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Silvermane Wolf",
+          "rank": 3,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/silvermane-wolf/",
+          "name": "Silvermane Wolf",
+          "rank": 3,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2924",
+          "name": "Silvermane Wolf",
+          "rank": null,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2924",
+          "name": "Silvermane Wolf",
+          "rank": null,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2925,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl2",
+          "name": "Silvermane Howler",
+          "rank": 2,
+          "minLevel": 45,
+          "maxLevel": 46,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Silvermane Howler",
+          "rank": 2,
+          "minLevel": 45,
+          "maxLevel": 46,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/silvermane-howler/",
+          "name": "Silvermane Howler",
+          "rank": 2,
+          "minLevel": 45,
+          "maxLevel": 46,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2925",
+          "name": "Silvermane Howler",
+          "rank": null,
+          "minLevel": 45,
+          "maxLevel": 46,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2925",
+          "name": "Silvermane Howler",
+          "rank": null,
+          "minLevel": 45,
+          "maxLevel": 46,
+          "zones": [
+            "The Hinterlands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2960,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl1",
+          "name": "Prairie Wolf Alpha",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2960",
+          "name": "Prairie Wolf Alpha",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Mulgore"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2960",
+          "name": "Prairie Wolf Alpha",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Mulgore"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3825,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl2",
+          "name": "Ghostpaw Alpha",
+          "rank": 2,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Ghostpaw Alpha",
+          "rank": 2,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ghostpaw-alpha/",
+          "name": "Ghostpaw Alpha",
+          "rank": 2,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3825",
+          "name": "Ghostpaw Alpha",
+          "rank": null,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3825",
+          "name": "Ghostpaw Alpha",
+          "rank": null,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5286,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl3",
+          "name": "Longtooth Runner",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Longtooth Runner",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/longtooth-runner/",
+          "name": "Longtooth Runner",
+          "rank": 3,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Ferelas"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5286",
+          "name": "Longtooth Runner",
+          "rank": null,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5286",
+          "name": "Longtooth Runner",
+          "rank": null,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5287,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl2",
+          "name": "Longtooth Howler",
+          "rank": 2,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl2",
+          "name": "Longtooth Howler",
+          "rank": 2,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/longtooth-howler/",
+          "name": "Longtooth Howler",
+          "rank": 2,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Ferelas"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5287",
+          "name": "Longtooth Howler",
+          "rank": null,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5287",
+          "name": "Longtooth Howler",
+          "rank": null,
+          "minLevel": 43,
+          "maxLevel": 44,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5356,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl3",
+          "name": "Snarler",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Snarler",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/snarler/",
+          "name": "Snarler",
+          "rank": 3,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Ferelas"
+          ],
+          "rare": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5356",
+          "name": "Snarler",
+          "rank": null,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5356",
+          "name": "Snarler",
+          "rank": null,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "Feralas"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 8959,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl3",
+          "name": "Felpaw Wolf",
+          "rank": 3,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Felwood"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Felpaw Wolf",
+          "rank": 3,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Felwood"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=8959",
+          "name": "Felpaw Wolf",
+          "rank": null,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Felwood"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=8959",
+          "name": "Felpaw Wolf",
+          "rank": null,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Felwood"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 9696,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl4",
+          "name": "Bloodaxe Worg",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl4",
+          "name": "Bloodaxe Worg",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/bloodaxe-worg/",
+          "name": "Bloodaxe Worg",
+          "rank": 4,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=9696",
+          "name": "Bloodaxe Worg",
+          "rank": null,
+          "minLevel": 56,
+          "maxLevel": 60,
+          "zones": [
+            "Blackrock Spire"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=9696",
+          "name": "Bloodaxe Worg",
+          "rank": null,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 10644,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl1",
+          "name": "Mist Howler",
+          "rank": 1,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "name": "Mist Howler",
+          "rank": 1,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/mist-howler/",
+          "name": "Mist Howler",
+          "rank": 1,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ],
+          "rare": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=10644",
+          "name": "Mist Howler",
+          "rank": null,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=10644",
+          "name": "Mist Howler",
+          "rank": null,
+          "minLevel": 22,
+          "maxLevel": 22,
+          "zones": [
+            "Ashenvale"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 14339,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#furioushowl3",
+          "name": "Death Howl",
+          "rank": 3,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl3",
+          "name": "Death Howl",
+          "rank": 3,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/death-howl/",
+          "name": "Death Howl",
+          "rank": 3,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "rare": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=14339",
+          "name": "Death Howl",
+          "rank": null,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "elite": false,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=14339",
+          "name": "Death Howl",
+          "rank": null,
+          "minLevel": 49,
+          "maxLevel": 49,
+          "zones": [
+            "Felwood"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 274300,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#furioushowl1",
+          "name": "Coldrasp",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=274300",
+          "name": "Coldrasp",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 12,
+          "zones": [
+            "Tirisfal Glades"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Sources: petopia-classic (wow-petopia.com/classic/abilities.php) and petopia-forever (wow-petopia.com/forever/abilities.php) are the SAME SITE (count as one source); they are separate datasets for Classic Era and WoW Forever. Petopia gives no spell IDs; its NPC links point to Wowhead (classic.wowhead.com / wowhead.com/forever).",
+    "wowhead-classic and wowhead-forever are the SAME SITE (count as one source). Wowhead DOES have a Forever section (wowhead.com/forever/...). Full Wowhead pages are behind an AWS WAF JS challenge (curl gets HTTP 202, empty body) and WebFetch strips page scripts, so the 'Taught by NPC' listviews could NOT be read. Wowhead data here comes only from nether.wowhead.com tooltip JSON: spell 'Requires level' (recorded as petLevel; TP is not in tooltips, so null) and NPC name/level/classification/primary map zone. Wowhead beast observations therefore have rank=null: they confirm identity, level and elite/rare, NOT which rank the NPC teaches. Classic tooltips carry no 'Rank N' label; the rank for classic spell IDs was assigned by matching required level to the Forever tooltip (which shows 'Rank N') and to Petopia's rank levels.",
+    "Wowhead NPC zones were converted from the tooltip's numeric map zone id using standard AreaTable ids (e.g. 491=Razorfen Kraul, 719=Blackfathom Deeps); the tooltip gives only one primary zone.",
+    "warcrafttavern = warcrafttavern.com/wow-classic/hunter-pets/ (Classic Era; per-model listing pages plus per-pet pages). No NPC IDs (observations matched to IDs by name). elite/rare set only where the per-pet page shows a 'Class' field (Elite or Rare); omitted otherwise. Looks like an independent dataset (it disagrees with Petopia in places), origin not stated.",
+    "warcraft.wiki.gg ability pages give few per-rank values and no beast lists; 'Pet abilities (Classic)' gives only rank-1 level and TP per ability. The old URLs Charge_(Boar) returned 404; the working page is Charge_(boar_pet_ability).",
+    "warcraft.wiki.gg Furious Howl: 4 ranks, spell IDs only for rank 1 (24604) and rank 4 (24597); level 10 for rank 1; TP 10 for rank 1 taken from 'Pet abilities (Classic)'. No beast list.",
+    "CONFLICT Prairie Wolf Alpha (2960, Mulgore, 9-10): petopia-classic lists it under Furious Howl 1; petopia-forever does NOT (lists it only under Bite 2); warcrafttavern shows its Skills When Tamed as 'Bite 2' only. It appears in this file only with petopia-classic plus rank-less Wowhead tooltips.",
+    "CONFLICT Felpaw Wolf (8959): both Petopia pages list Furious Howl 3 at 47-48 (Felwood), Wowhead tooltips say 47-48, but warcrafttavern lists 'Felpaw Wolf' at 49-50 with Skills When Tamed 'None' (no warcrafttavern observation recorded).",
+    "FOREVER-SPECIFIC: Coldrasp (274300, Wolf, 12, Tirisfal Glades; Wowhead Forever tooltip: Rare) teaches Furious Howl 1 on Forever only (no Classic Wowhead entry).",
+    "FOREVER-SPECIFIC: Furious Howl reworked on Forever: 'The wolf howls, increasing the melee attack power of all party or raid members within 15 yards by X. Lasts 1 min.', 30 sec cooldown (Classic Era: extra 9-11/18-22/28-34/45-57 damage on next physical attack, lasts 10 sec, 10 sec cooldown). Wowhead Forever tooltip values 13 / 31-38 / 68 / 84; Petopia Forever shows 139 / 51-62 / 115 / 45-57 (inconsistent, doubtful). Same spell IDs and levels on both.",
+    "Bloodaxe Worg (9696): Wowhead classic tooltip says level 56-60; Wowhead Forever, both Petopia pages and warcrafttavern say 56-57.",
+    "Snarler (5356): warcrafttavern spells the zone 'Ferelas' (sic; recorded as shown)."
+  ]
+}

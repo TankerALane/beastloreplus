@@ -1,0 +1,1011 @@
+{
+  "ability": "dash",
+  "name": "Dash",
+  "icon": "ability_druid_dash",
+  "trainerOnly": false,
+  "researcher": "research agent (Cower/Dash/Prowl), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=23099",
+          "spellIds": [
+            23099
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Dash_(pet_ability)",
+          "spellIds": [
+            23099
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 15
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=23109",
+          "spellIds": [
+            23109
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 20
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=23110",
+          "spellIds": [
+            23110
+          ],
+          "petLevel": 50,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Dash_(pet_ability)",
+          "spellIds": [
+            23110
+          ],
+          "petLevel": null,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 25
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://warcrafttavern.com/wow-classic/guides/hunter-pet-abilities",
+          "spellIds": [
+            23112
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 976,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Kurzen War Tiger",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/kurzen-war-tiger/",
+          "name": "Kurzen War Tiger",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 682,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Stranglethorn Tiger",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/stranglethorn-tiger/",
+          "name": "Stranglethorn Tiger",
+          "rank": 1,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4688,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Bonepaw Hyena",
+          "rank": 1,
+          "minLevel": 33,
+          "maxLevel": 35,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/bonepaw-hyena/",
+          "name": "Bonepaw Hyena",
+          "rank": 1,
+          "minLevel": 33,
+          "maxLevel": 35,
+          "zones": [
+            "Desolace"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4304,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Scarlet Tracking Hound",
+          "rank": 1,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Scarlet Monastery (Dungeon"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/scarlet-tracking-hound/",
+          "name": "Scarlet Tracking Hound",
+          "rank": 1,
+          "minLevel": 33,
+          "maxLevel": 34,
+          "zones": [
+            "Scarlet Monastery"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2727,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Crag Coyote",
+          "rank": 1,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/crag-coyote/",
+          "name": "Crag Coyote",
+          "rank": 1,
+          "minLevel": 35,
+          "maxLevel": 36,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4950,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Spot",
+          "rank": 1,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/spot/",
+          "name": "Spot",
+          "rank": 1,
+          "minLevel": 35,
+          "maxLevel": 35,
+          "zones": [
+            "Dustwallow Marsh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 767,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Swamp Jaguar",
+          "rank": 1,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Swamp of Sorrows"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/swamp-jaguar/",
+          "name": "Swamp Jaguar",
+          "rank": 1,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Swamp Of Sorrows"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4662,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Magram Bonepaw",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Desolace"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/magram-bonepaw/",
+          "name": "Magram Bonepaw",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Desolace"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2728,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Feral Crag Coyote",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/feral-crag-coyote/",
+          "name": "Feral Crag Coyote",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 38,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2850,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Broken Tooth",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 37,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/broken-tooth/",
+          "name": "Broken Tooth",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 37,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 729,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Sin'Dall",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 37,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/sindall/",
+          "name": "Sin'Dall",
+          "rank": 1,
+          "minLevel": 37,
+          "maxLevel": 37,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2729,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash1",
+          "name": "Elder Crag Coyote",
+          "rank": 1,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-crag-coyote/",
+          "name": "Elder Crag Coyote",
+          "rank": 1,
+          "minLevel": 39,
+          "maxLevel": 40,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 5286,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Longtooth Runner",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Feralas"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/longtooth-runner/",
+          "name": "Longtooth Runner",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Ferelas"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2734,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Ridge Stalker Patriarch",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ridge-stalker-patriarch/",
+          "name": "Ridge Stalker Patriarch",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 41,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 728,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Bhag'thera",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 40,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/bhagthera/",
+          "name": "Bhag'thera",
+          "rank": 2,
+          "minLevel": 40,
+          "maxLevel": 40,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 5425,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Starving Blisterpaw",
+          "rank": 2,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/starving-blisterpaw/",
+          "name": "Starving Blisterpaw",
+          "rank": 2,
+          "minLevel": 41,
+          "maxLevel": 42,
+          "zones": [
+            "Tanaris"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2730,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Rabid Crag Coyote",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/rabid-crag-coyote/",
+          "name": "Rabid Crag Coyote",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8211,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Old Cliff Jumper",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/old-cliff-jumper/",
+          "name": "Old Cliff Jumper",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 42,
+          "zones": [
+            "The Hinterlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1713,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Elder Shadowmaw Panther",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-shadowmaw-panther/",
+          "name": "Elder Shadowmaw Panther",
+          "rank": 2,
+          "minLevel": 42,
+          "maxLevel": 43,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8208,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Murderous Blisterpaw",
+          "rank": 2,
+          "minLevel": 43,
+          "maxLevel": 43,
+          "zones": [
+            "Tanaris"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 731,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "King Bangalash",
+          "rank": 2,
+          "minLevel": 43,
+          "maxLevel": 43,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/king-bangalash/",
+          "name": "King Bangalash",
+          "rank": 2,
+          "minLevel": 43,
+          "maxLevel": 43,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 5426,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Blisterpaw Hyena",
+          "rank": 2,
+          "minLevel": 44,
+          "maxLevel": 45,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/blisterpaw-hyena/",
+          "name": "Blisterpaw Hyena",
+          "rank": 2,
+          "minLevel": 44,
+          "maxLevel": 45,
+          "zones": [
+            "Tanaris"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2926,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Silvermane Stalker",
+          "rank": 2,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/silvermane-stalker/",
+          "name": "Silvermane Stalker",
+          "rank": 2,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "The Hinterlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 5427,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash2",
+          "name": "Rabid Blisterpaw",
+          "rank": 2,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Tanaris"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/rabid-blisterpaw/",
+          "name": "Rabid Blisterpaw",
+          "rank": 2,
+          "minLevel": 47,
+          "maxLevel": 48,
+          "zones": [
+            "Tanaris"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2681,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Vilebranch Raiding Wolf",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "The Hinterlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/vilebranch-raiding-wolf/",
+          "name": "Vilebranch Raiding Wolf",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 51,
+          "zones": [
+            "The Hinterlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8303,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Grunter",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/grunter/",
+          "name": "Grunter",
+          "rank": 3,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Blasted Lands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8300,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Ravage",
+          "rank": 3,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ravage/",
+          "name": "Ravage",
+          "rank": 3,
+          "minLevel": 51,
+          "maxLevel": 51,
+          "zones": [
+            "Blasted Lands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 9416,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Scarshield Worg",
+          "rank": 3,
+          "minLevel": 53,
+          "maxLevel": 54,
+          "zones": [
+            "Blackrock Spire (Dungeon"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/scarshield-worg/",
+          "name": "Scarshield Worg",
+          "rank": 3,
+          "minLevel": 53,
+          "maxLevel": 54,
+          "zones": [
+            "Blackrock Spire"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 7055,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Blackrock Worg",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/blackrock-worg/",
+          "name": "Blackrock Worg",
+          "rank": 3,
+          "minLevel": 54,
+          "maxLevel": 55,
+          "zones": [
+            "Burning Steppes"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 9696,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Bloodaxe Worg",
+          "rank": 3,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire (Dungeon"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/bloodaxe-worg/",
+          "name": "Bloodaxe Worg",
+          "rank": 3,
+          "minLevel": 56,
+          "maxLevel": 57,
+          "zones": [
+            "Blackrock Spire"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 10200,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Rak'Shiri",
+          "rank": 3,
+          "minLevel": 57,
+          "maxLevel": 57,
+          "zones": [
+            "Winterspring"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/rakshiri/",
+          "name": "Rak'Shiri",
+          "rank": 3,
+          "minLevel": 57,
+          "maxLevel": 57,
+          "zones": [
+            "Winterspring"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 7433,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Frostsaber Huntress",
+          "rank": 3,
+          "minLevel": 58,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/frostsaber-huntress/",
+          "name": "Frostsaber Huntress",
+          "rank": 3,
+          "minLevel": 58,
+          "maxLevel": 59,
+          "zones": [
+            "Winterspring"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 7432,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Frostsaber Stalker",
+          "rank": 3,
+          "minLevel": 59,
+          "maxLevel": 60,
+          "zones": [
+            "Winterspring"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/frostsaber-stalker/",
+          "name": "Frostsaber Stalker",
+          "rank": 3,
+          "minLevel": 59,
+          "maxLevel": 60,
+          "zones": [
+            "Winterspring"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 11365,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#dash3",
+          "name": "Zulian Panther",
+          "rank": 3,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Zul'Gurub (Raid"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Wowhead Classic spell pages (classic/spell=<id>) have NO 'Taught by NPC' / 'Learned from' listview for these pet abilities; only 'Used by Pet' (families) and 'See also' (other ranks). Rank spell IDs and 'Requires level N' (recorded as petLevel) come from those pages. Wowhead shows no TP cost.",
+    "Wowhead Classic NPC pages: the one page fetched (npc=3121 Durotar Tiger: 'Level: 7 - 8', Durotar, 'Tameable (Cat)') does not list the abilities the beast teaches; further NPC page fetches were then blocked by Wowhead (HTTP 403 'Request blocked'), so no Wowhead beast observations were recorded and elite/rare flags could not be taken from Wowhead.",
+    "Wowhead has a Forever section (search results show wowhead.com/forever/... NPC URLs) but every /forever/ page returned HTTP 403 to both curl and WebFetch; no wowhead-forever data recorded.",
+    "warcraft.wiki.gg ability pages give only general data (rank count, base level, some spell IDs in external-link headers, icon); no per-rank TP costs and no beast lists. The wiki's Beast Training page states Cower, Dash and Prowl are learned from tamed beasts (not pet trainers), hence trainerOnly=false.",
+    "petopia-classic = https://www.wow-petopia.com/classic/abilities.php (one page, anchors per rank). Gives pet level + TP per rank and beasts with (classic.wowhead.com) NPC IDs, family, level range, zone. No elite/rare flags. No spell IDs (null).",
+    "warcrafttavern = warcrafttavern.com WoW Classic hunter-pet model pages (per beast: Pet Level, 'Skills When Tamed', Zone). No NPC IDs; matched to Petopia's IDs by exact name. Probably compiled from the same community data as Petopia, but it differs in places (see notes below), so it is recorded as a separate source; the generator may want to weight it as partially dependent on Petopia. Zone strings are recorded as shown, including site typos (e.g. 'Eastern Plagulands', 'Ferelas'). Its hunter-pet-abilities guide links one spell ID per ability for the max rank (16698 Cower, 23112 Dash, 24455 Prowl); these differ from the Wowhead pet-spell IDs and look like the Beast Training 'teach' spell variants. Recorded as-is in the warcrafttavern rank observation, unverified.",
+    "No source that loaded showed elite/rare flags, so elite/rare are omitted. Nothing Forever-specific was found; all data is the Classic Era baseline. (The wiki's Cower page says the ability 'remains in Classic and Forever'.)",
+    "Petopia rank data: pet levels 30/40/50, TP 15/20/25. Wowhead 'Requires level' matches the levels.",
+    "Conflict: Murderous Blisterpaw (npc 8208): Petopia lists Dash 2; warcrafttavern lists 'Skills When Tamed: None' (level 43, Tanaris). Only Petopia's observation is recorded since warcrafttavern gives no rank.",
+    "Zulian Panther (npc 11365, Zul'Gurub raid, Dash 3) appears only on Petopia; warcrafttavern has no entry for it.",
+    "Named/rare-looking beasts (Spot, Broken Tooth, Sin'Dall, Bhag'thera, King Bangalash, Old Cliff Jumper, Grunter, Ravage, Rak'Shiri, Murderous Blisterpaw) were not flagged rare by any source that loaded; flags omitted rather than guessed.",
+    "Forum chatter seen in search results mentions 'technically 4 ranks of Dash'; no data source lists a Classic rank 4 (Wowhead See-also shows ranks 1-3 only). Not recorded."
+  ]
+}

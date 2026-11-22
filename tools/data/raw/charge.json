@@ -1,0 +1,2339 @@
+{
+  "ability": "charge",
+  "name": "Charge",
+  "icon": "ability_hunter_pet_boar",
+  "trainerOnly": false,
+  "researcher": "research agent (Opus 5.5) for charge/furious_howl/thunderstomp/shell_shield, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 5
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "spellIds": null,
+          "petLevel": 1,
+          "tp": 5
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=7371",
+          "spellIds": [
+            7371
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=7371",
+          "spellIds": [
+            7371
+          ],
+          "petLevel": 1,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Charge_(boar_pet_ability)",
+          "spellIds": [
+            7371
+          ],
+          "petLevel": 1,
+          "tp": 5
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge2",
+          "spellIds": null,
+          "petLevel": 12,
+          "tp": 9
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "spellIds": null,
+          "petLevel": 12,
+          "tp": 9
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=26177",
+          "spellIds": [
+            26177
+          ],
+          "petLevel": 12,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=26177",
+          "spellIds": [
+            26177
+          ],
+          "petLevel": 12,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Charge_(boar_pet_ability)",
+          "spellIds": null,
+          "petLevel": 12,
+          "tp": 9
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge3",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 13
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 13
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=26178",
+          "spellIds": [
+            26178
+          ],
+          "petLevel": 24,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=26178",
+          "spellIds": [
+            26178
+          ],
+          "petLevel": 24,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Charge_(boar_pet_ability)",
+          "spellIds": null,
+          "petLevel": 24,
+          "tp": 13
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge4",
+          "spellIds": null,
+          "petLevel": 36,
+          "tp": 17
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge4",
+          "spellIds": null,
+          "petLevel": 36,
+          "tp": 17
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=26179",
+          "spellIds": [
+            26179
+          ],
+          "petLevel": 36,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=26179",
+          "spellIds": [
+            26179
+          ],
+          "petLevel": 36,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Charge_(boar_pet_ability)",
+          "spellIds": null,
+          "petLevel": 36,
+          "tp": 17
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge5",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 21
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge5",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 21
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=26201",
+          "spellIds": [
+            26201
+          ],
+          "petLevel": 48,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=26201",
+          "spellIds": [
+            26201
+          ],
+          "petLevel": 48,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Charge_(boar_pet_ability)",
+          "spellIds": null,
+          "petLevel": 48,
+          "tp": 25
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge6",
+          "spellIds": null,
+          "petLevel": 60,
+          "tp": 25
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge6",
+          "spellIds": null,
+          "petLevel": 60,
+          "tp": 25
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=27685",
+          "spellIds": [
+            27685
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=27685",
+          "spellIds": [
+            27685
+          ],
+          "petLevel": 60,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Charge_(boar_pet_ability)",
+          "spellIds": [
+            27685
+          ],
+          "petLevel": 60,
+          "tp": 29
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 113,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Stonetusk Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Stonetusk Boar",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/stonetusk-boar/",
+          "name": "Stonetusk Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=113",
+          "name": "Stonetusk Boar",
+          "rank": null,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=113",
+          "name": "Stonetusk Boar",
+          "rank": null,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 119,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Longsnout",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Longsnout",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/longsnout/",
+          "name": "Longsnout",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=119",
+          "name": "Longsnout",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=119",
+          "name": "Longsnout",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 157,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge2",
+          "name": "Goretusk",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Goretusk",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/goretusk/",
+          "name": "Goretusk",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=157",
+          "name": "Goretusk",
+          "rank": null,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Westfall"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=157",
+          "name": "Goretusk",
+          "rank": null,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Westfall"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 330,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Princess",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Princess",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/princess/",
+          "name": "Princess",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=330",
+          "name": "Princess",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=330",
+          "name": "Princess",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 345,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge3",
+          "name": "Bellygrub",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "name": "Bellygrub",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/bellygrub/",
+          "name": "Bellygrub",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=345",
+          "name": "Bellygrub",
+          "rank": null,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Redridge Mountains"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=345",
+          "name": "Bellygrub",
+          "rank": null,
+          "minLevel": 24,
+          "maxLevel": 24,
+          "zones": [
+            "Redridge Mountains"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 390,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Porcine Entourage",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 7,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Porcine Entourage",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 7,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/porcine-entourage/",
+          "name": "Porcine Entourage",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 7,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=390",
+          "name": "Porcine Entourage",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 7,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=390",
+          "name": "Porcine Entourage",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 7,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 454,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge2",
+          "name": "Young Goretusk",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Young Goretusk",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/young-goretusk/",
+          "name": "Young Goretusk",
+          "rank": 2,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Westfall"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=454",
+          "name": "Young Goretusk",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Westfall"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=454",
+          "name": "Young Goretusk",
+          "rank": null,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "Westfall"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 524,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Rockhide Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Rockhide Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/rockhide-boar/",
+          "name": "Rockhide Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=524",
+          "name": "Rockhide Boar",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=524",
+          "name": "Rockhide Boar",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Elwynn Forest"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 547,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge2",
+          "name": "Great Goretusk",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Redridge Mountains",
+            "Westfall"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Great Goretusk",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Westfall",
+            "Redridge Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/great-goretusk/",
+          "name": "Great Goretusk",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Redridge Mountains"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=547",
+          "name": "Great Goretusk",
+          "rank": null,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Redridge Mountains"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=547",
+          "name": "Great Goretusk",
+          "rank": null,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Redridge Mountains"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 708,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Small Crag Boar",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Small Crag Boar",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/small-crag-boar/",
+          "name": "Small Crag Boar",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=708",
+          "name": "Small Crag Boar",
+          "rank": null,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=708",
+          "name": "Small Crag Boar",
+          "rank": null,
+          "minLevel": 3,
+          "maxLevel": 3,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1125,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Crag Boar",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Crag Boar",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/crag-boar/",
+          "name": "Crag Boar",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1125",
+          "name": "Crag Boar",
+          "rank": null,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1125",
+          "name": "Crag Boar",
+          "rank": null,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1126,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Large Crag Boar",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Large Crag Boar",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/large-crag-boar/",
+          "name": "Large Crag Boar",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1126",
+          "name": "Large Crag Boar",
+          "rank": null,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1126",
+          "name": "Large Crag Boar",
+          "rank": null,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1127,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Elder Crag Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Elder Crag Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-crag-boar/",
+          "name": "Elder Crag Boar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1127",
+          "name": "Elder Crag Boar",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1127",
+          "name": "Elder Crag Boar",
+          "rank": null,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1190,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Mountain Boar",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Mountain Boar",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/mountain-boar/",
+          "name": "Mountain Boar",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1190",
+          "name": "Mountain Boar",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1190",
+          "name": "Mountain Boar",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1191,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge2",
+          "name": "Mangy Mountain Boar",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Mangy Mountain Boar",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/mangy-mountain-boar/",
+          "name": "Mangy Mountain Boar",
+          "rank": 2,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1191",
+          "name": "Mangy Mountain Boar",
+          "rank": null,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1191",
+          "name": "Mangy Mountain Boar",
+          "rank": null,
+          "minLevel": 14,
+          "maxLevel": 15,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1192,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge2",
+          "name": "Elder Mountain Boar",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge2",
+          "name": "Elder Mountain Boar",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-mountain-boar/",
+          "name": "Elder Mountain Boar",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1192",
+          "name": "Elder Mountain Boar",
+          "rank": null,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1192",
+          "name": "Elder Mountain Boar",
+          "rank": null,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "Loch Modan"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1689,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Scarred Crag Boar",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Scarred Crag Boar",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/scarred-crag-boar/",
+          "name": "Scarred Crag Boar",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1689",
+          "name": "Scarred Crag Boar",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1689",
+          "name": "Scarred Crag Boar",
+          "rank": null,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Dun Morogh"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1984,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Young Thistle Boar",
+          "rank": 1,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Young Thistle Boar",
+          "rank": 1,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/young-thistle-boar/",
+          "name": "Young Thistle Boar",
+          "rank": 1,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1984",
+          "name": "Young Thistle Boar",
+          "rank": null,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1984",
+          "name": "Young Thistle Boar",
+          "rank": null,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 1985,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Thistle Boar",
+          "rank": 1,
+          "minLevel": 2,
+          "maxLevel": 3,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Thistle Boar",
+          "rank": 1,
+          "minLevel": 2,
+          "maxLevel": 3,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/thistle-boar/",
+          "name": "Thistle Boar",
+          "rank": 1,
+          "minLevel": 2,
+          "maxLevel": 3,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=1985",
+          "name": "Thistle Boar",
+          "rank": null,
+          "minLevel": 2,
+          "maxLevel": 3,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=1985",
+          "name": "Thistle Boar",
+          "rank": null,
+          "minLevel": 2,
+          "maxLevel": 3,
+          "zones": [
+            "Teldrassil"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2954,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Bristleback Battleboar",
+          "rank": 1,
+          "minLevel": 4,
+          "maxLevel": 5,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Bristleback Battleboar",
+          "rank": 1,
+          "minLevel": 4,
+          "maxLevel": 5,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/bristleback-battleboar/",
+          "name": "Bristleback Battleboar",
+          "rank": 1,
+          "minLevel": 4,
+          "maxLevel": 5,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2954",
+          "name": "Bristleback Battleboar",
+          "rank": null,
+          "minLevel": 4,
+          "maxLevel": 5,
+          "zones": [
+            "Mulgore"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2954",
+          "name": "Bristleback Battleboar",
+          "rank": null,
+          "minLevel": 4,
+          "maxLevel": 5,
+          "zones": [
+            "Mulgore"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 2966,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Battleboar",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Battleboar",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/battleboar/",
+          "name": "Battleboar",
+          "rank": 1,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=2966",
+          "name": "Battleboar",
+          "rank": null,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Mulgore"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=2966",
+          "name": "Battleboar",
+          "rank": null,
+          "minLevel": 3,
+          "maxLevel": 4,
+          "zones": [
+            "Mulgore"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3098,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Mottled Boar",
+          "rank": 1,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Mottled Boar",
+          "rank": 1,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/mottled-boar/",
+          "name": "Mottled Boar",
+          "rank": 1,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3098",
+          "name": "Mottled Boar",
+          "rank": null,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3098",
+          "name": "Mottled Boar",
+          "rank": null,
+          "minLevel": 1,
+          "maxLevel": 2,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3099,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Dire Mottled Boar",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Dire Mottled Boar",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/dire-mottled-boar/",
+          "name": "Dire Mottled Boar",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3099",
+          "name": "Dire Mottled Boar",
+          "rank": null,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3099",
+          "name": "Dire Mottled Boar",
+          "rank": null,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Orgrimmar"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3100,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Elder Mottled Boar",
+          "rank": 1,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Elder Mottled Boar",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 10,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-mottled-boar/",
+          "name": "Elder Mottled Boar",
+          "rank": 1,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3100",
+          "name": "Elder Mottled Boar",
+          "rank": null,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3100",
+          "name": "Elder Mottled Boar",
+          "rank": null,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 3225,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge1",
+          "name": "Corrupted Mottled Boar",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge1",
+          "name": "Corrupted Mottled Boar",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/corrupted-mottled-boar/",
+          "name": "Corrupted Mottled Boar",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=3225",
+          "name": "Corrupted Mottled Boar",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=3225",
+          "name": "Corrupted Mottled Boar",
+          "rank": null,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Durotar"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4511,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge3",
+          "name": "Agam'ar",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "name": "Agam'ar",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/agamar/",
+          "name": "Agam'ar",
+          "rank": 3,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Razorfen Kraul"
+          ],
+          "elite": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4511",
+          "name": "Agam'ar",
+          "rank": null,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Razorfen Kraul"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4511",
+          "name": "Agam'ar",
+          "rank": null,
+          "minLevel": 24,
+          "maxLevel": 25,
+          "zones": [
+            "Razorfen Kraul"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4512,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge3",
+          "name": "Rotting Agam'ar",
+          "rank": 3,
+          "minLevel": 28,
+          "maxLevel": 28,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "name": "Rotting Agam'ar",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/rotting-agamar/",
+          "name": "Rotting Agam'ar",
+          "rank": 3,
+          "minLevel": 28,
+          "maxLevel": 28,
+          "zones": [
+            "Razorfen Kraul"
+          ],
+          "elite": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4512",
+          "name": "Rotting Agam'ar",
+          "rank": null,
+          "minLevel": 28,
+          "maxLevel": 28,
+          "zones": [
+            "Razorfen Kraul"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4512",
+          "name": "Rotting Agam'ar",
+          "rank": null,
+          "minLevel": 28,
+          "maxLevel": 28,
+          "zones": [
+            "Razorfen Kraul"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 4514,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge3",
+          "name": "Raging Agam'ar",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge3",
+          "name": "Raging Agam'ar",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Razorfen Kraul (Dungeon)"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/raging-agamar/",
+          "name": "Raging Agam'ar",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Razorfen Kraul"
+          ],
+          "elite": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=4514",
+          "name": "Raging Agam'ar",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Razorfen Kraul"
+          ],
+          "elite": true,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=4514",
+          "name": "Raging Agam'ar",
+          "rank": null,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Razorfen Kraul"
+          ],
+          "elite": true,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 5992,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge5",
+          "name": "Ashmane Boar",
+          "rank": 5,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge5",
+          "name": "Ashmane Boar",
+          "rank": 5,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ashmane-boar/",
+          "name": "Ashmane Boar",
+          "rank": 5,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=5992",
+          "name": "Ashmane Boar",
+          "rank": null,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=5992",
+          "name": "Ashmane Boar",
+          "rank": null,
+          "minLevel": 48,
+          "maxLevel": 49,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 8303,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge5",
+          "name": "Grunter",
+          "rank": 5,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge5",
+          "name": "Grunter",
+          "rank": 5,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Blasted Lands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/grunter/",
+          "name": "Grunter",
+          "rank": 5,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "rare": true
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=8303",
+          "name": "Grunter",
+          "rank": null,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "elite": false,
+          "rare": true
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=8303",
+          "name": "Grunter",
+          "rank": null,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Blasted Lands"
+          ],
+          "elite": false,
+          "rare": true
+        }
+      ]
+    },
+    {
+      "npcId": 16117,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#charge6",
+          "name": "Plagued Swine",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Eastern Plaguelands"
+          ]
+        },
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge6",
+          "name": "Plagued Swine",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Eastern Plaguelands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/plagued-swine/",
+          "name": "Plagued Swine",
+          "rank": 6,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Eastern Plagulands"
+          ]
+        },
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/npc=16117",
+          "name": "Plagued Swine",
+          "rank": null,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Eastern Plaguelands"
+          ],
+          "elite": false,
+          "rare": false
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=16117",
+          "name": "Plagued Swine",
+          "rank": null,
+          "minLevel": 60,
+          "maxLevel": 60,
+          "zones": [
+            "Eastern Plaguelands"
+          ],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 255851,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge4",
+          "name": "Mature Paletusk",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=255851",
+          "name": "Mature Paletusk",
+          "rank": null,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    },
+    {
+      "npcId": 258331,
+      "observations": [
+        {
+          "source": "petopia-forever",
+          "url": "https://www.wow-petopia.com/forever/abilities.php#charge4",
+          "name": "Young Paletusk",
+          "rank": 4,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Riverglades"
+          ]
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/npc=258331",
+          "name": "Young Paletusk",
+          "rank": null,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [],
+          "elite": false,
+          "rare": false
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Sources: petopia-classic (wow-petopia.com/classic/abilities.php) and petopia-forever (wow-petopia.com/forever/abilities.php) are the SAME SITE (count as one source); they are separate datasets for Classic Era and WoW Forever. Petopia gives no spell IDs; its NPC links point to Wowhead (classic.wowhead.com / wowhead.com/forever).",
+    "wowhead-classic and wowhead-forever are the SAME SITE (count as one source). Wowhead DOES have a Forever section (wowhead.com/forever/...). Full Wowhead pages are behind an AWS WAF JS challenge (curl gets HTTP 202, empty body) and WebFetch strips page scripts, so the 'Taught by NPC' listviews could NOT be read. Wowhead data here comes only from nether.wowhead.com tooltip JSON: spell 'Requires level' (recorded as petLevel; TP is not in tooltips, so null) and NPC name/level/classification/primary map zone. Wowhead beast observations therefore have rank=null: they confirm identity, level and elite/rare, NOT which rank the NPC teaches. Classic tooltips carry no 'Rank N' label; the rank for classic spell IDs was assigned by matching required level to the Forever tooltip (which shows 'Rank N') and to Petopia's rank levels.",
+    "Wowhead NPC zones were converted from the tooltip's numeric map zone id using standard AreaTable ids (e.g. 491=Razorfen Kraul, 719=Blackfathom Deeps); the tooltip gives only one primary zone.",
+    "warcrafttavern = warcrafttavern.com/wow-classic/hunter-pets/ (Classic Era; per-model listing pages plus per-pet pages). No NPC IDs (observations matched to IDs by name). elite/rare set only where the per-pet page shows a 'Class' field (Elite or Rare); omitted otherwise. Looks like an independent dataset (it disagrees with Petopia in places), origin not stated.",
+    "warcraft.wiki.gg ability pages give few per-rank values and no beast lists; 'Pet abilities (Classic)' gives only rank-1 level and TP per ability. The old URLs Charge_(Boar) returned 404; the working page is Charge_(boar_pet_ability).",
+    "warcraft.wiki.gg Charge (boar pet ability), Classic table: 'At present, there is no mob which can teach Charge (Rank 4).' The table column is just 'Level' (not explicitly pet level). Its TP for rank 5 (25) and rank 6 (29) DIFFER from Petopia classic/forever (21 and 25). Spell IDs only for rank 1 (7371) and rank 6 (27685).",
+    "FOREVER-SPECIFIC: Petopia Forever lists Charge 4 as learnable from two NEW NPCs in the new zone 'Riverglades': Young Paletusk (258331, 36-37) and Mature Paletusk (255851, 38-39). In Classic Era (petopia-classic, wiki) no beast teaches Charge 4.",
+    "FOREVER-SPECIFIC: attack-power values changed: Forever tooltips/Petopia Forever 66/130/204/294/430/520 vs Classic Era (Petopia classic) 50/100/180/250/390/550. Wowhead Forever tooltip for rank 6 (27685) has no 'Rank N' label. A Blizzard forum thread (search result only, not verified) says Charge rank 6 behaves as a different spell from ranks 1-5.",
+    "Level differences: Stonetusk Boar 113 is 7-8 on petopia-classic and warcrafttavern but 5-6 on petopia-forever and both Wowhead tooltips; Elder Mottled Boar 3100 is 8-9 (petopia-classic, warcrafttavern, Wowhead) vs 9-10 (petopia-forever); Rotting Agam'ar 4512 is 28 vs 27-28 (petopia-forever).",
+    "Wowhead Forever tooltip gives Dire Mottled Boar (3099) primary map zone id 1637 (Orgrimmar) while classic gives 14 (Durotar) - doubtful, probably spawns near the city edge.",
+    "Princess (330), Longsnout (119), Bellygrub (345) are named mobs but Wowhead tooltips classify them as (Normal), not rare/elite.",
+    "petopia-classic: Charge 4 is shown with \"No known training source\".",
+    "wowhead-forever npc 258331 (Young Paletusk): tooltip map zone id 16591 (not a Classic zone id; presumably the new Forever zone Riverglades) - zones left empty.",
+    "wowhead-forever npc 255851 (Mature Paletusk): tooltip map zone id 16591 (not a Classic zone id; presumably the new Forever zone Riverglades) - zones left empty."
+  ]
+}

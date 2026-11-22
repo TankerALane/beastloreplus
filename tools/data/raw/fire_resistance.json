@@ -1,0 +1,187 @@
+{
+  "ability": "fire_resistance",
+  "name": "Fire Resistance",
+  "icon": "spell_fire_firearmor",
+  "trainerOnly": true,
+  "researcher": "trainer-abilities research agent, 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=23992",
+          "spellIds": [
+            23992,
+            24440
+          ],
+          "petLevel": 20,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=23992",
+          "spellIds": [
+            23992,
+            24440
+          ],
+          "petLevel": 20,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": [
+            23992
+          ],
+          "petLevel": 20,
+          "tp": 5
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 20,
+          "tp": 5
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Pet_abilities_(Classic)",
+          "spellIds": null,
+          "petLevel": 20,
+          "tp": 5
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24439",
+          "spellIds": [
+            24439,
+            24441
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=24439",
+          "spellIds": [
+            24439,
+            24441
+          ],
+          "petLevel": 30,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 15
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 30,
+          "tp": 15
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24444",
+          "spellIds": [
+            24444,
+            24463
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=24444",
+          "spellIds": [
+            24444,
+            24463
+          ],
+          "petLevel": 40,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 45
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 40,
+          "tp": 45
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=24445",
+          "spellIds": [
+            24445,
+            24464
+          ],
+          "petLevel": 50,
+          "tp": null
+        },
+        {
+          "source": "wowhead-forever",
+          "url": "https://www.wowhead.com/forever/spell=24445",
+          "spellIds": [
+            24445,
+            24464
+          ],
+          "petLevel": 50,
+          "tp": null
+        },
+        {
+          "source": "mmonster.co",
+          "url": "https://mmonster.co/wow-forever/guides/hunter-pets/abilities",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 90
+        },
+        {
+          "source": "tentonhammer",
+          "url": "https://www.tentonhammer.com/guides/wow-hunter-guide-pet-skill-list-page-4",
+          "spellIds": null,
+          "petLevel": 50,
+          "tp": 90
+        }
+      ]
+    }
+  ],
+  "beasts": [],
+  "notes": [
+    "Trainer-taught passive. 4 ranks in Classic Era: Fire resistance +30/60/90/120 (Wowhead Classic and Forever; Wowhead Forever tooltips print 'Rank 1'-'Rank 4').",
+    "Rank count: Warcraft Tavern Classic hunter-pets guide says R4 (level 50); Warcraft Tavern hunter-pet-abilities guide says R5 and tentonhammer lists a rank 5 (+140, level 60) - rank 5 is TBC data, no rank-5 spell exists on Wowhead Classic or Forever.",
+    "TP per rank (5/15/45/90) agrees between mmonster.co (Forever client data) and tentonhammer (TBC-era page); warcraft.wiki.gg gives rank 1 = 5 TP at level 20.",
+    "Classic-only unclassed 100 yd variants 24442, 24468, 24470, 24472 exist on Wowhead Classic (24442 not on Forever); not trainer data as far as found.",
+    "spellIds order in wowhead observations: [petSpellId, teachSpellId]. The first ID is the pet's own spell (what the pet casts / has as a passive; Wowhead Forever categorises it as 'Generic Pet Abilities'). The second ID is the hunter-side 'teach' spell (100 yd range, Instant, 'Requires Hunter'; Wowhead Classic shows its Effect #1 as 'Learn Spell' -> pet spell, e.g. 4195 -> 4187; Wowhead Forever categorises these as 'Beast Training Abilities').",
+    "Wowhead observations were read from Wowhead's tooltip JSON endpoint (nether.wowhead.com/classic|forever/tooltip/spell/<id>); petLevel = the 'Requires level N' line of the spell named in the observation url. Wowhead does not publish training point costs on spell pages, so tp is null there.",
+    "Wowhead Classic tooltips do not print rank numbers for Growl/Great Stamina/Natural Armor/resistances; rank order is by required level and effect value. Wowhead Forever tooltips/search results do print 'Rank N' and agree with this order.",
+    "mmonster.co is a WoW Forever fan guide; it says its trainer prices are 'Client data' read during the Forever beta and 'not checked again since' (page build 70959, updated 2026-11-18).",
+    "tentonhammer.com table is a 2016 page written for TBC-era data (it lists an extra rank 11 for Great Stamina/Natural Armor and rank 5 for resistances, which do not exist in Classic). Only the ranks that exist in Classic are recorded here; treat its levels with caution.",
+    "Petopia Classic (petopia.brashendeavors.net) could not be read: TLS certificate error on fetch; web.archive.org also blocked. Wowhead Classic guide/calculator pages returned HTTP 403 to direct fetch."
+  ]
+}

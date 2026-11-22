@@ -1,0 +1,1022 @@
+{
+  "ability": "cower",
+  "name": "Cower",
+  "icon": "ability_druid_cower",
+  "trainerOnly": false,
+  "researcher": "research agent (Cower/Dash/Prowl), 2026-11-21",
+  "ranks": [
+    {
+      "rank": 1,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=1742",
+          "spellIds": [
+            1742
+          ],
+          "petLevel": 5,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Cower_(pet_ability)",
+          "spellIds": [
+            1742
+          ],
+          "petLevel": 5,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "spellIds": null,
+          "petLevel": 5,
+          "tp": 8
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=1753",
+          "spellIds": [
+            1753
+          ],
+          "petLevel": 15,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower2",
+          "spellIds": null,
+          "petLevel": 15,
+          "tp": 10
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=1754",
+          "spellIds": [
+            1754
+          ],
+          "petLevel": 25,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower3",
+          "spellIds": null,
+          "petLevel": 25,
+          "tp": 12
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=1755",
+          "spellIds": [
+            1755
+          ],
+          "petLevel": 35,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower4",
+          "spellIds": null,
+          "petLevel": 35,
+          "tp": 14
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=1756",
+          "spellIds": [
+            1756
+          ],
+          "petLevel": 45,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower5",
+          "spellIds": null,
+          "petLevel": 45,
+          "tp": 16
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "observations": [
+        {
+          "source": "wowhead-classic",
+          "url": "https://www.wowhead.com/classic/spell=16697",
+          "spellIds": [
+            16697
+          ],
+          "petLevel": 55,
+          "tp": null
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Cower_(pet_ability)",
+          "spellIds": [
+            16697
+          ],
+          "petLevel": null,
+          "tp": null
+        },
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower6",
+          "spellIds": null,
+          "petLevel": 55,
+          "tp": 18
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://warcrafttavern.com/wow-classic/guides/hunter-pet-abilities",
+          "spellIds": [
+            16698
+          ],
+          "petLevel": null,
+          "tp": null
+        }
+      ]
+    }
+  ],
+  "beasts": [
+    {
+      "npcId": 2042,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Nightsaber",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Teldrassil"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/nightsaber/",
+          "name": "Nightsaber",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Teldrassil"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1199,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Juvenile Snow Leopard",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Dun Morogh"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/juvenile-snow-leopard/",
+          "name": "Juvenile Snow Leopard",
+          "rank": 1,
+          "minLevel": 5,
+          "maxLevel": 6,
+          "zones": [
+            "Dun Morogh"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 1553,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Greater Duskbat",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/greater-duskbat/",
+          "name": "Greater Duskbat",
+          "rank": 1,
+          "minLevel": 6,
+          "maxLevel": 7,
+          "zones": [
+            "Tirisfal Glades"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3035,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Flatland Cougar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/flatland-cougar/",
+          "name": "Flatland Cougar",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Mulgore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3121,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Durotar Tiger",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/durotar-tiger/",
+          "name": "Durotar Tiger",
+          "rank": 1,
+          "minLevel": 7,
+          "maxLevel": 8,
+          "zones": [
+            "Durotar"
+          ]
+        },
+        {
+          "source": "warcraft.wiki.gg",
+          "url": "https://warcraft.wiki.gg/wiki/Beast_Training",
+          "name": "Durotar Tiger",
+          "rank": 1,
+          "minLevel": null,
+          "maxLevel": null,
+          "zones": []
+        }
+      ]
+    },
+    {
+      "npcId": 2957,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Elder Plainstrider",
+          "rank": 1,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/elder-plainstrider/",
+          "name": "Elder Plainstrider",
+          "rank": 1,
+          "minLevel": 8,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3068,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Mazzranache",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/mazzranache/",
+          "name": "Mazzranache",
+          "rank": 1,
+          "minLevel": 9,
+          "maxLevel": 9,
+          "zones": [
+            "Mulgore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2070,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Moonstalker Runt",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Darkshore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/moonstalker-runt/",
+          "name": "Moonstalker Runt",
+          "rank": 1,
+          "minLevel": 10,
+          "maxLevel": 11,
+          "zones": [
+            "Darkshore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2321,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Foreststrider Fledgling",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 13,
+          "zones": [
+            "Darkshore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/foreststrider-fledgling/",
+          "name": "Foreststrider Fledgling",
+          "rank": 1,
+          "minLevel": 11,
+          "maxLevel": 13,
+          "zones": [
+            "Darkshore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3246,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower1",
+          "name": "Fleeting Plainstrider",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/fleeting-plainstrider/",
+          "name": "Fleeting Plainstrider",
+          "rank": 1,
+          "minLevel": 12,
+          "maxLevel": 13,
+          "zones": [
+            "The Barrens"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3241,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower2",
+          "name": "Savannah Patriarch",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/savannah-patriarch/",
+          "name": "Savannah Patriarch",
+          "rank": 2,
+          "minLevel": 15,
+          "maxLevel": 16,
+          "zones": [
+            "The Barrens"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 3245,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower2",
+          "name": "Ornery Plainstrider",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "The Barrens"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ornery-plainstrider/",
+          "name": "Ornery Plainstrider",
+          "rank": 2,
+          "minLevel": 16,
+          "maxLevel": 17,
+          "zones": [
+            "The Barrens"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2323,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower2",
+          "name": "Giant Foreststrider",
+          "rank": 2,
+          "minLevel": 17,
+          "maxLevel": 19,
+          "zones": [
+            "Darkshore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/giant-foreststrider/",
+          "name": "Giant Foreststrider",
+          "rank": 2,
+          "minLevel": 17,
+          "maxLevel": 19,
+          "zones": [
+            "Darkshore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2237,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower2",
+          "name": "Moonstalker Sire",
+          "rank": 2,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Darkshore"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/moonstalker-sire/",
+          "name": "Moonstalker Sire",
+          "rank": 2,
+          "minLevel": 17,
+          "maxLevel": 18,
+          "zones": [
+            "Darkshore"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4067,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower2",
+          "name": "Twilight Runner",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/twilight-runner/",
+          "name": "Twilight Runner",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Stonetalon Mountains"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2384,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower2",
+          "name": "Starving Mountain Lion",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/starving-mountain-lion/",
+          "name": "Starving Mountain Lion",
+          "rank": 2,
+          "minLevel": 23,
+          "maxLevel": 24,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4126,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower3",
+          "name": "Crag Stalker",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Thousand Needles"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/crag-stalker/",
+          "name": "Crag Stalker",
+          "rank": 3,
+          "minLevel": 25,
+          "maxLevel": 26,
+          "zones": [
+            "Thousand Needles"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2385,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower3",
+          "name": "Feral Mountain Lion",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/feral-mountain-lion/",
+          "name": "Feral Mountain Lion",
+          "rank": 3,
+          "minLevel": 27,
+          "maxLevel": 28,
+          "zones": [
+            "Hillsbrad Foothills"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4538,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower3",
+          "name": "Kraul Bat",
+          "rank": 3,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Razorfen Kraul (Dungeon"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/kraul-bat/",
+          "name": "Kraul Bat",
+          "rank": 3,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Razorfen Kraul"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 683,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower3",
+          "name": "Young Panther",
+          "rank": 3,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/young-panther/",
+          "name": "Young Panther",
+          "rank": 3,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 681,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower3",
+          "name": "Young Stranglethorn Tiger",
+          "rank": 3,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/young-stranglethorn-tiger/",
+          "name": "Young Stranglethorn Tiger",
+          "rank": 3,
+          "minLevel": 30,
+          "maxLevel": 31,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4539,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower3",
+          "name": "Greater Kraul Bat",
+          "rank": 3,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Razorfen Kraul (Dungeon"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/greater-kraul-bat/",
+          "name": "Greater Kraul Bat",
+          "rank": 3,
+          "minLevel": 32,
+          "maxLevel": 32,
+          "zones": [
+            "Razorfen Kraul"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 736,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower3",
+          "name": "Panther",
+          "rank": 3,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/panther/",
+          "name": "Panther",
+          "rank": 3,
+          "minLevel": 32,
+          "maxLevel": 33,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2731,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower4",
+          "name": "Ridge Stalker",
+          "rank": 4,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ridge-stalker/",
+          "name": "Ridge Stalker",
+          "rank": 4,
+          "minLevel": 36,
+          "maxLevel": 37,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 4861,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower4",
+          "name": "Shrike Bat",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Uldaman (Dungeon"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/shrike-bat/",
+          "name": "Shrike Bat",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Uldaman"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2732,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower4",
+          "name": "Ridge Huntress",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Badlands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/ridge-huntress/",
+          "name": "Ridge Huntress",
+          "rank": 4,
+          "minLevel": 38,
+          "maxLevel": 39,
+          "zones": [
+            "Badlands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 2522,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower5",
+          "name": "Jaguero Stalker",
+          "rank": 5,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/jaguero-stalker/",
+          "name": "Jaguero Stalker",
+          "rank": 5,
+          "minLevel": 50,
+          "maxLevel": 50,
+          "zones": [
+            "Stranglethorn Vale"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8600,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower5",
+          "name": "Plaguebat",
+          "rank": 5,
+          "minLevel": 53,
+          "maxLevel": 55,
+          "zones": [
+            "Eastern Plaguelands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/plaguebat/",
+          "name": "Plaguebat",
+          "rank": 5,
+          "minLevel": 53,
+          "maxLevel": 55,
+          "zones": [
+            "Eastern Plagulands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8601,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower5",
+          "name": "Noxious Plaguebat",
+          "rank": 5,
+          "minLevel": 54,
+          "maxLevel": 56,
+          "zones": [
+            "Eastern Plaguelands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/noxious-plaguebat/",
+          "name": "Noxious Plaguebat",
+          "rank": 5,
+          "minLevel": 54,
+          "maxLevel": 56,
+          "zones": [
+            "Eastern Plagulands"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 7430,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower6",
+          "name": "Frostsaber Cub",
+          "rank": 6,
+          "minLevel": 55,
+          "maxLevel": 56,
+          "zones": [
+            "Winterspring"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/frostsaber-cub/",
+          "name": "Frostsaber Cub",
+          "rank": 6,
+          "minLevel": 55,
+          "maxLevel": 56,
+          "zones": [
+            "Winterspring"
+          ]
+        }
+      ]
+    },
+    {
+      "npcId": 8602,
+      "observations": [
+        {
+          "source": "petopia-classic",
+          "url": "https://www.wow-petopia.com/classic/abilities.php#cower6",
+          "name": "Monstrous Plaguebat",
+          "rank": 6,
+          "minLevel": 56,
+          "maxLevel": 58,
+          "zones": [
+            "Eastern Plaguelands"
+          ]
+        },
+        {
+          "source": "warcrafttavern",
+          "url": "https://www.warcrafttavern.com/wow-classic/hunter-pets/pets/monstrous-plaguebat/",
+          "name": "Monstrous Plaguebat",
+          "rank": 6,
+          "minLevel": 56,
+          "maxLevel": 58,
+          "zones": [
+            "Eastern Plagulands"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Wowhead Classic spell pages (classic/spell=<id>) have NO 'Taught by NPC' / 'Learned from' listview for these pet abilities; only 'Used by Pet' (families) and 'See also' (other ranks). Rank spell IDs and 'Requires level N' (recorded as petLevel) come from those pages. Wowhead shows no TP cost.",
+    "Wowhead Classic NPC pages: the one page fetched (npc=3121 Durotar Tiger: 'Level: 7 - 8', Durotar, 'Tameable (Cat)') does not list the abilities the beast teaches; further NPC page fetches were then blocked by Wowhead (HTTP 403 'Request blocked'), so no Wowhead beast observations were recorded and elite/rare flags could not be taken from Wowhead.",
+    "Wowhead has a Forever section (search results show wowhead.com/forever/... NPC URLs) but every /forever/ page returned HTTP 403 to both curl and WebFetch; no wowhead-forever data recorded.",
+    "warcraft.wiki.gg ability pages give only general data (rank count, base level, some spell IDs in external-link headers, icon); no per-rank TP costs and no beast lists. The wiki's Beast Training page states Cower, Dash and Prowl are learned from tamed beasts (not pet trainers), hence trainerOnly=false.",
+    "petopia-classic = https://www.wow-petopia.com/classic/abilities.php (one page, anchors per rank). Gives pet level + TP per rank and beasts with (classic.wowhead.com) NPC IDs, family, level range, zone. No elite/rare flags. No spell IDs (null).",
+    "warcrafttavern = warcrafttavern.com WoW Classic hunter-pet model pages (per beast: Pet Level, 'Skills When Tamed', Zone). No NPC IDs; matched to Petopia's IDs by exact name. Probably compiled from the same community data as Petopia, but it differs in places (see notes below), so it is recorded as a separate source; the generator may want to weight it as partially dependent on Petopia. Zone strings are recorded as shown, including site typos (e.g. 'Eastern Plagulands', 'Ferelas'). Its hunter-pet-abilities guide links one spell ID per ability for the max rank (16698 Cower, 23112 Dash, 24455 Prowl); these differ from the Wowhead pet-spell IDs and look like the Beast Training 'teach' spell variants. Recorded as-is in the warcrafttavern rank observation, unverified.",
+    "No source that loaded showed elite/rare flags, so elite/rare are omitted. Nothing Forever-specific was found; all data is the Classic Era baseline. (The wiki's Cower page says the ability 'remains in Classic and Forever'.)",
+    "Petopia rank data: pet levels 5/15/25/35/45/55, TP 8/10/12/14/16/18. Wowhead 'Requires level' matches the levels.",
+    "Kraul Bat, Greater Kraul Bat (Razorfen Kraul) and Shrike Bat (Uldaman) are dungeon beasts per both sources.",
+    "warcraft.wiki.gg Beast Training page says a tamed Durotar Tiger knows Cower (Rank 1) when tamed; recorded as a wiki observation for npc 3121 (no level/zone given there)."
+  ]
+}
