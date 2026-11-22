@@ -32,6 +32,11 @@
       ],
       "tameable": true
     },
+    "2970": {
+      "family": "Carrion Bird",
+      "lines": [],
+      "tameable": true
+    },
     "2971": {
       "family": "Carrion Bird",
       "lines": [
@@ -51,6 +56,11 @@
     "3239": {
       "lines": [],
       "tameable": false
+    },
+    "3245": {
+      "family": "Tallstrider",
+      "lines": [],
+      "tameable": true
     },
     "3249": {
       "family": "Wind Serpent",
@@ -87,9 +97,41 @@
       ],
       "name": "Flatland Prowler",
       "tameable": true
+    },
+    "3810": {
+      "family": "Bear",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Meat, Fish, Cheese, Bread, Fungus, Fruit"
+      ],
+      "name": "Elder Ashenvale Bear",
+      "tameable": true
+    },
+    "3818": {
+      "lines": [],
+      "name": "Elder Shadowhorn Stag",
+      "tameable": false
+    },
+    "3820": {
+      "family": "Spider",
+      "lines": [],
+      "tameable": true
+    },
+    "3825": {
+      "family": "Wolf",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Meat"
+      ],
+      "name": "Ghostpaw Alpha",
+      "tameable": true
     }
   },
   "families": {
+    "Bear": [
+      "Specialization: Default",
+      "Diet: Meat, Fish, Cheese, Bread, Fungus, Fruit"
+    ],
     "Carrion Bird": [
       "Specialization: Default",
       "Diet: Meat, Fish"

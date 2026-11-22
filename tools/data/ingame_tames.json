@@ -12,6 +12,7 @@
     {"npcId": 3246, "name": "Fleeting Plainstrider", "level": 12, "zone": "The Barrens", "teaches": [{"ability": "cower", "rank": 1}, {"ability": "dust_cloud", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
     {"npcId": 3254, "name": "Sunscale Lashtail", "level": 12, "zone": "The Barrens", "teaches": [], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
     {"npcId": 2959, "name": "Prairie Stalker", "level": 8, "zone": "Mulgore", "teaches": [{"ability": "bite", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
-    {"npcId": 2970, "name": "Swoop", "level": 7, "zone": "Mulgore", "teaches": [{"ability": "claw", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"}
+    {"npcId": 2970, "name": "Swoop", "level": 7, "zone": "Mulgore", "teaches": [{"ability": "claw", "rank": 1}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"},
+    {"npcId": 3825, "name": "Ghostpaw Alpha", "level": 27, "zone": "Ashenvale", "teaches": [{"ability": "bite", "rank": 4}, {"ability": "furious_howl", "rank": 2}], "date": "2026-11-21", "by": "Austin (Tarahawk), addon dev build, client 71037"}
   ]
 }

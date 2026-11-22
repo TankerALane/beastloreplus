@@ -307,6 +307,19 @@ function BLP.FamilyCanLearn(family, key)
     return false
 end
 
+-- Families that can learn an ability: "all", or a sorted list (empty if none is confirmed).
+function BLP.FamiliesFor(key)
+    local ab = BLP.Abilities[key]
+    if ab and ab.trainerOnly then return "all" end
+    for _, k in ipairs(BLP.FamilyAll or {}) do if k == key then return "all" end end
+    local out = {}
+    for family, list in pairs(BLP.Families or {}) do
+        for _, k in ipairs(list) do if k == key then out[#out + 1] = family end end
+    end
+    table.sort(out)
+    return out
+end
+
 -- What a beast teaches: bundled data first (always wins), then community data that met the
 -- 3-sender rule. Returns list, source ("bundled"|"community"|"pending"|nil), extra.
 function BLP.GetTeaches(npcId)

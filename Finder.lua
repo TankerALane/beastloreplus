@@ -411,6 +411,20 @@ end
 
 local function updateHeader()
     local key = state.ability
+    -- Second line: which pet families can learn the selected ability.
+    if key then
+        local fams = BLP.FamiliesFor(key)
+        if fams == "all" then
+            frame.families:SetText("Learned by: every pet family")
+        elseif #fams > 0 then
+            frame.families:SetText("Learned by: " .. table.concat(fams, ", "))
+        else
+            frame.families:SetText("Learned by: no pet family confirmed yet")
+        end
+    else
+        local fam = currentFamily()
+        frame.families:SetText(fam and ("Showing the abilities a " .. fam .. " can learn") or "")
+    end
     if not key then
         frame.info:SetText(("All abilities \226\128\148 %d result(s)"):format(resultCount))
     else
@@ -826,6 +840,12 @@ local function create()
     local right = 206
     f.info = f:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
     f.info:SetPoint("TOPLEFT", right, -36)
+    f.families = f:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    f.families:SetPoint("TOPLEFT", right, -54)
+    f.families:SetPoint("RIGHT", -16, 0)
+    f.families:SetJustifyH("LEFT")
+    f.families:SetTextColor(0.8, 0.8, 0.8)
+    f.families:SetWordWrap(false)
     f.info:SetPoint("RIGHT", -16, 0)
     f.info:SetJustifyH("LEFT")
 
@@ -833,7 +853,7 @@ local function create()
         local b = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
         b:SetSize(rank == 0 and 44 or 28, 22)
         b:SetText(rank == 0 and "All" or tostring(rank))
-        if rank == 0 then b:SetPoint("TOPLEFT", right, -60)
+        if rank == 0 then b:SetPoint("TOPLEFT", right, -72)
         else b:SetPoint("LEFT", rankButtons[rank], "RIGHT", 2, 0) end
         b:SetScript("OnClick", function() state.rank = rank Finder.Refresh() end)
         if rank > 0 then
@@ -856,7 +876,7 @@ local function create()
 
     local zoneBtn = CreateFrame("Button", nil, f, "UIPanelButtonTemplate")
     zoneBtn:SetSize(160, 22)
-    zoneBtn:SetPoint("TOPLEFT", right + 300, -60)
+    zoneBtn:SetPoint("TOPLEFT", right + 300, -72)
     zoneBtn:SetScript("OnClick", openZoneMenu)
     zoneBtn:SetScript("OnMouseUp", function(_, button)
         if button == "RightButton" then state.zone = nil Finder.Refresh() end
@@ -881,7 +901,7 @@ local function create()
 
     -- Level box and the three learn-state toggles
     local levelLabel = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    levelLabel:SetPoint("TOPLEFT", right, -94)
+    levelLabel:SetPoint("TOPLEFT", right, -106)
     levelLabel:SetText("Level")
     local levelBox = CreateFrame("EditBox", nil, f, "InputBoxTemplate")
     levelBox:SetSize(30, 20)
@@ -940,7 +960,7 @@ local function create()
 
     -- Column headers
     local header = CreateFrame("Frame", nil, f)
-    header:SetPoint("TOPLEFT", right, -122)
+    header:SetPoint("TOPLEFT", right, -134)
     header:SetPoint("RIGHT", -34, 0)
     header:SetHeight(18)
     f.statusHeader = makeHeader(header, "", nil, 20, COLS.dot - 2)
@@ -951,7 +971,7 @@ local function create()
 
     -- Results list (virtualised rows)
     local scroll = CreateFrame("ScrollFrame", nil, f, "UIPanelScrollFrameTemplate")
-    scroll:SetPoint("TOPLEFT", right, -142)
+    scroll:SetPoint("TOPLEFT", right, -154)
     scroll:SetPoint("BOTTOMRIGHT", -34, 36)
     styleScrollBar(scroll)
     local content = CreateFrame("Frame", nil, scroll)

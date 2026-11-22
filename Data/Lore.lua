@@ -5,6 +5,7 @@ local _, BLP = ...
 BLP.LoreData = {
   -- creature family -> Specialization / Diet lines
   families = {
+    ["Bear"] = { "Specialization: Default", "Diet: Meat, Fish, Cheese, Bread, Fungus, Fruit" },
     ["Carrion Bird"] = { "Specialization: Default", "Diet: Meat, Fish" },
     ["Cat"] = { "Specialization: Default", "Diet: Meat, Fish" },
     ["Tallstrider"] = { "Specialization: Default", "Diet: Cheese, Fungus, Fruit" },
@@ -17,13 +18,19 @@ BLP.LoreData = {
     [2957] = { tameable = true, family = "Tallstrider", lines = { "Specialization: Default", "Diet: Cheese, Fungus, Fruit" } },
     [2959] = { tameable = true, family = "Wolf", lines = { "Specialization: Default", "Diet: Meat" } },
     [2960] = { tameable = true, family = "Wolf", lines = { "Specialization: Default", "Diet: Meat" } },
+    [2970] = { tameable = true, family = "Carrion Bird" },
     [2971] = { tameable = true, family = "Carrion Bird", lines = { "Specialization: Default", "Diet: Meat, Fish" } },
     [3035] = { tameable = true, family = "Cat", lines = { "Specialization: Default", "Diet: Meat, Fish" } },
     [3239] = { tameable = false },
+    [3245] = { tameable = true, family = "Tallstrider" },
     [3249] = { tameable = true, family = "Wind Serpent", lines = { "Specialization: Default", "Diet: Fish, Cheese, Bread" } },
     [3250] = { tameable = true, lines = { "Specialization: Default", "Diet: Meat" } },
     [3424] = { tameable = true, family = "Wind Serpent", lines = { "Specialization: Default", "Diet: Fish, Cheese, Bread" } },
     [3466] = { tameable = false },
     [3566] = { tameable = true, family = "Cat", lines = { "Specialization: Default", "Diet: Meat, Fish" } },  -- Flatland Prowler
+    [3810] = { tameable = true, family = "Bear", lines = { "Specialization: Default", "Diet: Meat, Fish, Cheese, Bread, Fungus, Fruit" } },  -- Elder Ashenvale Bear
+    [3818] = { tameable = false },  -- Elder Shadowhorn Stag
+    [3820] = { tameable = true, family = "Spider" },
+    [3825] = { tameable = true, family = "Wolf", lines = { "Specialization: Default", "Diet: Meat" } },  -- Ghostpaw Alpha
   },
 }

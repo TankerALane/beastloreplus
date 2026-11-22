@@ -9,7 +9,10 @@
   to see only the abilities it can learn. Family lists are from two agreeing sources
   (`tools/data/families.json`); Cower and trainer abilities count for every family.
 - Ability Finder: the legend shows the yellow dot (higher rank known, this one not).
-- Data: Swoop confirmed in game (Claw 1); Flatland Prowler Beast Lore lines bundled.
+- Ability Finder: a "Learned by" line under the heading lists the pet families that can learn the
+  selected ability.
+- Data: Swoop (Claw 1) and Ghostpaw Alpha (Bite 4, Furious Howl 2) confirmed in game; Beast Lore lines
+  bundled for Bear and more beasts.
 
 ## 1.0.2 (2026-11-21)
 

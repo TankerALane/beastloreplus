@@ -263,6 +263,11 @@ local sawPinch = false
 for _, row in ipairs(crabRows) do if row.ability == "pinch" then sawPinch = true end end
 check(sawPinch, "My pet follows the pet you have out (Crab: Pinch)")
 UnitCreatureFamily, FT.state.family = nil, nil
+local clawFams = BLP.FamiliesFor("claw")
+check(type(clawFams) == "table" and table.concat(clawFams, ",") == "Bear,Bird of Prey,Carrion Bird,Cat,Crab,Raptor,Scorpid",
+    "Claw learned by (" .. (type(clawFams) == "table" and table.concat(clawFams, ",") or tostring(clawFams)) .. ")")
+check(BLP.FamiliesFor("cower") == "all" and BLP.FamiliesFor("growl") == "all", "Cower and trainer abilities: every family")
+check(#BLP.FamiliesFor("lava_breath") == 0, "Lava Breath: no family confirmed")
 -- Nearest-first sort: player in The Barrens (Kalimdor); Eastern Kingdoms zones sort last.
 do
     local KALIMDOR = { ["The Barrens"] = { 0, 0 }, ["Durotar"] = { 300, 0 }, ["Ashenvale"] = { 0, 600 },
