@@ -65,6 +65,37 @@ for npcId, b in pairs(BLP.Beasts) do
 end
 check(nAbilities > 0 and nBeasts > 0, "data loaded")
 
+-- Ranks go up with level: no shipped beast teaching rank N is below every rank N-1 teacher.
+do
+    local byAb = {}
+    for npcId, b in pairs(BLP.Beasts) do
+        for _, t in ipairs(b.teaches) do
+            byAb[t.ability] = byAb[t.ability] or {}
+            local list = byAb[t.ability][t.rank] or {}
+            byAb[t.ability][t.rank] = list
+            list[#list + 1] = b
+        end
+    end
+    for ability, ranks in pairs(byAb) do
+        local ref
+        for rank = 1, 20 do
+            local list = ranks[rank]
+            if list then
+                local lowest
+                for _, b in ipairs(list) do
+                    local hi = b.maxLevel or b.minLevel
+                    if ref and hi then
+                        check(hi >= ref, ("%s rank %d: %s (level %d) is not below every rank %d teacher (%d)"):format(
+                            ability, rank, b.name, hi, rank - 1, ref))
+                    end
+                    if b.minLevel and (not lowest or b.minLevel < lowest) then lowest = b.minLevel end
+                end
+                if lowest then ref = lowest end
+            end
+        end
+    end
+end
+
 -- Spell resolution ---------------------------------------------------------
 local k, r = BLP.ResolveSpell(17255)
 check(k == "bite" and r == 2, "Bite rank 2 by spell id (17255)")

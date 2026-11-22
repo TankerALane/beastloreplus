@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Data: entries where a beast would teach a higher rank than its level allows (below every teacher
+  of the rank before) are removed, e.g. Savannah Patriarch as Cower (Rank 4).
 - Ability Finder: **Level** box (defaults to your level) with **Can learn now** (hide beasts above the
   level) and **Already learned** (show ranks you know), replacing "Only upgrades for me". Beasts above
   the level are dimmed when shown.

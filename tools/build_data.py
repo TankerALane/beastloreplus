@@ -254,6 +254,45 @@ def merge_abilities(files, errs):
     return out, review
 
 
+def drop_out_of_order(beasts, abilities):
+    """Ranks go up with level. A beast teaching rank N that is lower level than every beast teaching
+    the next lower rank that has teachers is implausible: drop that pair (unless a tame confirmed it
+    in game). Returns review rows for REVIEW.md."""
+    review = []
+    for key in sorted(abilities):
+        by_rank = defaultdict(list)
+        for npc, b in beasts.items():
+            for t in b["teaches"]:
+                if t["ability"] == key:
+                    by_rank[t["rank"]].append((npc, b, t))
+        ref = None  # lowest level among the kept teachers of the nearest lower rank
+        for rank in sorted(by_rank):
+            kept_levels = []
+            for npc, b, t in by_rank[rank]:
+                hi = b["maxLevel"] if b["maxLevel"] is not None else b["minLevel"]
+                if ref is not None and hi is not None and hi < ref and not t["ingame"]:
+                    t["drop"] = True
+                    review.append(("dropped", "NPC %d %s: %s rank %d" % (npc, b["name"], abilities[key]["name"], rank),
+                                   "level %s is below every rank %d teacher (lowest %d); was %s" % (
+                                       hi, rank - 1, ref, t["conf"]), []))
+                elif b["minLevel"] is not None:
+                    kept_levels.append(b["minLevel"])
+            if kept_levels:
+                ref = min(kept_levels)
+    for npc in list(beasts):
+        b = beasts[npc]
+        b["teaches"] = [t for t in b["teaches"] if not t.get("drop")]
+        if not b["teaches"]:
+            del beasts[npc]
+            continue
+        worst = "confirmed"
+        for t in b["teaches"]:
+            if CONF_ORDER[t["conf"]] > CONF_ORDER[worst]:
+                worst = t["conf"]
+        b["conf"] = worst
+    return review
+
+
 def merge_beasts(files, abilities, errs):
     # Collect observations: npcId -> ability -> list of obs (with resolved source)
     by_npc = defaultdict(lambda: defaultdict(list))
@@ -356,7 +395,7 @@ def merge_beasts(files, abilities, errs):
                 continue
             if ab["trainerOnly"]:
                 errs.warn("NPC %d listed for trainer-only ability %s (kept)" % (npc, key))
-            teaches.append({"ability": key, "rank": rank, "conf": conf})
+            teaches.append({"ability": key, "rank": rank, "conf": conf, "ingame": "in-game" in rank_by})
             if CONF_ORDER[conf] > CONF_ORDER[worst]:
                 worst = conf
             if conf != "confirmed":
@@ -471,6 +510,7 @@ def write_review(abilities, beasts, ab_review, beast_review, unresolved, errs):
     section("Ability ranks with one source", ab_review, {"unverified"})
     section("Beast conflicts", beast_review, {"conflict"})
     section("Beasts with one source", beast_review, {"unverified"})
+    section("Dropped: rank out of level order (not shipped)", beast_review, {"dropped"})
     section("Level-range disagreements (informational)", beast_review, {"note"})
     out.append("## Unresolved names (not shipped) (%d)" % len(unresolved))
     out.append("")
@@ -499,6 +539,9 @@ def main(argv):
     files = load_raw(errs)
     abilities, ab_review = merge_abilities(files, errs)
     beasts, beast_review, unresolved = merge_beasts(files, abilities, errs)
+    drops = drop_out_of_order(beasts, abilities)
+    dropped = set(r[1] for r in drops)
+    beast_review = [r for r in beast_review if r[1] not in dropped] + drops
     review, counts, pairs = write_review(abilities, beasts, ab_review, beast_review, unresolved, errs)
 
     print("abilities: %d, ranks: %d" % (len(abilities), sum(len(a["ranks"]) for a in abilities.values())))
