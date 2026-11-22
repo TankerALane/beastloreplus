@@ -2,6 +2,9 @@
 --
 -- On Forever, Beast Lore shows the unit GameTooltip with extra lines (Tameable / Cannot Be Tamed,
 -- Specialization:, Diet:). We hook unit tooltips and act only when a "Tameable" line is present.
+-- With "Show details without casting Beast Lore" on, beasts are shown on plain mouseover too:
+-- the Beast Lore lines seen last time are replayed (BLP.db.lore), or "Tameable" for beasts in
+-- the database, followed by the Pet Abilities section.
 local _, BLP = ...
 local L = BLP.L
 
@@ -35,16 +38,45 @@ end
 
 -- Read the tooltip's current left-hand lines (plain values only).
 local function readLines(tooltip)
-    local out = {}
+    local out, colors = {}, {}
     local name = tooltip.GetName and tooltip:GetName()
-    if not name or not tooltip.NumLines then return out end
+    if not name or not tooltip.NumLines then return out, colors end
     for i = 1, tooltip:NumLines() do
         local fs = _G[name .. "TextLeft" .. i]
         local text = fs and BLP.Plain(fs:GetText())
         out[i] = type(text) == "string" and strip(text) or ""
+        if fs and fs.GetTextColor then
+            local ok, r, g, b = pcall(fs.GetTextColor, fs)
+            r, g, b = BLP.Plain(r), BLP.Plain(g), BLP.Plain(b)
+            if ok and type(r) == "number" and type(g) == "number" and type(b) == "number" then
+                colors[i] = { r, g, b }
+            end
+        end
     end
-    return out
+    return out, colors
 end
+
+local function isLoreLine(low)
+    if TAMEABLE[low] or NOT_TAMEABLE[low] then return true end
+    for _, pat in ipairs(LORE_MARKERS) do if low:find(pat) then return true end end
+    return false
+end
+
+-- Remember a beast's Beast Lore lines so they can be shown again without casting.
+local function remember(npcId, lines, colors, tameable)
+    local db = BLP.db
+    if not db then return end
+    db.lore = db.lore or {}
+    local entry = { tameable = tameable, lines = {} }
+    for i, text in ipairs(lines) do
+        if isLoreLine(text:lower()) then
+            local c = colors[i]
+            entry.lines[#entry.lines + 1] = c and { text, c[1], c[2], c[3] } or { text }
+        end
+    end
+    if #entry.lines > 0 then db.lore[npcId] = entry end
+end
+Lore.Remember = remember
 
 local function classify(lines)
     local tameable, notTameable, lore, ours = false, false, false, false
@@ -139,8 +171,9 @@ local function process(tooltip, data, knownGUID, isRecheck)
     local npcId = BLP.NpcIdFromGUID(guid)
     if not npcId then return end
 
-    local lines = readLines(tooltip)
+    local lines, colors = readLines(tooltip)
     local tameable, notTameable, lore, ours = classify(lines)
+    if (tameable or notTameable) and not ours then remember(npcId, lines, colors, tameable) end
     if tameable or notTameable or lore then
         local dataLines
         if data and type(data.lines) == "table" then
@@ -157,6 +190,22 @@ local function process(tooltip, data, knownGUID, isRecheck)
     if ours or notTameable then return end
     if tameable then
         appendSection(tooltip, npcId)
+        return
+    end
+    -- Optional: show the details on plain mouseover, without casting Beast Lore.
+    if BLP.db.alwaysShow and (isRecheck or not C_Timer) then
+        local cached = BLP.db.lore and BLP.db.lore[npcId]
+        if cached and type(cached.lines) == "table" then
+            for _, l in ipairs(cached.lines) do
+                tooltip:AddLine(l[1], l[2] or 1, l[3] or 1, l[4] or 1)
+            end
+            if cached.tameable then appendSection(tooltip, npcId)
+            elseif tooltip:IsShown() then tooltip:Show() end
+        elseif BLP.GetTeaches(npcId) then
+            -- Only tameable beasts are in the data, so "Tameable" is safe to show.
+            tooltip:AddLine(L.TAMEABLE, 1, 1, 1)
+            appendSection(tooltip, npcId)
+        end
         return
     end
     -- Safety net: if the Beast Lore lines are added after the post-call, look again next frame.

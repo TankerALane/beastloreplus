@@ -23,6 +23,10 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
       hook sees the Beast Lore lines]**
 - [ ] `/blp debug` → "Last Beast Lore display seen" lists the tooltip lines; note the line types.
 - [ ] Options › untick "Show grey ? rows" → the grey rows disappear, the hint stays. Tick it again.
+- [ ] Default: hovering a beast without casting Beast Lore shows no Pet Abilities.
+- [ ] Options › tick "Show Beast Lore details without casting Beast Lore" → hovering the beast you just
+      lored shows Tameable / Specialization / Diet and Pet Abilities; a database beast you never lored
+      shows "Tameable" and Pet Abilities; humanoids show nothing extra. Untick it again.
 
 ## 2. Beast Training scan, then green / orange / red
 
@@ -76,7 +80,7 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
 
 - [ ] Minimap button shows the logo; drag it around the minimap; right-click opens options.
 - [ ] Options › untick "Show the minimap button" → it hides; `/blp minimap` shows it again.
-- [ ] Esc › Options › AddOns › Beast Lore Plus shows the panel with logo, 4 checkboxes and legend.
+- [ ] Esc › Options › AddOns › Beast Lore Plus shows the panel with logo, 5 checkboxes and legend.
 
 ## 6. Capture a fresh tame, then export
 

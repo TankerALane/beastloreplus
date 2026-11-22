@@ -31,6 +31,8 @@ Cast **Beast Lore** on a tameable beast as usual. Under the game's own lines (Ta
 
 Beasts with no known abilities say so. Nothing is added for beasts that can't be tamed.
 
+Prefer not to cast every time? Turn on **Show Beast Lore details without casting Beast Lore** in the options and simply hover a beast. It's off by default.
+
 ## Ability Finder
 
 Type **/blp** or click the minimap button to search every pet ability and the beasts that teach it.
@@ -66,7 +68,7 @@ Shared messages contain only the beast's ID and name, its abilities and ranks, y
 ## Commands
 
 - **/blp**: open the Ability Finder
-- **/blp options**: settings (minimap button, sharing, grey rows, NPC IDs)
+- **/blp options**: settings (minimap button, sharing, details without casting, grey rows, NPC IDs)
 - **/blp export**: copy your tames and data reports for a GitHub issue
 - **/blp capture**: record the pet you have out (target a wild beast of the same kind first)
 - **/blp debug**: troubleshooting information

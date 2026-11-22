@@ -25,7 +25,8 @@ teaches, with its rank and a dot that says whether you need it.
   recorded and shared with other Beast Lore Plus users (guild + a hidden channel), so the data gets
   better over time. See below.
 - **Options** (Esc › Options › AddOns › Beast Lore Plus, or `/blp options`): minimap button,
-  community sharing, grey "?" rows, and NPC IDs (debug).
+  community sharing, showing details without casting Beast Lore (off by default; when on, hovering
+  a beast shows its remembered Beast Lore lines and Pet Abilities), grey "?" rows, and NPC IDs (debug).
 
 Non-hunters can still open the Finder; it just has no status column.
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Option **Show Beast Lore details without casting Beast Lore** (off by default). When on, hovering a
+  beast shows the Beast Lore lines seen the last time you cast Beast Lore on it (Tameable,
+  Specialization, Diet), or "Tameable" for beasts in the database, followed by Pet Abilities.
+
 ## 1.0.1 (2026-11-21)
 
 - Data: entries where a beast would teach a higher rank than its level allows (below every teacher

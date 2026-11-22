@@ -260,6 +260,59 @@ do
     check(firstZone ~= "Silverpine Forest", "nearest sort: first Bite 3 beast is not in Silverpine (" .. tostring(firstZone) .. ")")
     C_Map, CreateVector2D = nil, nil
 end
+-- Tooltip: details without casting Beast Lore (off by default)
+do
+    load("BeastLore.lua")
+    local function mockTip(name, texts)
+        local tip = { lines = {} }
+        local function add(text, r, g, b)
+            local fs = { text = text, c = { r or 1, g or 1, b or 1 } }
+            function fs.GetText() return fs.text end
+            function fs.GetTextColor() return fs.c[1], fs.c[2], fs.c[3] end
+            tip.lines[#tip.lines + 1] = fs
+            _G[name .. "TextLeft" .. #tip.lines] = fs
+        end
+        for _, t in ipairs(texts) do add(t) end
+        function tip.GetName() return name end
+        function tip.NumLines() return #tip.lines end
+        function tip.AddLine(_, text, r, g, b) add(text, r, g, b) end
+        function tip.AddDoubleLine(_, text) add(text) end
+        function tip.IsShown() return false end
+        function tip.Show() end
+        function tip.has(text)
+            for _, fs in ipairs(tip.lines) do if fs.text == text then return true end end
+            return false
+        end
+        return tip
+    end
+    local guid = "Creature-0-1-1-1-3255-00000001"  -- Sunscale Screecher, in the database
+    BLP.db.lore = {}
+
+    local plain = mockTip("TipA", { "Sunscale Screecher", "Level 13" })
+    BLP.Lore.Process(plain, nil, guid, true)
+    check(not plain.has("Pet Abilities"), "default: nothing shown without casting Beast Lore")
+
+    local lored = mockTip("TipB", { "Sunscale Screecher", "Level 13", "Tameable", "Specialization: Cunning", "Diet: Meat" })
+    BLP.Lore.Process(lored, nil, guid, true)
+    check(lored.has("Pet Abilities"), "Beast Lore tooltip gets the section")
+    local cached = BLP.db.lore[3255]
+    check(cached and cached.tameable and #cached.lines == 3, "Beast Lore lines remembered")
+
+    BLP.db.alwaysShow = true
+    local hover = mockTip("TipC", { "Sunscale Screecher", "Level 13" })
+    BLP.Lore.Process(hover, nil, guid, true)
+    check(hover.has("Diet: Meat") and hover.has("Specialization: Cunning") and hover.has("Pet Abilities"),
+        "toggle on: remembered Beast Lore lines and abilities shown on mouseover")
+
+    local unseen = mockTip("TipD", { "Forest Spider", "Level 5" })
+    BLP.Lore.Process(unseen, nil, "Creature-0-1-1-1-30-00000002", true)
+    check(unseen.has("Tameable") and unseen.has("Pet Abilities"), "toggle on: database beast never lored shows Tameable")
+
+    local other = mockTip("TipE", { "Defias Thug", "Level 9" })
+    BLP.Lore.Process(other, nil, "Creature-0-1-1-1-38-00000003", true)
+    check(#other.lines == 2, "toggle on: unknown NPCs get nothing")
+    BLP.db.alwaysShow = false
+end
 -- Caps
 local capStore = {}
 for i = 1, 450 do C.AddReport(capStore, i, "bite:1", "S", nil, i) end

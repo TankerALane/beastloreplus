@@ -283,6 +283,8 @@ local DEFAULTS = {
     share = true,
     showUnknown = true,
     showNpcId = false,
+    alwaysShow = false, -- show the details on mouseover without casting Beast Lore
+    lore = {},          -- npcId -> Beast Lore lines seen last time
     community = { reports = {}, tames = {}, lastShare = 0 },
     finder = {},
 }
