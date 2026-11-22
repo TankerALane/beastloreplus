@@ -121,6 +121,7 @@ local function onSystemMessage(msg)
     if not what then return end
     local spellId = tonumber(what:match("|Hspell:(%d+)"))
     local key, rank = BLP.ResolveSpell(spellId, what:match("%[(.-)%]") or what, nil)
+    BLP.Log("learned: %s spell=%s -> %s %s", (what:gsub("|", "/")), tostring(spellId), tostring(key), tostring(rank))
     if key and rank and spellId and BLP.SpellIndex[spellId] then
         -- Only a scanned character gets field updates; otherwise the grey "?" would turn into
         -- misleading reds for everything else.
@@ -146,6 +147,16 @@ local function trainerEvent(event)
     end
     info.scanned = Training.ScanTrainer()
     Training.lastTrainerEvent = info
+    if event == "TRAINER_SHOW" then
+        local unmatched = {}
+        for _, e in ipairs(info.scanned and Training.lastScan or {}) do
+            if not e.key then
+                unmatched[#unmatched + 1] = ("%s/%s#%s"):format(tostring(e.name), tostring(e.sub), tostring(e.spellId))
+            end
+        end
+        BLP.Log("trainer: type=%s pet=%s services=%s scanned=%s unmatched=[%s]", tostring(info.trainerType),
+            tostring(info.petType), tostring(info.services), tostring(info.scanned), table.concat(unmatched, "; "))
+    end
 end
 
 BLP.OnInit(function()

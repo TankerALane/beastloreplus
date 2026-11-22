@@ -144,6 +144,25 @@ function Community.GetGapReport(npcId)
     return teaches, "pending", count
 end
 
+-- True when an in-game tame (yours, or any community report) showed this beast teaching this
+-- ability at this rank. Used only to replace the "unverified" tag; it never changes the data.
+function Community.ConfirmedInGame(npcId, ability, rank)
+    if not BLP.db or not npcId then return false end
+    local needle = ability .. ":" .. rank
+    local function has(sig)
+        for entry in (sig or ""):gmatch("[^,]+") do if entry == needle then return true end end
+        return false
+    end
+    local entry = BLP.db.community.reports[npcId]
+    if entry then
+        for sig in pairs(entry.sigs) do if has(sig) then return true end end
+    end
+    for _, t in ipairs(BLP.db.community.tames) do
+        if t.npcId == npcId and has(t.sig) then return true end
+    end
+    return false
+end
+
 -- Reports that disagree with bundled data (never shown in game, only exported).
 function Community.Conflicts()
     local out = {}
@@ -371,13 +390,8 @@ local function recordTame(target, teaches, unknown)
     Community.Share(tame)
 end
 
--- Diagnostics for /blp debug: the last tame-related events and decisions.
-Community.tameLog = {}
-local function log(fmt, ...)
-    local msg = date("%H:%M:%S") .. " " .. fmt:format(...)
-    table.insert(Community.tameLog, msg)
-    while #Community.tameLog > 25 do table.remove(Community.tameLog, 1) end
-end
+-- Diagnostics for /blp debug (saved to disk): tame-related events and decisions.
+local function log(fmt, ...) BLP.Log("tame: " .. fmt, ...) end
 
 local tameName
 local function isTameSpell(spellId)
@@ -429,7 +443,13 @@ end
 local function onTameEvent(event, unit, a, b, c)
     if unit ~= "player" then return end
     local spellId = (event == "UNIT_SPELLCAST_SENT") and c or b
-    if not isTameSpell(spellId) then return end
+    if not isTameSpell(spellId) then
+        local name = BLP.GetSpellName(BLP.Plain(spellId))
+        if name and name:lower():find("tame", 1, true) then
+            log("%s spell %s '%s' looks like taming but is not Tame Beast", event, tostring(BLP.Plain(spellId)), name)
+        end
+        return
+    end
     local t = snapshotTarget(event)
     log("%s spell %s target npc %s", event, tostring(BLP.Plain(spellId)), t and t.npcId or "none")
     -- Keep the first arming for the same beast (a later event must not restart the clock).
@@ -456,6 +476,38 @@ local function onUnitPet(unit)
         return
     end
     C_Timer.After(1, function() tryCapture(1) end)
+end
+
+-- /blp capture: record the pet you have out now. Its GUID carries the creature ID, so no re-tame is
+-- needed. A pet may have been trained since it was tamed, so manual captures are kept for export
+-- and for "confirmed in game" only: never shared or counted toward the 3-sender rule.
+function Community.CaptureCurrentPet()
+    local petGUID = BLP.SafeUnitGUID("pet")
+    local npcId = BLP.NpcIdFromPetGUID(petGUID)
+    if not npcId then
+        BLP.Print("no hunter pet out (or its creature ID cannot be read): " .. tostring(petGUID))
+        return
+    end
+    local teaches, unknown = readPetAbilities()
+    if not teaches then
+        BLP.Print("could not read your pet's spellbook yet; try again in a moment.")
+        return
+    end
+    local b = BLP.Beasts[npcId]
+    local build = select(2, GetBuildInfo())
+    local tame = {
+        npcId = npcId, name = b and b.name or BLP.Plain(UnitName("pet")),
+        level = BLP.Plain(UnitLevel("pet")), zone = BLP.Plain(GetZoneText and GetZoneText() or nil),
+        sig = Community.Signature(teaches), build = BLP.Plain(build) or "", version = BLP.version,
+        time = time(), manual = true,
+    }
+    if unknown and #unknown > 0 then tame.unknown = unknown end
+    table.insert(BLP.db.community.tames, 1, tame)
+    while #BLP.db.community.tames > MAX_TAMES do table.remove(BLP.db.community.tames) end
+    Community.lastCapture = tame
+    log("manual capture npc %d: %s%s", npcId, tame.sig, tame.unknown and (" + unknown " .. table.concat(tame.unknown, ", ")) or "")
+    BLP.Print(("recorded your pet as NPC %d (%s): %s%s. See /blp export."):format(npcId, tame.name or "?",
+        tame.sig, tame.unknown and (" + not in addon data: " .. table.concat(tame.unknown, ", ")) or ""))
 end
 
 local function onTargetChanged()
@@ -497,6 +549,7 @@ function Community.ExportText()
             ("differs: " .. abilitiesText(Community.Signature(b.teaches))))
         local arrived = abilitiesText(t.sig)
         if t.unknown then arrived = arrived .. "; not in addon data: " .. table.concat(t.unknown, ", ") end
+        if t.manual then arrived = arrived .. " (manual /blp capture)" end
         lines[#lines + 1] = ("| %d | %s | %s | %s | %s | %s | %s |"):format(t.npcId, t.name or "?",
             tostring(t.level or "?"), t.zone or "?", arrived, cmp, date("%Y-%m-%d", t.time))
     end

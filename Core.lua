@@ -33,6 +33,7 @@ BLP.L = {
     UNVERIFIED = "unverified",
     CONFLICT = "unverified",
     COMMUNITY = "community",
+    CONFIRMED_IN_GAME = "confirmed in game",
     PENDING = "community: pending (%d/%d)",
     RANK = "Rank %d",
     TAMEABLE = "Tameable",
@@ -53,6 +54,17 @@ function BLP.Print(...)
     local parts = { ... }
     for i = 1, select("#", ...) do msg = msg .. " " .. tostring(parts[i]) end
     DEFAULT_CHAT_FRAME:AddMessage(msg)
+end
+
+-- Diagnostic log, kept in saved variables so it can be read from disk after /reload.
+function BLP.Log(fmt, ...)
+    local ok, msg = pcall(string.format, fmt, ...)
+    msg = date("%m-%d %H:%M:%S") .. " " .. (ok and msg or fmt)
+    local db = BeastLorePlusDB
+    if type(db) ~= "table" then return end
+    db.debugLog = type(db.debugLog) == "table" and db.debugLog or {}
+    table.insert(db.debugLog, msg)
+    while #db.debugLog > 80 do table.remove(db.debugLog, 1) end
 end
 
 ---------------------------------------------------------------------------
@@ -336,6 +348,8 @@ SlashCmdList.BEASTLOREPLUS = function(msg)
         if BLP.Debug then BLP.Debug.Show() end
     elseif msg == "export" then
         if BLP.Community then BLP.Community.ShowExport() end
+    elseif msg == "capture" then
+        if BLP.Community then BLP.Community.CaptureCurrentPet() end
     elseif msg == "options" or msg == "config" or msg == "settings" then
         if BLP.Options then BLP.Options.Open() end
     elseif msg == "minimap" then
@@ -346,6 +360,7 @@ SlashCmdList.BEASTLOREPLUS = function(msg)
         BLP.Print("  /blp options \226\128\148 settings")
         BLP.Print("  /blp minimap \226\128\148 show/hide the minimap button")
         BLP.Print("  /blp export \226\128\148 copy captured tames and conflicts for a GitHub issue")
+        BLP.Print("  /blp capture \226\128\148 record the pet you have out now (for export)")
         BLP.Print("  /blp debug \226\128\148 dump target NPC ID, Beast Lore lines and Beast Training")
     end
 end

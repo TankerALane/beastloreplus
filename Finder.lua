@@ -152,7 +152,12 @@ end
 
 local function tagText(r)
     if r.source == "community" then return "|cff9d9d9d" .. L.COMMUNITY .. "|r" end
-    if r.conf == "unverified" or r.conf == "conflict" then return "|cff9d9d9d" .. L.UNVERIFIED .. "|r" end
+    if r.conf == "unverified" or r.conf == "conflict" then
+        if BLP.Community.ConfirmedInGame(r.npcId, r.ability, r.rank) then
+            return "|cff2ea84a" .. L.CONFIRMED_IN_GAME .. "|r"
+        end
+        return "|cff9d9d9d" .. L.UNVERIFIED .. "|r"
+    end
     return ""
 end
 
@@ -308,7 +313,7 @@ local function makeHeader(parent, text, key, width, x)
     return b
 end
 
-local COLS = { dot = 4, name = 28, rank = 238, level = 336, zone = 394, tag = 568 }
+local COLS = { dot = 4, name = 28, rank = 238, level = 336, zone = 394, tag = 540 }
 
 local function createRow(parent)
     local row = CreateFrame("Button", nil, parent)
@@ -328,8 +333,8 @@ local function createRow(parent)
     row.name = fs(COLS.name, 210)
     row.rank = fs(COLS.rank, 96)
     row.level = fs(COLS.level, 56)
-    row.zone = fs(COLS.zone, 170, "GameFontDisableSmall")
-    row.tag = fs(COLS.tag, 70, "GameFontDisableSmall")
+    row.zone = fs(COLS.zone, 142, "GameFontDisableSmall")
+    row.tag = fs(COLS.tag, 100, "GameFontDisableSmall")
     row:SetScript("OnEnter", rowTooltip)
     row:SetScript("OnLeave", function() GameTooltip:Hide() end)
     return row
@@ -481,7 +486,7 @@ local function create()
     makeHeader(header, "Beast", "name", 210, COLS.name - 2)
     makeHeader(header, "Rank", "rank", 96, COLS.rank - 2)
     makeHeader(header, "Level", "level", 56, COLS.level - 2)
-    makeHeader(header, "Zone", "zone", 170, COLS.zone - 2)
+    makeHeader(header, "Zone", "zone", 142, COLS.zone - 2)
 
     -- Results list (virtualised rows)
     local scroll = CreateFrame("ScrollFrame", nil, f, "UIPanelScrollFrameTemplate")

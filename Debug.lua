@@ -170,8 +170,8 @@ function Debug.Text()
     add("== Community")
     local lc = BLP.Community and BLP.Community.lastCapture
     add(("last capture: %s"):format(lc and (lc.npcId .. " " .. (lc.name or "?") .. " " .. lc.sig) or "none"))
-    local tlog = BLP.Community and BLP.Community.tameLog or {}
-    add(("tame log (%d):"):format(#tlog))
+    local tlog = BLP.db.debugLog or {}
+    add(("diagnostic log (%d, newest last):"):format(#tlog))
     for _, line in ipairs(tlog) do add("  " .. line) end
     local n = 0
     for _ in pairs(BLP.db.community.reports) do n = n + 1 end

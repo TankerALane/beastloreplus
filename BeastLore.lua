@@ -69,10 +69,13 @@ local function sortedTeaches(teaches)
     return rows
 end
 
-local function tagFor(t, source, beast, extra)
+local function tagFor(t, source, beast, extra, npcId)
     if source == "community" then return L.COMMUNITY end
     if source == "pending" then return L.PENDING:format(extra or 0, BLP.Community.QUORUM) end
     local conf = t.conf or (beast and beast.conf)
+    if conf ~= "confirmed" and BLP.Community.ConfirmedInGame(npcId, t.ability, t.rank) then
+        return L.CONFIRMED_IN_GAME
+    end
     if conf == "unverified" then return L.UNVERIFIED end
     if conf == "conflict" then return L.CONFLICT end
     return nil
@@ -100,7 +103,7 @@ local function appendSection(tooltip, npcId)
         if status ~= "unknown" or db.showUnknown then
             local left = ("%s%s%s %s"):format(BLP.DotString(status), BLP.DOT_GAP, BLP.AbilityName(t.ability),
                 L.RANK:format(t.rank))
-            local tag = tagFor(t, source, beast, extra)
+            local tag = tagFor(t, source, beast, extra, npcId)
             if tag then
                 tooltip:AddDoubleLine(left, tag, 1, 1, 1, c.grey[1], c.grey[2], c.grey[3])
             else
