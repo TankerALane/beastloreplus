@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.3 (2026-11-21)
 
 - Fix: with "Show Beast Lore details without casting Beast Lore" on, the tooltip no longer flickers or
   jumps on mouseover; the lines are added at once instead of a frame later.
