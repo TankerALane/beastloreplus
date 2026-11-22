@@ -6,7 +6,7 @@ local Finder = {}
 BLP.Finder = Finder
 
 local ROW_H = 18
-local VISIBLE = 18
+local createRow -- defined below; rows are created as the visible area needs them
 local frame
 local state = { ability = nil, rank = 0, zone = nil, search = "", sortKey = "level", asc = true,
                 level = nil,  -- nil = follow the character's level
@@ -307,6 +307,9 @@ end
 
 local function updateRows()
     if not frame then return end
+    -- Enough row slots to fill the visible area (+2 for partial rows while scrolling).
+    local needed = math.ceil((frame.scroll:GetHeight() or 0) / ROW_H) + 2
+    while #rows < needed do rows[#rows + 1] = createRow(frame.content) end
     local offset = frame.scroll:GetVerticalScroll()
     local first = math.floor(offset / ROW_H)
     local showStatus = BLP.isHunter
@@ -554,7 +557,7 @@ end
 
 local COLS = { dot = 4, name = 28, rank = 238, level = 336, zone = 394, tag = 540 }
 
-local function createRow(parent)
+function createRow(parent)
     local row = CreateFrame("Button", nil, parent)
     row:SetHeight(ROW_H)
     row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD")
@@ -840,9 +843,8 @@ local function create()
     content:SetSize(640, 1)
     scroll:SetScrollChild(content)
     scroll:HookScript("OnVerticalScroll", updateRows)
-    scroll:HookScript("OnSizeChanged", function(self) content:SetWidth(self:GetWidth()) end)
+    scroll:HookScript("OnSizeChanged", function(self) content:SetWidth(self:GetWidth()) updateRows() end)
     f.scroll, f.content = scroll, content
-    for i = 1, VISIBLE + 2 do rows[i] = createRow(content) end
 
     -- Legend
     local legend = f:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
