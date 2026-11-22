@@ -107,6 +107,19 @@ end
 ---------------------------------------------------------------------------
 -- "You have learned a new spell: [Bite (Rank 3)]" (Forever sends a spell link)
 ---------------------------------------------------------------------------
+-- Highest rank of an ability the current pet knows, or nil.
+function Training.PetRank(key)
+    local read = BLP.Community and BLP.Community.ReadPetAbilities
+    if not read then return nil end
+    local ok, list = pcall(read)
+    if not ok or type(list) ~= "table" then return nil end
+    local best
+    for _, t in ipairs(list) do
+        if t.ability == key and (not best or t.rank > best) then best = t.rank end
+    end
+    return best
+end
+
 local learnPattern
 local function onSystemMessage(msg)
     msg = BLP.Plain(msg)
@@ -120,12 +133,22 @@ local function onSystemMessage(msg)
     local what = msg:match(learnPattern)
     if not what then return end
     local spellId = tonumber(what:match("|Hspell:(%d+)"))
-    local key, rank = BLP.ResolveSpell(spellId, what:match("%[(.-)%]") or what, nil)
-    BLP.Log("learned: %s spell=%s -> %s %s", (what:gsub("|", "/")), tostring(spellId), tostring(key), tostring(rank))
+    local key, rank, explicit = BLP.ResolveSpell(spellId, what:match("%[(.-)%]") or what, nil)
+    local from = explicit and "message" or "assumed"
+    if key and not explicit then
+        -- No rank in the message (Forever sends "[Lightning Breath]" for Rank 2). Abilities are
+        -- learned from the pet, so take the rank the current pet knows.
+        local petRank = Training.PetRank(key)
+        if petRank then rank, explicit, from = petRank, true, "pet" end
+    end
+    BLP.Log("learned: %s spell=%s -> %s %s (%s)", (what:gsub("|", "/")), tostring(spellId), tostring(key),
+        tostring(rank), from)
     if key and rank then
         -- The link carries the hunter's copy of the spell (e.g. 1265043 for Tendon Rip 1), not the
-        -- pet's; remember it so later scans and messages match by ID too.
-        if spellId and not BLP.SpellIndex[spellId] then BLP.SpellIndex[spellId] = { key = key, rank = rank } end
+        -- pet's; remember it so later scans and messages match by ID too (only when the rank is sure).
+        if spellId and explicit and not BLP.SpellIndex[spellId] then
+            BLP.SpellIndex[spellId] = { key = key, rank = rank }
+        end
         -- Saved even before the first Beast Training scan; the dots stay grey until that scan.
         local char = BLP.char
         if char and rank > (char.known[key] or 0) then
@@ -134,6 +157,8 @@ local function onSystemMessage(msg)
         end
     end
 end
+
+Training.OnSystemMessage = onSystemMessage
 
 -- Record what the trainer reported, for /blp debug.
 local function trainerEvent(event)

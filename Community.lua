@@ -386,6 +386,7 @@ local function readPetAbilities()
     end
     return list, unknown
 end
+Community.ReadPetAbilities = readPetAbilities
 
 local function recordTame(target, teaches, unknown)
     local build = select(2, GetBuildInfo())

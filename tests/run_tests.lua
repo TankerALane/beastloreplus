@@ -331,6 +331,27 @@ do
     check(#other.lines == 2, "toggle on: unknown NPCs get nothing")
     BLP.db.alwaysShow = false
 end
+-- Learn message without a rank: take the rank the pet knows
+do
+    load("Training.lua")
+    ERR_LEARN_SPELL_S = "You have learned a new spell: %s."
+    BLP.char.known.lightning_breath = nil
+    local realRead = BLP.Community.ReadPetAbilities
+    BLP.Community.ReadPetAbilities = function() return { { ability = "lightning_breath", rank = 2 } }, {} end
+    BLP.Training.OnSystemMessage("You have learned a new spell: |cff71d5ff|Hspell:25013:0|h[Lightning Breath]|h|r.")
+    check(BLP.char.known.lightning_breath == 2, "unranked learn message uses the pet's rank (" ..
+        tostring(BLP.char.known.lightning_breath) .. ")")
+    check(BLP.SpellIndex[25013] and BLP.SpellIndex[25013].rank == 2, "hunter spell ID cached with the pet's rank")
+    BLP.Community.ReadPetAbilities = function() return nil end
+    BLP.char.known.cower = nil
+    BLP.Training.OnSystemMessage("You have learned a new spell: |cff71d5ff|Hspell:1747:0|h[Cower]|h|r.")
+    check(BLP.char.known.cower == 1, "unranked learn message with no pet out: Rank 1")
+    check(BLP.SpellIndex[1747] == nil, "assumed rank is not cached")
+    BLP.Training.OnSystemMessage("You have learned a new spell: |cff71d5ff|Hspell:1748:0|h[Cower (Rank 2)]|h|r.")
+    check(BLP.char.known.cower == 2, "ranked learn message")
+    BLP.Community.ReadPetAbilities = realRead
+end
+
 -- Caps
 local capStore = {}
 for i = 1, 450 do C.AddReport(capStore, i, "bite:1", "S", nil, i) end

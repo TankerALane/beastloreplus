@@ -8,6 +8,9 @@
   Specialization and Diet are remembered per creature family, so a beast you never lored shows those
   of its family once you have cast Beast Lore on any beast of that family.
 - `/blp export` lists the Specialization and Diet seen for each family.
+- Fix: when the game's "You have learned a new spell" message has no rank (Forever sends
+  "[Lightning Breath]" for Rank 2), the rank now comes from your pet instead of assuming Rank 1, so the
+  dot no longer shows orange until you open Beast Training.
 
 ## 1.0.1 (2026-11-21)
 

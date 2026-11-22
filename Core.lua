@@ -186,10 +186,12 @@ function BLP.MaxRank(key)
 end
 
 -- Resolve (name, "Rank 3") or a spell ID to ability key + rank.
+-- Returns key, rank, explicit. explicit is false when nothing gave a rank and 1 was assumed
+-- (e.g. Forever's learn message "[Lightning Breath]" for Rank 2).
 function BLP.ResolveSpell(spellId, name, subText)
     if spellId and BLP.SpellIndex[spellId] then
         local e = BLP.SpellIndex[spellId]
-        return e.key, e.rank
+        return e.key, e.rank, true
     end
     name = BLP.Plain(name)
     if type(name) ~= "string" then return nil end
@@ -215,7 +217,7 @@ function BLP.ResolveSpell(spellId, name, subText)
         local map = { I = 1, II = 2, III = 3, IV = 4, V = 5, VI = 6, VII = 7, VIII = 8, IX = 9, X = 10 }
         rank = map[roman]
     end
-    return key, rank or 1
+    return key, rank or 1, rank ~= nil
 end
 
 ---------------------------------------------------------------------------
