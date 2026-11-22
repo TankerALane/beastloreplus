@@ -337,10 +337,16 @@ local function readPetAbilities()
             if ok and type(info) == "table" then
                 name, sub, spellId = BLP.Plain(info.name), BLP.Plain(info.subName), BLP.Plain(info.spellID)
                 passive = BLP.Plain(info.isPassive)
+                local petAction = Enum.SpellBookItemType and Enum.SpellBookItemType.PetAction
+                if petAction and BLP.Plain(info.itemType) == petAction then name = nil end
             end
         elseif GetSpellBookItemName then
             local ok, a, b, c = pcall(GetSpellBookItemName, i, BOOKTYPE_PET or "pet")
             if ok then name, sub, spellId = BLP.Plain(a), BLP.Plain(b), BLP.Plain(c) end
+        end
+        -- Pet commands and stances (Attack, Follow, Passive...) are not abilities.
+        if type(sub) == "string" and (sub:find("Pet Stance", 1, true) or sub:find("Pet Command", 1, true)) then
+            name = nil
         end
         if passive == nil and spellId then
             local isPassive = (C_Spell and C_Spell.IsSpellPassive) or _G.IsPassiveSpell
@@ -402,9 +408,6 @@ local function isTameSpell(spellId)
     return BLP.GetSpellName(spellId) == tameName
 end
 
--- The creature most recently targeted (fallback when no Tame Beast event was seen).
-local lastTarget
-
 local function snapshotTarget(how)
     local npcId = BLP.NpcIdFromGUID(BLP.SafeUnitGUID("target"))
     if not npcId then return nil end
@@ -416,22 +419,22 @@ end
 
 local function tryCapture(attempt)
     if not tameTarget then return end
+    -- On Forever every hunter pet GUID carries the same generic creature ID (165189 "Hunter Pet"),
+    -- so the tamed beast is identified by the Tame Beast target, and the pet by being new.
     local petGUID = BLP.SafeUnitGUID("pet")
-    local petNpc = BLP.NpcIdFromPetGUID(petGUID)
-    if petNpc and petNpc ~= tameTarget.npcId then
-        log("pet %s (npc %s) is not the tamed beast %d: ignored", tostring(petGUID), tostring(petNpc), tameTarget.npcId)
-        tameTarget = nil -- a different pet (summoned/stabled): never record
+    if petGUID and petGUID == tameTarget.prevPet then
+        if attempt < 10 then C_Timer.After(1, function() tryCapture(attempt + 1) end) end
         return
     end
     local teaches, unknown = readPetAbilities()
-    if (not teaches or not petNpc) and attempt < 10 then
+    if (not teaches or not petGUID) and attempt < 10 then
         C_Timer.After(1, function() tryCapture(attempt + 1) end)
         return
     end
     local target = tameTarget
     tameTarget = nil
-    if teaches and petNpc then
-        log("captured npc %d: %s%s", target.npcId, Community.Signature(teaches),
+    if teaches and petGUID then
+        log("captured npc %d (pet %s): %s%s", target.npcId, petGUID, Community.Signature(teaches),
             (unknown and #unknown > 0) and (" + unknown " .. table.concat(unknown, ", ")) or "")
         recordTame(target, teaches, unknown)
     else
@@ -454,20 +457,15 @@ local function onTameEvent(event, unit, a, b, c)
     log("%s spell %s target npc %s", event, tostring(BLP.Plain(spellId)), t and t.npcId or "none")
     -- Keep the first arming for the same beast (a later event must not restart the clock).
     if t and (not tameTarget or tameTarget.npcId ~= t.npcId or GetTime() - tameTarget.started > 60) then
+        t.prevPet = BLP.SafeUnitGUID("pet")
         tameTarget = t
+        Community.lastTameTarget = t
     end
 end
 
 local function onUnitPet(unit)
     if unit ~= "player" then return end
     local petGUID = BLP.SafeUnitGUID("pet")
-    local petNpc = BLP.NpcIdFromPetGUID(petGUID)
-    if not tameTarget and petNpc and lastTarget and lastTarget.npcId == petNpc
-        and GetTime() - lastTarget.started < 90 then
-        -- No Tame Beast event seen, but the new pet is the creature we just had targeted.
-        tameTarget = lastTarget
-        tameTarget.how = "target fallback"
-    end
     log("UNIT_PET pet=%s armed=%s", tostring(petGUID), tameTarget and tameTarget.how or "no")
     if not tameTarget then return end
     if GetTime() - tameTarget.started > 60 then
@@ -478,16 +476,23 @@ local function onUnitPet(unit)
     C_Timer.After(1, function() tryCapture(1) end)
 end
 
--- /blp capture: record the pet you have out now. Its GUID carries the creature ID, so no re-tame is
--- needed. A pet may have been trained since it was tamed, so manual captures are kept for export
--- and for "confirmed in game" only: never shared or counted toward the 3-sender rule.
+-- /blp capture: record the pet you have out now. Pet GUIDs carry a generic creature ID on
+-- Forever, so the beast comes from your target (target a beast of the same kind) or the last
+-- Tame Beast target. A pet may have been trained since it was tamed, so manual captures are kept
+-- for export and "confirmed in game" only: never shared or counted toward the 3-sender rule.
 function Community.CaptureCurrentPet()
     local petGUID = BLP.SafeUnitGUID("pet")
-    local npcId = BLP.NpcIdFromPetGUID(petGUID)
-    if not npcId then
-        BLP.Print("no hunter pet out (or its creature ID cannot be read): " .. tostring(petGUID))
+    if not petGUID then
+        BLP.Print("summon the pet you want to record first.")
         return
     end
+    local src = snapshotTarget("manual")
+    if not src and Community.lastTameTarget then src = Community.lastTameTarget end
+    if not src then
+        BLP.Print("target a wild beast of the same kind as your pet (it gives the NPC ID), then /blp capture again.")
+        return
+    end
+    local npcId = src.npcId
     local teaches, unknown = readPetAbilities()
     if not teaches then
         BLP.Print("could not read your pet's spellbook yet; try again in a moment.")
@@ -496,8 +501,8 @@ function Community.CaptureCurrentPet()
     local b = BLP.Beasts[npcId]
     local build = select(2, GetBuildInfo())
     local tame = {
-        npcId = npcId, name = b and b.name or BLP.Plain(UnitName("pet")),
-        level = BLP.Plain(UnitLevel("pet")), zone = BLP.Plain(GetZoneText and GetZoneText() or nil),
+        npcId = npcId, name = b and b.name or src.name,
+        level = src.level, zone = src.zone,
         sig = Community.Signature(teaches), build = BLP.Plain(build) or "", version = BLP.version,
         time = time(), manual = true,
     }
@@ -510,9 +515,14 @@ function Community.CaptureCurrentPet()
         tame.sig, tame.unknown and (" + not in addon data: " .. table.concat(tame.unknown, ", ")) or ""))
 end
 
-local function onTargetChanged()
-    local t = snapshotTarget("target")
-    if t then lastTarget = t end
+-- An interrupted or failed Tame Beast disarms the capture.
+local function onTameStopped(event, unit, _, spellId)
+    if unit ~= "player" or not tameTarget or not isTameSpell(spellId) then return end
+    -- Pressing the key again mid-cast fires FAILED while the real cast goes on: ignore that.
+    local casting = (UnitCastingInfo and UnitCastingInfo("player")) or (UnitChannelInfo and UnitChannelInfo("player"))
+    if casting then return end
+    log("%s: tame of npc %d cancelled", event, tameTarget.npcId)
+    tameTarget = nil
 end
 
 ---------------------------------------------------------------------------
@@ -616,7 +626,14 @@ BLP.OnInit(function()
         BLP.On(ev, function(...) onTameEvent(ev, ...) end)
     end
     BLP.On("UNIT_PET", onUnitPet)
-    BLP.On("PLAYER_TARGET_CHANGED", onTargetChanged)
+    for _, ev in ipairs({ "UNIT_SPELLCAST_INTERRUPTED", "UNIT_SPELLCAST_FAILED" }) do
+        BLP.On(ev, function(...) onTameStopped(ev, ...) end)
+    end
+    -- 1.0.0-dev builds recorded the generic hunter-pet creature ID (165189) by mistake.
+    local tames = BLP.db.community.tames
+    for i = #tames, 1, -1 do
+        if tames[i].npcId == 165189 then table.remove(tames, i) end
+    end
 
     local entered = false
     BLP.On("PLAYER_ENTERING_WORLD", function()

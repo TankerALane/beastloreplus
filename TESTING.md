@@ -65,9 +65,11 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
 
 - [ ] Tame a beast (Tame Beast channel completes). Within a few seconds chat says the tame was
       recorded if it is new or differs from the database (nothing is said if it matches).
-      `/blp debug` → "last capture" shows the NPC ID and abilities. **[confirms Phase 0: pet GUID
-      carries the creature ID; pet spellbook API]**
-- [ ] Dismiss and call a **stabled** pet → **no** capture is recorded.
+      `/blp debug` → "last capture" shows the beast's NPC ID and abilities, and the diagnostic log
+      shows the Tame Beast events. **[confirms the pet spellbook API]**
+- [ ] `/blp capture` with a pet out while targeting a wild beast of the same kind → recorded as a
+      manual capture (shown in `/blp export`, never shared).
+- [ ] Dismiss and call a **stabled** pet (no Tame Beast cast) → **no** capture is recorded.
 - [ ] Interrupt a Tame Beast cast → no capture.
 - [ ] `/blp export` → a copyable window with the tame in a Markdown table; Ctrl+C works.
 

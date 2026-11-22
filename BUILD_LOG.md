@@ -199,3 +199,23 @@ in-game probe report. "In game" means it still needs Austin to confirm (see `TES
   between abilities. Passes.
 - `tools/install_local.ps1` installed the addon into the Forever AddOns folder, with libraries
   copied from Auctionator/RareScanner. Not yet loaded in game: see `TESTING.md`.
+
+## Fixes from Austin's first in-game tests (2026-11-21)
+
+- **Pet GUIDs do not carry the tamed beast's creature ID on Forever.** Every hunter pet GUID uses
+  the generic creature ID **165189** ("Hunter Pet", as on retail). The original capture compared
+  the pet's creature ID with the Tame Beast target, so every real tame was discarded as "a
+  different pet". Now: the beast comes from the Tame Beast target, and the pet counts if it is
+  *new* (GUID differs from the pet out before the cast). Tame Beast is detected from
+  SENT/START/CHANNEL_START/SUCCEEDED by spell ID 1515 or name; INTERRUPTED/FAILED disarm (FAILED
+  is ignored while a cast is still running).
+- Pet spellbook includes pet commands and stances (Attack, Follow, Passive, ...): skipped
+  (`Enum.SpellBookItemType.PetAction`, or subtext "Pet Command"/"Pet Stance").
+- Beast Training scan **works** on Forever (Tarahawk: scanned, Bite 2, Growl 3, Great Stamina 4...).
+- `/blp capture` records the pet you have out, using your current target (or the last Tame Beast
+  target) for the NPC ID. Manual captures are export/local only, never shared.
+- Unverified entries that a tame matched show "confirmed in game" (display only).
+- Diagnostics (tame events, trainer scans with unmatched entries, learned-spell messages) are
+  saved in `BeastLorePlusDB.debugLog` so they can be read from disk after /reload.
+- Confirmed in game: Sunscale Screecher (3255) teaches Savage Rend 1; a Barrens hyena teaches
+  Tendon Rip 1.

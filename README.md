@@ -46,6 +46,7 @@ can check them in game.
 | `/blp options` | Open the options |
 | `/blp minimap` | Show or hide the minimap button |
 | `/blp export` | Copy your captured tames and data conflicts, ready for a GitHub issue |
+| `/blp capture` | Record the pet you have out (target a wild beast of the same kind first) |
 | `/blp debug` | Show the target's NPC ID, the last Beast Lore lines and your Beast Training scan |
 
 ## Help improve the data
