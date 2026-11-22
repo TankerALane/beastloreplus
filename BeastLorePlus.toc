@@ -22,6 +22,7 @@ Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua
 Core.lua
 Data\Abilities.lua
 Data\Beasts.lua
+Data\Lore.lua
 Training.lua
 BeastLore.lua
 Community.lua

@@ -73,7 +73,9 @@ unverified or missing. You can help:
    confirmed reports into the bundled data.
 
 Shared messages contain only the beast's NPC ID and name, the abilities and ranks, your client build
-and the addon version.
+and the addon version. When you cast Beast Lore, its Specialization and Diet lines (with the NPC ID
+and creature family) are shared the same way, so "details without casting" can show them for
+everyone; shared lines are used once 2 different hunters agree.
 
 ## Support
 

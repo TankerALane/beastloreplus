@@ -11,7 +11,11 @@
   Specialization, Diet), or "Tameable" for beasts in the database, followed by Pet Abilities.
   Specialization and Diet are remembered per creature family, so a beast you never lored shows those
   of its family once you have cast Beast Lore on any beast of that family.
-- `/blp export` lists the Specialization and Diet seen for each family.
+- Specialization and Diet come from three places: your own Beast Lore casts, the bundled
+  `Data/Lore.lua` (lines seen in game, added each release), and other Beast Lore Plus users, who share
+  what their Beast Lore casts show (used once 2 different hunters agree). Shown in Blizzard's default
+  tooltip yellow. Beasts known to be untameable say "Cannot Be Tamed".
+- `/blp export` lists the Specialization and Diet seen for each family and each beast.
 - Fix: when the game's "You have learned a new spell" message has no rank (Forever sends
   "[Lightning Breath]" for Rank 2), the rank now comes from your pet instead of assuming Rank 1, so the
   dot no longer shows orange until you open Beast Training.

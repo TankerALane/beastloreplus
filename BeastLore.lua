@@ -6,6 +6,8 @@
 -- the Beast Lore lines seen last time are replayed (BLP.db.lore), or "Tameable" for beasts in
 -- the database, followed by the Pet Abilities section. Specialization and Diet are also remembered
 -- per creature family (BLP.db.loreFamily), so a beast never lored shows those of its family.
+-- Sources, in order: your own casts, the bundled Data/Lore.lua (lines seen in game, imported each
+-- release), then lines shared by other Beast Lore Plus users (2 different hunters must agree).
 local _, BLP = ...
 local L = BLP.L
 
@@ -67,6 +69,14 @@ local function isFamilyLine(low)
     for _, pat in ipairs(LORE_MARKERS) do if low:find(pat) then return true end end
     return false
 end
+Lore.IsFamilyLine = function(text) return type(text) == "string" and isFamilyLine(text:lower()) end
+
+-- Blizzard's default tooltip yellow (NORMAL_FONT_COLOR) for Specialization and Diet.
+local LORE_GOLD = { 1, 0.82, 0 }
+local function addLoreLine(tooltip, text, r, g, b)
+    if isFamilyLine(text:lower()) then r, g, b = LORE_GOLD[1], LORE_GOLD[2], LORE_GOLD[3] end
+    tooltip:AddLine(text, r or 1, g or 1, b or 1)
+end
 
 -- Remember a beast's Beast Lore lines so they can be shown again without casting, and its
 -- Specialization and Diet for its whole family.
@@ -74,7 +84,7 @@ local function remember(npcId, lines, colors, tameable, family)
     local db = BLP.db
     if not db then return end
     db.lore = db.lore or {}
-    local entry = { tameable = tameable, lines = {} }
+    local entry = { tameable = tameable, lines = {}, name = lines[1] ~= "" and lines[1] or nil }
     local famLines = {}
     for i, text in ipairs(lines) do
         local low = text:lower()
@@ -89,6 +99,11 @@ local function remember(npcId, lines, colors, tameable, family)
     if tameable and family and #famLines > 0 then
         db.loreFamily = db.loreFamily or {}
         db.loreFamily[family] = { lines = famLines, npcId = npcId }
+    end
+    if tameable and #famLines > 0 and BLP.Community and BLP.Community.ShareLore then
+        local texts = {}
+        for _, l in ipairs(famLines) do texts[#texts + 1] = l[1] end
+        BLP.Community.ShareLore(npcId, family, texts)
     end
 end
 Lore.Remember = remember
@@ -211,9 +226,37 @@ local function tooltipFamily(tooltip, guid)
         db.npcFamily = db.npcFamily or {}
         if family then db.npcFamily[npcId] = family else family = db.npcFamily[npcId] end
     end
+    if not family and npcId then
+        local bundled = BLP.LoreData and BLP.LoreData.beasts and BLP.LoreData.beasts[npcId]
+        family = bundled and bundled.family
+            or (BLP.Community and BLP.Community.SharedNpcFamily and BLP.Community.SharedNpcFamily(npcId))
+    end
     return family
 end
 Lore.TooltipFamily = tooltipFamily
+
+local function plainList(t)
+    if type(t) ~= "table" or #t == 0 then return nil end
+    local out = {}
+    for _, v in ipairs(t) do out[#out + 1] = type(v) == "table" and v[1] or v end
+    return out
+end
+
+-- Specialization / Diet lines for a beast not lored yourself: own casts on its family, bundled
+-- data (family, then this NPC), then shared lines (family, then this NPC).
+function Lore.FamilyLines(npcId, family)
+    local db, data, C = BLP.db or {}, BLP.LoreData or {}, BLP.Community
+    local shared = C and C.SharedLore
+    if family then
+        local own = db.loreFamily and db.loreFamily[family]
+        local lines = plainList(own and own.lines)
+            or plainList(data.families and data.families[family])
+            or (shared and shared(family))
+        if lines then return lines end
+    end
+    local beast = data.beasts and data.beasts[npcId]
+    return plainList(beast and beast.lines) or (shared and shared("#" .. npcId)) or nil
+end
 
 local function process(tooltip, data, knownGUID, isRecheck)
     if not BLP.isHunter or not BLP.db then return end
@@ -247,24 +290,26 @@ local function process(tooltip, data, knownGUID, isRecheck)
     -- Optional: show the details on plain mouseover, without casting Beast Lore.
     if BLP.db.alwaysShow and (isRecheck or not C_Timer) then
         local cached = BLP.db.lore and BLP.db.lore[npcId]
+        local bundled = BLP.LoreData and BLP.LoreData.beasts and BLP.LoreData.beasts[npcId]
         if cached and type(cached.lines) == "table" then
-            for _, l in ipairs(cached.lines) do
-                tooltip:AddLine(l[1], l[2] or 1, l[3] or 1, l[4] or 1)
-            end
+            for _, l in ipairs(cached.lines) do addLoreLine(tooltip, l[1], l[2], l[3], l[4]) end
             if cached.tameable then appendSection(tooltip, npcId)
             elseif tooltip:IsShown() then tooltip:Show() end
-        elseif BLP.GetTeaches(npcId) then
-            -- Only tameable beasts are in the data, so "Tameable" is safe to show.
-            tooltip:AddLine(L.TAMEABLE, 1, 1, 1)
-            -- Specialization and Diet from another beast of the same family.
+        elseif bundled and bundled.tameable == false then
+            local c = BLP.COLORS.red
+            tooltip:AddLine(L.NOT_TAMEABLE, c[1], c[2], c[3])
+            if tooltip:IsShown() then tooltip:Show() end
+        else
             local family = tooltipFamily(tooltip, guid)
-            local fam = family and BLP.db.loreFamily and BLP.db.loreFamily[family]
-            if fam and type(fam.lines) == "table" then
-                for _, l in ipairs(fam.lines) do
-                    tooltip:AddLine(l[1], l[2] or 1, l[3] or 1, l[4] or 1)
-                end
+            local famLines = Lore.FamilyLines(npcId, family)
+            -- Only tameable beasts are in the data (or were shared as tameable), so "Tameable" is safe.
+            local sharedTameable = BLP.Community and BLP.Community.SharedLore and BLP.Community.SharedLore("#" .. npcId)
+            if BLP.GetTeaches(npcId) or bundled or sharedTameable then
+                local c = BLP.COLORS.green
+                tooltip:AddLine(L.TAMEABLE, c[1], c[2], c[3])
+                for _, text in ipairs(famLines or {}) do addLoreLine(tooltip, text) end
+                appendSection(tooltip, npcId)
             end
-            appendSection(tooltip, npcId)
         end
         return
     end

@@ -1,0 +1,23 @@
+{
+  "beasts": {
+    "3239": {
+      "lines": [],
+      "tameable": false
+    },
+    "3249": {
+      "lines": [
+        "Specialization: Default",
+        "Diet: Fish, Cheese, Bread"
+      ],
+      "tameable": true
+    },
+    "3250": {
+      "lines": [
+        "Specialization: Default",
+        "Diet: Meat"
+      ],
+      "tameable": true
+    }
+  },
+  "families": {}
+}

@@ -26,6 +26,7 @@ end
 load("Core.lua")
 load("Data/Abilities.lua")
 load("Data/Beasts.lua")
+load("Data/Lore.lua")
 load("Community.lua")
 BLP.BuildIndexes()
 BLP.isHunter = true
@@ -295,6 +296,9 @@ do
             for _, fs in ipairs(tip.lines) do if fs.text == text then return true end end
             return false
         end
+        function tip.color(text)
+            for _, fs in ipairs(tip.lines) do if fs.text == text then return fs.c end end
+        end
         return tip
     end
     local guid = "Creature-0-1-1-1-3255-00000001"  -- Sunscale Screecher, in the database
@@ -335,6 +339,49 @@ do
         "toggle on: never-lored beast of a lored family shows the family's Specialization and Diet")
     check(BLP.Community.ExportText():find("| Tallstrider | Specialization: Cunning; Diet: Meat | 3255 |", 1, true),
         "export lists Beast Lore by family")
+    local gold = kin.color("Diet: Meat")
+    check(gold and gold[1] == 1 and gold[2] == 0.82 and gold[3] == 0, "Specialization / Diet shown in Blizzard yellow")
+
+    -- Bundled lines (Data/Lore.lua): a beast never lored on this account.
+    BLP.LoreData = { families = { Crocolisk = { "Specialization: Default", "Diet: Fish" } },
+                     beasts = { [1417] = { tameable = true, lines = { "Specialization: Default", "Diet: Meat" } },
+                                [3239] = { tameable = false } } }
+    UnitCreatureFamily = function() return nil end
+    local bundledTip = mockTip("TipH", { "Young Wetlands Crocolisk", "Level 25" })
+    BLP.Lore.Process(bundledTip, nil, "Creature-0-1-1-1-1417-00000006", true)
+    check(bundledTip.has("Tameable") and bundledTip.has("Diet: Meat"), "bundled Beast Lore lines for an NPC")
+    UnitCreatureFamily = function() return "Crocolisk" end
+    local famTip = mockTip("TipI", { "Some Crocolisk", "Level 30" })
+    BLP.Lore.Process(famTip, nil, "Creature-0-1-1-1-1150-00000007", true)
+    check(famTip.has("Diet: Fish"), "bundled family lines for a database beast")
+    local noTame = mockTip("TipJ", { "Thunderhead", "Level 22" })
+    BLP.Lore.Process(noTame, nil, "Creature-0-1-1-1-3239-00000008", true)
+    check(noTame.has("Cannot Be Tamed") and not noTame.has("Pet Abilities"), "bundled untameable beast says so")
+
+    -- Shared lines: shown once 2 different hunters agree.
+    local C = BLP.Community
+    local msg = C.EncodeLore(2000, "Wind Serpent", { "Specialization: Default", "Diet: Fish, Cheese, Bread" })
+    check(msg == "L1|2000|Wind Serpent|Specialization: Default|Diet: Fish, Cheese, Bread", "lore message encodes")
+    local rep = C.DecodeLore(msg)
+    check(rep and rep.npcId == 2000 and rep.family == "Wind Serpent" and #rep.lines == 2, "lore message decodes")
+    check(C.DecodeLore("L1|2000|Wind Serpent|Hacked: yes") == nil, "lore lines other than Specialization / Diet rejected")
+    check(C.DecodeLore("B1|1|2|3|bite:1|x") == nil and C.Decode(msg, BLP.Abilities) == nil, "message types do not mix")
+    check(C.EncodeLore(2000, "Wind Serpent", {}) == nil, "nothing to share without lines")
+    BLP.db.community.lore, BLP.db.community.npcFamily = {}, {}
+    C.AddLoreReport(rep, "A-Realm", 1)
+    check(C.SharedLore("Wind Serpent") == nil, "one shared report is not enough")
+    C.AddLoreReport(rep, "B-Realm", 2)
+    local shared = C.SharedLore("Wind Serpent")
+    check(shared and shared[2] == "Diet: Fish, Cheese, Bread", "two agreeing hunters: shared lines used")
+    check(C.SharedNpcFamily(2000) == "Wind Serpent", "shared NPC family")
+    UnitCreatureFamily = function() return nil end
+    local sharedTip = mockTip("TipK", { "Unknown Serpent", "Level 40" })
+    BLP.Lore.Process(sharedTip, nil, "Creature-0-1-1-1-2000-00000009", true)
+    check(sharedTip.has("Tameable") and sharedTip.has("Diet: Fish, Cheese, Bread"), "shared lines shown on mouseover")
+    check(C.ExportText():find("#### Beast Lore by beast", 1, true) and C.ExportText():find("| 3255 | Sunscale Screecher |", 1, true),
+        "export lists Beast Lore by beast")
+    BLP.LoreData = { families = {}, beasts = {} }
+
     -- Family remembered per NPC: hovering again works even when the game gives no family.
     UnitCreatureFamily = function() return nil end
     local again = mockTip("TipG", { "Mottled Screecher", "Level 16" })

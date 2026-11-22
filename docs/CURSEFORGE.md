@@ -34,7 +34,7 @@ Beast Training only shows the abilities your current pet's family can use, so sk
 
 Beasts with no known abilities say so. Nothing is added for beasts that can't be tamed.
 
-Prefer not to cast every time? Turn on **Show Beast Lore details without casting Beast Lore** in the options and simply hover a beast to see Tameable, Specialization, Diet and Pet Abilities. Specialization and Diet are learned per family: cast Beast Lore once on any wolf and every wolf shows them. It's off by default.
+Prefer not to cast every time? Turn on **Show Beast Lore details without casting Beast Lore** in the options and simply hover a beast to see Tameable, Specialization, Diet and Pet Abilities. Specialization and Diet come built in for beasts already seen in game, are shared by other Beast Lore Plus users, and are learned per family from your own casts (cast Beast Lore once on any wolf and every wolf shows them). It's off by default.
 
 ## Ability Finder
 
@@ -66,7 +66,9 @@ Forever changed a lot about pets, so some entries are still unverified. You can 
 - **Tame beasts.** When you tame a beast, the abilities your new pet arrived with are recorded and shared with other Beast Lore Plus users in your guild and on a hidden channel. A beast missing from the data is filled in once **3 different hunters** report the same abilities. Community reports never overwrite the bundled data.
 - **Send an export.** Type **/blp export**, copy the text, and paste it into a [GitHub issue](https://github.com/TankerALane/beastloreplus/issues). Each release folds confirmed tames into the bundled data.
 
-Shared messages contain only the beast's ID and name, its abilities and ranks, your game build and the addon version. You can turn sharing off in the options.
+Casting **Beast Lore** shares that beast's Specialization and Diet the same way, so everyone can see them on mouseover.
+
+Shared messages contain only the beast's ID, name and family, its abilities and ranks, its Specialization and Diet, your game build and the addon version. You can turn sharing off in the options.
 
 ## Commands
 

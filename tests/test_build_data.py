@@ -44,5 +44,64 @@ beasts, review = run(ingame=True)
 check(4 in beasts, "out-of-order beast confirmed in game is kept")
 check(not any("Odd" in r[1] for r in review), "in-game beast is not reported as dropped")
 
+# import_lore: read saved variables and merge Beast Lore lines
+import import_lore as il  # noqa: E402
+
+SAVED = '''
+BeastLorePlusDB = {
+["npcFamily"] = {
+[3249] = "Wind Serpent",
+},
+["loreFamily"] = {
+["Wind Serpent"] = {
+["lines"] = {
+{
+"Specialization: Default", -- [1]
+1, -- [2]
+},
+{
+"Diet: Fish, Cheese, Bread",
+},
+},
+["npcId"] = 3249,
+},
+},
+["lore"] = {
+[3249] = {
+["tameable"] = true,
+["name"] = "Greater \\"Thunder\\" hawk",
+["lines"] = {
+{
+"Tameable",
+0.09, 1, 0.09,
+},
+{
+"Specialization: Default",
+},
+},
+},
+[3239] = {
+["tameable"] = false,
+["lines"] = {
+{
+"Cannot Be Tamed",
+},
+},
+},
+},
+}
+'''
+r = il.LuaReader(SAVED)
+r.i = SAVED.index("{")
+db = r.value()
+data = {"families": {}, "beasts": {}}
+il.merge(data, db)
+check(data["families"].get("Wind Serpent") == ["Specialization: Default", "Diet: Fish, Cheese, Bread"], "family lines imported")
+check(data["beasts"]["3249"] == {"tameable": True, "lines": ["Specialization: Default"], "family": "Wind Serpent",
+                                 "name": 'Greater "Thunder" hawk'}, "beast imported with family and name")
+check(data["beasts"]["3239"]["tameable"] is False, "untameable beast imported")
+check(il.merge(data, db) == 0, "importing again changes nothing")
+check('[3249] = { tameable = true, family = "Wind Serpent"' in il.render(data), "Lua output")
+
 print("build_data tests: %s" % ("all passed" if failures == 0 else "%d failed" % failures))
 sys.exit(1 if failures else 0)

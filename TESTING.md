@@ -27,7 +27,10 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
 - [ ] Options › tick "Show Beast Lore details without casting Beast Lore" → hovering the beast you just
       lored shows Tameable / Specialization / Diet and Pet Abilities; a database beast you never lored
       shows "Tameable" and Pet Abilities, plus Specialization / Diet if you have lored another beast of
-      its family; humanoids show nothing extra. `/blp export` lists "Beast Lore by family". Untick it again.
+      its family; humanoids show nothing extra. `/blp export` lists "Beast Lore by family" and "Beast Lore by beast". Specialization / Diet
+      added on mouseover are in Blizzard yellow. Untick it again.
+- [ ] Two players with the addon: one casts Beast Lore, the other (sharing on) sees nothing yet; after a
+      second hunter casts it on the same family, the other sees Specialization / Diet on mouseover.
 
 ## 2. Beast Training scan, then green / orange / red
 

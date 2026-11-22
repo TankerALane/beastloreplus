@@ -8,6 +8,8 @@ Community.PREFIX = "BLPlus"          -- <= 16 characters
 Community.CHANNEL = "BeastLorePlus"  -- hidden custom channel
 Community.QUORUM = 3                 -- distinct senders before a gap report is used
 Community.MSG_VERSION = "B1"
+Community.LORE_VERSION = "L1"         -- Beast Lore lines: "L1|npcId|family|line|line"
+Community.LORE_QUORUM = 2             -- distinct senders before shared Beast Lore lines are shown
 
 local TAME_BEAST_SPELL = 1515
 local MAX_NPCS = 400        -- stored community NPCs
@@ -72,6 +74,43 @@ function Community.Decode(msg, abilities)
              name = (name ~= "" and name or nil) }
 end
 
+-- Beast Lore lines (Specialization / Diet) of a tameable beast and its family ("" if unknown).
+local LORE_LINE = { "^Specialization: ", "^Diet: " }
+local function validLoreLine(t)
+    if type(t) ~= "string" or #t > 100 or t:find("[%c|]") then return false end
+    for _, pat in ipairs(LORE_LINE) do if t:find(pat) then return true end end
+    return false
+end
+
+function Community.EncodeLore(npcId, family, lines)
+    family = tostring(family or ""):gsub("[|%c]", ""):sub(1, 32)
+    local parts = { Community.LORE_VERSION, tostring(npcId), family }
+    for _, t in ipairs(lines or {}) do
+        if validLoreLine(t) and #parts < 5 then parts[#parts + 1] = t end
+    end
+    if #parts < 4 then return nil end
+    local msg = table.concat(parts, "|")
+    if #msg > MAX_MSG then return nil end
+    return msg
+end
+
+function Community.DecodeLore(msg)
+    if type(msg) ~= "string" or #msg > MAX_MSG then return nil end
+    local parts = {}
+    for p in (msg .. "|"):gmatch("([^|]*)|") do parts[#parts + 1] = p end
+    if parts[1] ~= Community.LORE_VERSION or #parts < 4 or #parts > 5 then return nil end
+    local npc = tonumber(parts[2])
+    if not npc or npc < 1 or npc > 9999999 or npc % 1 ~= 0 then return nil end
+    local family = parts[3]
+    if #family > 32 or not family:match("^[%w '%-]*$") then return nil end
+    local lines = {}
+    for i = 4, #parts do
+        if not validLoreLine(parts[i]) then return nil end
+        lines[#lines + 1] = parts[i]
+    end
+    return { npcId = npc, family = family ~= "" and family or nil, lines = lines }
+end
+
 ---------------------------------------------------------------------------
 -- Report storage and the trust rules (pure apart from `now`)
 ---------------------------------------------------------------------------
@@ -130,6 +169,36 @@ function Community.BestSignature(store, npcId)
         if c > bestCount or (c == bestCount and best and sig < best) then best, bestCount = sig, c end
     end
     return best, bestCount
+end
+
+-- Shared Beast Lore lines for a family (or "#npcId"), once LORE_QUORUM hunters agree.
+function Community.SharedLore(key)
+    local store = BLP.db and BLP.db.community and BLP.db.community.lore
+    local sig, count = Community.BestSignature(store, key)
+    if not sig or count < Community.LORE_QUORUM then return nil end
+    local lines = {}
+    for t in (sig .. "\n"):gmatch("([^\n]*)\n") do if t ~= "" then lines[#lines + 1] = t end end
+    return #lines > 0 and lines or nil
+end
+
+-- Shared creature family of an NPC, once LORE_QUORUM hunters agree.
+function Community.SharedNpcFamily(npcId)
+    local store = BLP.db and BLP.db.community and BLP.db.community.npcFamily
+    local family, count = Community.BestSignature(store, npcId)
+    if family and count >= Community.LORE_QUORUM then return family end
+    return nil
+end
+
+function Community.AddLoreReport(report, sender, now)
+    local c = BLP.db.community
+    c.lore = c.lore or {}
+    c.npcFamily = c.npcFamily or {}
+    local sig = table.concat(report.lines, "\n")
+    Community.AddReport(c.lore, report.family or ("#" .. report.npcId), sig, sender, nil, now)
+    if report.family then
+        Community.AddReport(c.lore, "#" .. report.npcId, sig, sender, nil, now)
+        Community.AddReport(c.npcFamily, report.npcId, report.family, sender, nil, now)
+    end
 end
 
 -- For an NPC missing from bundled data: teaches, "community"|"pending", count
@@ -255,6 +324,16 @@ local function enqueue(msg)
     if not sending then pump() end
 end
 
+-- Share your Beast Lore lines once per session per beast (and again only if they change).
+local sentLore = {}
+function Community.ShareLore(npcId, family, lines)
+    if not BLP.db.share or not npcId then return end
+    local msg = Community.EncodeLore(npcId, family, lines)
+    if not msg or sentLore[npcId] == msg then return end
+    sentLore[npcId] = msg
+    enqueue(msg)
+end
+
 function Community.Share(tame)
     if not BLP.db.share or tame.unknown then return end
     local msg = Community.Encode(tame.npcId, tame.build, tame.version, tame.sig, tame.name)
@@ -324,9 +403,14 @@ local function onAddonMessage(prefix, text, channel, sender)
     if not r or now - r.start > 60 then r = { count = 0, start = now } recent[sender] = r end
     r.count = r.count + 1
     if r.count > 10 then return end -- flood: drop silently
-    local report = Community.Decode(BLP.Plain(text), BLP.Abilities)
-    if not report then return end
-    Community.AddReport(BLP.db.community.reports, report.npcId, report.sig, sender, report.name, now)
+    text = BLP.Plain(text)
+    local report = Community.Decode(text, BLP.Abilities)
+    if report then
+        Community.AddReport(BLP.db.community.reports, report.npcId, report.sig, sender, report.name, now)
+        return
+    end
+    local lore = Community.DecodeLore(text)
+    if lore then Community.AddLoreReport(lore, sender, now) end
 end
 
 ---------------------------------------------------------------------------
@@ -674,6 +758,22 @@ function Community.ExportText()
         lines[#lines + 1] = ("| %s | %s | %s |"):format(family, table.concat(parts, "; "), tostring(fam.npcId or "?"))
     end
     if #families == 0 then lines[#lines + 1] = "| (none yet) | | |" end
+    lines[#lines + 1] = ""
+    lines[#lines + 1] = "#### Beast Lore by beast"
+    lines[#lines + 1] = ""
+    lines[#lines + 1] = "| NPC ID | Beast | Family | Lines |"
+    lines[#lines + 1] = "|---|---|---|---|"
+    local loreIds = {}
+    for npcId in pairs(BLP.db.lore or {}) do loreIds[#loreIds + 1] = npcId end
+    table.sort(loreIds)
+    for _, npcId in ipairs(loreIds) do
+        local entry = BLP.db.lore[npcId]
+        local parts = {}
+        for _, l in ipairs(entry.lines or {}) do parts[#parts + 1] = tostring(l[1]) end
+        lines[#lines + 1] = ("| %d | %s | %s | %s |"):format(npcId, tostring(entry.name or "?"),
+            tostring(BLP.db.npcFamily and BLP.db.npcFamily[npcId] or "?"), table.concat(parts, "; "))
+    end
+    if #loreIds == 0 then lines[#lines + 1] = "| | (none yet: cast Beast Lore on a beast) | | |" end
     return table.concat(lines, "\n")
 end
 
@@ -728,6 +828,17 @@ BLP.OnInit(function()
             BLP.db.community.lastShare = now
             for i = 1, math.min(5, #BLP.db.community.tames) do
                 Community.Share(BLP.db.community.tames[i])
+            end
+            -- And up to 10 families you have seen with Beast Lore.
+            local n = 0
+            for family, entry in pairs(BLP.db.loreFamily or {}) do
+                if n >= 10 then break end
+                local texts = {}
+                for _, l in ipairs(entry.lines or {}) do texts[#texts + 1] = l[1] end
+                if entry.npcId then
+                    Community.ShareLore(entry.npcId, family, texts)
+                    n = n + 1
+                end
             end
         end)
     end)

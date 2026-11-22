@@ -318,7 +318,7 @@ local DEFAULTS = {
     lore = {},          -- npcId -> Beast Lore lines seen last time
     loreFamily = {},    -- creature family -> Specialization / Diet lines seen last time
     npcFamily = {},     -- npcId -> creature family (from Beast Lore casts and tames)
-    community = { reports = {}, tames = {}, lastShare = 0 },
+    community = { reports = {}, tames = {}, lastShare = 0, lore = {}, npcFamily = {} },
     finder = {},
 }
 
