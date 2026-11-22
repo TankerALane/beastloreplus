@@ -192,7 +192,7 @@ local function updateRows()
             if b.elite then name = name .. " |cffd4a44c(elite)|r" end
             if b.rare then name = name .. " |cffc0c0ff(rare)|r" end
             row.name:SetText(name)
-            row.rank:SetText(state.ability and L.RANK:format(r.rank) or (BLP.AbilityName(r.ability) .. " " .. r.rank))
+            row.rank:SetText(state.ability and L.RANK_SHORT:format(r.rank) or (BLP.AbilityName(r.ability) .. " " .. L.RANK:format(r.rank)))
             row.level:SetText(levelText(b))
             row.zone:SetText(table.concat(b.zones or {}, ", "))
             row.tag:SetText(tagText(r))
@@ -224,7 +224,7 @@ local function updateHeader()
             end
         elseif BLP.isHunter and BLP.char and BLP.char.scanned then
             local known = BLP.char.known[key]
-            text = text .. "   (you know " .. (known and L.RANK:format(known) or "no rank") .. ")"
+            text = text .. "   (you know " .. (known and L.RANK_SHORT:format(known) or "no rank") .. ")"
         end
         frame.info:SetText(text .. ("  \226\128\148 %d result(s)"):format(#data))
     end
