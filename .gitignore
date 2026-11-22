@@ -1,0 +1,10 @@
+# Libraries are pulled by the packager (.pkgmeta externals); tools/install_local.ps1 fills them locally
+Libs/
+.release/
+dist/
+__pycache__/
+*.pyc
+.vscode/
+.claude/settings.local.json
+Thumbs.db
+.DS_Store
