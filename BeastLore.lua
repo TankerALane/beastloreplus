@@ -98,7 +98,7 @@ local function appendSection(tooltip, npcId)
         local status = BLP.Status(t.ability, t.rank)
         if status == "unknown" then anyUnknown = true end
         if status ~= "unknown" or db.showUnknown then
-            local left = ("%s %s %s"):format(BLP.DotString(status), BLP.AbilityName(t.ability),
+            local left = ("%s%s%s %s"):format(BLP.DotString(status), BLP.DOT_GAP, BLP.AbilityName(t.ability),
                 L.RANK:format(t.rank))
             local tag = tagFor(t, source, beast, extra)
             if tag then

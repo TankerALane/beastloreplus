@@ -80,8 +80,10 @@ local function build()
     local legend = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
     legend:SetPoint("TOPLEFT", finder, "BOTTOMLEFT", 0, -20)
     legend:SetJustifyH("LEFT")
-    legend:SetText(("%s you know this rank or higher\n%s you know a lower rank (upgrade)\n%s you have not learned it\n%s unknown: open Beast Training once"):format(
-        BLP.DotString("known", 14), BLP.DotString("upgrade", 14), BLP.DotString("missing", 14), BLP.DotString("unknown", 14)))
+    local g = BLP.DOT_GAP
+    legend:SetText(("%s%syou know this rank or higher\n%s%syou know a lower rank (upgrade)\n%s%syou have not learned it\n%s%sunknown: open Beast Training once"):format(
+        BLP.DotString("known", 14), g, BLP.DotString("upgrade", 14), g, BLP.DotString("missing", 14), g,
+        BLP.DotString("unknown", 14), g))
     legend:SetSpacing(4)
 
     panel:SetScript("OnShow", Options.Sync)

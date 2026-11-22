@@ -215,7 +215,7 @@ local function updateHeader()
             if #bits > 0 then text = text .. ": " .. table.concat(bits, ", ") end
             if BLP.isHunter then
                 local s = BLP.Status(key, state.rank)
-                text = text .. "   " .. BLP.DotString(s) .. " " .. BLP.StatusText(s)
+                text = text .. "   " .. BLP.DotString(s) .. BLP.DOT_GAP .. BLP.StatusText(s)
             end
         elseif BLP.isHunter and BLP.char and BLP.char.scanned then
             local known = BLP.char.known[key]
@@ -273,7 +273,7 @@ local function rowTooltip(row)
     GameTooltip:AddLine(L.PET_ABILITIES, c.gold[1], c.gold[2], c.gold[3])
     for _, t in ipairs(b.teaches or {}) do
         local s = BLP.Status(t.ability, t.rank)
-        local prefix = s and (BLP.DotString(s) .. " ") or ""
+        local prefix = s and (BLP.DotString(s) .. BLP.DOT_GAP) or ""
         GameTooltip:AddLine(prefix .. BLP.AbilityName(t.ability) .. " " .. L.RANK:format(t.rank), 1, 1, 1)
     end
     if BLP.isHunter then
@@ -308,7 +308,7 @@ local function makeHeader(parent, text, key, width, x)
     return b
 end
 
-local COLS = { dot = 4, name = 24, rank = 238, level = 336, zone = 394, tag = 568 }
+local COLS = { dot = 4, name = 28, rank = 238, level = 336, zone = 394, tag = 568 }
 
 local function createRow(parent)
     local row = CreateFrame("Button", nil, parent)
@@ -499,8 +499,10 @@ local function create()
     local legend = f:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
     legend:SetPoint("BOTTOMLEFT", right, 14)
     if BLP.isHunter then
-        legend:SetText(("%s you know it   %s upgrade   %s not learned   %s open Beast Training"):format(
-            BLP.DotString("known"), BLP.DotString("upgrade"), BLP.DotString("missing"), BLP.DotString("unknown")))
+        local g = BLP.DOT_GAP
+        legend:SetText(("%s%syou know it      %s%supgrade      %s%snot learned      %s%sopen Beast Training"):format(
+            BLP.DotString("known"), g, BLP.DotString("upgrade"), g, BLP.DotString("missing"), g,
+            BLP.DotString("unknown"), g))
     else
         legend:SetText("Learned status is shown on hunters only.")
     end

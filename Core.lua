@@ -219,6 +219,9 @@ function BLP.StatusColor(status)
     return c.grey
 end
 
+-- Space between a status dot and the text after it.
+BLP.DOT_GAP = "   "
+
 -- Inline texture string for a status dot (a texture, tinted; not a font glyph).
 function BLP.DotString(status, size)
     size = size or 12
