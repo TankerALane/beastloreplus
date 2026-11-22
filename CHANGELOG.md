@@ -4,6 +4,7 @@
 
 - Fix: with "Show Beast Lore details without casting Beast Lore" on, the tooltip no longer flickers or
   jumps on mouseover; the lines are added at once instead of a frame later.
+- Specialization / Diet added on mouseover: label in yellow, value in white.
 
 ## 1.0.2 (2026-11-21)
 

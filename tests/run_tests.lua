@@ -292,12 +292,13 @@ do
         function tip.AddDoubleLine(_, text) add(text) end
         function tip.IsShown() return false end
         function tip.Show() end
+        local function plain(t) return (t:gsub("|c%x%x%x%x%x%x%x%x", ""):gsub("|r", "")) end
         function tip.has(text)
-            for _, fs in ipairs(tip.lines) do if fs.text == text then return true end end
+            for _, fs in ipairs(tip.lines) do if plain(fs.text) == text then return true end end
             return false
         end
         function tip.color(text)
-            for _, fs in ipairs(tip.lines) do if fs.text == text then return fs.c end end
+            for _, fs in ipairs(tip.lines) do if plain(fs.text) == text then return fs.c, fs.text end end
         end
         return tip
     end
@@ -339,8 +340,9 @@ do
         "toggle on: never-lored beast of a lored family shows the family's Specialization and Diet")
     check(BLP.Community.ExportText():find("| Tallstrider | Specialization: Cunning; Diet: Meat | 3255 |", 1, true),
         "export lists Beast Lore by family")
-    local gold = kin.color("Diet: Meat")
-    check(gold and gold[1] == 1 and gold[2] == 0.82 and gold[3] == 0, "Specialization / Diet shown in Blizzard yellow")
+    local gold, raw = kin.color("Diet: Meat")
+    check(gold and gold[1] == 1 and gold[2] == 0.82 and gold[3] == 0, "Specialization / Diet label in Blizzard yellow")
+    check(raw == "Diet: |cffffffffMeat|r", "Specialization / Diet value in white (" .. tostring(raw) .. ")")
 
     -- Bundled lines (Data/Lore.lua): a beast never lored on this account.
     BLP.LoreData = { families = { Crocolisk = { "Specialization: Default", "Diet: Fish" } },

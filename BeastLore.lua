@@ -71,10 +71,15 @@ local function isFamilyLine(low)
 end
 Lore.IsFamilyLine = function(text) return type(text) == "string" and isFamilyLine(text:lower()) end
 
--- Blizzard's default tooltip yellow (NORMAL_FONT_COLOR) for Specialization and Diet.
+-- Specialization and Diet: the label in Blizzard's default tooltip yellow (NORMAL_FONT_COLOR),
+-- the value after the colon in white.
 local LORE_GOLD = { 1, 0.82, 0 }
 local function addLoreLine(tooltip, text, r, g, b)
-    if isFamilyLine(text:lower()) then r, g, b = LORE_GOLD[1], LORE_GOLD[2], LORE_GOLD[3] end
+    if isFamilyLine(text:lower()) then
+        local label, value = text:match("^(.-:)%s*(.*)$")
+        if label then text = ("%s |cffffffff%s|r"):format(label, value) end
+        r, g, b = LORE_GOLD[1], LORE_GOLD[2], LORE_GOLD[3]
+    end
     tooltip:AddLine(text, r or 1, g or 1, b or 1)
 end
 
