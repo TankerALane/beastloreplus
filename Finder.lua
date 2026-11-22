@@ -8,8 +8,9 @@ BLP.Finder = Finder
 local ROW_H = 18
 local VISIBLE = 18
 local frame
-local state = { ability = nil, rank = 0, zone = nil, search = "", upgradesOnly = false,
-                sortKey = "level", asc = true }
+local state = { ability = nil, rank = 0, zone = nil, search = "", sortKey = "level", asc = true,
+                level = nil,  -- nil = follow the character's level
+                show = { learnable = true, learned = true, later = true } }
 local data = {}       -- filtered/sorted rows
 local abilityButtons = {}
 local rankButtons = {}
@@ -64,6 +65,21 @@ local function contains(hay, needle)
     return hay and hay:lower():find(needle, 1, true) ~= nil
 end
 
+-- The level used for "can learn now": the Level box, or the character's level.
+local function effectiveLevel()
+    if state.level then return state.level end
+    return BLP.Plain(UnitLevel("player")) or 60
+end
+
+-- "learned": this hunter knows the rank or higher. "learnable": not learned, and the beast is at
+-- or below the level (you can tame it now). "later": not learned, beast above the level.
+local function category(r)
+    if BLP.Status(r.ability, r.rank) == "known" then return "learned" end
+    local min = r.beast.minLevel
+    if not min or min <= effectiveLevel() then return "learnable" end
+    return "later"
+end
+
 local function rowMatches(r, search)
     if state.ability and r.ability ~= state.ability then return false end
     if state.rank > 0 and r.rank ~= state.rank then return false end
@@ -72,10 +88,7 @@ local function rowMatches(r, search)
         for _, z in ipairs(r.beast.zones or {}) do if z == state.zone then ok = true end end
         if not ok then return false end
     end
-    if state.upgradesOnly then
-        local s = BLP.Status(r.ability, r.rank)
-        if s ~= "upgrade" and s ~= "missing" then return false end
-    end
+    if not state.show[category(r)] then return false end
     if search ~= "" then
         if not (contains(r.beast.name, search) or contains(BLP.AbilityName(r.ability), search)) then
             local zoneHit = false
@@ -192,6 +205,11 @@ local function updateRows()
             if b.elite then name = name .. " |cffd4a44c(elite)|r" end
             if b.rare then name = name .. " |cffc0c0ff(rare)|r" end
             row.name:SetText(name)
+            local later = category(r) == "later"
+            local shade = later and 0.55 or 1
+            row.name:SetTextColor(shade, shade, shade)
+            row.rank:SetTextColor(shade, shade, shade)
+            row.level:SetTextColor(later and 0.85 or 1, later and 0.35 or 1, later and 0.3 or 1)
             row.rank:SetText(state.ability and L.RANK_SHORT:format(r.rank) or (BLP.AbilityName(r.ability) .. " " .. L.RANK:format(r.rank)))
             row.level:SetText(levelText(b))
             row.zone:SetText(table.concat(b.zones or {}, ", "))
@@ -238,27 +256,29 @@ local function updateHeader()
         if rank == state.rank then btn:LockHighlight() else btn:UnlockHighlight() end
     end
     frame.zoneBtn:SetText("Zone: " .. (state.zone or "All"))
-    local canUpgrade = BLP.isHunter and BLP.char and BLP.char.scanned
-    frame.upgrades:SetEnabled(canUpgrade and true or false)
-    frame.upgrades:SetChecked(canUpgrade and state.upgradesOnly or false)
-    frame.upgradesLabel:SetTextColor(canUpgrade and 1 or 0.5, canUpgrade and 0.82 or 0.5, canUpgrade and 0 or 0.5)
+    if not frame.levelBox:HasFocus() then
+        frame.levelBox:SetText(tostring(effectiveLevel()))
+    end
+    local canKnow = BLP.isHunter and BLP.char and BLP.char.scanned
+    for toggleKey, cb in pairs(frame.toggles) do
+        local enabled = toggleKey ~= "learned" or canKnow
+        cb:SetEnabled(enabled and true or false)
+        cb:SetChecked(state.show[toggleKey] and true or false)
+        cb.label:SetTextColor(enabled and 1 or 0.5, enabled and 0.82 or 0.5, enabled and 0 or 0.5)
+    end
     frame.statusHeader:SetShown(BLP.isHunter)
 end
 
 function Finder.Refresh()
     if not frame or not frame:IsShown() then return end
-    if not state.upgradesOnly or (BLP.isHunter and BLP.char.scanned) then
-        collect()
-    else
-        state.upgradesOnly = false
-        collect()
-    end
+    collect()
     frame.content:SetHeight(math.max(1, #data * ROW_H))
     updateHeader()
     updateRows()
     if BLP.db then
         BLP.db.finder.ability, BLP.db.finder.rank = state.ability, state.rank
-        BLP.db.finder.upgradesOnly = state.upgradesOnly
+        BLP.db.finder.show = state.show
+        BLP.db.finder.level = state.level
     end
 end
 
@@ -281,11 +301,18 @@ local function rowTooltip(row)
         local prefix = s and (BLP.DotString(s) .. BLP.DOT_GAP) or ""
         GameTooltip:AddLine(prefix .. BLP.AbilityName(t.ability) .. " " .. L.RANK:format(t.rank), 1, 1, 1)
     end
+    GameTooltip:AddLine(" ")
     if BLP.isHunter then
         local s = BLP.Status(r.ability, r.rank)
         local col = BLP.StatusColor(s)
-        GameTooltip:AddLine(" ")
         GameTooltip:AddLine(BLP.StatusText(s), col[1], col[2], col[3], true)
+    end
+    local cat = category(r)
+    if cat == "later" then
+        GameTooltip:AddLine(("Not yet: this beast is level %d, above level %d."):format(b.minLevel, effectiveLevel()),
+            0.85, 0.35, 0.3, true)
+    elseif cat == "learnable" then
+        GameTooltip:AddLine(("Can learn now: tameable at level %d."):format(effectiveLevel()), 0.18, 0.66, 0.29, true)
     end
     if r.source == "community" then
         GameTooltip:AddLine("From community reports (3+ hunters agreed).", 0.6, 0.6, 0.6, true)
@@ -366,7 +393,7 @@ end
 local function create()
     buildIndex()
     local f = CreateFrame("Frame", "BeastLorePlusFinder", UIParent, "BasicFrameTemplateWithInset")
-    f:SetSize(880, 520)
+    f:SetSize(880, 560)
     f:SetPoint("CENTER")
     f:SetFrameStrata("HIGH")
     f:SetMovable(true)
@@ -393,7 +420,18 @@ local function create()
         state.search = self:GetText() or ""
         Finder.Refresh()
     end)
-    if search.Instructions then search.Instructions:SetText("Search beast, ability, zone") end
+    -- Short placeholder so it fits the box; the full hint is in the tooltip.
+    if search.Instructions then
+        search.Instructions:SetText(SEARCH or "Search")
+        search.Instructions:SetWordWrap(false)
+    end
+    search:HookScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+        GameTooltip:AddLine(SEARCH or "Search")
+        GameTooltip:AddLine("Type part of a beast name, an ability or a zone.", 1, 1, 1, true)
+        GameTooltip:Show()
+    end)
+    search:HookScript("OnLeave", function() GameTooltip:Hide() end)
     f.search = search
 
     local keys = abilityKeys()
@@ -430,7 +468,7 @@ local function create()
         abilityButtons[#abilityButtons + 1] = b
     end
 
-    -- Right: info, rank buttons, zone filter, upgrades toggle
+    -- Right: info, rank buttons, zone filter; level box and learn-state toggles below
     local right = 206
     f.info = f:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
     f.info:SetPoint("TOPLEFT", right, -36)
@@ -456,30 +494,65 @@ local function create()
     end)
     f.zoneBtn = zoneBtn
 
-    local up = CreateFrame("CheckButton", nil, f, "UICheckButtonTemplate")
-    up:SetSize(24, 24)
-    up:SetPoint("LEFT", zoneBtn, "RIGHT", 10, 0)
-    up:SetScript("OnClick", function(self) state.upgradesOnly = self:GetChecked() and true or false Finder.Refresh() end)
-    up:SetScript("OnEnter", function(self)
+    -- Level box and the three learn-state toggles
+    local levelLabel = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    levelLabel:SetPoint("TOPLEFT", right, -94)
+    levelLabel:SetText("Level")
+    local levelBox = CreateFrame("EditBox", nil, f, "InputBoxTemplate")
+    levelBox:SetSize(30, 20)
+    levelBox:SetPoint("LEFT", levelLabel, "RIGHT", 10, 0)
+    levelBox:SetAutoFocus(false)
+    levelBox:SetNumeric(true)
+    levelBox:SetMaxLetters(2)
+    local function applyLevel(self)
+        local n = tonumber(self:GetText())
+        if n and n >= 1 and n <= 60 then state.level = n else state.level = nil end
+        Finder.Refresh()
+    end
+    levelBox:SetScript("OnEnterPressed", function(self) self:ClearFocus() end)
+    levelBox:SetScript("OnEditFocusLost", applyLevel)
+    levelBox:SetScript("OnEscapePressed", function(self) self:ClearFocus() end)
+    levelBox:SetScript("OnEnter", function(self)
         GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-        GameTooltip:AddLine("Show only upgrades for me")
-        GameTooltip:AddLine("Ranks you know at a lower level (orange) or not at all (red).", 1, 1, 1, true)
-        if not BLP.isHunter then
-            GameTooltip:AddLine("Hunters only.", 0.6, 0.6, 0.6)
-        elseif not (BLP.char and BLP.char.scanned) then
-            GameTooltip:AddLine(L.OPEN_TRAINING, 0.6, 0.6, 0.6, true)
-        end
+        GameTooltip:AddLine("Level")
+        GameTooltip:AddLine("Beasts at or below this level can be tamed now. Defaults to your level; clear it to follow your level again.", 1, 1, 1, true)
         GameTooltip:Show()
     end)
-    up:SetScript("OnLeave", function() GameTooltip:Hide() end)
-    f.upgrades = up
-    f.upgradesLabel = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    f.upgradesLabel:SetPoint("LEFT", up, "RIGHT", 2, 0)
-    f.upgradesLabel:SetText("Only upgrades for me")
+    levelBox:SetScript("OnLeave", function() GameTooltip:Hide() end)
+    f.levelBox = levelBox
+
+    f.toggles = {}
+    local TOGGLES = {
+        { key = "learnable", label = "Can learn now",
+          tip = "You don't know this rank yet, and the beast is at or below the level: tame it now." },
+        { key = "learned", label = "Already learned",
+          tip = "You know this rank or higher. Needs one Beast Training scan on this hunter." },
+        { key = "later", label = "Not yet",
+          tip = "You don't know this rank, but the beast is above the level, so you can't tame it yet." },
+    }
+    local anchor = levelBox
+    for _, t in ipairs(TOGGLES) do
+        local cb = CreateFrame("CheckButton", nil, f, "UICheckButtonTemplate")
+        cb:SetSize(24, 24)
+        cb:SetPoint("LEFT", anchor, "RIGHT", anchor == levelBox and 18 or 6, 0)
+        cb.label = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        cb.label:SetPoint("LEFT", cb, "RIGHT", 1, 0)
+        cb.label:SetText(t.label)
+        cb:SetScript("OnClick", function(self) state.show[t.key] = self:GetChecked() and true or false Finder.Refresh() end)
+        cb:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:AddLine(t.label)
+            GameTooltip:AddLine(t.tip, 1, 1, 1, true)
+            GameTooltip:Show()
+        end)
+        cb:SetScript("OnLeave", function() GameTooltip:Hide() end)
+        f.toggles[t.key] = cb
+        anchor = cb.label
+    end
 
     -- Column headers
     local header = CreateFrame("Frame", nil, f)
-    header:SetPoint("TOPLEFT", right, -92)
+    header:SetPoint("TOPLEFT", right, -122)
     header:SetPoint("RIGHT", -34, 0)
     header:SetHeight(18)
     f.statusHeader = makeHeader(header, "", nil, 20, COLS.dot - 2)
@@ -490,7 +563,7 @@ local function create()
 
     -- Results list (virtualised rows)
     local scroll = CreateFrame("ScrollFrame", nil, f, "UIPanelScrollFrameTemplate")
-    scroll:SetPoint("TOPLEFT", right, -112)
+    scroll:SetPoint("TOPLEFT", right, -142)
     scroll:SetPoint("BOTTOMRIGHT", -34, 36)
     local content = CreateFrame("Frame", nil, scroll)
     content:SetSize(640, 1)
@@ -521,7 +594,12 @@ function Finder.Toggle()
         local saved = BLP.db and BLP.db.finder or {}
         if saved.ability and BLP.Abilities[saved.ability] then state.ability = saved.ability end
         state.rank = tonumber(saved.rank) or 0
-        state.upgradesOnly = saved.upgradesOnly and true or false
+        if type(saved.show) == "table" then
+            for k in pairs(state.show) do
+                if saved.show[k] ~= nil then state.show[k] = saved.show[k] and true or false end
+            end
+        end
+        state.level = tonumber(saved.level)
     end
     if frame:IsShown() then frame:Hide() else frame:Show() end
 end
@@ -532,3 +610,7 @@ function Finder.Open(abilityKey, rank)
     state.rank = rank or 0
     Finder.Refresh()
 end
+
+BLP.OnInit(function()
+    BLP.On("PLAYER_LEVEL_UP", function() C_Timer.After(0.5, Finder.Refresh) end)
+end)

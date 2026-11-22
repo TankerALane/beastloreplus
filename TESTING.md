@@ -54,7 +54,9 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
 - [ ] **Zone** button → menu of zones (and "Current zone"); picking one filters; right-click clears.
       **[confirms Phase 0: MenuUtil exists; otherwise it cycles zones on click]**
 - [ ] Type in the search box (a beast name, an ability or a zone) → the list filters.
-- [ ] Tick **Only upgrades for me** → only orange and red rows remain.
+- [ ] **Level** box shows your level. Untick **Already learned** and **Not yet** → only beasts you can
+      tame now with ranks you don't know remain. Type another level (e.g. 40) → the list changes; clear it
+      → back to your level. Rows above the level are dimmed with a red level.
 - [ ] Hover a row → tooltip with all abilities that beast teaches and your status.
 
 ## 5. Minimap button and options
@@ -91,7 +93,7 @@ Two hunters with the addon, sharing on, either in the same guild or both online 
 ## 8. Non-hunter character
 
 - [ ] Log in on a non-hunter: no errors, no channel joined, nothing added to tooltips.
-- [ ] `/blp` still opens the Finder, without the status column; the upgrades toggle is disabled.
+- [ ] `/blp` still opens the Finder, without the status column; "Already learned" is disabled.
 
 ## Data review
 
