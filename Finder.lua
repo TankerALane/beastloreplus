@@ -192,6 +192,9 @@ end
 
 local resultCount = 0
 
+local rankCounts = {}
+local abilityCounts = {}
+
 local function collect()
     wipe(data)
     local search = (state.search or ""):lower()
@@ -202,6 +205,30 @@ local function collect()
         for _, list in pairs(byAbility) do sources[#sources + 1] = list end
     end
     sources[#sources + 1] = communityRows()
+    -- How many rows each ability would show under the other filters (for the ability list).
+    wipe(abilityCounts)
+    do
+        local savedAbility, savedRank = state.ability, state.rank
+        state.ability, state.rank = nil, 0
+        for _, list in pairs(byAbility) do
+            for _, r in ipairs(list) do
+                if rowMatches(r, search) then abilityCounts[r.ability] = (abilityCounts[r.ability] or 0) + 1 end
+            end
+        end
+        state.ability, state.rank = savedAbility, savedRank
+    end
+    -- How many rows each rank would show under the other filters (for the rank buttons).
+    wipe(rankCounts)
+    if state.ability then
+        local savedRank = state.rank
+        state.rank = 0
+        for _, list in ipairs(sources) do
+            for _, r in ipairs(list) do
+                if rowMatches(r, search) then rankCounts[r.rank] = (rankCounts[r.rank] or 0) + 1 end
+            end
+        end
+        state.rank = savedRank
+    end
     for _, list in ipairs(sources) do
         for _, r in ipairs(list) do
             if rowMatches(r, search) then data[#data + 1] = r end
@@ -389,12 +416,25 @@ local function updateHeader()
     end
     for _, btn in ipairs(abilityButtons) do
         if btn.key == state.ability then btn:LockHighlight() else btn:UnlockHighlight() end
+        -- Dim abilities with nothing under the current filters (kept in place so the list is stable).
+        local empty = btn.key and (abilityCounts[btn.key] or 0) == 0
+        btn.text:SetTextColor(empty and 0.5 or 1, empty and 0.5 or 0.82, empty and 0.5 or 0)
+        btn.icon:SetDesaturated(empty and true or false)
     end
     local max = key and BLP.MaxRank(key) or 0
     local knownRank = (key and BLP.isHunter and BLP.char and BLP.char.scanned) and (BLP.char.known[key] or 0) or 0
+    -- Only ranks with at least one beast under the current filters get a button (the selected
+    -- rank always keeps its button); visible buttons close up so there are no gaps.
+    local prev = rankButtons[1]
     for i, btn in ipairs(rankButtons) do
         local rank = i - 1
-        btn:SetShown(rank == 0 or rank <= max)
+        local shown = rank == 0 or (rank <= max and ((rankCounts[rank] or 0) > 0 or rank == state.rank))
+        btn:SetShown(shown)
+        if shown and rank > 0 then
+            btn:ClearAllPoints()
+            btn:SetPoint("LEFT", prev, "RIGHT", 2, 0)
+            prev = btn
+        end
         if rank == state.rank then btn:LockHighlight() else btn:UnlockHighlight() end
         btn.known = rank > 0 and rank <= knownRank
         btn:SetNormalFontObject(btn.known and "GameFontDisable" or "GameFontNormal")
@@ -635,6 +675,7 @@ local function create()
         text:SetPoint("LEFT", icon, "RIGHT", 6, 0)
         text:SetText(key and BLP.AbilityName(key) or "All abilities")
         b.key = key or nil
+        b.text, b.icon = text, icon
         b:SetScript("OnClick", function()
             state.ability = b.key
             if not b.key or state.rank > BLP.MaxRank(b.key) then state.rank = 0 end

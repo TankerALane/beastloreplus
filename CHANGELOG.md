@@ -8,6 +8,8 @@
 - Ability Finder: results are grouped under a header per ability and rank (icon, pet level, TP,
   beast count), with a gap between groups; click a header to show only that rank.
 - Ability Finder: rank buttons you already know are greyed out.
+- Ability Finder: rank buttons only appear for ranks with beasts under the current filters (e.g.
+  "Can learn now" at level 27 hides Claw 5), and abilities with nothing to show are dimmed.
 - Ability Finder: the Zone column and the zone menu sort nearest first (click again for farthest).
 
 ## 1.0.0 (2026-11-21)
