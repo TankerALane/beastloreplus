@@ -382,6 +382,17 @@ do
         "export lists Beast Lore by beast")
     BLP.LoreData = { families = {}, beasts = {} }
 
+    -- No flicker: with complete tooltip data the lines are added in the same call (not a frame later).
+    BLP.db.alwaysShow = true
+    local now = mockTip("TipL", { "Forest Spider", "Level 5" })
+    BLP.Lore.Process(now, { lines = { { leftText = "Forest Spider" }, { leftText = "Level 5" } } },
+        "Creature-0-1-1-1-30-00000010", false)
+    check(now.has("Pet Abilities"), "details added immediately when the tooltip data is complete")
+    local loreComing = mockTip("TipM", { "Forest Spider", "Level 5" })
+    BLP.Lore.Process(loreComing, { lines = { { leftText = "Forest Spider" }, { leftText = "Tameable" } } },
+        "Creature-0-1-1-1-30-00000011", false)
+    check(not loreComing.has("Pet Abilities"), "waits when the game's Beast Lore lines are still to be drawn")
+
     -- Family remembered per NPC: hovering again works even when the game gives no family.
     UnitCreatureFamily = function() return nil end
     local again = mockTip("TipG", { "Mottled Screecher", "Level 16" })

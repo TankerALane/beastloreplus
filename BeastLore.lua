@@ -290,7 +290,18 @@ local function process(tooltip, data, knownGUID, isRecheck)
         return
     end
     -- Optional: show the details on plain mouseover, without casting Beast Lore.
-    if BLP.db.alwaysShow and (isRecheck or not C_Timer) then
+    -- With the game's tooltip data (TooltipDataProcessor) every line is already known, so the
+    -- lines can be added straight away instead of a frame later (no flicker). Wait only when the
+    -- data holds Beast Lore lines the tooltip has not drawn yet.
+    local complete = false
+    if data and type(data.lines) == "table" then
+        complete = true
+        for _, l in ipairs(data.lines) do
+            local text = BLP.Plain(l.leftText)
+            if type(text) == "string" and isLoreLine(strip(text):lower()) then complete = false end
+        end
+    end
+    if BLP.db.alwaysShow and (isRecheck or complete or not C_Timer) then
         local cached = BLP.db.lore and BLP.db.lore[npcId]
         local bundled = BLP.LoreData and BLP.LoreData.beasts and BLP.LoreData.beasts[npcId]
         if cached and type(cached.lines) == "table" then

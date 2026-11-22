@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Fix: with "Show Beast Lore details without casting Beast Lore" on, the tooltip no longer flickers or
+  jumps on mouseover; the lines are added at once instead of a frame later.
+
 ## 1.0.2 (2026-11-21)
 
 - Data: in-game tames are now the complete ability list for that beast. Prairie Wolf Alpha teaches only
