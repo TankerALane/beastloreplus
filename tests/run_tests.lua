@@ -141,6 +141,18 @@ local conflicts = C.Conflicts()
 local found = false
 for _, c in ipairs(conflicts) do if c.npcId == someNpc and c.sig == "-" then found = true end end
 check(found or C.Signature(someBeast.teaches) == "-", "disagreeing report stored as conflict")
+-- "Teaches nothing" needs 2 different hunters before the hint goes away
+local noneNpc = 999002
+check(C.NothingConfirmations(noneNpc) == 0, "no 'nothing' reports yet")
+C.AddReport(store, noneNpc, "-", "A-Realm", "Plain Beast", 20)
+C.AddReport(store, noneNpc, "-", "A-Realm", "Plain Beast", 21)
+check(C.NothingConfirmations(noneNpc) == 1, "same hunter twice counts once")
+C.AddReport(store, noneNpc, "-", "B-Realm", nil, 22)
+check(C.NothingConfirmations(noneNpc) == 2, "two hunters confirm 'nothing'")
+local selfNpc = 999003
+C.AddReport(store, selfNpc, "-", "A-Realm", nil, 23)
+table.insert(BLP.db.community.tames, { npcId = selfNpc, sig = "-", manual = true })
+check(C.NothingConfirmations(selfNpc) == 2, "your own (manual) tame counts as one of the two")
 -- Caps
 local capStore = {}
 for i = 1, 450 do C.AddReport(capStore, i, "bite:1", "S", nil, i) end

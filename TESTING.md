@@ -40,6 +40,8 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
 - [ ] Beast Lore on a **Cannot Be Tamed** beast (e.g. Kodo Calf in Mulgore) → nothing added.
 - [ ] Beast Lore on a tameable beast **missing from the database** (turn on "Show NPC ID" in options;
       check the ID is not in the Finder) → "No known abilities" and a grey "Tame it to help confirm!".
+- [ ] Tame such a beast that arrives with **no** pet abilities → the hint stays (1 hunter). After a
+      second hunter reports the same → only "No known abilities" remains.
 - [ ] Mouse over ordinary mobs, players and NPCs without Beast Lore → tooltips unchanged.
 - [ ] Beast Lore in combat → no errors (secret values are skipped silently).
 

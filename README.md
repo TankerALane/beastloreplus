@@ -11,8 +11,9 @@ teaches, with its rank and a dot that says whether you need it.
 ## Features
 
 - **Enhanced Beast Lore.** Every ability and rank the beast teaches, with a status dot.
-  Beasts that teach nothing say so; beasts missing from the database say "No known abilities" with
-  a hint to tame it and help confirm. Nothing is added for beasts that cannot be tamed.
+  Beasts with no known abilities say "No known abilities", with a hint to tame one and help
+  confirm until 2 different hunters have confirmed it teaches nothing. Nothing is added for beasts
+  that cannot be tamed.
 - **Learned-ability tracking per character.** Open Beast Training once and the addon remembers which
   abilities and ranks that hunter knows. It updates whenever Beast Training opens or you learn a rank.
 - **Ability Finder** (`/blp` or the minimap button). Pick any pet ability and rank to see which

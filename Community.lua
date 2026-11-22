@@ -163,6 +163,25 @@ function Community.ConfirmedInGame(npcId, ability, rank)
     return false
 end
 
+-- How many different hunters (you included, also via /blp capture) saw this beast arrive with no
+-- pet abilities. 2 or more removes the "Tame it to help confirm!" hint.
+Community.NOTHING_QUORUM = 2
+function Community.NothingConfirmations(npcId)
+    if not BLP.db or not npcId then return 0 end
+    local senders = {}
+    local entry = BLP.db.community.reports[npcId]
+    local s = entry and entry.sigs["-"]
+    if s then for sender in pairs(s.senders) do senders[sender] = true end end
+    for _, t in ipairs(BLP.db.community.tames) do
+        if t.npcId == npcId and t.sig == "-" and not t.unknown then
+            senders[Community.myName or "me"] = true
+        end
+    end
+    local n = 0
+    for _ in pairs(senders) do n = n + 1 end
+    return n
+end
+
 -- Reports that disagree with bundled data (never shown in game, only exported).
 function Community.Conflicts()
     local out = {}
@@ -613,6 +632,7 @@ BLP.OnInit(function()
     local name, realm = UnitFullName("player")
     realm = realm or (GetNormalizedRealmName and GetNormalizedRealmName())
     myName = name and realm and (name .. "-" .. realm) or name
+    Community.myName = myName
 
     if C_ChatInfo and C_ChatInfo.RegisterAddonMessagePrefix then
         pcall(C_ChatInfo.RegisterAddonMessagePrefix, Community.PREFIX)

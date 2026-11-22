@@ -89,12 +89,14 @@ local function appendSection(tooltip, npcId)
 
     local teaches, source, extra = BLP.GetTeaches(npcId)
     local beast = source == "bundled" and extra or nil
-    if not teaches or source == "pending" then
+    local empty = not teaches or #teaches == 0
+    if empty or source == "pending" then
         tooltip:AddLine(L.NO_DATA, c.cream[1], c.cream[2], c.cream[3])
-        tooltip:AddLine(L.NO_DATA_HINT, c.grey[1], c.grey[2], c.grey[3], true)
-    end
-    if teaches and #teaches == 0 and source ~= "pending" then
-        tooltip:AddLine(L.TEACHES_NOTHING, c.cream[1], c.cream[2], c.cream[3])
+        -- Keep asking for tames until 2 different hunters confirmed it teaches nothing.
+        local confirmedNone = empty and BLP.Community.NothingConfirmations(npcId) >= BLP.Community.NOTHING_QUORUM
+        if not confirmedNone then
+            tooltip:AddLine(L.NO_DATA_HINT, c.grey[1], c.grey[2], c.grey[3], true)
+        end
     end
     local anyUnknown = false
     for _, t in ipairs(teaches and sortedTeaches(teaches) or {}) do
