@@ -53,7 +53,7 @@ Type **/blp** or click the minimap button to search every pet ability and the be
 
 Forever redesigned hunter pets, and the database covers the new family abilities: Savage Rend, Tendon Rip, Pinch, Web, Swipe, Sonic Blast, Dismember, Dust Cloud, Mine! and Trickster's Dance. It also covers the Classic abilities (Bite, Claw, Dash, Dive, Cower and more).
 
-It has **434 beasts across 32 abilities**. Each entry is tagged **confirmed** (two independent sources agree, or a hunter confirmed it in game) or **unverified**.
+It has **435 beasts across 32 abilities**. Each entry is tagged **confirmed** (two independent sources agree, or a hunter confirmed it in game) or **unverified**.
 
 ## Your training, tracked per character
 

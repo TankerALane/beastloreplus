@@ -1,13 +1,13 @@
 # Changelog
 
-## Unreleased
+## 1.0.2 (2026-11-21)
 
 - Data: in-game tames are now the complete ability list for that beast. Prairie Wolf Alpha teaches only
   Bite 2 (no Furious Howl); Hecklefang Stalker and Sunscale Lashtail teach nothing; Fleeting
   Plainstrider (Cower 1, Dust Cloud 1), Washte Pawne (Lightning Breath 3), Silithid Creeper, Ornery
   Plainstrider and Greater Thunderhawk confirmed in game. Beasts that teach nothing say "No known
   abilities" without the "Tame it to help confirm!" hint.
-- Bundled Specialization / Diet for Cat, Tallstrider, Wind Serpent and Wolf.
+- Bundled Specialization / Diet for Carrion Bird, Cat, Tallstrider, Wind Serpent and Wolf.
 - Ranks are tracked one by one: learning a higher rank does not teach the lower ones. A lower rank you
   don't have shows a new **yellow** dot ("you have a higher rank, but not this one"). Beast Training only
   lists the current pet family's abilities, so this applies once Beast Training has listed that ability;

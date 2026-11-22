@@ -8,11 +8,35 @@
       ],
       "tameable": true
     },
+    "2957": {
+      "family": "Tallstrider",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Cheese, Fungus, Fruit"
+      ],
+      "tameable": true
+    },
+    "2959": {
+      "family": "Wolf",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Meat"
+      ],
+      "tameable": true
+    },
     "2960": {
       "family": "Wolf",
       "lines": [
         "Specialization: Default",
         "Diet: Meat"
+      ],
+      "tameable": true
+    },
+    "2971": {
+      "family": "Carrion Bird",
+      "lines": [
+        "Specialization: Default",
+        "Diet: Meat, Fish"
       ],
       "tameable": true
     },
@@ -50,9 +74,17 @@
         "Diet: Fish, Cheese, Bread"
       ],
       "tameable": true
+    },
+    "3466": {
+      "lines": [],
+      "tameable": false
     }
   },
   "families": {
+    "Carrion Bird": [
+      "Specialization: Default",
+      "Diet: Meat, Fish"
+    ],
     "Cat": [
       "Specialization: Default",
       "Diet: Meat, Fish"

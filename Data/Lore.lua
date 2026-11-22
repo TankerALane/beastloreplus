@@ -5,6 +5,7 @@ local _, BLP = ...
 BLP.LoreData = {
   -- creature family -> Specialization / Diet lines
   families = {
+    ["Carrion Bird"] = { "Specialization: Default", "Diet: Meat, Fish" },
     ["Cat"] = { "Specialization: Default", "Diet: Meat, Fish" },
     ["Tallstrider"] = { "Specialization: Default", "Diet: Cheese, Fungus, Fruit" },
     ["Wind Serpent"] = { "Specialization: Default", "Diet: Fish, Cheese, Bread" },
@@ -13,11 +14,15 @@ BLP.LoreData = {
   -- npcId -> { tameable, family, lines }
   beasts = {
     [2956] = { tameable = true, family = "Tallstrider", lines = { "Specialization: Default", "Diet: Cheese, Fungus, Fruit" } },
+    [2957] = { tameable = true, family = "Tallstrider", lines = { "Specialization: Default", "Diet: Cheese, Fungus, Fruit" } },
+    [2959] = { tameable = true, family = "Wolf", lines = { "Specialization: Default", "Diet: Meat" } },
     [2960] = { tameable = true, family = "Wolf", lines = { "Specialization: Default", "Diet: Meat" } },
+    [2971] = { tameable = true, family = "Carrion Bird", lines = { "Specialization: Default", "Diet: Meat, Fish" } },
     [3035] = { tameable = true, family = "Cat", lines = { "Specialization: Default", "Diet: Meat, Fish" } },
     [3239] = { tameable = false },
     [3249] = { tameable = true, family = "Wind Serpent", lines = { "Specialization: Default", "Diet: Fish, Cheese, Bread" } },
     [3250] = { tameable = true, lines = { "Specialization: Default", "Diet: Meat" } },
     [3424] = { tameable = true, family = "Wind Serpent", lines = { "Specialization: Default", "Diet: Fish, Cheese, Bread" } },
+    [3466] = { tameable = false },
   },
 }
