@@ -153,6 +153,15 @@ local selfNpc = 999003
 C.AddReport(store, selfNpc, "-", "A-Realm", nil, 23)
 table.insert(BLP.db.community.tames, { npcId = selfNpc, sig = "-", manual = true })
 check(C.NothingConfirmations(selfNpc) == 2, "your own (manual) tame counts as one of the two")
+-- Export: agreeing reports for unverified bundled beasts are listed
+GetBuildInfo = function() return "1.60.1", "71037", "", 16001 end
+local unv
+for npcId, b in pairs(BLP.Beasts) do if b.conf == "unverified" then unv = npcId break end end
+for i = 1, 3 do C.AddReport(store, unv, C.Signature(BLP.Beasts[unv].teaches), "H" .. i, nil, 30) end
+local text = C.ExportText()
+check(text:find("confirm unverified bundled data", 1, true) ~= nil, "export has the confirmations section")
+check(text:find("| " .. unv .. " |", 1, true) ~= nil and text:find("(ready to add)", 1, true) ~= nil,
+    "agreeing report from 3 hunters is listed as ready to add")
 -- Caps
 local capStore = {}
 for i = 1, 450 do C.AddReport(capStore, i, "bite:1", "S", nil, i) end

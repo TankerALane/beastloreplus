@@ -413,6 +413,12 @@ local function recordTame(target, teaches, unknown)
         BLP.Print(("tame of %s recorded (new beast for the database). Thanks!"):format(tame.name or tame.npcId))
     end
     Community.Share(tame)
+    -- One-time nudge after the third capture: exports are how the bundled data gets fixed.
+    BLP.db.community.captures = (BLP.db.community.captures or 0) + 1
+    if BLP.db.community.captures == 3 and not BLP.db.community.nudged then
+        BLP.db.community.nudged = true
+        BLP.Print("thanks for taming! Type /blp export and paste it into a GitHub issue at github.com/TankerALane/beastloreplus to improve the data for everyone.")
+    end
 end
 
 -- Diagnostics for /blp debug (saved to disk): tame-related events and decisions.
@@ -611,10 +617,40 @@ function Community.ExportText()
         local entry = BLP.db.community.reports[npcId]
         for sig, s in pairs(entry.sigs) do
             gaps = gaps + 1
-            lines[#lines + 1] = ("| %d | %s | %s | %d |"):format(npcId, entry.name or "?", abilitiesText(sig), senderCount(s))
+            local n = senderCount(s)
+            lines[#lines + 1] = ("| %d | %s | %s | %d%s |"):format(npcId, entry.name or "?", abilitiesText(sig), n,
+                n >= Community.QUORUM and " (ready to add)" or "")
         end
     end
     if gaps == 0 then lines[#lines + 1] = "| | (none) | | |" end
+
+    -- Reports that agree with bundled entries still marked unverified: these confirm them.
+    lines[#lines + 1] = ""
+    lines[#lines + 1] = "#### Community reports that confirm unverified bundled data"
+    lines[#lines + 1] = ""
+    lines[#lines + 1] = "| NPC ID | Beast | Confirms | Senders |"
+    lines[#lines + 1] = "|---|---|---|---|"
+    local agree = 0
+    ids = {}
+    for npcId in pairs(BLP.db.community.reports) do
+        local b = BLP.Beasts[npcId]
+        if b and b.conf ~= "confirmed" then ids[#ids + 1] = npcId end
+    end
+    table.sort(ids)
+    for _, npcId in ipairs(ids) do
+        local b = BLP.Beasts[npcId]
+        local sig = Community.Signature(b.teaches)
+        local s = BLP.db.community.reports[npcId].sigs[sig]
+        if s then
+            agree = agree + 1
+            local n = senderCount(s)
+            lines[#lines + 1] = ("| %d | %s | %s | %d%s |"):format(npcId, b.name, abilitiesText(sig), n,
+                n >= Community.QUORUM and " (ready to add)" or "")
+        end
+    end
+    if agree == 0 then lines[#lines + 1] = "| | (none) | | |" end
+    lines[#lines + 1] = ""
+    lines[#lines + 1] = ("_\"ready to add\" = reported by %d+ different hunters._"):format(Community.QUORUM)
     return table.concat(lines, "\n")
 end
 
