@@ -6,7 +6,7 @@
 
 - **Name:** Beast Lore Plus
 - **Summary:** Beast Lore shows which pet abilities a beast teaches and whether you need them, plus a searchable finder for every beast in WoW Forever.
-- **Main category:** Class
+- **Main category:** Hunter (under Class)
 - **Additional category:** Map & Minimap
 - **License:** MIT License
 - **Game version:** WoW Forever 1.60.1
