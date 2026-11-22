@@ -85,9 +85,9 @@ local function build()
     legend:SetPoint("TOPLEFT", finder, "BOTTOMLEFT", 0, -20)
     legend:SetJustifyH("LEFT")
     local g = BLP.DOT_GAP
-    legend:SetText(("%s%syou know this rank or higher\n%s%syou know a lower rank (upgrade)\n%s%syou have not learned it\n%s%sunknown: open Beast Training once"):format(
-        BLP.DotString("known", 14), g, BLP.DotString("upgrade", 14), g, BLP.DotString("missing", 14), g,
-        BLP.DotString("unknown", 14), g))
+    legend:SetText(("%s%syou know this rank\n%s%syou have a higher rank, but not this one\n%s%syou know a lower rank (upgrade)\n%s%syou have not learned it\n%s%sunknown: open Beast Training once"):format(
+        BLP.DotString("known", 14), g, BLP.DotString("lower", 14), g, BLP.DotString("upgrade", 14), g,
+        BLP.DotString("missing", 14), g, BLP.DotString("unknown", 14), g))
     legend:SetSpacing(4)
 
     panel:SetScript("OnShow", Options.Sync)

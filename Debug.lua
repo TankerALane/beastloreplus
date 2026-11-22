@@ -149,7 +149,13 @@ function Debug.Text()
     local keys = {}
     for k in pairs(char.known or {}) do keys[#keys + 1] = k end
     table.sort(keys)
-    for _, k in ipairs(keys) do add(("  %s = rank %d"):format(k, char.known[k])) end
+    for _, k in ipairs(keys) do
+        local have = {}
+        for r in pairs(char.ranks and char.ranks[k] or {}) do have[#have + 1] = r end
+        table.sort(have)
+        add(("  %s = rank %d (has %s)%s"):format(k, char.known[k], #have > 0 and table.concat(have, ",") or "?",
+            char.verified and char.verified[k] and ", checked in Beast Training" or ""))
+    end
     local te = BLP.Training and BLP.Training.lastTrainerEvent
     if te then
         add(("last trainer event: %s at %s, trainer type=%s (Pet=%s), services=%s, scanned=%s"):format(

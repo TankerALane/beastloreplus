@@ -24,10 +24,13 @@ A hunter addon for **World of Warcraft Forever**.
 
 Cast **Beast Lore** on a tameable beast as usual. Under the game's own lines (Tameable, Specialization, Diet), Beast Lore Plus adds a **Pet Abilities** section listing every ability and rank that beast teaches, each with a coloured dot showing whether you need it:
 
-- **Green**: you already know this rank or higher
+- **Green**: you already know this rank
+- **Yellow**: you have a higher rank, but not this one (a higher rank doesn't teach the lower ones)
 - **Orange**: you know a lower rank, so taming this beast is an **upgrade**
 - **Red**: you haven't learned this ability yet
 - **Grey ?**: open **Beast Training** once on this character so the addon knows what you have
+
+Beast Training only shows the abilities your current pet's family can use, so skipped ranks turn yellow once you've opened Beast Training with a pet of that family.
 
 Beasts with no known abilities say so. Nothing is added for beasts that can't be tamed.
 

@@ -16,6 +16,7 @@ BLP.COLORS = {
     cream   = { 0.95, 0.89, 0.71 },
     green   = { 0.18, 0.66, 0.29 },
     orange  = { 0.91, 0.54, 0.17 },
+    yellow  = { 0.98, 0.85, 0.18 },
     red     = { 0.82, 0.20, 0.17 },
     grey    = { 0.55, 0.55, 0.55 },
 }
@@ -40,7 +41,8 @@ BLP.L = {
     TAMEABLE = "Tameable",
     NOT_TAMEABLE = "Cannot Be Tamed",
     FINDER_TITLE = "Beast Lore Plus \226\128\148 Ability Finder",
-    STATUS_KNOWN = "You know this rank or higher",
+    STATUS_KNOWN = "You know this rank",
+    STATUS_LOWER = "You have a higher rank, but not this one",
     STATUS_UPGRADE = "You know a lower rank: taming this beast is an upgrade",
     STATUS_MISSING = "You have not learned this ability",
     STATUS_UNKNOWN = "Unknown: open Beast Training once",
@@ -225,21 +227,47 @@ end
 ---------------------------------------------------------------------------
 BLP.isHunter = false
 
--- "known" (green) | "upgrade" (orange) | "missing" (red) | "unknown" (grey ?) | nil (not a hunter)
+-- "known" (green) | "lower" (yellow) | "upgrade" (orange) | "missing" (red) | "unknown" (grey ?)
+-- | nil (not a hunter).
+-- Learning a higher rank does not teach the lower ones, so ranks are tracked one by one
+-- (char.ranks). Beast Training only lists the abilities the current pet's family can use, so a
+-- lower rank shows yellow only once Beast Training has listed that ability (char.verified);
+-- until then it stays green.
 function BLP.Status(key, rank)
     if not BLP.isHunter then return nil end
     local char = BeastLorePlusCharDB
     if not char or not char.scanned then return "unknown" end
     local known = char.known and char.known[key] or 0
-    if known >= rank then return "known" end
-    if known > 0 then return "upgrade" end
-    return "missing"
+    if known == 0 then return "missing" end
+    if rank > known then return "upgrade" end
+    if rank == known then return "known" end
+    local have = char.ranks and char.ranks[key]
+    if have and have[rank] then return "known" end
+    if char.verified and char.verified[key] then return "lower" end
+    return "known"
+end
+
+-- Record that this character has a rank (Beast Training or a learn message). True if new.
+function BLP.AddKnownRank(key, rank)
+    local char = BLP.char
+    if not char or not key or not rank then return false end
+    char.known = char.known or {}
+    char.ranks = char.ranks or {}
+    char.ranks[key] = char.ranks[key] or {}
+    local changed = not char.ranks[key][rank]
+    char.ranks[key][rank] = true
+    if rank > (char.known[key] or 0) then
+        char.known[key] = rank
+        changed = true
+    end
+    return changed
 end
 
 function BLP.StatusColor(status)
     local c = BLP.COLORS
     if status == "known" then return c.green end
     if status == "upgrade" then return c.orange end
+    if status == "lower" then return c.yellow end
     if status == "missing" then return c.red end
     return c.grey
 end
@@ -261,6 +289,7 @@ end
 function BLP.StatusText(status)
     if status == "known" then return L.STATUS_KNOWN end
     if status == "upgrade" then return L.STATUS_UPGRADE end
+    if status == "lower" then return L.STATUS_LOWER end
     if status == "missing" then return L.STATUS_MISSING end
     return L.STATUS_UNKNOWN
 end
@@ -339,7 +368,7 @@ BLP.On("ADDON_LOADED", function(name)
     BeastLorePlusDB = type(BeastLorePlusDB) == "table" and BeastLorePlusDB or {}
     BeastLorePlusCharDB = type(BeastLorePlusCharDB) == "table" and BeastLorePlusCharDB or {}
     applyDefaults(BeastLorePlusDB, DEFAULTS)
-    applyDefaults(BeastLorePlusCharDB, { known = {}, scanned = false, lastScan = 0 })
+    applyDefaults(BeastLorePlusCharDB, { known = {}, ranks = {}, verified = {}, scanned = false, lastScan = 0 })
     BLP.db = BeastLorePlusDB
     BLP.char = BeastLorePlusCharDB
     local _, class = UnitClass("player")

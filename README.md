@@ -34,13 +34,17 @@ Non-hunters can still open the Finder; it just has no status column.
 
 | Dot | Meaning |
 |---|---|
-| 🟢 Green | You already know this ability at this rank or higher |
+| 🟢 Green | You already know this rank |
+| 🟡 Yellow | You have a higher rank, but not this one (learning a higher rank does not teach the lower ones) |
 | 🟠 Orange | You know a lower rank — taming this beast is an **upgrade** |
 | 🔴 Red | You have not learned this ability at all |
 | ⚪ Grey "?" | Unknown — open **Beast Training** once on this character |
 
 Entries tagged *unverified* come from a single source, or sources disagree. They still show, so you
 can check them in game.
+
+Beast Training only lists the abilities your current pet's family can use, so a skipped lower rank
+turns yellow only after Beast Training has shown that ability once; until then it stays green.
 
 ## Commands
 

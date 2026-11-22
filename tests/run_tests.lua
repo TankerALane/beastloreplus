@@ -118,6 +118,17 @@ check(BLP.Status("bite", 2) == "known", "lower taught rank is known")
 check(BLP.Status("bite", 3) == "known", "same rank is known")
 check(BLP.Status("bite", 4) == "upgrade", "higher taught rank is upgrade")
 check(BLP.Status("claw", 1) == "missing", "unlearned is missing")
+-- Ranks one by one: a higher rank does not teach the lower ones.
+BLP.char.ranks, BLP.char.verified = { bite = { [1] = true, [3] = true } }, {}
+check(BLP.Status("bite", 2) == "known", "lower rank stays green until Beast Training lists the ability")
+BLP.char.verified.bite = true
+check(BLP.Status("bite", 2) == "lower", "checked in Beast Training: missing lower rank is yellow")
+check(BLP.Status("bite", 1) == "known", "checked: lower rank you have is green")
+check(BLP.AddKnownRank("bite", 2) and BLP.Status("bite", 2) == "known", "learning the lower rank turns it green")
+check(not BLP.AddKnownRank("bite", 2), "adding a known rank again is no change")
+check(BLP.AddKnownRank("bite", 5) and BLP.char.known.bite == 5 and BLP.Status("bite", 4) == "lower",
+    "learning a higher rank raises the top rank; skipped ranks are yellow")
+BLP.char.known.bite, BLP.char.ranks, BLP.char.verified = 3, {}, {}
 BLP.isHunter = false
 check(BLP.Status("bite", 1) == nil, "non-hunter has no status")
 BLP.isHunter = true

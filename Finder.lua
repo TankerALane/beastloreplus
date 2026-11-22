@@ -72,10 +72,10 @@ local function effectiveLevel()
     return BLP.Plain(UnitLevel("player")) or 60
 end
 
--- "learned": this hunter knows the rank or higher. "learnable": not learned, and the beast is at
+-- "learned": this hunter knows the rank (green). "learnable": not learned, and the beast is at
 -- or below the level (you can tame it now). "later": not learned, beast above the level.
 local function category(r)
-    if BLP.Status(r.ability, r.rank) == "known" then return "learned" end
+    if BLP.Status(r.ability, r.rank) == "known" then return "learned" end -- yellow is not learned
     local min = r.beast.minLevel
     if not min or min <= effectiveLevel() then return "learnable" end
     return "later"
@@ -464,7 +464,7 @@ local function updateHeader()
             prev = btn
         end
         if rank == state.rank then btn:LockHighlight() else btn:UnlockHighlight() end
-        btn.known = rank > 0 and rank <= knownRank
+        btn.known = rank > 0 and rank <= knownRank and BLP.Status(key, rank) == "known"
         btn:SetNormalFontObject(btn.known and "GameFontDisable" or "GameFontNormal")
         btn.ability = key
     end

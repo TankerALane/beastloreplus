@@ -36,6 +36,9 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
       type + C_TooltipInfo.GetTrainerService ids]**
 - [ ] Beast Lore on a beast that teaches a rank you **know** (or lower) → **green** dot.
 - [ ] Beast Lore on a beast that teaches a **higher** rank of something you know → **orange** dot.
+- [ ] A rank **below** your highest that you never learned: **green** until Beast Training has listed that
+      ability (open it with a pet of a family that uses it), then **yellow**. `/blp debug` shows
+      "has 1,3, checked in Beast Training" per ability; the "trainer:" log line lists every rank read.
 - [ ] Beast Lore on a beast that teaches an ability you **don't have** → **red** dot.
 - [ ] Learn a new rank from a pet in the field; the "You have learned..." message updates the
       status without reopening Beast Training.

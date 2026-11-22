@@ -16,17 +16,20 @@ local function eventValid(event)
     return true
 end
 
--- Merge a parsed list into the saved known ranks. Ranks only go up: a hunter never unlearns
--- an ability, and a filtered trainer list must not erase what is already known.
+-- Merge a parsed list into the saved known ranks. Nothing is ever removed: a hunter never
+-- unlearns an ability, and Beast Training only lists what the current pet's family can use.
+-- Every ability it lists is marked verified: its ranks are now known exactly, so a missing lower
+-- rank can show yellow.
 local function merge(list, source)
     local char = BLP.char
     if not char then return end
+    char.verified = char.verified or {}
     local changed = false
     for _, e in ipairs(list) do
         if e.key and e.rank then
-            local cur = char.known[e.key] or 0
-            if e.rank > cur then
-                char.known[e.key] = e.rank
+            if BLP.AddKnownRank(e.key, e.rank) then changed = true end
+            if not char.verified[e.key] then
+                char.verified[e.key] = true
                 changed = true
             end
         end
@@ -150,11 +153,7 @@ local function onSystemMessage(msg)
             BLP.SpellIndex[spellId] = { key = key, rank = rank }
         end
         -- Saved even before the first Beast Training scan; the dots stay grey until that scan.
-        local char = BLP.char
-        if char and rank > (char.known[key] or 0) then
-            char.known[key] = rank
-            if BLP.Finder and BLP.Finder.Refresh then BLP.Finder.Refresh() end
-        end
+        if BLP.AddKnownRank(key, rank) and BLP.Finder and BLP.Finder.Refresh then BLP.Finder.Refresh() end
     end
 end
 
@@ -181,8 +180,13 @@ local function trainerEvent(event)
                 unmatched[#unmatched + 1] = ("%s/%s#%s"):format(tostring(e.name), tostring(e.sub), tostring(e.spellId))
             end
         end
-        BLP.Log("trainer: type=%s pet=%s services=%s scanned=%s unmatched=[%s]", tostring(info.trainerType),
-            tostring(info.petType), tostring(info.services), tostring(info.scanned), table.concat(unmatched, "; "))
+        local listed = {}
+        for _, e in ipairs(info.scanned and Training.lastScan or {}) do
+            if e.key then listed[#listed + 1] = ("%s:%s(%s)"):format(e.key, tostring(e.rank), tostring(e.kind)) end
+        end
+        BLP.Log("trainer: type=%s pet=%s services=%s scanned=%s unmatched=[%s] listed=[%s]",
+            tostring(info.trainerType), tostring(info.petType), tostring(info.services), tostring(info.scanned),
+            table.concat(unmatched, "; "), table.concat(listed, " "))
     end
 end
 
