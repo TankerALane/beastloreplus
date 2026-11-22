@@ -99,12 +99,86 @@ local function rowMatches(r, search)
     return true
 end
 
+---------------------------------------------------------------------------
+-- Zone distance (nearest first). Zone centres come from the client's map data; a dungeon uses
+-- the zone it sits in. Other continents sort after this one. Falls back to A-Z if unavailable.
+---------------------------------------------------------------------------
+local zoneCenters -- name -> { cont, x, y }
+local FAR = 1e9
+
+local function mapsAvailable()
+    return C_Map and C_Map.GetBestMapForUnit and C_Map.GetMapInfo and C_Map.GetMapChildrenInfo
+        and C_Map.GetWorldPosFromMapPos and CreateVector2D
+end
+
+local function mapCenter(mapID)
+    local ok, cont, pos = pcall(C_Map.GetWorldPosFromMapPos, mapID, CreateVector2D(0.5, 0.5))
+    if ok and cont and pos then return { cont = cont, x = pos.x, y = pos.y } end
+    return nil
+end
+
+local function buildZoneCenters()
+    if zoneCenters or not mapsAvailable() then return end
+    local mapID = BLP.Plain(C_Map.GetBestMapForUnit("player"))
+    if not mapID then return end -- loading screen: try again later
+    local top = mapID
+    for _ = 1, 10 do
+        local info = C_Map.GetMapInfo(top)
+        if info and info.parentMapID and info.parentMapID ~= 0 then top = info.parentMapID else break end
+    end
+    local ok, kids = pcall(C_Map.GetMapChildrenInfo, top, nil, true)
+    if not ok or type(kids) ~= "table" then return end
+    local zoneType = Enum and Enum.UIMapType and Enum.UIMapType.Zone
+    local centers = {}
+    for _, info in ipairs(kids) do
+        local name = BLP.Plain(info.name)
+        if name and (not centers[name] or (info.mapType == zoneType and not centers[name].zone)) then
+            local c = mapCenter(info.mapID) or (info.parentMapID and mapCenter(info.parentMapID))
+            if c then
+                c.zone = info.mapType == zoneType
+                centers[name] = c
+            end
+        end
+    end
+    zoneCenters = centers
+end
+
+-- Where the player is, in world coordinates.
+local function playerWorldPos()
+    if not mapsAvailable() then return nil end
+    local mapID = BLP.Plain(C_Map.GetBestMapForUnit("player"))
+    if not mapID then return nil end
+    local pos = C_Map.GetPlayerMapPosition and BLP.Plain(C_Map.GetPlayerMapPosition(mapID, "player"))
+    local ok, cont, world = pcall(C_Map.GetWorldPosFromMapPos, mapID, pos or CreateVector2D(0.5, 0.5))
+    if ok and cont and world then return { cont = cont, x = world.x, y = world.y } end
+    return mapCenter(mapID)
+end
+
+local function zoneDistance(name, me)
+    local c = zoneCenters and zoneCenters[name]
+    if not c or not me then return FAR end
+    local d = math.sqrt((c.x - me.x) ^ 2 + (c.y - me.y) ^ 2)
+    if c.cont ~= me.cont then d = d + 1e7 end
+    return d
+end
+
+local function beastDistance(b, me)
+    local best = FAR
+    for _, z in ipairs(b.zones or {}) do
+        local d = zoneDistance(z, me)
+        if d < best then best = d end
+    end
+    return best
+end
+
 local function sortRows()
     local key, asc = state.sortKey, state.asc
     table.sort(data, function(a, b)
+        if a.ability ~= b.ability then return BLP.AbilityName(a.ability) < BLP.AbilityName(b.ability) end
+        if a.rank ~= b.rank then return a.rank < b.rank end
         local va, vb
         if key == "name" then va, vb = a.beast.name, b.beast.name
-        elseif key == "zone" then va, vb = (a.beast.zones or {})[1] or "~", (b.beast.zones or {})[1] or "~"
+        elseif key == "zone" then va, vb = a.dist or FAR, b.dist or FAR
         elseif key == "rank" then va, vb = BLP.AbilityName(a.ability) .. a.rank, BLP.AbilityName(b.ability) .. b.rank
         else va, vb = a.beast.minLevel or 999, b.beast.minLevel or 999 end
         if va == vb then
@@ -115,6 +189,8 @@ local function sortRows()
         return va > vb
     end)
 end
+
+local resultCount = 0
 
 local function collect()
     wipe(data)
@@ -131,7 +207,27 @@ local function collect()
             if rowMatches(r, search) then data[#data + 1] = r end
         end
     end
+    if state.sortKey == "zone" then
+        buildZoneCenters()
+        local me = playerWorldPos()
+        for _, r in ipairs(data) do r.dist = beastDistance(r.beast, me) end
+    end
     sortRows()
+    resultCount = #data
+    -- One ability and one rank picked: a single group, no headers needed.
+    if state.ability and state.rank > 0 then return end
+    local grouped, header = {}, nil
+    for _, r in ipairs(data) do
+        if not header or header.ability ~= r.ability or header.rank ~= r.rank then
+            if header then grouped[#grouped + 1] = { spacer = true } end
+            header = { header = true, ability = r.ability, rank = r.rank, count = 0 }
+            grouped[#grouped + 1] = header
+        end
+        header.count = header.count + 1
+        grouped[#grouped + 1] = r
+    end
+    wipe(data)
+    for i, r in ipairs(grouped) do data[i] = r end
 end
 
 local function zonesInScope()
@@ -150,7 +246,15 @@ local function zonesInScope()
         end
     end
     state.zone = saveZone
-    table.sort(out)
+    -- Nearest first (A-Z among zones the map data does not know).
+    buildZoneCenters()
+    local me = playerWorldPos()
+    local dist = {}
+    for _, z in ipairs(out) do dist[z] = zoneDistance(z, me) end
+    table.sort(out, function(a, b)
+        if dist[a] ~= dist[b] then return dist[a] < dist[b] end
+        return a < b
+    end)
     return out
 end
 
@@ -184,7 +288,44 @@ local function updateRows()
         row:ClearAllPoints()
         row:SetPoint("TOPLEFT", frame.content, "TOPLEFT", 0, -(first + i - 1) * ROW_H)
         row:SetPoint("RIGHT", frame.content, "RIGHT")
-        if r then
+        row.hIcon:Hide()
+        row.hText:Hide()
+        row.hInfo:Hide()
+        row.hLine:Hide()
+        if r and r.spacer then
+            row.data = nil
+            row:Hide()
+        elseif r and r.header then
+            row.data = r
+            for _, f in ipairs({ row.name, row.rank, row.level, row.zone, row.tag }) do f:SetText("") end
+            local status = BLP.Status(r.ability, r.rank)
+            if showStatus and status then
+                row.dot:Show()
+                if status == "unknown" then
+                    row.dot:SetTexture(BLP.MEDIA .. "unknown")
+                    row.dot:SetVertexColor(1, 1, 1)
+                else
+                    row.dot:SetTexture(BLP.MEDIA .. "dot")
+                    local c = BLP.StatusColor(status)
+                    row.dot:SetVertexColor(c[1], c[2], c[3])
+                end
+            else
+                row.dot:Hide()
+            end
+            row.hIcon:SetTexture(BLP.AbilityIcon(r.ability))
+            row.hIcon:Show()
+            row.hText:SetText(BLP.AbilityName(r.ability) .. " " .. L.RANK:format(r.rank))
+            row.hText:Show()
+            local rk = BLP.Abilities[r.ability] and BLP.Abilities[r.ability].ranks[r.rank] or {}
+            local bits = {}
+            if rk.petLevel then bits[#bits + 1] = "pet level " .. rk.petLevel end
+            if rk.tp and rk.tp > 0 then bits[#bits + 1] = rk.tp .. " TP" end
+            bits[#bits + 1] = r.count .. (r.count == 1 and " beast" or " beasts")
+            row.hInfo:SetText(table.concat(bits, "  \194\183  "))
+            row.hInfo:Show()
+            row.hLine:Show()
+            row:Show()
+        elseif r then
             row.data = r
             local status = BLP.Status(r.ability, r.rank)
             if showStatus and status then
@@ -225,7 +366,7 @@ end
 local function updateHeader()
     local key = state.ability
     if not key then
-        frame.info:SetText(("All abilities \226\128\148 %d result(s)"):format(#data))
+        frame.info:SetText(("All abilities \226\128\148 %d result(s)"):format(resultCount))
     else
         local ab = BLP.Abilities[key]
         local text = BLP.AbilityName(key)
@@ -244,16 +385,20 @@ local function updateHeader()
             local known = BLP.char.known[key]
             text = text .. "   (you know " .. (known and L.RANK_SHORT:format(known) or "no rank") .. ")"
         end
-        frame.info:SetText(text .. ("  \226\128\148 %d result(s)"):format(#data))
+        frame.info:SetText(text .. ("  \226\128\148 %d result(s)"):format(resultCount))
     end
     for _, btn in ipairs(abilityButtons) do
         if btn.key == state.ability then btn:LockHighlight() else btn:UnlockHighlight() end
     end
     local max = key and BLP.MaxRank(key) or 0
+    local knownRank = (key and BLP.isHunter and BLP.char and BLP.char.scanned) and (BLP.char.known[key] or 0) or 0
     for i, btn in ipairs(rankButtons) do
         local rank = i - 1
         btn:SetShown(rank == 0 or rank <= max)
         if rank == state.rank then btn:LockHighlight() else btn:UnlockHighlight() end
+        btn.known = rank > 0 and rank <= knownRank
+        btn:SetNormalFontObject(btn.known and "GameFontDisable" or "GameFontNormal")
+        btn.ability = key
     end
     frame.zoneBtn:SetText("Zone: " .. (state.zone or "All"))
     if not frame.levelBox:HasFocus() then
@@ -288,6 +433,18 @@ end
 local function rowTooltip(row)
     local r = row.data
     if not r then return end
+    if r.header then
+        GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
+        GameTooltip:AddLine(BLP.AbilityName(r.ability) .. " " .. L.RANK:format(r.rank))
+        if BLP.isHunter then
+            local st = BLP.Status(r.ability, r.rank)
+            local col = BLP.StatusColor(st)
+            GameTooltip:AddLine(BLP.StatusText(st), col[1], col[2], col[3], true)
+        end
+        GameTooltip:AddLine("Click to show only this ability and rank.", 0.6, 0.6, 0.6, true)
+        GameTooltip:Show()
+        return
+    end
     local b = r.beast
     GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
     GameTooltip:AddLine(b.name, 1, 1, 1)
@@ -362,6 +519,25 @@ local function createRow(parent)
     row.level = fs(COLS.level, 56)
     row.zone = fs(COLS.zone, 142, "GameFontDisableSmall")
     row.tag = fs(COLS.tag, 100, "GameFontDisableSmall")
+    row.hIcon = row:CreateTexture(nil, "ARTWORK")
+    row.hIcon:SetSize(16, 16)
+    row.hIcon:SetPoint("LEFT", COLS.name, 0)
+    row.hText = row:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    row.hText:SetPoint("LEFT", row.hIcon, "RIGHT", 6, 0)
+    row.hInfo = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+    row.hInfo:SetPoint("LEFT", COLS.level, 0)
+    row.hLine = row:CreateTexture(nil, "BACKGROUND")
+    row.hLine:SetColorTexture(BLP.COLORS.gold[1], BLP.COLORS.gold[2], BLP.COLORS.gold[3], 0.35)
+    row.hLine:SetHeight(1)
+    row.hLine:SetPoint("BOTTOMLEFT", 0, 0)
+    row.hLine:SetPoint("BOTTOMRIGHT", 0, 0)
+    row:SetScript("OnClick", function(self)
+        local r = self.data
+        if r and r.header then
+            state.ability, state.rank = r.ability, r.rank
+            Finder.Refresh()
+        end
+    end)
     row:SetScript("OnEnter", rowTooltip)
     row:SetScript("OnLeave", function() GameTooltip:Hide() end)
     return row
@@ -373,7 +549,7 @@ local function openZoneMenu(btn)
     local function pick(z) state.zone = z Finder.Refresh() end
     if MenuUtil and MenuUtil.CreateContextMenu then
         MenuUtil.CreateContextMenu(btn, function(_, root)
-            root:CreateTitle("Filter by zone")
+            root:CreateTitle("Filter by zone (nearest first)")
             root:CreateButton("All zones", function() pick(nil) end)
             if current and current ~= "" then
                 root:CreateButton("Current zone (" .. current .. ")", function() pick(current) end)
@@ -482,6 +658,21 @@ local function create()
         if rank == 0 then b:SetPoint("TOPLEFT", right, -60)
         else b:SetPoint("LEFT", rankButtons[rank], "RIGHT", 2, 0) end
         b:SetScript("OnClick", function() state.rank = rank Finder.Refresh() end)
+        if rank > 0 then
+            b:SetScript("OnEnter", function(self)
+                if not self.ability then return end
+                local rk = BLP.Abilities[self.ability].ranks[rank] or {}
+                GameTooltip:SetOwner(self, "ANCHOR_TOP")
+                GameTooltip:AddLine(BLP.AbilityName(self.ability) .. " " .. L.RANK:format(rank))
+                if rk.petLevel then GameTooltip:AddLine("Pet level " .. rk.petLevel, 1, 1, 1) end
+                if self.known then
+                    local c = BLP.COLORS.green
+                    GameTooltip:AddLine("You already know this rank.", c[1], c[2], c[3])
+                end
+                GameTooltip:Show()
+            end)
+            b:SetScript("OnLeave", function() GameTooltip:Hide() end)
+        end
         rankButtons[#rankButtons + 1] = b
     end
 
@@ -559,7 +750,7 @@ local function create()
     makeHeader(header, "Beast", "name", 210, COLS.name - 2)
     makeHeader(header, "Rank", "rank", 96, COLS.rank - 2)
     makeHeader(header, "Level", "level", 56, COLS.level - 2)
-    makeHeader(header, "Zone", "zone", 142, COLS.zone - 2)
+    makeHeader(header, "Zone (nearest)", "zone", 142, COLS.zone - 2)
 
     -- Results list (virtualised rows)
     local scroll = CreateFrame("ScrollFrame", nil, f, "UIPanelScrollFrameTemplate")

@@ -50,7 +50,13 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
 - [ ] `/blp` opens the Finder; the minimap button left-click opens it too; Esc closes it.
 - [ ] Pick an ability (e.g. Bite) and a rank → the list shows beasts with level range and zone,
       and the header shows pet level, training points and your status for that rank.
-- [ ] Click the **Level**, **Beast**, **Zone** headers → sorting changes; click again → reverses.
+- [ ] Click the **Level** and **Beast** headers → sorting changes; click again → reverses.
+- [ ] Click **Zone (nearest)** → beasts in your zone first, then nearby zones, other continent last;
+      click again → farthest first. The zone menu also lists zones nearest first.
+- [ ] "All abilities" (or "All" ranks) → a gold header per ability and rank with a blank row between
+      groups; clicking a header shows only that rank.
+- [ ] Pick an ability you know (e.g. Bite rank 2) → rank buttons 1 and 2 are grey; hovering says you
+      already know it.
 - [ ] **Zone** button → menu of zones (and "Current zone"); picking one filters; right-click clears.
       **[confirms Phase 0: MenuUtil exists; otherwise it cycles zones on click]**
 - [ ] Type in the search box (a beast name, an ability or a zone) → the list filters.

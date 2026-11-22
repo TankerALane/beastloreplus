@@ -5,6 +5,10 @@
 - Ability Finder: **Level** box (defaults to your level) with **Can learn now**, **Already learned**
   and **Not yet** toggles, replacing "Only upgrades for me". Beasts above the level are dimmed.
 - Ability Finder: the search box placeholder fits the box (full hint on mouse-over).
+- Ability Finder: results are grouped under a header per ability and rank (icon, pet level, TP,
+  beast count), with a gap between groups; click a header to show only that rank.
+- Ability Finder: rank buttons you already know are greyed out.
+- Ability Finder: the Zone column and the zone menu sort nearest first (click again for farthest).
 
 ## 1.0.0 (2026-11-21)
 
