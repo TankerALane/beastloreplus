@@ -600,6 +600,23 @@ local function createRow(parent)
     return row
 end
 
+-- A lighter strip behind a scroll bar, so it doubles as a divider between panels.
+local function styleScrollBar(scroll)
+    local bar = scroll.ScrollBar or (scroll.GetName and scroll:GetName() and _G[scroll:GetName() .. "ScrollBar"])
+    if not bar then return end
+    local bg = bar:CreateTexture(nil, "BACKGROUND")
+    bg:SetColorTexture(0.55, 0.50, 0.40, 0.22)
+    bg:SetPoint("TOPLEFT", bar, "TOPLEFT", -2, 18)
+    bg:SetPoint("BOTTOMRIGHT", bar, "BOTTOMRIGHT", 2, -18)
+    for _, side in ipairs({ "LEFT", "RIGHT" }) do
+        local line = bar:CreateTexture(nil, "BORDER")
+        line:SetColorTexture(BLP.COLORS.gold[1], BLP.COLORS.gold[2], BLP.COLORS.gold[3], 0.35)
+        line:SetWidth(1)
+        line:SetPoint("TOP" .. side, bg, "TOP" .. side)
+        line:SetPoint("BOTTOM" .. side, bg, "BOTTOM" .. side)
+    end
+end
+
 local function openZoneMenu(btn)
     local zones = zonesInScope()
     local current = GetZoneText and BLP.Plain(GetZoneText())
@@ -673,6 +690,7 @@ local function create()
     listScroll:SetPoint("TOPLEFT", 10, -60)
     listScroll:SetPoint("BOTTOMLEFT", 10, 12)
     listScroll:SetWidth(170)
+    styleScrollBar(listScroll)
     local list = CreateFrame("Frame", nil, listScroll)
     list:SetSize(170, #keys * 21)
     listScroll:SetScrollChild(list)
@@ -817,6 +835,7 @@ local function create()
     local scroll = CreateFrame("ScrollFrame", nil, f, "UIPanelScrollFrameTemplate")
     scroll:SetPoint("TOPLEFT", right, -142)
     scroll:SetPoint("BOTTOMRIGHT", -34, 36)
+    styleScrollBar(scroll)
     local content = CreateFrame("Frame", nil, scroll)
     content:SetSize(640, 1)
     scroll:SetScrollChild(content)
