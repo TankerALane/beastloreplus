@@ -18,8 +18,9 @@ teaches, with its rank and a dot that says whether you need it.
   abilities and ranks that hunter knows. It updates whenever Beast Training opens or you learn a rank.
 - **Ability Finder** (`/blp` or the minimap button). Pick any pet ability and rank to see which
   beasts teach it, with level range, zone and your status. Search, sort by level/name/zone, filter
-  by zone, and set a **Level** with the toggles **Can learn now**, **Already learned** and **Not yet**
-  (e.g. at level 26, show only what you can tame and learn right now).
+  by zone (nearest first), and set a **Level** with **Can learn now** (hide beasts above that level) and
+  **Already learned** (show ranks you know). Click a beast to drop a **map pin** where it spawns (plus a
+  **TomTom** arrow if you use TomTom; exact spawns need Questie installed).
 - **Community confirmation.** When you tame a beast, the abilities your new pet arrived with are
   recorded and shared with other Beast Lore Plus users (guild + a hidden channel), so the data gets
   better over time. See below.

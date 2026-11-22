@@ -448,16 +448,29 @@ local function updateHeader()
     for toggleKey, cb in pairs(frame.toggles) do
         local enabled = toggleKey ~= "learned" or canKnow
         cb:SetEnabled(enabled and true or false)
-        cb:SetChecked(state.show[toggleKey] and true or false)
+        local on = state.show[toggleKey] and true or false
+        if cb.invert then on = not on end
+        cb:SetChecked(on)
         cb.label:SetTextColor(enabled and 1 or 0.5, enabled and 0.82 or 0.5, enabled and 0 or 0.5)
     end
     frame.statusHeader:SetShown(BLP.isHunter)
 end
 
+local lastView
 function Finder.Refresh()
     if not frame or not frame:IsShown() then return end
     collect()
-    frame.content:SetHeight(math.max(1, #data * ROW_H))
+    local height = math.max(1, #data * ROW_H)
+    frame.content:SetHeight(height)
+    if frame.scroll.UpdateScrollChildRect then frame.scroll:UpdateScrollChildRect() end
+    local view = tostring(state.ability) .. ":" .. state.rank
+    local maxScroll = math.max(0, height - frame.scroll:GetHeight())
+    if view ~= lastView then
+        frame.scroll:SetVerticalScroll(0)
+    elseif frame.scroll:GetVerticalScroll() > maxScroll then
+        frame.scroll:SetVerticalScroll(maxScroll)
+    end
+    lastView = view
     updateHeader()
     updateRows()
     if BLP.db then
@@ -517,6 +530,8 @@ local function rowTooltip(row)
         GameTooltip:AddLine("Only one source (or sources disagree): unverified.", 0.6, 0.6, 0.6, true)
     end
     if BLP.db.showNpcId then GameTooltip:AddLine("NPC ID: " .. r.npcId, 0.6, 0.6, 0.6) end
+    local tomtom = rawget(_G, "TomTom") and " and TomTom arrow" or ""
+    GameTooltip:AddLine(("Click: map pin%s to this beast."):format(tomtom), 0.83, 0.64, 0.30, true)
     GameTooltip:Show()
 end
 
@@ -576,6 +591,8 @@ local function createRow(parent)
         if r and r.header then
             state.ability, state.rank = r.ability, r.rank
             Finder.Refresh()
+        elseif r and not r.spacer and BLP.Waypoint then
+            BLP.Waypoint.ToBeast(r.npcId, r.beast)
         end
     end)
     row:SetScript("OnEnter", rowTooltip)
@@ -755,12 +772,10 @@ local function create()
 
     f.toggles = {}
     local TOGGLES = {
-        { key = "learnable", label = "Can learn now",
-          tip = "You don't know this rank yet, and the beast is at or below the level: tame it now." },
+        { key = "later", invert = true, label = "Can learn now",
+          tip = "Only beasts at or below the level, so you can tame them now. Untick to also see higher beasts (dimmed)." },
         { key = "learned", label = "Already learned",
-          tip = "You know this rank or higher. Needs one Beast Training scan on this hunter." },
-        { key = "later", label = "Not yet",
-          tip = "You don't know this rank, but the beast is above the level, so you can't tame it yet." },
+          tip = "Also show ranks you already know. Untick to see only what you still need. Needs one Beast Training scan on this hunter." },
     }
     local anchor = levelBox
     for _, t in ipairs(TOGGLES) do
@@ -770,7 +785,12 @@ local function create()
         cb.label = f:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
         cb.label:SetPoint("LEFT", cb, "RIGHT", 1, 0)
         cb.label:SetText(t.label)
-        cb:SetScript("OnClick", function(self) state.show[t.key] = self:GetChecked() and true or false Finder.Refresh() end)
+        cb.invert = t.invert
+        cb:SetScript("OnClick", function(self)
+            local checked = self:GetChecked() and true or false
+            if t.invert then state.show[t.key] = not checked else state.show[t.key] = checked end
+            Finder.Refresh()
+        end)
         cb:SetScript("OnEnter", function(self)
             GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
             GameTooltip:AddLine(t.label)
@@ -831,6 +851,7 @@ function Finder.Toggle()
                 if saved.show[k] ~= nil then state.show[k] = saved.show[k] and true or false end
             end
         end
+        state.show.learnable = true -- what you can learn now is always shown
         state.level = tonumber(saved.level)
     end
     if frame:IsShown() then frame:Hide() else frame:Show() end
@@ -846,3 +867,10 @@ end
 BLP.OnInit(function()
     BLP.On("PLAYER_LEVEL_UP", function() C_Timer.After(0.5, Finder.Refresh) end)
 end)
+
+-- Test hooks (used by tests/run_tests.lua; harmless in game).
+Finder._test = {
+    state = state,
+    build = function() buildIndex() end,
+    collect = function() collect() return data, resultCount, rankCounts end,
+}

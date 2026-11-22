@@ -162,6 +162,29 @@ local text = C.ExportText()
 check(text:find("confirm unverified bundled data", 1, true) ~= nil, "export has the confirmations section")
 check(text:find("| " .. unv .. " |", 1, true) ~= nil and text:find("(ready to add)", 1, true) ~= nil,
     "agreeing report from 3 hunters is listed as ready to add")
+-- Finder filters: level 27 hunter, Claw, "Can learn now" on, "Already learned" off
+UnitLevel = function() return 27 end
+load("Finder.lua")
+BLP.db.finder = {}
+local FT = BLP.Finder._test
+FT.build()
+FT.state.ability = "claw"
+FT.state.show = { learnable = true, learned = false, later = false }
+local rows, count, rankCounts = FT.collect()
+local claw4, claw5 = 0, 0
+for _, row in ipairs(rows) do
+    if not row.header and not row.spacer then
+        check((row.beast.minLevel or 0) <= 27, "Can learn now hides beasts above level 27 (" .. row.beast.name .. ")")
+        if row.rank == 4 then claw4 = claw4 + 1 end
+        if row.rank == 5 then claw5 = claw5 + 1 end
+    end
+end
+check(claw4 >= 2, "Claw 4 keeps the beasts you can tame at 27 (got " .. claw4 .. ")")
+check(claw5 == 0 and (rankCounts[5] or 0) == 0, "Claw 5 (lowest beast 34) hidden at 27")
+check(count > 0, "some Claw results at 27")
+FT.state.show = { learnable = true, learned = true, later = true }
+local _, all = FT.collect()
+check(all > count, "unticking Can learn now shows more")
 -- Caps
 local capStore = {}
 for i = 1, 450 do C.AddReport(capStore, i, "bite:1", "S", nil, i) end

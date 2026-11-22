@@ -2,8 +2,13 @@
 
 ## Unreleased
 
-- Ability Finder: **Level** box (defaults to your level) with **Can learn now**, **Already learned**
-  and **Not yet** toggles, replacing "Only upgrades for me". Beasts above the level are dimmed.
+- Ability Finder: **Level** box (defaults to your level) with **Can learn now** (hide beasts above the
+  level) and **Already learned** (show ranks you know), replacing "Only upgrades for me". Beasts above
+  the level are dimmed when shown.
+- Ability Finder: click a beast to set a map pin where it spawns, plus a TomTom arrow when TomTom is
+  installed. Spawn points come from Questie's database when Questie is installed, otherwise from where
+  you last targeted that beast; with neither, the world map opens on its zone.
+- Ability Finder: the list no longer looks empty after a filter shortens it while scrolled down.
 - Ability Finder: the search box placeholder fits the box (full hint on mouse-over).
 - Ability Finder: results are grouped under a header per ability and rank (icon, pet level, TP,
   beast count), with a gap between groups; click a header to show only that rank.

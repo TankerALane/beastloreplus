@@ -60,9 +60,13 @@ Use a hunter that has **never opened Beast Training** since installing (or a fre
 - [ ] **Zone** button → menu of zones (and "Current zone"); picking one filters; right-click clears.
       **[confirms Phase 0: MenuUtil exists; otherwise it cycles zones on click]**
 - [ ] Type in the search box (a beast name, an ability or a zone) → the list filters.
-- [ ] **Level** box shows your level. Untick **Already learned** and **Not yet** → only beasts you can
-      tame now with ranks you don't know remain. Type another level (e.g. 40) → the list changes; clear it
-      → back to your level. Rows above the level are dimmed with a red level.
+- [ ] **Level** box shows your level. Tick **Can learn now** and untick **Already learned** → only beasts
+      you can tame now with ranks you don't know remain (level 27: Claw shows ranks 1-4, not 5). Type
+      another level (e.g. 40) → the list changes; clear it → back to your level. With **Can learn now**
+      unticked, rows above the level are dimmed with a red level.
+- [ ] Scroll down, then tick **Can learn now** → the list stays visible (no empty view).
+- [ ] Click a beast row → chat names the zone and coordinates, a map pin appears (and a TomTom arrow if
+      TomTom is installed). With Questie installed the spot is a real spawn point.
 - [ ] Hover a row → tooltip with all abilities that beast teaches and your status.
 
 ## 5. Minimap button and options

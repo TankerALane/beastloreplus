@@ -14,7 +14,7 @@ local opts = { std = "lua51", globals = env.globals, read_globals = env.read_glo
 
 local files = { ... }
 if #files == 0 then
-    files = { "Core.lua", "Training.lua", "BeastLore.lua", "Community.lua", "Debug.lua", "Finder.lua",
+    files = { "Core.lua", "Training.lua", "BeastLore.lua", "Community.lua", "Debug.lua", "Waypoint.lua", "Finder.lua",
               "Minimap.lua", "Options.lua", "Data/Abilities.lua", "Data/Beasts.lua" }
 end
 local srcs = {}

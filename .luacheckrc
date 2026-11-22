@@ -18,6 +18,7 @@ read_globals = {
     "GetCraftDisplaySkillLine", "HasPetSpells", "GetSpellBookItemName", "GetSpellInfo", "GetAddOnMetadata",
     "JoinTemporaryChannel", "JoinChannelByName", "LeaveChannelByName", "ChatFrame_RemoveChannel",
     "InterfaceOptions_AddCategory", "InterfaceOptionsFrame_OpenToCategory",
-    "ERR_LEARN_SPELL_S", "SEARCH", "C_Map", "CreateVector2D", "BOOKTYPE_PET", "NUM_CHAT_WINDOWS", "CLOSE",
+    "ERR_LEARN_SPELL_S", "SEARCH", "C_Map", "CreateVector2D", "UiMapPoint", "C_SuperTrack", "OpenWorldMap",
+    "WorldMapFrame", "ToggleWorldMap", "BOOKTYPE_PET", "NUM_CHAT_WINDOWS", "CLOSE",
     "issecretvalue", "wipe", "tinsert", "time", "date",
 }

@@ -26,6 +26,7 @@ Training.lua
 BeastLore.lua
 Community.lua
 Debug.lua
+Waypoint.lua
 Finder.lua
 Minimap.lua
 Options.lua
